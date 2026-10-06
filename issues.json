@@ -1,24 +1,16 @@
 [
   {
     "id": "ai",
-    "name": "AI 繁榮背後的代價",
+    "name": "AI帶來的社會幫助與社會衝擊是什麼?",
     "keys": [
       "AI",
       "人工智慧",
       "算力"
     ],
     "note": "追蹤技術發展如何改變稅制、商業責任與社會信任。",
-    "entries": [
-      {
-        "id": "08336f42-6069-4a2e-b951-3af4bc8bd1bd",
-        "date": "2026-10-07",
-        "label": "筆記",
-        "text": "Test a",
-        "links": []
-      }
-    ],
+    "entries": [],
     "status": "觀察中",
-    "then": ""
+    "then": "test"
   },
   {
     "id": "world",
@@ -49,5 +41,41 @@
     "entries": [],
     "status": "觀察中",
     "then": ""
+  },
+  {
+    "id": "1a9b1491-bd4b-4205-8bee-9efc1fe9b394",
+    "entries": [
+      {
+        "id": "623c6f40-76a9-453c-84e9-a0a7c5ecbee8",
+        "date": "2026-10-06",
+        "label": "筆記",
+        "text": "AI時代的課稅難題: 人力被AI取代，那政府要向誰課稅?\n1. 勞工課稅: 目前現況, 勞工所得下降，收稅減少\n2. AI課稅: 稅基比勞工小很多\n3. 富人稅: 難以估算，也有富豪到海外配置資產，或是整個企業外移風險\n可能解方:\n消費稅，誰花錢誰就繳稅\n配套措施: \n對於基層人民可能負擔較重，要搭配基本生活減免、退稅或現金補助 ",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.03《英國 x 歐洲版塊》英國稅制有多荒謬？歐盟國防預算大亂鬥！英國「後自由主義」陷阱、北愛爾蘭遊行危機，基輔無人機轟炸MAGA右派對歐洲的愛恨情仇｜TheEconomist｜01:30 Britain’s taxes are strewn with loopholes and perverse incentives",
+            "url": "https://www.youtube.com/watch?v=v6HctbB6cfM&t=90s"
+          },
+          {
+            "title": "經濟學人｜2026.10.03《英國 x 歐洲版塊》英國稅制有多荒謬？歐盟國防預算大亂鬥！英國「後自由主義」陷阱、北愛爾蘭遊行危機，基輔無人機轟炸MAGA右派對歐洲的愛恨情仇｜TheEconomist｜07:43 Britain overtaxes well-paid workers",
+            "url": "https://www.youtube.com/watch?v=v6HctbB6cfM&t=463s"
+          },
+          {
+            "title": "經濟學人｜2026.10.03《封面故事 x 社論版塊》人類生存代價！從 AI 稅制崩盤、25兆中國新基建到鏡像生命，科技失控誰來踩煞車？川普金正恩會面風險！｜TheEconomist｜17:42 A hurricane is coming to tax systems",
+            "url": "https://www.youtube.com/watch?v=5wB4kUG_ZN0&t=1062s"
+          }
+        ]
+      }
+    ],
+    "name": "稅收對於國家的影響有哪些角度?",
+    "keys": [
+      "稅收",
+      "稅制",
+      "財政",
+      "tax",
+      "taxation"
+    ],
+    "status": "觀察中",
+    "then": "",
+    "note": ""
   }
 ]
