@@ -18,5 +18,13 @@ $items=@($feed.feed.entry | ForEach-Object {
  @{id=[string]$_.videoId;title=$title;published=[string]$_.published;category=$category;description=[string]$_.group.description;url=[string]$_.link.href;thumbnail=[string]$_.group.thumbnail.url}
 })
 if($items.Count -eq 0){throw 'RSS 未回傳影片，保留原有資料。'}
+$archivePath=Join-Path $root 'dist/videos.json'
+$archive=@{}
+if(Test-Path -LiteralPath $archivePath){
+ $previous=Get-Content -Raw -LiteralPath $archivePath | ConvertFrom-Json
+ foreach($video in $previous.videos){if($video.id){$archive[[string]$video.id]=$video}}
+}
+foreach($video in $items){$archive[[string]$video.id]=$video}
+$items=@($archive.Values | Sort-Object { [DateTimeOffset]$_.published } -Descending)
 @{updated=(Get-Date).ToUniversalTime().ToString('o');channel=$channel;videos=$items} | ConvertTo-Json -Depth 6 | Set-Content -Encoding utf8 (Join-Path $root 'dist/videos.json')
 Write-Output "已更新 $($items.Count) 部影片"
