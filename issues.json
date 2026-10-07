@@ -66,5 +66,80 @@
     "status": "觀察中",
     "then": "",
     "note": ""
+  },
+  {
+    "id": "ai-benefits-distribution",
+    "name": "AI 越繁榮，誰真正得到好處？",
+    "keys": [
+      "AI",
+      "artificial intelligence",
+      "productivity",
+      "wages",
+      "inequality"
+    ],
+    "status": "觀察中",
+    "then": "",
+    "note": "",
+    "entries": []
+  },
+  {
+    "id": "tax-work-versus-assets",
+    "name": "稅制是在獎勵努力，還是在獎勵資產？",
+    "keys": [
+      "tax",
+      "taxation",
+      "income",
+      "capital gains",
+      "wealth"
+    ],
+    "status": "觀察中",
+    "then": "",
+    "note": "",
+    "entries": []
+  },
+  {
+    "id": "security-economic-efficiency",
+    "name": "國家追求安全，會犧牲多少經濟效率？",
+    "keys": [
+      "security",
+      "defence",
+      "supply chain",
+      "subsidy",
+      "trade"
+    ],
+    "status": "觀察中",
+    "then": "",
+    "note": "",
+    "entries": []
+  },
+  {
+    "id": "housing-affordability",
+    "name": "住房為什麼越來越難負擔？",
+    "keys": [
+      "housing",
+      "property",
+      "rent",
+      "mortgage",
+      "planning"
+    ],
+    "status": "觀察中",
+    "then": "",
+    "note": "",
+    "entries": []
+  },
+  {
+    "id": "democracy-long-term",
+    "name": "民主政治還能處理長期問題嗎？",
+    "keys": [
+      "democracy",
+      "election",
+      "fiscal",
+      "climate",
+      "ageing"
+    ],
+    "status": "觀察中",
+    "then": "",
+    "note": "",
+    "entries": []
   }
 ]
