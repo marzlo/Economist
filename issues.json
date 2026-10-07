@@ -59,7 +59,24 @@
     "status": "觀察中",
     "then": "",
     "note": "",
-    "entries": []
+    "entries": [
+      {
+        "id": "e8b16e67-da07-4778-a93b-574a8b5f79f8",
+        "date": "2026-10-07",
+        "label": "筆記",
+        "text": "AI時代的課稅難題: 人力被AI取代，那政府要向誰課稅?\n1. 勞工課稅: 目前現況, 勞工所得下降，收稅減少\n2. AI課稅: 稅基比勞工小很多\n3. 富人稅: 難以估算，也有富豪到海外配置資產，或是整個企業外移風險\n可能解方:\n消費稅，誰花錢誰就繳稅\n配套措施: \n對於基層人民可能負擔較重，要搭配基本生活減免、退稅或現金補助 ",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.03《英國 x 歐洲版塊》英國稅制有多荒謬？歐盟國防預算大亂鬥！英國「後自由主義」陷阱、北愛爾蘭遊行危機，基輔無人機轟炸MAGA右派對歐洲的愛恨情仇｜TheEconomist｜01:30 Britain’s taxes are strewn with loopholes and perverse incentives",
+            "url": "https://www.youtube.com/watch?v=v6HctbB6cfM&t=90s"
+          },
+          {
+            "title": "經濟學人｜2026.10.03《英國 x 歐洲版塊》英國稅制有多荒謬？歐盟國防預算大亂鬥！英國「後自由主義」陷阱、北愛爾蘭遊行危機，基輔無人機轟炸MAGA右派對歐洲的愛恨情仇｜TheEconomist｜07:43 Britain overtaxes well-paid workers",
+            "url": "https://www.youtube.com/watch?v=v6HctbB6cfM&t=463s"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "security-economic-efficiency",
