@@ -1,7 +1,17 @@
 $ErrorActionPreference='Stop'
 $root=$PSScriptRoot
 $channel='UCyQM2qoRd1Ngb4apsbca-aQ'
-[xml]$feed=(Invoke-WebRequest -Uri "https://www.youtube.com/feeds/videos.xml?channel_id=$channel").Content
+$feed=$null
+for($attempt=1;$attempt -le 3;$attempt++){
+ try {
+  [xml]$feed=(Invoke-WebRequest -Uri "https://www.youtube.com/feeds/videos.xml?channel_id=$channel" -TimeoutSec 30 -Headers @{'User-Agent'='Mozilla/5.0'}).Content
+  if(-not $feed.feed.entry){throw 'RSS 未回傳影片'}
+  break
+ } catch {
+  if($attempt -eq 3){throw}
+  Start-Sleep -Seconds 5
+ }
+}
 $items=@($feed.feed.entry | ForEach-Object {
  $title=[string]$_.title
  $category=if($title -match 'AI|人工智慧|科技|晶片|機器人'){ '科技與 AI' }elseif($title -match '川普|特朗普|美國|中國|戰爭|俄|以色列|伊朗|外交|政治'){ '國際與政治' }elseif($title -match '經濟|金融|投資|美元|股|市場|銀行|債|通膨'){ '經濟與市場' }else{'閱讀與觀點'}
