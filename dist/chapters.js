@@ -13,4 +13,20 @@ function chapters(video){
  }
  return found.sort((a,b)=>a.seconds-b.seconds);
 }
-function chapterList(video){const list=chapters(video);return list.length?`<details class="chapters"><summary>章節段落 · ${list.length}</summary><ol>${list.map(c=>`<li><a href="${esc(c.url)}" target="_blank" rel="noopener"><time>${esc(c.time)}</time><span>${esc(c.title)}</span></a></li>`).join('')}</ol></details>`:''}
+function chapterTerms(issue){
+ if(!issue)return [];
+ const terms=issue.keys.map(k=>k.trim()).filter(Boolean);
+ if(typeof keywordGroups!=='undefined')for(const group of keywordGroups){if(terms.some(k=>group.triggers.some(t=>k.toLowerCase()===t.toLowerCase()||(/[^a-z -]/i.test(t)&&k.includes(t)))))terms.push(...group.words)}
+ return [...new Set(terms.map(k=>k.toLowerCase()))].sort((a,b)=>b.length-a.length);
+}
+function chapterMatches(title,terms){return terms.some(term=>title.toLowerCase().includes(term))}
+function highlightChapter(title,terms){
+ const lower=title.toLowerCase(),ranges=[];
+ for(const term of terms){let offset=0,index;while((index=lower.indexOf(term,offset))!==-1){ranges.push([index,index+term.length]);offset=index+term.length}}
+ ranges.sort((a,b)=>a[0]-b[0]);const merged=[];for(const range of ranges){const last=merged[merged.length-1];if(last&&range[0]<=last[1])last[1]=Math.max(last[1],range[1]);else merged.push([...range])}
+ let output='',offset=0;for(const [start,end] of merged){output+=esc(title.slice(offset,start))+'<mark>'+esc(title.slice(start,end))+'</mark>';offset=end}return output+esc(title.slice(offset));
+}
+function chapterList(video){
+ const list=chapters(video),terms=chapterTerms(selected),count=list.filter(c=>chapterMatches(c.title,terms)).length;
+ return list.length?`<details class="chapters" ${selected?'open':''}><summary>章節段落 · ${list.length}${selected?` · <span class="chapter-count">${count?count+' 個符合議題':'章節標題無符合關鍵字'}</span>`:''}</summary><ol>${list.map(c=>{const match=chapterMatches(c.title,terms);return `<li class="${match?'chapter-hit':''}"><a href="${esc(c.url)}" target="_blank" rel="noopener"><time>${esc(c.time)}</time><span>${highlightChapter(c.title,terms)}${match?'<small class="chapter-badge">相關段落</small>':''}</span></a></li>`}).join('')}</ol></details>`:'';
+}
