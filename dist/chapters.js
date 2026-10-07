@@ -19,12 +19,18 @@ function chapterTerms(issue){
  if(typeof keywordGroups!=='undefined')for(const group of keywordGroups){if(terms.some(k=>group.triggers.some(t=>k.toLowerCase()===t.toLowerCase()||(/[^a-z -]/i.test(t)&&k.includes(t)))))terms.push(...group.words)}
  return [...new Set(terms.map(k=>k.toLowerCase()))].sort((a,b)=>b.length-a.length);
 }
-function chapterMatches(title,terms){return terms.some(term=>title.toLowerCase().includes(term))}
-function highlightChapter(title,terms){
+function chapterRanges(title,terms){
  const lower=title.toLowerCase(),ranges=[];
- for(const term of terms){let offset=0,index;while((index=lower.indexOf(term,offset))!==-1){ranges.push([index,index+term.length]);offset=index+term.length}}
- ranges.sort((a,b)=>a[0]-b[0]);const merged=[];for(const range of ranges){const last=merged[merged.length-1];if(last&&range[0]<=last[1])last[1]=Math.max(last[1],range[1]);else merged.push([...range])}
- let output='',offset=0;for(const [start,end] of merged){output+=esc(title.slice(offset,start))+'<mark>'+esc(title.slice(start,end))+'</mark>';offset=end}return output+esc(title.slice(offset));
+ for(const term of terms){let offset=0,index;const english=/^[a-z0-9][a-z0-9 -]*$/i.test(term);
+ while((index=lower.indexOf(term,offset))!==-1){const end=index+term.length;
+ if(!english||(!/[a-z0-9_]/i.test(lower[index-1]||'')&&!/[a-z0-9_]/i.test(lower[end]||'')))ranges.push([index,end]);
+ offset=end;
+ }}
+ ranges.sort((a,b)=>a[0]-b[0]);const merged=[];for(const range of ranges){const last=merged[merged.length-1];if(last&&range[0]<=last[1])last[1]=Math.max(last[1],range[1]);else merged.push([...range])}return merged;
+}
+function chapterMatches(title,terms){return chapterRanges(title,terms).length>0}
+function highlightChapter(title,terms){
+ let output='',offset=0;for(const [start,end] of chapterRanges(title,terms)){output+=esc(title.slice(offset,start))+'<mark>'+esc(title.slice(start,end))+'</mark>';offset=end}return output+esc(title.slice(offset));
 }
 function chapterList(video){
  const list=chapters(video),terms=chapterTerms(selected),count=list.filter(c=>chapterMatches(c.title,terms)).length;
