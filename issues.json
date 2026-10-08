@@ -104,7 +104,20 @@
     "status": "觀察中",
     "then": "",
     "note": "",
-    "entries": []
+    "entries": [
+      {
+        "id": "c57e1f1e-a51f-4906-8ef0-664ba57248f4",
+        "date": "2026-10-08",
+        "label": "筆記",
+        "text": "美國🇺🇸\n佛羅里達州近3年有很多拿著錢湧入，造成當地房價大漲，財產稅也因而大漲\n而政治人物為了選票，提出提高免稅額的政見\n這吸引了大票關注眼前利益的選民\n但未來一些基礎公共事物就會被犧牲",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.03《美國 x 美洲版塊》白宮媒體戰爆發！醫療費比油價更痛？炸船秀的政治止痛藥、民主黨派牧師搶川普鐵票！拉美首度「捨美親中」地緣大震盪！｜TheEconomist｜29:57 Florida has put America’s boldest tax cut on the ballot",
+            "url": "https://www.youtube.com/watch?v=-f-hv4lgKgY&t=1797s"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "democracy-long-term",
