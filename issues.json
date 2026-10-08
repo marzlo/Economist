@@ -12,7 +12,20 @@
       "衝擊"
     ],
     "note": "追蹤技術發展如何改變稅制、商業責任與社會信任。",
-    "entries": [],
+    "entries": [
+      {
+        "id": "87b5c11a-d27c-45f2-8f7c-c5b6f1e4cabc",
+        "date": "2026-10-08",
+        "label": "筆記",
+        "text": "［美國］🇺🇸\nAI會掃描病歷，並調整其就診代碼\n例如把睡眠障礙這個關鍵字挑出來，把就診代碼升級成複雜的神經與睡眠系統評估，醫院跟保險公司請款的金額就會翻倍。\n這樣病人的保費就會暴漲\n目前醫療保險是美國人最有感的民生支出，也是焦慮來源",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.03《美國 x 美洲版塊》白宮媒體戰爆發！醫療費比油價更痛？炸船秀的政治止痛藥、民主黨派牧師搶川普鐵票！拉美首度「捨美親中」地緣大震盪！｜TheEconomist｜19:46 What’s even more politically toxic than high prices at the pump?",
+            "url": "https://www.youtube.com/watch?v=-f-hv4lgKgY&t=1186s"
+          }
+        ]
+      }
+    ],
     "status": "觀察中",
     "then": "test"
   },
