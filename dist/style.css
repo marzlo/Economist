@@ -13,3 +13,4 @@ html{scroll-behavior:smooth}#videos-section,#issues-section{scroll-margin-top:20
 .issue .related-chapters{list-style:none;padding:0;margin:12px 0}.related-chapters li{padding:10px 0;border-bottom:1px solid var(--line)}.related-chapters a{display:flex;flex-direction:column;gap:4px;line-height:1.6;font-size:13px}.related-chapter-meta{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
 .update-message:empty{display:none}.update-message{background:var(--paper);border-left:3px solid var(--accent);padding:12px 15px;font-size:13px;line-height:1.7}.update-message a{color:var(--accent)}.status button{margin:3px 0}
 .app-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:14px 0}.app-actions button{font-size:12px}.app-actions .muted{margin:0}#install-dialog p{font-size:14px;line-height:1.8}#install-dialog h3{margin-top:24px}
+#entry-issues{max-height:230px;overflow:auto}#entry-issues .video-choice{font-size:13px;line-height:1.6}
