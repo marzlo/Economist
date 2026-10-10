@@ -1,6 +1,6 @@
-const CACHE='economist-app-v1';
+const CACHE='economist-app-v2';
 const root=new URL('./',self.location).href;
-const assets=['./','style.css?v=19','chapters.js?v=15','app.js?v=14','keywords.js?v=6','sync.js?v=10','issues.js?v=18','update-trigger.js?v=19','pwa.js?v=20','manifest.webmanifest','icons/icon-192.png','icons/icon-512.png'];
+const assets=['./','style.css?v=19','chapters.js?v=15','app.js?v=14','keywords.js?v=6','sync.js?v=10','issues.js?v=18','update-trigger.js?v=19','pwa.js?v=20','manifest.webmanifest','icons/icon-192-cream.png','icons/icon-512-cream.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(assets.map(a=>new URL(a,root).href)))));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('economist-app-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{
