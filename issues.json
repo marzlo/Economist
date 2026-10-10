@@ -60,6 +60,22 @@
             "url": "https://www.youtube.com/watch?v=DOaNC9TkHPU&t=2221s"
           }
         ]
+      },
+      {
+        "id": "9d9b374b-7586-43c7-adf1-1ae6640c8588",
+        "date": "2026-10-09",
+        "label": "筆記",
+        "text": "歐洲製造業在量與價方面無法與亞洲競爭\n目前只有在高階技術與服務方面（例如 設備預測性維修服務）有優勢\n歐洲應該關注的AI,如果無法將AI深度整合進供應鏈，現在的高階工程師就會失去用武之地\n",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.03《商業版塊》你的工作 Email 全被賣掉訓練 AI？SpaceX 獨佔資源引爆全球火箭荒！百年律所體系崩解，為何造就年薪千萬美金的超級律師？｜TheEconomist｜01:19 European industry is doing better than you may think",
+            "url": "https://www.youtube.com/watch?v=DOaNC9TkHPU&t=79s"
+          }
+        ],
+        "issueIds": [
+          "ai",
+          "world"
+        ]
       }
     ],
     "status": "觀察中",
@@ -87,6 +103,10 @@
             "title": "經濟學人｜2026.10.03《商業版塊》你的工作 Email 全被賣掉訓練 AI？SpaceX 獨佔資源引爆全球火箭荒！百年律所體系崩解，為何造就年薪千萬美金的超級律師？｜TheEconomist｜01:19 European industry is doing better than you may think",
             "url": "https://www.youtube.com/watch?v=DOaNC9TkHPU&t=79s"
           }
+        ],
+        "issueIds": [
+          "ai",
+          "world"
         ]
       }
     ],
