@@ -21,10 +21,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Fetch latest YouTube videos
+        if: github.event_name != 'push'
         shell: pwsh
         run: |
           ./update.ps1
       - name: Save current video snapshot
+        if: github.event_name != 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -43,3 +45,4 @@ jobs:
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
