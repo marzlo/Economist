@@ -92,6 +92,21 @@
           "ai",
           "773ecc56-d77d-4a4d-aab9-837d95688edb"
         ]
+      },
+      {
+        "id": "ef052ba6-c932-45b0-80a5-a2abb6136f15",
+        "date": "2026-10-11",
+        "label": "筆記",
+        "text": "華府態度：放手AI去做\n為什麼？ 怕中國超車\n風險：\nAI agent被證明是會去攻擊金融系統（蜂群）\nAI資料庫也被當地人民抗議",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.10《封面故事 x 社論版塊》AI榨乾資金！美歐公債深陷破產危機？沒有規則的AI狂飆，與歐洲如何應對新中國衝擊？英國綠黨反猶風暴，極化政治的代價？｜TheEconomist｜20:12 A no-rules approach to AI is mad politics and worse policy",
+            "url": "https://www.youtube.com/watch?v=ykIY6JVOl2M&t=1212s"
+          }
+        ],
+        "issueIds": [
+          "ai"
+        ]
       }
     ],
     "status": "觀察中",
