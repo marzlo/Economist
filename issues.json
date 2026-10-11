@@ -107,6 +107,22 @@
         "issueIds": [
           "ai"
         ]
+      },
+      {
+        "id": "b7910ecc-3539-4ad5-831a-980f61935b03",
+        "date": "2026-10-11",
+        "label": "筆記",
+        "text": "美國想要用「讓AI放手去做」, 歐洲想要用高關稅來防堵中國威脅\n怕中國把供應鏈武器化\n\n有句話說：外行講戰略，內行談後勤\n\n歐洲要先自己壯大，後勤的厚度才能決定戰略的硬度\n美國也不是零監管與放手的二選一，而是要經過安全檢驗，要有獨立的監督人員",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.10《封面故事 x 社論版塊》AI榨乾資金！美歐公債深陷破產危機？沒有規則的AI狂飆，與歐洲如何應對新中國衝擊？英國綠黨反猶風暴，極化政治的代價？｜TheEconomist｜27:39 How Europe should deal with the new China shock",
+            "url": "https://www.youtube.com/watch?v=ykIY6JVOl2M&t=1659s"
+          }
+        ],
+        "issueIds": [
+          "ai",
+          "world"
+        ]
       }
     ],
     "status": "觀察中",
@@ -133,6 +149,22 @@
           {
             "title": "經濟學人｜2026.10.03《商業版塊》你的工作 Email 全被賣掉訓練 AI？SpaceX 獨佔資源引爆全球火箭荒！百年律所體系崩解，為何造就年薪千萬美金的超級律師？｜TheEconomist｜01:19 European industry is doing better than you may think",
             "url": "https://www.youtube.com/watch?v=DOaNC9TkHPU&t=79s"
+          }
+        ],
+        "issueIds": [
+          "ai",
+          "world"
+        ]
+      },
+      {
+        "id": "b7910ecc-3539-4ad5-831a-980f61935b03",
+        "date": "2026-10-11",
+        "label": "筆記",
+        "text": "美國想要用「讓AI放手去做」, 歐洲想要用高關稅來防堵中國威脅\n怕中國把供應鏈武器化\n\n有句話說：外行講戰略，內行談後勤\n\n歐洲要先自己壯大，後勤的厚度才能決定戰略的硬度\n美國也不是零監管與放手的二選一，而是要經過安全檢驗，要有獨立的監督人員",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.10《封面故事 x 社論版塊》AI榨乾資金！美歐公債深陷破產危機？沒有規則的AI狂飆，與歐洲如何應對新中國衝擊？英國綠黨反猶風暴，極化政治的代價？｜TheEconomist｜27:39 How Europe should deal with the new China shock",
+            "url": "https://www.youtube.com/watch?v=ykIY6JVOl2M&t=1659s"
           }
         ],
         "issueIds": [
