@@ -76,6 +76,22 @@
           "ai",
           "world"
         ]
+      },
+      {
+        "id": "828b16af-65bd-49ed-babe-95f3c99eb342",
+        "date": "2026-10-11",
+        "label": "筆記",
+        "text": "AI巨頭在跟政府競爭，要跟市場搶錢，所以買家對於政府債券要求的利率就變高了",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.10《封面故事 x 社論版塊》AI榨乾資金！美歐公債深陷破產危機？沒有規則的AI狂飆，與歐洲如何應對新中國衝擊？英國綠黨反猶風暴，極化政治的代價？｜TheEconomist｜01:31 Will bonds blow up?",
+            "url": "https://www.youtube.com/watch?v=ykIY6JVOl2M&t=91s"
+          }
+        ],
+        "issueIds": [
+          "ai",
+          "773ecc56-d77d-4a4d-aab9-837d95688edb"
+        ]
       }
     ],
     "status": "觀察中",
@@ -218,6 +234,22 @@
           }
         ],
         "issueIds": [
+          "773ecc56-d77d-4a4d-aab9-837d95688edb"
+        ]
+      },
+      {
+        "id": "828b16af-65bd-49ed-babe-95f3c99eb342",
+        "date": "2026-10-11",
+        "label": "筆記",
+        "text": "AI巨頭在跟政府競爭，要跟市場搶錢，所以買家對於政府債券要求的利率就變高了",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.10《封面故事 x 社論版塊》AI榨乾資金！美歐公債深陷破產危機？沒有規則的AI狂飆，與歐洲如何應對新中國衝擊？英國綠黨反猶風暴，極化政治的代價？｜TheEconomist｜01:31 Will bonds blow up?",
+            "url": "https://www.youtube.com/watch?v=ykIY6JVOl2M&t=91s"
+          }
+        ],
+        "issueIds": [
+          "ai",
           "773ecc56-d77d-4a4d-aab9-837d95688edb"
         ]
       }
