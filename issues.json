@@ -123,6 +123,21 @@
           "ai",
           "world"
         ]
+      },
+      {
+        "id": "0480b43f-1e59-437d-9f5e-7981596ddb1c",
+        "date": "2026-10-12",
+        "label": "筆記",
+        "text": "AI的基礎設施的巨額資本支出讓美元上漲",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.10《財經版塊》股票取代房子？越救通膨人民越難生活？從天然氣暴漲先短缺後過剩、強勢美元與生活負擔危機到股票如何取代房產？政府抗通膨政策究竟出了什麼問題？｜Economist｜19:17 The bond market sell-off is helping the dollar",
+            "url": "https://www.youtube.com/watch?v=8T0QxW08bdM&t=1157s"
+          }
+        ],
+        "issueIds": [
+          "ai"
+        ]
       }
     ],
     "status": "觀察中",
