@@ -186,6 +186,21 @@
           "ai",
           "world"
         ]
+      },
+      {
+        "id": "dcd6d0d9-e1bf-446b-ac16-85df919a81e5",
+        "date": "2026-10-13",
+        "label": "筆記",
+        "text": "歐洲企業的創新與擴張速度跟不上中國\n民主制度、法規監管、稀土資源等都是原因\n\n中國不僅用價格戰打入歐洲，也不願意分享技術給歐洲\n德國感到切身之痛。過去德國與中國綁定很深\n但現在歐盟對中國貿易大量赤字\n中國高附加價值商品直接取代德國的工業引擎\n德國每個月流失一萬五千個工業工作機會，流失高技術高薪資的藍領與白領職缺\n\n",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.10《英國 x 歐洲版塊》歐洲走向跛腳鴨之年！美軍突撤英國基地！世界上最難的考試？退休共產主義的終結？法國學生示威、德法聯手歐盟應對中國貿易浪潮｜TheEconomist｜33:32 Germany and France want EU storm gates for China’s trade surge",
+            "url": "https://www.youtube.com/watch?v=dQAZzFhpNG8&t=2012s"
+          }
+        ],
+        "issueIds": [
+          "world"
+        ]
       }
     ],
     "status": "觀察中",
