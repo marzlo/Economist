@@ -8,7 +8,12 @@ for($attempt=1;$attempt -le 3;$attempt++){
   if(-not $feed.feed.entry){throw 'RSS 未回傳影片'}
   break
  } catch {
-  if($attempt -eq 3){throw}
+  if($attempt -eq 3){
+   Write-Warning 'YouTube RSS 失敗，改用頻道頁備援'
+   python3 (Join-Path $root 'fetch-fallback.py')
+   if($LASTEXITCODE -ne 0){throw '頻道頁備援失敗，保留原有資料'}
+   exit 0
+  }
   Start-Sleep -Seconds 5
  }
 }
