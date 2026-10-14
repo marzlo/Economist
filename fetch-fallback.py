@@ -6,13 +6,13 @@ ROOT = Path(__file__).resolve().parent
 CHANNEL = 'UCyQM2qoRd1Ngb4apsbca-aQ'
 def fetch(url, mobile=True):
     agent='Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36' if mobile else 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130.0.0.0 Safari/537.36'
-    req = urllib.request.Request(url, headers={'User-Agent':agent})
+    req = urllib.request.Request(url, headers={'User-Agent':agent,'Cookie':'SOCS=CAI; CONSENT=YES+cb','Accept-Language':'en-US,en;q=0.9'})
     with urllib.request.urlopen(req, timeout=30) as response:
         return response.read().decode('utf-8')
 def extract(html, name):
     match = re.search(r'(?:var\s+)?'+name+r'\s*=\s*', html)
     if not match:
-        raise ValueError('Missing '+name)
+        raise ValueError('Missing '+name+'; page title='+str(re.findall(r'<title>(.*?)</title>',html)[:1]))
     rest=html[match.end():]
     if rest.startswith("'"):
         literal=re.match(r"'(?:\\.|[^'\\])*'",rest).group()
@@ -54,5 +54,6 @@ def run(fixture=None):
     path.write_text(json.dumps(old,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('頻道頁備援成功，共',len(archive),'部影片')
 if __name__=='__main__': run(sys.argv[1] if len(sys.argv)>1 else None)
+
 
 
