@@ -153,6 +153,21 @@
         "issueIds": [
           "ai"
         ]
+      },
+      {
+        "id": "a6ce52cf-71e2-4ba1-8343-08bd3b22f134",
+        "date": "2026-10-14",
+        "label": "筆記",
+        "text": "AI代理所犯的錯，其開發者要擔責嗎？\n法院應該預設模型具有意圖\n\n",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.10《美國版塊》制度的真正價值：事前防範還是事後追責？責任法無法馴服AI？川普的AI策略、選區重劃反噬、伊朗戰事泥淖、校園制度失靈與石油巨頭的「菸草時刻」｜Economist｜15:32 Liability law will not tame AI",
+            "url": "https://www.youtube.com/watch?v=JqmOpcfnps8&t=932s"
+          }
+        ],
+        "issueIds": [
+          "ai"
+        ]
       }
     ],
     "status": "觀察中",
