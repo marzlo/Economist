@@ -244,7 +244,8 @@
           }
         ],
         "issueIds": [
-          "world"
+          "world",
+          "32c33f70-308f-4b07-a650-22a7503d17f6"
         ]
       }
     ],
@@ -487,6 +488,22 @@
           }
         ],
         "issueIds": [
+          "32c33f70-308f-4b07-a650-22a7503d17f6"
+        ]
+      },
+      {
+        "id": "674a5381-9e3c-4d69-832c-d724d6247c87",
+        "date": "2026-10-16",
+        "label": "筆記",
+        "text": "印度製造崛起\n印度極度依賴能源進口（八成石油要來自進口），而且是以美元計價，2026年的能源危機，導致印度必須拿更多的盧比去換美元來買油，導致貨幣貶值，有利於出口\n工業邦崛起\n",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.10《商業版塊》曼城假帳醜聞為何引發球迷冷漠？印度製造崛起對決中國腦機？AI音樂摧毀產業還是創造新市場？零食為什麼變脆變嚼？Jaguar全電動最後一搏！｜Economist｜01:09 Indian manufacturing’s moment may finally have arrived",
+            "url": "https://www.youtube.com/watch?v=LSiVmGNvJXg&t=69s"
+          }
+        ],
+        "issueIds": [
+          "world",
           "32c33f70-308f-4b07-a650-22a7503d17f6"
         ]
       }
