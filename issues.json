@@ -266,6 +266,26 @@
           "world",
           "32c33f70-308f-4b07-a650-22a7503d17f6"
         ]
+      },
+      {
+        "title": "",
+        "region": "auto",
+        "country": "auto",
+        "createdAt": "2026-10-17T04:48:31.739Z",
+        "updatedAt": "2026-10-17T04:48:31.739Z",
+        "id": "070ea647-f7c1-41af-a7f9-4463c9fd490b",
+        "date": "2026-10-17",
+        "label": "筆記",
+        "text": "加拿大亞伯達省獨立公投",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.17《封面故事 x 社論版塊》中等強國如何維護自主權？川普關稅與柴油外交踢到鐵板？當AI接管科學，人類學者該害怕嗎？從失落世代到經濟霸主！千禧世代如何逆襲｜Economist｜01:42 Mark Carney and the lessons for the middle powers",
+            "url": "https://www.youtube.com/watch?v=1SDL8VOPqJw&t=102s"
+          }
+        ],
+        "issueIds": [
+          "world"
+        ]
       }
     ],
     "status": "觀察中",
