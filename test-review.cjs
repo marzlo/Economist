@@ -13,6 +13,12 @@ const late=M.collect([{id:'a',name:'AI',entries:[{...note,createdAt:'2026-10-11T
 assert.equal(late.statDate,'2026-10-12');
 assert.deepEqual(M.inferRegions({...note,region:'europe'}),['europe']);
 assert.deepEqual(M.inferRegions({text:'人工智慧與責任'}),['global']);
+assert.deepEqual(M.inferRegions({text:'英國與日本的稅制'}).sort(),['gb','jp']);
+assert.deepEqual(M.inferRegions({text:'歐洲的公共服務'}),['europe']);
+assert.deepEqual(M.inferRegions({text:'台灣與中國的供應鏈'}).sort(),['cn','tw']);
+assert.deepEqual(M.inferRegions({country:'jp',region:'europe',text:'美國的觀察'}),['jp']);
+assert(M.searchable({...collected[0],links:[{title:'醫療保險',url:'https://example.com'}]},'美國 保險'));
+assert(!M.searchable(collected[0],'不存在的關鍵字'));
 assert(M.options([], '2026-10-17').includes('2026-10-05'));
 const actual=M.collect(require('./issues.json'));
 assert(actual.length<=require('./issues.json').flatMap(i=>i.entries).length);
