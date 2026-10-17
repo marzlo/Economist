@@ -14,3 +14,12 @@ html{scroll-behavior:smooth}#videos-section,#issues-section{scroll-margin-top:20
 .update-message:empty{display:none}.update-message{background:var(--paper);border-left:3px solid var(--accent);padding:12px 15px;font-size:13px;line-height:1.7}.update-message a{color:var(--accent)}.status button{margin:3px 0}
 .app-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:14px 0}.app-actions button{font-size:12px}.app-actions .muted{margin:0}#install-dialog p{font-size:14px;line-height:1.8}#install-dialog h3{margin-top:24px}
 #entry-issues{max-height:230px;overflow:auto}#entry-issues .video-choice{font-size:13px;line-height:1.6}
+
+/* Desktop section navigation; mobile keeps its bottom shortcuts. */
+.desktop-nav{display:none}
+@media(min-width:851px){
+  .desktop-nav{display:flex;position:sticky;top:0;z-index:20;gap:24px;margin:0;padding:12px 0;background:var(--bg);border-bottom:1px solid var(--line)}
+  .desktop-nav a{display:block;padding:10px 14px;font-size:14px;border-radius:4px}
+  .desktop-nav a:hover,.desktop-nav a:focus-visible{background:var(--wash);color:var(--accent)}
+  #videos-section,#issues-section,main #reading-review{scroll-margin-top:88px}
+}
