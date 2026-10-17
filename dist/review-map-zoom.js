@@ -2,11 +2,11 @@
 const W=900,H=330;
 function constrain(s){s.scale=Math.max(1,Math.min(8,s.scale));s.x=Math.max(W*(1-s.scale),Math.min(0,s.x));s.y=Math.max(H*(1-s.scale),Math.min(0,s.y));return s}
 function zoom(s,scale,from,to=from){const ratio=scale/s.scale;return constrain({scale,x:to.x-(from.x-s.x)*ratio,y:to.y-(from.y-s.y)*ratio})}
-function bind(svg,controls,state){
+function bind(svg,controls,state,onDraw=()=>{}){
  const layer=svg.querySelector('.rv-map-content'),pointers=new Map();let base=null,moved=false,suppressUntil=0;
  const point=e=>{const p=svg.createSVGPoint();p.x=e.clientX;p.y=e.clientY;return p.matrixTransform(svg.getScreenCTM().inverse())};
  const gesture=()=>{const a=[...pointers.values()];return {center:a.length>1?{x:(a[0].x+a[1].x)/2,y:(a[0].y+a[1].y)/2}:a[0],distance:a.length>1?Math.hypot(a[1].x-a[0].x,a[1].y-a[0].y):0}};
- function draw(next){Object.assign(state,constrain(next));layer.setAttribute('transform',`translate(${state.x} ${state.y}) scale(${state.scale})`);svg.querySelectorAll('.rv-map-point').forEach(marker=>{const x=Number(marker.dataset.mapX),y=Number(marker.dataset.mapY);marker.setAttribute('transform',`translate(${x} ${y}) scale(${1/state.scale}) translate(${-x} ${-y})`)});controls.querySelector('output').textContent=Math.round(state.scale*100)+'%';controls.querySelector('[data-zoom="out"]').disabled=state.scale<=1;controls.querySelector('[data-zoom="in"]').disabled=state.scale>=8}
+ function draw(next){Object.assign(state,constrain(next));layer.setAttribute('transform',`translate(${state.x} ${state.y}) scale(${state.scale})`);svg.querySelectorAll('.rv-map-point').forEach(marker=>{const x=Number(marker.dataset.mapX),y=Number(marker.dataset.mapY);marker.setAttribute('transform',`translate(${x} ${y}) scale(${1/state.scale}) translate(${-x} ${-y})`)});controls.querySelector('output').textContent=Math.round(state.scale*100)+'%';controls.querySelector('[data-zoom="out"]').disabled=state.scale<=1;controls.querySelector('[data-zoom="in"]').disabled=state.scale>=8;onDraw(state)}
  function baseline(){base=pointers.size?{...gesture(),state:{...state}}:null}
  svg.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse'&&e.button!==0)return;if(!pointers.size)moved=false;pointers.set(e.pointerId,point(e));baseline()});
  svg.addEventListener('pointermove',e=>{if(!pointers.has(e.pointerId))return;pointers.set(e.pointerId,point(e));const g=gesture();if(Math.hypot(g.center.x-base.center.x,g.center.y-base.center.y)>3||Math.abs(g.distance-base.distance)>3)moved=true;
