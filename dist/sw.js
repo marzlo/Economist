@@ -1,6 +1,6 @@
-const CACHE='economist-app-v5';
+const CACHE='economist-app-v6';
 const root=new URL('./',self.location).href;
-const assets=['./','review-countries.js?v=23','review.css?v=23','review-model.js?v=23','review.js?v=23','style.css?v=21','chapters.js?v=15','app.js?v=14','keywords.js?v=6','sync.js?v=10','entry-relations.js?v=21','issues.js?v=23','update-trigger.js?v=19','pwa.js?v=20','manifest.webmanifest','icons/icon-192-cream.png','icons/icon-512-cream.png'];
+const assets=['./','review-search.js?v=24','review-countries.js?v=23','review.css?v=24','review-model.js?v=23','review.js?v=24','style.css?v=21','chapters.js?v=15','app.js?v=14','keywords.js?v=6','sync.js?v=10','entry-relations.js?v=21','issues.js?v=23','update-trigger.js?v=19','pwa.js?v=20','manifest.webmanifest','icons/icon-192-cream.png','icons/icon-512-cream.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(assets.map(a=>new URL(a,root).href)))));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('economist-app-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{
