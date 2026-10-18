@@ -207,6 +207,26 @@
         "issueIds": [
           "ai"
         ]
+      },
+      {
+        "title": "",
+        "region": "auto",
+        "country": "auto",
+        "createdAt": "2026-10-18T05:34:43.808Z",
+        "updatedAt": "2026-10-18T05:34:43.808Z",
+        "id": "26c6986e-4b26-41b9-930c-ae38d49db802",
+        "date": "2026-10-18",
+        "label": "筆記",
+        "text": "這是我在Suno上傳片段後讓它生成的音樂\nhttps://suno.com/s/bYawqe5YSBGGMdFw\n\n",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.10《商業版塊》曼城假帳醜聞為何引發球迷冷漠？印度製造崛起對決中國腦機？AI音樂摧毀產業還是創造新市場？零食為什麼變脆變嚼？Jaguar全電動最後一搏！｜Economist｜19:18 Record labels are in a spin over AI music",
+            "url": "https://www.youtube.com/watch?v=LSiVmGNvJXg&t=1158s"
+          }
+        ],
+        "issueIds": [
+          "ai"
+        ]
       }
     ],
     "status": "觀察中",
