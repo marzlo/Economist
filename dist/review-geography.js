@@ -1,7 +1,6 @@
 (()=>{
 const coastalNeighbors={tw:['cn','jp','ph','kr'],jp:['kr','kp','cn','tw','ru'],gb:['ie','fr','be','nl'],au:['nz','id','pg','tl'],nz:['au','fj','nc']};
 const distance=(a,b)=>Math.hypot(a.xy[0]-b.xy[0],a.xy[1]-b.xy[1]);
-const flag=id=>/^[a-z]{2}$/i.test(id)?String.fromCodePoint(...id.toUpperCase().split('').map(c=>127397+c.charCodeAt(0))):'';
 function nearby(data,id){const c=data.find(c=>c.id===id);if(!c)return [];const neighbors=[...c.borders,...(coastalNeighbors[id]||[])];return [c,...data.filter(n=>n.id!==id).sort((a,b)=>(neighbors.includes(b.id)?1:0)-(neighbors.includes(a.id)?1:0)||distance(c,a)-distance(c,b)).slice(0,6)]}
 function focus(data,id){const list=nearby(data,id);if(!list.length)return null;const c=list[0],xs=list.map(n=>n.xy[0]),ys=list.map(n=>n.xy[1]);
  // Retain the selected country's outline when it fits the regional view; ignore faraway overseas territories.
@@ -17,7 +16,8 @@ function bind(svg,data,id){const ns='http://www.w3.org/2000/svg',layer=document.
  const [a,b]=pos;occupied.push({x:a,y:b,w:width,h:height});const group=document.createElementNS(ns,'g');
  const line=document.createElementNS(ns,'line');for(const [k,v] of Object.entries({x1:x,y1:y,x2:a+width/2,y2:b+height/2}))line.setAttribute(k,v);group.append(line);
  const rect=document.createElementNS(ns,'rect');for(const [k,v] of Object.entries({x:a,y:b,width,height,rx:3*ratio}))rect.setAttribute(k,v);group.append(rect);
- const text=document.createElementNS(ns,'text');text.setAttribute('x',a+6*ratio);text.setAttribute('y',b+14*ratio);text.setAttribute('font-size',12*ratio);text.textContent=flag(c.id)+' '+c.name;group.append(text);
+ const image=document.createElementNS(ns,'image');for(const [k,v] of Object.entries({href:'flags/'+c.id+'.svg',x:a+6*ratio,y:b+4*ratio,width:18*ratio,height:12*ratio}))image.setAttribute(k,v);group.append(image);
+ const text=document.createElementNS(ns,'text');text.setAttribute('x',a+28*ratio);text.setAttribute('y',b+14*ratio);text.setAttribute('font-size',12*ratio);text.textContent=c.name;group.append(text);
  const capital=document.createElementNS(ns,'text');capital.setAttribute('class','rv-geo-capital');capital.setAttribute('x',a+6*ratio);capital.setAttribute('y',b+28*ratio);capital.setAttribute('font-size',11*ratio);capital.textContent=c.capital;group.append(capital);layer.append(group);
  }
  };
