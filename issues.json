@@ -380,21 +380,6 @@
     ]
   },
   {
-    "id": "security-economic-efficiency",
-    "name": "國家追求安全，會犧牲多少經濟效率？",
-    "keys": [
-      "security",
-      "defence",
-      "supply chain",
-      "subsidy",
-      "trade"
-    ],
-    "status": "觀察中",
-    "then": "",
-    "note": "",
-    "entries": []
-  },
-  {
     "id": "housing-affordability",
     "name": "住房為什麼越來越難負擔？",
     "keys": [
