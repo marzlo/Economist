@@ -669,7 +669,28 @@
   },
   {
     "id": "ffb0b1cf-b499-4d6f-89dd-a79639ad4914",
-    "entries": [],
+    "entries": [
+      {
+        "title": "",
+        "region": "auto",
+        "country": "auto",
+        "createdAt": "2026-10-18T13:13:40.247Z",
+        "updatedAt": "2026-10-18T13:13:40.247Z",
+        "id": "832ad0fe-8282-45ee-8ea2-5bc73b16b20e",
+        "date": "2026-10-18",
+        "label": "筆記",
+        "text": "中國的3D列印機市佔率96%\n深圳四小龍，其中一間是大疆的子公司\n中國視其為重點培育產業，\n國家支持加上同業內捲，所以品質優良",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.17《中國 x 亞洲版塊》中國對外擴大金援、而國內嚴查隱形稅！廢電池成新石油、循環經濟戰略、亞洲聖嬰糧荒危機與日本城鎮管理衰退：中國與亞洲如何面對未來考驗｜Economist｜13:52 China has captured the market for hobbyist 3D printers",
+            "url": "https://www.youtube.com/watch?v=WI9EjuG562U&t=832s"
+          }
+        ],
+        "issueIds": [
+          "ffb0b1cf-b499-4d6f-89dd-a79639ad4914"
+        ]
+      }
+    ],
     "name": "各國有那些厲害的產品稱霸世界?",
     "keys": [
       "各國",
