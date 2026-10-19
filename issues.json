@@ -362,6 +362,27 @@
           "world",
           "32c33f70-308f-4b07-a650-22a7503d17f6"
         ]
+      },
+      {
+        "title": "",
+        "region": "auto",
+        "country": "auto",
+        "createdAt": "2026-10-19T11:11:23.588Z",
+        "updatedAt": "2026-10-19T11:11:23.588Z",
+        "id": "7c62b183-ff46-47c3-a47a-4bdfd5b5d928",
+        "date": "2026-10-19",
+        "label": "筆記",
+        "text": "中國消費降級\n中國房地產近幾年經歷史詩級的修正，沒有房貸，貸款就降下來了。\n大家不再借錢，短期消費信貸也下降。\n政府想要透過補貼銀行來降低銀行利率讓人民借錢，但是銀行反而不願意借錢\n因為借款人違約風險提高（目前經濟不太好）\n所以銀行大幅提高借款門檻\n\n14億人口的消費降級會有兩個狀況\n1. 其他國家出口的商品沒人買了\n2. 中國低價的商品會全球傾銷，通貨緊縮擴散",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.17《財經版塊》利率通膨與央行政策底層邏輯是什麼？諾獎揭密央行如何穩經濟！千禧世代翻身了嗎？從AI富豪、 中國消費信貸寒冬到歐元韌性，全球財富版圖正在改寫｜Economist｜18:43 Another warning sign for China’s economy: falling consumer credit",
+            "url": "https://www.youtube.com/watch?v=ENGngDy7_nQ&t=1123s"
+          }
+        ],
+        "issueIds": [
+          "world",
+          "773ecc56-d77d-4a4d-aab9-837d95688edb"
+        ]
       }
     ],
     "status": "觀察中",
@@ -561,6 +582,27 @@
           }
         ],
         "issueIds": [
+          "773ecc56-d77d-4a4d-aab9-837d95688edb"
+        ]
+      },
+      {
+        "title": "",
+        "region": "auto",
+        "country": "auto",
+        "createdAt": "2026-10-19T11:11:23.588Z",
+        "updatedAt": "2026-10-19T11:11:23.588Z",
+        "id": "7c62b183-ff46-47c3-a47a-4bdfd5b5d928",
+        "date": "2026-10-19",
+        "label": "筆記",
+        "text": "中國消費降級\n中國房地產近幾年經歷史詩級的修正，沒有房貸，貸款就降下來了。\n大家不再借錢，短期消費信貸也下降。\n政府想要透過補貼銀行來降低銀行利率讓人民借錢，但是銀行反而不願意借錢\n因為借款人違約風險提高（目前經濟不太好）\n所以銀行大幅提高借款門檻\n\n14億人口的消費降級會有兩個狀況\n1. 其他國家出口的商品沒人買了\n2. 中國低價的商品會全球傾銷，通貨緊縮擴散",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.17《財經版塊》利率通膨與央行政策底層邏輯是什麼？諾獎揭密央行如何穩經濟！千禧世代翻身了嗎？從AI富豪、 中國消費信貸寒冬到歐元韌性，全球財富版圖正在改寫｜Economist｜18:43 Another warning sign for China’s economy: falling consumer credit",
+            "url": "https://www.youtube.com/watch?v=ENGngDy7_nQ&t=1123s"
+          }
+        ],
+        "issueIds": [
+          "world",
           "773ecc56-d77d-4a4d-aab9-837d95688edb"
         ]
       }
