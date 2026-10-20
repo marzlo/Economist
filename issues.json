@@ -383,6 +383,26 @@
           "world",
           "773ecc56-d77d-4a4d-aab9-837d95688edb"
         ]
+      },
+      {
+        "title": "",
+        "region": "auto",
+        "country": "auto",
+        "createdAt": "2026-10-20T00:44:52.949Z",
+        "updatedAt": "2026-10-20T00:44:52.949Z",
+        "id": "54969f2b-3db4-4636-be5d-aae808bd0c07",
+        "date": "2026-10-20",
+        "label": "筆記",
+        "text": "美國的情報與星鏈針對烏克蘭的攻擊進行限制，例如只要偵測到無人機時速大於每小時160公里就會自動斷網，因為判定為自殺式無人機",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.17《英國 x 歐洲版塊》悲劇成了政治籌碼，國家的韌性有多脆弱？英國IMF紓困教訓、烏克蘭失去美援、俄國逃亡潮，移民急煞車與歐洲城市競爭力的集體困境｜TheEconomist｜40:03 Donald Trump is squeezing Ukraine’s military lifeline",
+            "url": "https://www.youtube.com/watch?v=7uLnsQ_cssQ&t=2403s"
+          }
+        ],
+        "issueIds": [
+          "world"
+        ]
       }
     ],
     "status": "觀察中",
