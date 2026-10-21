@@ -463,6 +463,26 @@
         "issueIds": [
           "world"
         ]
+      },
+      {
+        "title": "",
+        "region": "auto",
+        "country": "auto",
+        "createdAt": "2026-10-21T01:39:50.301Z",
+        "updatedAt": "2026-10-21T01:39:50.301Z",
+        "id": "312e13f8-606c-4055-affe-c4503d471bf2",
+        "date": "2026-10-21",
+        "label": "筆記",
+        "text": "以色列的阿拉伯政黨為了解決現在社區犯罪問題，要推翻目前納塔雅胡政黨\n犯罪問題是因為國家抽掉警力給猶太社區，造成阿拉伯犯罪滋生，當地警力無力維護",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.17《美國版塊》美國期中選舉將如何改變政治版圖？從選務安全、油價通膨到川普對俄政策，民主黨能否把民怨轉化為選票？以色列阿拉伯政黨如何成為關鍵造王者！｜Economist｜49:00 Israel’s Arab parties could be the kingmakers in its election",
+            "url": "https://www.youtube.com/watch?v=skPUE4PwmUo&t=2940s"
+          }
+        ],
+        "issueIds": [
+          "world"
+        ]
       }
     ],
     "status": "觀察中",
