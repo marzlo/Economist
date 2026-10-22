@@ -886,6 +886,26 @@
         "issueIds": [
           "ffb0b1cf-b499-4d6f-89dd-a79639ad4914"
         ]
+      },
+      {
+        "title": "",
+        "region": "auto",
+        "country": "auto",
+        "createdAt": "2026-10-22T00:26:54.418Z",
+        "updatedAt": "2026-10-22T00:26:54.418Z",
+        "id": "fa5583a3-0d37-4ef7-a978-6e3d0d51f0dd",
+        "date": "2026-10-22",
+        "label": "筆記",
+        "text": "美國SpaceX 的星鏈（Starlink)預計擴展服務範圍，從原本偏鄉、烏克蘭戰爭的場景，轉向都市\n其提供的網路服務不僅可以讓手機上網，未來更是瞄準城市自動駕駛與人形機器人\n這也讓現行電信服務商倍感威脅",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.17《商業版塊》揭開AI繁榮背後的財務幻覺與失控危機！AI投資狂潮會不會變成下一場泡沫？從馬斯克電信豪賭、AI新創募資到台積電超級週期，誰在承擔真正的風險｜Economist｜11:56 SpaceX’s Starlink expansion is a bold gamble on the future",
+            "url": "https://www.youtube.com/watch?v=S_vu1x-7I3Q&t=716s"
+          }
+        ],
+        "issueIds": [
+          "ffb0b1cf-b499-4d6f-89dd-a79639ad4914"
+        ]
       }
     ],
     "name": "各國有那些厲害的產品稱霸世界?",
