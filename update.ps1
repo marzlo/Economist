@@ -1,5 +1,10 @@
 $ErrorActionPreference='Stop'
 $root=$PSScriptRoot
+if($env:YOUTUBE_API_KEY){
+ python3 (Join-Path $root 'fetch-youtube-api.py')
+ if($LASTEXITCODE -ne 0){throw 'YouTube API 更新失敗，保留原有資料'}
+ exit 0
+}
 $channel='UCyQM2qoRd1Ngb4apsbca-aQ'
 $feed=$null
 for($attempt=1;$attempt -le 3;$attempt++){

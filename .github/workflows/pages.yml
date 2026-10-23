@@ -20,13 +20,19 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch latest YouTube videos
-        if: github.event_name != 'push'
-        shell: pwsh
+      - name: Test video updaters
         run: |
-          ./update.ps1
+          python3 -B test-fetch-fallback.py
+          python3 -B test-youtube-api.py
+      - name: Fetch latest YouTube videos
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[update-videos]')
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        shell: bash
+        run: |
+          python3 fetch-youtube-api.py
       - name: Save current video snapshot
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[update-videos]')
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
