@@ -503,6 +503,26 @@
         "issueIds": [
           "world"
         ]
+      },
+      {
+        "title": "",
+        "region": "auto",
+        "country": "auto",
+        "createdAt": "2026-10-23T09:17:54.482Z",
+        "updatedAt": "2026-10-23T09:17:54.482Z",
+        "id": "44c43cae-f90f-42fd-9a0f-d3c6cfff7322",
+        "date": "2026-10-23",
+        "label": "筆記",
+        "text": "亞伯達在加拿大人口約12 %，但是貢獻約四成的經濟",
+        "links": [
+          {
+            "title": "世界如何在強權與科技風險中自保？川普關稅竟成加拿大救命丹？掠奪性秩序下中等強國如何自保？美國國會又該如何煞住AI危機？｜Economist經濟學人｜2026.10.17《深論 x 國際 x 特邀評論》｜02:32 唐納德·川普或許能拯救加拿大",
+            "url": "https://www.youtube.com/watch?v=pDsTfioBNpA&t=152s"
+          }
+        ],
+        "issueIds": [
+          "world"
+        ]
       }
     ],
     "status": "觀察中",
