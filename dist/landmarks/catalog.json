@@ -1,7 +1,8 @@
 {
   "中央": {
     "name": "總統府",
-    "article": "中華民國總統府"
+    "article": "中華民國總統府",
+    "commonsSearch": "\"Presidential Office Building\" Taipei filetype:bitmap"
   },
   "國際": {
     "name": "聯合國總部",
@@ -9,7 +10,8 @@
   },
   "臺北市": {
     "name": "台北101",
-    "article": "台北101"
+    "article": "台北101",
+    "commonsFile": "Taipei 101 2009 amk.jpg"
   },
   "新北市": {
     "name": "淡水紅毛城",

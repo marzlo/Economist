@@ -37,16 +37,29 @@ def run():
         if landmark.get('illustration'):
             continue
         existing = credits.get(scope, {})
-        if existing.get('file') and (ROOT / 'dist' / existing['file']).exists():
+        selection = landmark.get('commonsFile') or landmark.get('commonsSearch') or landmark['article']
+        if existing.get('selection') == selection and existing.get('file') and (ROOT / 'dist' / existing['file']).exists():
             continue
         try:
-            page = next(iter(api('zh.wikipedia.org', titles=landmark['article'], redirects=1,
-                                 prop='pageimages', piprop='name|original', pilicense='free')['query']['pages'].values()))
-            filename = page.get('pageimage')
-            if not filename:
-                raise ValueError('百科條目沒有可用的自由授權圖片')
-            info = next(iter(api('commons.wikimedia.org', titles='File:' + filename, prop='imageinfo',
-                                iiprop='url|extmetadata', iiurlwidth=1280)['query']['pages'].values()))['imageinfo'][0]
+            if landmark.get('commonsSearch'):
+                pages = api('commons.wikimedia.org', generator='search', gsrsearch=landmark['commonsSearch'],
+                            gsrnamespace=6, gsrlimit=5, prop='imageinfo', iiprop='url|extmetadata', iiurlwidth=1280)['query']['pages']
+                candidates = sorted(pages.values(), key=lambda p: p.get('index', 999))
+                candidate = next(p for p in candidates if p['title'].lower().endswith(('.jpg', '.jpeg')))
+                filename = candidate['title'].removeprefix('File:')
+                info = candidate['imageinfo'][0]
+            else:
+                filename = landmark.get('commonsFile')
+                if not filename:
+                    page = next(iter(api('zh.wikipedia.org', titles=landmark['article'], redirects=1,
+                                         prop='pageimages', piprop='name|original', pilicense='free')['query']['pages'].values()))
+                    filename = page.get('pageimage')
+                if not filename:
+                    raise ValueError('百科條目沒有可用的自由授權圖片')
+                if filename.lower().endswith('.svg'):
+                    raise ValueError('來源是標誌而不是地標照片，需指定照片')
+                info = next(iter(api('commons.wikimedia.org', titles='File:' + filename, prop='imageinfo',
+                                    iiprop='url|extmetadata', iiurlwidth=1280)['query']['pages'].values()))['imageinfo'][0]
             metadata = info['extmetadata']
             license_name = clean(metadata.get('LicenseShortName', {}).get('value', ''))
             if not (license_name.startswith(('CC BY', 'CC0')) or license_name == 'Public domain'):
@@ -70,7 +83,7 @@ def run():
                 photo = ImageOps.exif_transpose(photo).convert('RGB')
                 photo.thumbnail((1400, 1000))
                 photo.save(ROOT / 'dist' / relative, 'JPEG', quality=84, optimize=True)
-            credits[scope] = {'name': landmark['name'], 'file': relative, 'originalFile': filename,
+            credits[scope] = {'selection': selection, 'name': landmark['name'], 'file': relative, 'originalFile': filename,
                              'author': clean(metadata.get('Artist', {}).get('value', 'Wikimedia Commons contributor')),
                              'license': license_name, 'licenseUrl': metadata.get('LicenseUrl', {}).get('value', ''),
                              'source': info['descriptionurl'], 'changes': 'Resized and converted to JPEG; displayed cropped with a translucent overlay.'}
