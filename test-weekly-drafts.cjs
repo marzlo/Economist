@@ -1,0 +1,13 @@
+const assert=require('node:assert/strict'),M=require('./dist/weekly-drafts-model.js'),fs=require('node:fs');
+assert.equal(M.monday('2026-10-24'),'2026-10-19');assert.equal(M.previousWeek('2026-10-24'),'2026-10-12');assert.equal(M.previousWeek('2027-01-01'),'2026-12-21');
+const old=JSON.parse(fs.readFileSync('dist/weekly/2026-10-12/report-data.json'));
+const data={...old,title:'測試週報',subtitle:'測試',intro:'測試導讀',quote:null,questions:['下一步？']};
+assert.equal(M.validate(data).notes.length,old.notes.length);
+const missing=structuredClone(data);missing.chapters[0].ids.pop();assert.throws(()=>M.validate(missing),/尚未/);
+const fakeQuote=structuredClone(data);fakeQuote.quote={noteId:data.notes[0].id,text:'不是原文'};assert.throws(()=>M.validate(fakeQuote),/逐字/);
+const malicious=structuredClone(data);malicious.title='</script><img src=x onerror=alert(1)>';
+const doc=M.previewDocument('<html><head></head><title>__TITLE__</title><script>const DATA=__DATA__;</script></html>',malicious,'https://example.com/Economist/');
+assert(!doc.includes('</script><img'));assert(doc.includes('base href="https://example.com/Economist/weekly/draft/"'));
+console.log('Draft model passed: Taipei weeks, source coverage, literal quotations and safe preview serialization');
+const onlyJson=M.previewDocument('__DATA__',malicious,'https://example.com/');assert.equal(JSON.parse(onlyJson).title,malicious.title);
+const dollar=structuredClone(data);dollar.title='價格 $& $\' $`';assert.equal(JSON.parse(M.previewDocument('__DATA__',dollar,'https://example.com/')).title,dollar.title);

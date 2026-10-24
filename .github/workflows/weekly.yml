@@ -1,0 +1,112 @@
+name: Weekly reflection drafts and publication
+run-name: Weekly ${{ inputs.operation || 'generate' }} · ${{ inputs.request_id || github.run_id }}
+on:
+  schedule:
+    - cron: '10 1 * * 1'
+  workflow_dispatch:
+    inputs:
+      operation:
+        type: choice
+        options: [generate, publish]
+        default: generate
+        required: true
+      week:
+        description: 'Week starting Monday, YYYY-MM-DD; empty generates previous complete week'
+        required: false
+        default: ''
+      revision:
+        description: 'Exact reviewed draft revision; required for publication'
+        required: false
+        default: ''
+      request_id:
+        description: 'Browser request identifier'
+        required: false
+        default: ''
+  push:
+    branches: [main]
+    paths: ['scripts/weekly.py', 'scripts/weekly-notes.cjs', '.github/workflows/weekly.yml']
+concurrency:
+  group: weekly-reflection-writer
+  cancel-in-progress: false
+jobs:
+  draft:
+    timeout-minutes: 12
+    if: (github.event_name != 'workflow_dispatch' || inputs.operation == 'generate') && (github.event_name != 'push' || contains(github.event.head_commit.message, '[weekly-draft]'))
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate generator
+        run: python3 -B test-weekly-generator.py
+      - name: Generate a reviewable draft
+        env:
+          WEEKLY_AI_API_KEY: ${{ secrets.WEEKLY_AI_API_KEY || secrets.OPENAI_API_KEY }}
+          WEEKLY_AI_MODEL: ${{ vars.WEEKLY_AI_MODEL }}
+          WEEKLY_WEEK: ${{ inputs.week }}
+        run: python3 -B scripts/weekly.py generate --week "$WEEKLY_WEEK"
+      - name: Save draft without publishing
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _weekly/drafts
+          if ! git diff --cached --quiet; then
+            git commit -m "Save weekly reflection draft for review"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+  publish:
+    timeout-minutes: 15
+    if: github.event_name == 'workflow_dispatch' && inputs.operation == 'publish'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate generator
+        run: python3 -B test-weekly-generator.py
+      - name: Install tested PDF renderer
+        run: |
+          npm install --prefix /tmp/weekly-tools --no-save --no-audit --no-fund playwright@1.62.1
+          if ! command -v google-chrome && ! command -v chromium && ! command -v chromium-browser; then
+            /tmp/weekly-tools/node_modules/.bin/playwright install --with-deps chromium
+          fi
+      - name: Prepare Chinese PDF fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends fonts-noto-cjk
+      - name: Publish only the reviewed revision
+        env:
+          WEEKLY_WEEK: ${{ inputs.week }}
+          WEEKLY_REVISION: ${{ inputs.revision }}
+          NODE_PATH: /tmp/weekly-tools/node_modules
+        run: |
+          test -n "$WEEKLY_WEEK"
+          test -n "$WEEKLY_REVISION"
+          python3 -B scripts/weekly.py publish --week "$WEEKLY_WEEK" --revision "$WEEKLY_REVISION"
+          node test-weekly.cjs
+      - name: Save approved report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/weekly dist/index.html _weekly/published
+          git commit -m "Publish reviewed weekly reflection"
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Deploy approved report
+        id: deployment
+        uses: actions/deploy-pages@v4

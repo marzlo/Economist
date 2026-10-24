@@ -2,6 +2,7 @@ name: Update videos and deploy Pages
 on:
   push:
     branches: [main]
+    paths-ignore: ['_weekly/**']
   workflow_dispatch:
   schedule:
     - cron: '17 0,4,10 * * *'
@@ -28,6 +29,8 @@ jobs:
           node test-civic.cjs
           node test-civic-keywords.cjs
           node test-weekly.cjs
+          node test-weekly-drafts.cjs
+          python3 -B test-weekly-generator.py
       - name: Update public topic news recommendations
         run: python3 -B update-public-news.py
       - name: Fetch latest YouTube videos
