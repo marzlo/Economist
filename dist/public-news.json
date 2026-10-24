@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24T06:17:50.053543+00:00",
+  "updated": "2026-10-24T06:32:28.645918+00:00",
   "topics": [
     {
       "id": "civic-songshan-airport",
@@ -59,10 +59,18 @@
     "civic-songshan-airport": {
       "items": [
         {
-          "title": "松機遷移 蔣指可保留機坪救災 - 中時新聞網",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1BMHBQTk9xRXEyNjJKcFZvMl9HSWw0VDh4NjRZUUNTVk01VW1Yb01lT1JxOWwwQ01FamVXbHI4eG5kZTAtWVk3UjNSZjh5VFpmaTcxVklIeG56X1VyUkM0XzBDRjJSeGt5VkdZ?oc=5",
-          "source": "中時新聞網",
-          "published": "2026-10-22T20:10:00+00:00",
+          "title": "蔣萬安提松機改建AI園區最新網路民調出爐 61%贊成、38%反對 - UDN",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBwOXRnQzVUSXBEdkdLZ0pWdzZ2NTdvT3FhbXNzSFZla1Z3QjZlOWdJSFdSU3FTUjd4eUFLQk5keW5EYkRRQ3pVQndQeGUyNG5PdU9xOGpmUXg?oc=5",
+          "source": "UDN",
+          "published": "2026-10-23T04:02:50+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "松機遷建…陳以信：謝長廷、姚文智、吳怡農主張 沈伯洋認同哪個？ - UDN",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE91THhEZy1VTUdhdWRfNFFhcTBhRFduM0dobWdwNDVFLUdlRXZnYXJ2LURybk5VeHNuT2stTEIyeWJBVEZBM20yQ2pwRkJ5NVc5TGF30gFYQVVfeXFMT3hYSDFZcVpVQ1JSREh1S3lVekZmUjVlcDVJTHFFYi1Fbm5vRV9lUi1nRGlDR3FReHBTOFplYWZOa2lzbjlTRjluNHFJNERFNFd5X1Azd29fVg?oc=5",
+          "source": "UDN",
+          "published": "2026-10-23T01:08:51+00:00",
           "type": "文章",
           "description": ""
         },
@@ -75,18 +83,26 @@
           "description": ""
         },
         {
-          "title": "蔣萬安：遷松機願與中央來討論 可保留機坪救災後送 - 自由時報",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBYMlJsR20yZ3JHV3RmbjlROGh5OUpiZUtqTVRiaXc0SFE3UkVnQWZSMVdvYTQxS29POXhsbEliWTEtREVFeURHcDlBOF9uaVk1WFAzOWZkQi1jcW1md2dEM1dua3lCclltaGfSAW9BVV95cUxOcGE3SHpaVEtIYk1mM29TZkRWd2VlOHVuT1J4eFlDN1hMcTg4ZGR4SnlqRGdtZjVCX2U0RG1IQ2RlMzNLQnZDUWRyV25aaTFTNU9PcDZPbUVNSW0xOEkwRF84Z1QwUmtXRmN5SW12Slk?oc=5",
-          "source": "自由時報",
-          "published": "2026-10-22T12:48:20+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
           "title": "三民國小被圈進松機遷建範圍？北市府突刪舊新聞稿 最新地圖不一樣| 政治焦點 - 太報 TaiSounds",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1lVUQ1X2dWM3JkZ0NTZWhydGhBbmd1eS1tNFM1SG9FSkN3bU9pUmI5aEVnN1Q0TFhDMDJ3Rl9PaVpVOXdxWUhub1loUWd5b016bnctUi1VT25UMjQt?oc=5",
           "source": "太報 TaiSounds",
           "published": "2026-10-22T11:43:25+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "蔣萬安拋遷移松機恐衝擊離島急救 金門縣長陳福海表態：堅決反對 - UDN",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8wVXE2UzBnNkxYVjl4VFlJY2JiN1NjWm9MT00tVjJXYm9LYnJkMWcwWXA0a1NnaURZU3VtcDBveDdmc0Z5ODl0bFNtdGs0bVVidGE00gFYQVVfeXFMTUtlQlMxNmV2Y1lqVURwSE41M0RlaTlrUVNBZnVuVVFZcG9EejFnLXI4enpWMDYyVk0xb0lOa2ZVZkhObVlueFFvME8wNDlTeE1PS3lucjZnRQ?oc=5",
+          "source": "UDN",
+          "published": "2026-10-22T09:36:32+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "蔣萬安拋松機遷建！蔡明彥示警國安衝擊　政院：還沒收到資料 - 鏡週刊Mirror Media",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqQVF2Z0FzTEs2T3dTdnlPVVp5ZHc3TVRzdm1VMXhLZjVjallIYk56N1hWU2VBOTkzNHNOSjd0V3VxcnItTmd1eGdveElvWFNqYlpwNWUxN0JRbWPSAWBBVV95cUxQLXdTdFUzWkpyQzZHdWNVbHg1NUdPY2tocWVrNzlzdnJsdS1NOV9PaFdYdXhIU2tzX0V4eTNXX3VjZ2E5aGtLdjBmT3hrZW1MZzYydVBseTdKV3Z6OGYxbkY?oc=5",
+          "source": "鏡週刊Mirror Media",
+          "published": "2026-10-22T07:29:00+00:00",
           "type": "文章",
           "description": ""
         },
@@ -107,10 +123,10 @@
           "description": ""
         },
         {
-          "title": "搬台中水湳力挺蔣萬安 徐巧芯：松機遷建是為台北下一個20年布局 - 自由時報",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5SM0phN193UU5zYVhWZFpTR1JmUFBXejU0SkZKMGNRZUx5Yjh4eFhKLVlDT0dYZjdNQkEwdWFXc3NDU1VJQlJjSkN0Nm54UG9fUFZ6TFE5cVFlQXdNa1dEQkY3aXJMd0NkYnfSAW9BVV95cUxNRDdEdFBvQ1MyOFlOS0JaM3RKZjNDQUNKZ1JFLTAyclhudnRtaWotcUZFOHR2MFhnVzVKS0c2VGpsOHdsWXJLNnVVdXNYMWZrOUpUU1FtcTM1N25qWEFvcEpHNW1Oa0JTOWpXMV9BUUE?oc=5",
-          "source": "自由時報",
-          "published": "2026-10-22T04:42:29+00:00",
+          "title": "倡松機遷建借鏡台中水湳經驗 徐巧芯籲中央審慎評估協調 - UDN",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1ZOVZjSEZqNlJQVWQ0cjVfeWtuVzRxSFd6ZTJGaFcteHlvZ2hwdVd4UUxPSXpyVVp2ZDNIem1lWnhZZzdCMjZHYjVHbXJueWlw0gFWQVVfeXFMUGJCaVNkWDhPb0E4cVJJTlFaOHpsc21pb2lhQk1vbDZMQzgxdE5ydTc2MkdWWFhxTk5SZ1FVUVA2NUZ3WEsySl80Wmwwa0pQZG1ZaWVzbnc?oc=5",
+          "source": "UDN",
+          "published": "2026-10-22T04:46:16+00:00",
           "type": "文章",
           "description": ""
         },
@@ -123,18 +139,18 @@
           "description": ""
         },
         {
-          "title": "松機遷建蔡明彥：要找特勤維安替代機場有難度| 政治 - Newtalk新聞",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ORlZGS2JoVTZFUnQzc3R6S1FucURrUklQMWlYNEk2amxoN1Uwc2hNNnVwQXlJSWllRVNSZ00xdVpyV1NsRmpjUWZ6cjczZ20yNFN6X2M2WmVNUVk?oc=5",
-          "source": "Newtalk新聞",
-          "published": "2026-10-22T01:33:47+00:00",
+          "title": "挺蔣萬安松山機場遷建 徐巧芯等人倡借鏡台中水湳經驗 - UDN",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5Xc3g1VEJ0aU0tbGRkS0Z1V1Y0LUctZ2lRTXFVX2xPLXhYUzQ5RmN5bkN3STRBSW5xVUE1a05RVGE1TE5CVlBWT3VuTGdmdllq0gFWQVVfeXFMTV9PM0RlTW40eGZqMEV6TnVzYmpNc2J4YzhzWUZDdndMbnBNY2VCTVRvckxJMVFualQwYXRXdWFQWU9jZ1NXRFktcXFkRE50ZU02YmxOLUE?oc=5",
+          "source": "UDN",
+          "published": "2026-10-22T03:01:14+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "藍推水湳遷建經驗當松機參考！他酸「引清兵入關」：要把蔣萬安綁死？ - 自由時報",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1XSjVQOWY2UVRxdjh3b0FTREd5ZU9mVGgxc1o1RldHUmRhRmh6UTNpbDVwazloTklxOEpnbUtuX2RtZ0lqc0ptRTFuakFiQWtNdW5MbFBHbWkyMkFWYXZWLVdaTVRQSWVGSXfSAW9BVV95cUxORUxSYnVRRFpRQnhPdkJ2TC1tQ2RpY2o3NV9tWURHZVhuOWFaTGFrc3hiY2k4NXZhZW93Zl9kcWNXbDJqN2MwS2d2anRkSnVxYkN1YUcxZDlJZ2NOWVVIZ2dYY0RlOUE0OEV1TEZDRlE?oc=5",
-          "source": "自由時報",
-          "published": "2026-10-21T23:42:44+00:00",
+          "title": "何孟樺揭蔣萬安遷松機「AI園區」還少40公頃！恐動到民生社區、濱江商圈| 政治焦點 - 太報 TaiSounds",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fbFVIQW1fTjFKbjRMV1lxWGNIcFBXUXpLMUxoNkd4Tkp3ZS1VcTRIRVdLSGtZQzgyRlhYNno2QmV5YlVPczktZk00MGNJZVpReGwwc1lNUHRrTXdo?oc=5",
+          "source": "太報 TaiSounds",
+          "published": "2026-10-22T02:34:09+00:00",
           "type": "文章",
           "description": ""
         },
@@ -147,40 +163,24 @@
           "description": ""
         },
         {
-          "title": "松山機場遷移爭議！游淑慧曝漏掉安全問題 - Yahoo新聞",
-          "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxNR040SUxoSmJFc1NuTVAtNVBDdEEyUDZzMDJmNGp3RS0tT2Rfb1o5d2RDbUw2VUY4N0pnWGlGX09vNXVhWHhlUmFlUEt0NmI5eFJjMlpZa2Q1Ykl6U0JDeExLcGdRUVoyQlY5U1drRFZybElFR1E3ODdYR282cWJhYzFtdXJYMTlHT2tIbFpFREUzX1puMVdkNDBHWGZNSDhwVjZQNjdQaUUyUXgzNDMxSU5ueHc5ZkJRWEgyeGZCS2hEcFM5SG5nUC1hRk5MMFcwXzNNYmFjVFI3OTBQdENDWml4ODg2LWdJMF82YXZLQzc4SzVLdXBwejhvY05QWDROMnBqcjcwUXhBdXNtV1k1QnYta2E5UmxJTnlFTXpvbTk0UlJuZlE3dlZ4Wno?oc=5",
-          "source": "Yahoo新聞",
-          "published": "2026-10-21T07:15:10+00:00",
+          "title": "槓「遷松機」！ 綠委控10/8記者會後「補公文」 市府：子虛烏有 - 華視新聞網",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1QZHFsbFFMdW1XZXdhcnl4clVHS0lmcDgydFdQMTJhZTNnZFc2QXZfM2ZMX09QMUxlbGNXNDBqZWMwNXJCamQxTGF3cW54S3ZQY3dTRkF0dFJjc2Y4bmZuQjBsZmpMV2RkbEZ2NnRQQzB4UQ?oc=5",
+          "source": "華視新聞網",
+          "published": "2026-10-21T11:15:00+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "松機遷移改科學園區？劉世芳：最快也要20年 - 經濟日報",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBaUVJ5bVoxOFY5czRkcnUzQzdtQm4tS2lHOWEzY0NVYnZHRE03LTZHZEYxTXJnbTRuQzBxdjQ0V3pHcU85Q0gzeHJlejZBU29XM09UNjdJU3Q5aXMyVEtoUV93c2ZRZHVCVUZUN2hGMVNXeTFXN2kw0gFfQVVfeXFMTmNvN3JfZTd2OHBRRlhhdzhPdTc3MmEwdmJYbXMyNEdONTVhbTZNS05jcWo0SmdNbXBuZ2lsSEZ0ZTFaQ3U4RG0zNm9qMFpZOFgxVTN2VGNjcS13WU9oVjg?oc=5",
-          "source": "經濟日報",
-          "published": "2026-10-21T03:45:32+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "松山機場遷移改科學園區？劉世芳：最快也要20年 - 中央社 CNA",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1oWGdBd2dOb2cwZFlsQVk0QWZiZ21KdjlfeS0xdzQyR1psTXg2UF9ZSXhyTXlXaEIwbWtiTVBwdUVySFgyNVB4bnlJQWpUQVVvZ3lSejN4aGxNZlBQZHNv?oc=5",
-          "source": "中央社 CNA",
-          "published": "2026-10-21T03:32:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "松山機場遷移蔣萬安赴議會報告提現在就應啟動| 政治 - 中央社 CNA",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBuc2NiM2F4WVVsYUZMQk80STVFOUMycU1OT0c1MTM5dmpuUjVVb2pyRXBjamZPV2ZUamVBYnprU3QtN2Z5dTN4UEpMNTg1akp3SEpCMmM0M19tUzJyaHJV?oc=5",
-          "source": "中央社 CNA",
-          "published": "2026-10-21T03:17:00+00:00",
+          "title": "石崇良松機飛台東「遇支援醫護」　再談遷建：會積極參與評估 - ETtoday健康雲",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBvbmNTOE9YWVdJamVWRWctYlVpeERjTG9mU1NSNS1paVFRcGF2MXpadWhMZ0hOZ19hb0NDb0hWd01jM1FLT0lkbzkzYms4blE30gFPQVVfeXFMUC1IRUVLVi1MNFZ4c2k2T19rU29BSnpFSWtYS3dNWV94aGNXdUVLMVo4SzlzemtNMUp2WUdfQW9OUGlHc0hMdVhBZ29sZWh0VQ?oc=5",
+          "source": "ETtoday健康雲",
+          "published": "2026-10-21T07:48:00+00:00",
           "type": "文章",
           "description": ""
         }
       ],
-      "updated": "2026-10-24T06:17:50.053543+00:00",
-      "checkedAt": "2026-10-24T06:17:50.053543+00:00",
+      "updated": "2026-10-24T06:32:28.645918+00:00",
+      "checkedAt": "2026-10-24T06:32:28.645918+00:00",
       "keys": [
         "松山機場",
         "松機",
