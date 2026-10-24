@@ -22,3 +22,6 @@ assert.equal(M.landmark('臺北市',{'臺北市':{file:'landmarks/../../x.jpg',s
 assert.equal(M.landmark('不存在',credits),null);
 const catalog=require('./dist/landmarks/catalog.json');
 assert.deepEqual(Object.keys(catalog).sort(),[...M.scopes].sort());
+const original=[{id:'delete-me',entries:[{id:'unique',text:'only here'}]},{id:'keep-me',entries:[{id:'shared',text:'retain shared note',links:[{url:'https://example.com'}],issueIds:['delete-me','keep-me']}]}];
+const remaining=M.removeTopic(original,'delete-me');
+assert.equal(remaining.length,1);assert.equal(remaining[0].id,'keep-me');assert.equal(remaining[0].entries[0].text,'retain shared note');assert.deepEqual(remaining[0].entries[0].issueIds,['keep-me']);assert.equal(remaining[0].entries[0].links[0].url,'https://example.com');assert.equal(original.length,2);assert.deepEqual(original[1].entries[0].issueIds,['delete-me','keep-me']);

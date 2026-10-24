@@ -14,6 +14,7 @@ function recommendations(topic,news,videos){
 }
 function criteria(lines,previous,id){return [...new Set(lines.split('\n').map(s=>s.trim()).filter(Boolean))].map(text=>previous.find(c=>c.text===text)||{id:id(),text,status:'待查證'})}
 function landmark(scope,credits){const item=credits[scope];if(!item||!/^landmarks\/[a-z0-9-]+\.(jpg|png|webp|svg)$/.test(item.file)||!safeUrl(item.source))return null;return item}
-const api={scopes,states,safeUrl,normalize,recommendations,criteria,landmark};
+function removeTopic(list,id){return list.filter(i=>i.id!==id).map(i=>({...i,entries:(i.entries||[]).map(e=>Array.isArray(e.issueIds)&&e.issueIds.includes(id)?{...e,issueIds:e.issueIds.filter(owner=>owner!==id)}:e)}))}
+const api={scopes,states,safeUrl,normalize,recommendations,criteria,landmark,removeTopic};
 if(typeof module!=='undefined')module.exports=api;else globalThis.CivicModel=api;
 })();

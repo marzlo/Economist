@@ -5,7 +5,8 @@ const option=(value,label=value)=>`<option value="${esc(value)}">${esc(label)}</
 $('#civic-scope').innerHTML=option('全部')+M.scopes.map(s=>option(s)).join('');
 $('#civic-scope').value=['全部',...M.scopes].includes(localStorage.getItem('civic-selected-scope'))?localStorage.getItem('civic-selected-scope'):'臺北市';
 $('#civic-edit-scope').innerHTML=M.scopes.map(s=>option(s)).join('');
-const topics=()=>[...new Map([...(feed.topics||[]),...issues.filter(i=>i.kind==='civic')].map(i=>[i.id,i])).values()];
+let deletedFallbacks;try{deletedFallbacks=new Set(JSON.parse(localStorage.getItem('civic-deleted-topics')||'[]'))}catch{deletedFallbacks=new Set()}
+const topics=()=>[...new Map([...(baseIssues===null?(feed.topics||[]).filter(i=>!deletedFallbacks.has(i.id)):[]),...issues.filter(i=>i.kind==='civic')].map(i=>[i.id,i])).values()];
 function editable(id){let item=issues.find(i=>i.id===id);if(!item){item=structuredClone(topics().find(i=>i.id===id));if(!item)throw Error('找不到議題');issues.push(item)}return item}
 const linksHtml=links=>(links||[]).filter(l=>M.safeUrl(l.url)).map(l=>`<a class="source-link" href="${esc(M.safeUrl(l.url))}" target="_blank" rel="noopener noreferrer">↗ ${esc(l.title||l.url)}</a>`).join('');
 window.renderCivic=function(){
@@ -35,7 +36,7 @@ window.renderCivic=function(){
   openEntry(item.id);$('#entry-note-title').value=recommendation.title;$('#entry-links').value=recommendation.title+' | '+recommendation.url;$('#entry-text').value='來源重點：\n\n與追蹤方向的關聯：';
  });
 };
-function openEditor(id){editing=id||null;const i=id?topics().find(i=>i.id===id):null;$('#civic-keyword-status').textContent='';$('#civic-editor-title').textContent=i?'編輯公共議題':'新增公共議題';$('#civic-name').value=i?.name||'';$('#civic-edit-scope').value=i?.scope||($('#civic-scope').value==='全部'?'中央':$('#civic-scope').value);$('#civic-keys').value=(i?.keys||[]).join(', ');$('#civic-note').value=i?.note||'';$('#civic-criteria').value=(i?.criteria||[]).map(c=>c.text).join('\n');$('#civic-status').value=i?.status||'觀察中';$('#civic-editor').showModal()}
+function openEditor(id){editing=id||null;const i=id?topics().find(i=>i.id===id):null;$('#civic-delete').hidden=!i;$('#civic-delete-message').textContent='';$('#civic-keyword-status').textContent='';$('#civic-editor-title').textContent=i?'編輯公共議題':'新增公共議題';$('#civic-name').value=i?.name||'';$('#civic-edit-scope').value=i?.scope||($('#civic-scope').value==='全部'?'中央':$('#civic-scope').value);$('#civic-keys').value=(i?.keys||[]).join(', ');$('#civic-note').value=i?.note||'';$('#civic-criteria').value=(i?.criteria||[]).map(c=>c.text).join('\n');$('#civic-status').value=i?.status||'觀察中';$('#civic-editor').showModal()}
 const keywordDialog=document.createElement('dialog');keywordDialog.id='civic-keyword-dialog';keywordDialog.innerHTML=`<div class="civic-keyword-head"><h2>推薦關鍵字</h2><button type="button" id="civic-keyword-close" aria-label="關閉關鍵字推薦">✕</button></div><p class="muted">依議題名稱、縣市與觀察方向整理搜尋詞，勾選適合的詞加入即可。</p><div id="civic-keyword-options"></div><p id="civic-keyword-error" role="status"></p><p class="muted">加入時保留原有關鍵字；儲存議題後才會同步。建議詞依詞彙規則產生，可自行調整。</p><button type="button" id="civic-apply-keywords">加入勾選的關鍵字</button>`;document.body.append(keywordDialog);
 let keywordSuggestions=[];
 $('#civic-suggest-keywords').onclick=()=>{
@@ -46,6 +47,15 @@ $('#civic-suggest-keywords').onclick=()=>{
 $('#civic-keyword-close').onclick=()=>keywordDialog.close();
 $('#civic-apply-keywords').onclick=()=>{const selected=[...$('#civic-keyword-options').querySelectorAll('input:checked')].map(input=>keywordSuggestions[Number(input.value)].term);if(!selected.length){$('#civic-keyword-error').textContent='請至少勾選一個建議詞。';return}$('#civic-keys').value=CivicKeywords.mergeKeywords($('#civic-keys').value,selected);$('#civic-keyword-status').textContent='已合併 '+selected.length+' 個勾選建議，保留原有關鍵字；可再自行調整。';keywordDialog.close()};
 $('#civic-add').onclick=()=>openEditor();$('#civic-cancel').onclick=()=>$('#civic-editor').close();
+$('#civic-delete').onclick=()=>{
+ const item=issues.find(i=>i.id===editing);
+ if(!item){$('#civic-delete-message').textContent='請先完成 GitHub 議題同步，再刪除這個議題。';return}
+ if(!confirm('確定刪除「'+item.name+'」？\n此議題的指標、記事與已收錄來源會移除；同時關聯其他議題的記事會保留。\n同步後其他裝置也會更新。'))return;
+ deletedFallbacks.add(item.id);localStorage.setItem('civic-deleted-topics',JSON.stringify([...deletedFallbacks]));
+ issues=M.removeTopic(issues,item.id);if(selected?.id===item.id)selected=null;if(activeTopic===item.id)activeTopic=null;
+ if(localStorage.getItem('civic-selected-topic')===item.id)localStorage.removeItem('civic-selected-topic');
+ editing=null;save();$('#civic-editor').close();renderIssues();renderNews();
+};
 $('#civic-form').onsubmit=e=>{e.preventDefault();const keys=$('#civic-keys').value.split(/[,，]/).map(s=>s.trim()).filter(Boolean),name=$('#civic-name').value.trim(),lines=$('#civic-criteria').value;if(!name||!keys.length||!lines.trim())return;const i=editing?editable(editing):{id:crypto.randomUUID(),kind:'civic',entries:[],then:''};Object.assign(i,{name,scope:$('#civic-edit-scope').value,keys,note:$('#civic-note').value.trim(),status:$('#civic-status').value,criteria:M.criteria(lines,i.criteria||[],()=>crypto.randomUUID())});if(!editing)issues.push(i);activeTopic=i.id;$('#civic-scope').value=i.scope;localStorage.setItem('civic-selected-scope',i.scope);save();$('#civic-editor').close();renderIssues();};
 const dialog=document.createElement('dialog');dialog.id='civic-progress-editor';dialog.innerHTML=`<form id="civic-progress-form"><h2>記錄指標進展</h2><p id="civic-progress-title"></p><label>狀態<select id="civic-progress-state">${M.states.map(s=>option(s)).join('')}</select></label><label>日期<input id="civic-progress-date" type="date" required></label><label>觀察與依據<textarea id="civic-progress-note" rows="3" required></textarea></label><label>佐證連結（每行：名稱 | 網址；標記已達成時必填）<textarea id="civic-progress-links" rows="3"></textarea></label><p id="civic-progress-error" role="alert"></p><button type="button" id="civic-progress-cancel">取消</button> <button type="submit">儲存進展</button></form>`;document.body.append(dialog);
 function openProgress(id,cid){progress={id,cid};const c=topics().find(i=>i.id===id).criteria.find(c=>c.id===cid);$('#civic-progress-title').textContent=c.text;$('#civic-progress-state').value=c.status;$('#civic-progress-date').value=today();$('#civic-progress-note').value='';$('#civic-progress-links').value='';$('#civic-progress-error').textContent='';dialog.showModal()}
