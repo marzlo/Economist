@@ -13,6 +13,7 @@ function recommendations(topic,news,videos){
  }).sort((a,b)=>(Date.parse(b.published)||0)-(Date.parse(a.published)||0)).slice(0,12);
 }
 function criteria(lines,previous,id){return [...new Set(lines.split('\n').map(s=>s.trim()).filter(Boolean))].map(text=>previous.find(c=>c.text===text)||{id:id(),text,status:'待查證'})}
-const api={scopes,states,safeUrl,normalize,recommendations,criteria};
+function landmark(scope,credits){const item=credits[scope];if(!item||!/^landmarks\/[a-z0-9-]+\.(jpg|png|webp|svg)$/.test(item.file)||!safeUrl(item.source))return null;return item}
+const api={scopes,states,safeUrl,normalize,recommendations,criteria,landmark};
 if(typeof module!=='undefined')module.exports=api;else globalThis.CivicModel=api;
 })();
