@@ -583,6 +583,26 @@
         "issueIds": [
           "world"
         ]
+      },
+      {
+        "title": "",
+        "region": "auto",
+        "country": "auto",
+        "createdAt": "2026-10-24T07:20:35.305Z",
+        "updatedAt": "2026-10-24T07:20:35.305Z",
+        "id": "5e782bf5-8ef8-4625-b3fe-0b8d69e9f0dc",
+        "date": "2026-10-24",
+        "label": "筆記",
+        "text": "現在歐洲國家該是重視太空自主\n目前歐洲的E S A的火箭發射效率沒有辦法與美國的SpaceX競爭\n所以現在歐洲要把USA開始培養出商業競爭環境\n他們必須打造能和和star link競爭的衛星網路\n",
+        "links": [
+          {
+            "title": "經濟學人｜2026.10.24《封面故事 x 社論版塊》自由主義歐洲的痛苦掙扎？中道政治為何陷入困局？AI泡沫vs公債危機：哪一個更可能引爆金融市場？星鏈綁架歐洲！中東強權外交冒險｜Economist｜35:58 歐洲必須擺脫對美國衛星的依賴",
+            "url": "https://www.youtube.com/watch?v=ZDoe-vu52Kk&t=2158s"
+          }
+        ],
+        "issueIds": [
+          "world"
+        ]
       }
     ],
     "status": "觀察中",
