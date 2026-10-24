@@ -1,0 +1,27 @@
+/* Larger reading type on touch tablets, including iPad portrait and landscape.
+   Keep phone, mouse/trackpad desktop, and PDF print typography unchanged. */
+@media screen and (min-width:600px) and (max-width:1440px) and (pointer:coarse){
+ body{font-size:18px}
+ article h3{font-size:21px;line-height:1.7}
+ article p,.issue p,.issue .timeline p,.rv-text,.civic-intro p,.civic-understanding>p,.civic-entry p,.civic-criteria li,.civic-source blockquote,.ob-story p{font-size:18px;line-height:1.95}
+ .rv-note-title,.civic-source>a,.civic-recommendation a,.ob-note summary span{font-size:18px;line-height:1.8}
+ .rv-heading p,.civic-header p,.ob-heading p,.rv-sources a,.source-link,.issue ul,.civic-empty-sources,.civic-empty{font-size:17px;line-height:1.9}
+ .civic-row h4,.civic-sources-heading{font-size:20px}
+ .civic-intro h3{font-size:26px;line-height:1.7}
+ label,input,textarea,select,button,.rv-mode-tabs button,.rv-controls label,.civic-row button,.civic-recommendation button,.civic-actions button,#civic-topic-tabs button,#civic-city-tabs button{font-size:16px}
+ .civic-criteria button,.civic-source button,.civic-entry .meta button{font-size:15px}
+ .muted,.note,.meta,.rv-note time,.rv-tag,.rv-stat-note,.rv-stats span,.civic-footer p,#civic-section .meta,.civic-understanding>p.civic-disclaimer,.ob-footnote,.ob-chart-caption,.ob-label,.ob-change,.ob-record-status,.ob-metadata dt,.entry-images figcaption{font-size:14px;line-height:1.8}
+ .ob-metadata dd,.ob-note p,.ob-note a{font-size:17px;line-height:1.9}
+ .ob-table-scroll table{font-size:16px}
+ #weekly-review .weekly-digest-copy>p,#weekly-review .weekly-digest-copy blockquote{font-size:18px;line-height:1.95}
+ #weekly-review .weekly-digest-copy h3{font-size:30px}
+ .weekly-eyebrow,.weekly-date,.weekly-digest-tags span,.weekly-digest-bottom,.weekly-read,#weekly-manager>summary,#weekly-published-archive summary,#weekly-published-archive a{font-size:14px;line-height:1.8}
+ .weekly-digest-copy blockquote small{font-size:14px}
+ .desktop-nav a,.mobile-nav a{font-size:14px}
+ /* Full weekly reflection articles (including archived issues). */
+ .chapter .summary,.observation,.note-text,.lead p,.question-board li,.experiment p{font-size:18px;line-height:1.95}
+ .cover-head p,.rhythm-caption,.chapter-tile p,.flow-item,.concept p,.note summary,.note-sources a,.question-board p,.archive>p{font-size:16px;line-height:1.85}
+ .chapter-tag,.chapter-date,.chapter-source-row,.chapter-source-row button,.next-question small,.next-question p,.note-meta,.note summary time,.archive-head span,.footer,.eyebrow,.cover-label,.report-actions a{font-size:14px;line-height:1.8}
+ .chapter-tile h3{font-size:19px}
+ .toc a{font-size:15px}
+}
