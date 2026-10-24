@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install image optimizer
+        run: python3 -m pip install Pillow==12.3.0
       - name: Fetch Commons photographs and attribution
         id: photographs
         continue-on-error: true

@@ -1,5 +1,7 @@
 """Vendor reusable Commons landmark photographs and preserve licensing metadata."""
 import html
+import io
+from PIL import Image, ImageOps
 import json
 from pathlib import Path
 import re
@@ -50,7 +52,9 @@ def run():
             if not (license_name.startswith(('CC BY', 'CC0')) or license_name == 'Public domain'):
                 raise ValueError('圖片授權需另行審查：' + license_name)
             url = urllib.parse.urljoin('https://commons.wikimedia.org', info.get('thumburl') or info['url'])
-            if urllib.parse.urlsplit(url).hostname not in ('upload.wikimedia.org', 'commons.wikimedia.org'):
+            if not (urllib.parse.urlsplit(url).hostname or '').endswith('.wikimedia.org'):
+                url = info['url']
+            if not (urllib.parse.urlsplit(url).hostname or '').endswith('.wikimedia.org'):
                 raise ValueError('不是 Commons 圖片主機：' + repr(url))
             req = urllib.request.Request(url, headers=HEADERS)
             with urllib.request.urlopen(req, timeout=45) as response:
@@ -58,15 +62,18 @@ def run():
                 extension = {'image/jpeg': '.jpg', 'image/png': '.png', 'image/webp': '.webp'}.get(content_type)
                 if not extension:
                     raise ValueError('背景不是可用的靜態照片：' + content_type)
-                image = response.read(8 * 1024 * 1024 + 1)
-            if len(image) > 8 * 1024 * 1024:
+                image = response.read(32 * 1024 * 1024 + 1)
+            if len(image) > 32 * 1024 * 1024:
                 raise ValueError('圖片過大')
-            relative = 'landmarks/landmark-' + str(index).zfill(2) + extension
-            (ROOT / 'dist' / relative).write_bytes(image)
+            relative = 'landmarks/landmark-' + str(index).zfill(2) + '.jpg'
+            with Image.open(io.BytesIO(image)) as photo:
+                photo = ImageOps.exif_transpose(photo).convert('RGB')
+                photo.thumbnail((1400, 1000))
+                photo.save(ROOT / 'dist' / relative, 'JPEG', quality=84, optimize=True)
             credits[scope] = {'name': landmark['name'], 'file': relative, 'originalFile': filename,
                              'author': clean(metadata.get('Artist', {}).get('value', 'Wikimedia Commons contributor')),
                              'license': license_name, 'licenseUrl': metadata.get('LicenseUrl', {}).get('value', ''),
-                             'source': info['descriptionurl'], 'changes': 'Resized by Wikimedia; displayed cropped with a translucent overlay.'}
+                             'source': info['descriptionurl'], 'changes': 'Resized and converted to JPEG; displayed cropped with a translucent overlay.'}
             print(scope, landmark['name'], license_name, len(image), flush=True)
         except Exception as error:
             failures.append(scope)
