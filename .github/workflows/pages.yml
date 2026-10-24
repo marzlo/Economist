@@ -20,10 +20,14 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Test video updaters
+      - name: Test video and public topic updates
         run: |
           python3 -B test-fetch-fallback.py
           python3 -B test-youtube-api.py
+          python3 -B test-public-news.py
+          node test-civic.cjs
+      - name: Update public topic news recommendations
+        run: python3 -B update-public-news.py
       - name: Fetch latest YouTube videos
         if: github.event_name != 'push' || contains(github.event.head_commit.message, '[update-videos]')
         env:
@@ -31,14 +35,13 @@ jobs:
         shell: bash
         run: |
           python3 fetch-youtube-api.py
-      - name: Save current video snapshot
-        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[update-videos]')
+      - name: Save videos and public topic recommendations
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dist/videos.json
+          git add dist/videos.json dist/public-news.json
           if ! git diff --cached --quiet; then
-            git commit -m "Update latest YouTube videos"
+            git commit -m "Update videos and public topic recommendations"
             git pull --rebase origin main
             git push origin HEAD:main
           fi

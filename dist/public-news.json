@@ -1,0 +1,38 @@
+{
+  "updated": null,
+  "topics": [
+    {
+      "id": "civic-songshan-airport",
+      "kind": "civic",
+      "name": "松山機場：替代方案與分階段轉型",
+      "scope": "臺北市",
+      "keys": [
+        "松山機場",
+        "松機",
+        "松山機場遷建"
+      ],
+      "status": "觀察中",
+      "then": "關注中央與地方如何提出具體、可行且能持續檢驗的方案。",
+      "note": "觀察跨部會協作、替代方案成本與可執行時程；目前各項進度待查證。",
+      "criteria": [
+        {
+          "id": "songshan-taskforce",
+          "text": "中央與地方成立正式跨部會專案小組。",
+          "status": "待查證"
+        },
+        {
+          "id": "songshan-alternatives",
+          "text": "提出包含離島、醫療、國防與民航的替代方案及成本。",
+          "status": "待查證"
+        },
+        {
+          "id": "songshan-feasibility",
+          "text": "完成具體的可行性評估，提出可執行的分階段時程。",
+          "status": "待查證"
+        }
+      ],
+      "entries": []
+    }
+  ],
+  "results": {}
+}
