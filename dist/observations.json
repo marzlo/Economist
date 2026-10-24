@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedAt": "2026-10-24T14:32:52.451379+00:00",
+  "checkedAt": "2026-10-24T15:39:39.327331+00:00",
   "series": {
     "diesel": {
       "points": [
@@ -8516,8 +8516,8 @@
       "definition": "EIA 全美公路柴油含稅零售價，美元／美制加侖；每週一的統計值。",
       "frequency": "每週",
       "periodType": "weekly",
-      "checkedAt": "2026-10-24T14:32:52.451379+00:00",
-      "lastSuccess": "2026-10-24T14:32:52.451379+00:00",
+      "checkedAt": "2026-10-24T15:39:39.327331+00:00",
+      "lastSuccess": "2026-10-24T15:39:39.327331+00:00",
       "error": null
     },
     "treasury": {
@@ -9390,8 +9390,917 @@
       "definition": "以財報現金流量表 B02700「取得不動產、廠房及設備」現金支出 ÷ 營業收入合計（4000）× 100%。同年度累計差分成單季，皆為新臺幣；不含無形資產及非現金交易，可能與公司公布的資本預算口徑不同。",
       "frequency": "每季（以公開觀測站申報為準）",
       "periodType": "quarterly",
-      "checkedAt": "2026-10-24T14:32:52.451379+00:00",
-      "lastSuccess": "2026-10-24T14:32:52.451379+00:00",
+      "checkedAt": "2026-10-24T15:39:39.327331+00:00",
+      "lastSuccess": "2026-10-24T15:39:39.327331+00:00",
+      "error": null
+    },
+    "treasury-share": {
+      "points": [
+        {
+          "date": "2016-02-29",
+          "label": "2016-02",
+          "value": 7.084275,
+          "netInterestUSD": 234594429159.91,
+          "receiptsUSD": 3311481098608.61
+        },
+        {
+          "date": "2016-03-31",
+          "label": "2016-03",
+          "value": 7.344483,
+          "netInterestUSD": 242745569549.03,
+          "receiptsUSD": 3305141587666.25
+        },
+        {
+          "date": "2016-04-30",
+          "label": "2016-04",
+          "value": 7.33115,
+          "netInterestUSD": 239858579601.62,
+          "receiptsUSD": 3271772691310.2603
+        },
+        {
+          "date": "2016-05-31",
+          "label": "2016-05",
+          "value": 7.314014,
+          "netInterestUSD": 240191518132.78,
+          "receiptsUSD": 3283990295289.0103
+        },
+        {
+          "date": "2016-06-30",
+          "label": "2016-06",
+          "value": 7.489449,
+          "netInterestUSD": 244952111180.83,
+          "receiptsUSD": 3270629464672.33
+        },
+        {
+          "date": "2016-07-31",
+          "label": "2016-07",
+          "value": 7.540094,
+          "netInterestUSD": 245440152192.93,
+          "receiptsUSD": 3255133761440.6
+        },
+        {
+          "date": "2016-08-31",
+          "label": "2016-08",
+          "value": 7.520518,
+          "netInterestUSD": 246343862355.19998,
+          "receiptsUSD": 3275623736328.3
+        },
+        {
+          "date": "2016-09-30",
+          "label": "2016-09",
+          "value": 7.36898,
+          "netInterestUSD": 240721589386.4,
+          "receiptsUSD": 3266688261785.86
+        },
+        {
+          "date": "2016-10-31",
+          "label": "2016-10",
+          "value": 7.448713,
+          "netInterestUSD": 244119200571.16,
+          "receiptsUSD": 3277334084568.07
+        },
+        {
+          "date": "2016-11-30",
+          "label": "2016-11",
+          "value": 7.577129,
+          "netInterestUSD": 247941932907.44,
+          "receiptsUSD": 3272241238833.71
+        },
+        {
+          "date": "2016-12-31",
+          "label": "2016-12",
+          "value": 7.729225,
+          "netInterestUSD": 250567147194.12,
+          "receiptsUSD": 3241814660186.6
+        },
+        {
+          "date": "2017-01-31",
+          "label": "2017-01",
+          "value": 7.686729,
+          "netInterestUSD": 251533222886.38998,
+          "receiptsUSD": 3272304964233.64
+        },
+        {
+          "date": "2017-02-28",
+          "label": "2017-02",
+          "value": 7.75252,
+          "netInterestUSD": 253885018210.66,
+          "receiptsUSD": 3274870761211.13
+        },
+        {
+          "date": "2017-03-31",
+          "label": "2017-03",
+          "value": 7.962725,
+          "netInterestUSD": 259871993740.11,
+          "receiptsUSD": 3263606488677.99
+        },
+        {
+          "date": "2017-04-30",
+          "label": "2017-04",
+          "value": 8.079743,
+          "netInterestUSD": 265078554801.31,
+          "receiptsUSD": 3280779521045.35
+        },
+        {
+          "date": "2017-05-31",
+          "label": "2017-05",
+          "value": 7.954591,
+          "netInterestUSD": 262230567557.32,
+          "receiptsUSD": 3296594064581.43
+        },
+        {
+          "date": "2017-06-30",
+          "label": "2017-06",
+          "value": 7.890998,
+          "netInterestUSD": 260851331301.44,
+          "receiptsUSD": 3305682329550.79
+        },
+        {
+          "date": "2017-07-31",
+          "label": "2017-07",
+          "value": 7.771236,
+          "netInterestUSD": 258605358184.68,
+          "receiptsUSD": 3327724813768.45
+        },
+        {
+          "date": "2017-08-31",
+          "label": "2017-08",
+          "value": 7.752598,
+          "netInterestUSD": 257596271742.16,
+          "receiptsUSD": 3322708970967.38
+        },
+        {
+          "date": "2017-09-30",
+          "label": "2017-09",
+          "value": 7.927276,
+          "netInterestUSD": 262780801989.57,
+          "receiptsUSD": 3314893904524.18
+        },
+        {
+          "date": "2017-10-31",
+          "label": "2017-10",
+          "value": 8.047662,
+          "netInterestUSD": 267869851928.83,
+          "receiptsUSD": 3328542487128.93
+        },
+        {
+          "date": "2017-11-30",
+          "label": "2017-11",
+          "value": 8.217128,
+          "netInterestUSD": 274208999349.45,
+          "receiptsUSD": 3337041795103.05
+        },
+        {
+          "date": "2017-12-31",
+          "label": "2017-12",
+          "value": 8.19781,
+          "netInterestUSD": 274104806310.45,
+          "receiptsUSD": 3343634551203.73
+        },
+        {
+          "date": "2018-01-31",
+          "label": "2018-01",
+          "value": 8.26444,
+          "netInterestUSD": 277735020342.62,
+          "receiptsUSD": 3360602856862.13
+        },
+        {
+          "date": "2018-02-28",
+          "label": "2018-02",
+          "value": 8.367847,
+          "netInterestUSD": 279863710971.36,
+          "receiptsUSD": 3344512921419.33
+        },
+        {
+          "date": "2018-03-31",
+          "label": "2018-03",
+          "value": 8.481143,
+          "netInterestUSD": 283165156682.76,
+          "receiptsUSD": 3338761736505.09
+        },
+        {
+          "date": "2018-04-30",
+          "label": "2018-04",
+          "value": 8.573908,
+          "netInterestUSD": 290964401966.12,
+          "receiptsUSD": 3393603027974.14
+        },
+        {
+          "date": "2018-05-31",
+          "label": "2018-05",
+          "value": 8.825981,
+          "netInterestUSD": 297458508675.44,
+          "receiptsUSD": 3370259990935.95
+        },
+        {
+          "date": "2018-06-30",
+          "label": "2018-06",
+          "value": 9.084508,
+          "netInterestUSD": 304138222741.61,
+          "receiptsUSD": 3347877697324.07
+        },
+        {
+          "date": "2018-07-31",
+          "label": "2018-07",
+          "value": 9.389208,
+          "netInterestUSD": 313703196306.73,
+          "receiptsUSD": 3341103771682.56
+        },
+        {
+          "date": "2018-08-31",
+          "label": "2018-08",
+          "value": 9.607823,
+          "netInterestUSD": 320315975201.03,
+          "receiptsUSD": 3333908068517.76
+        },
+        {
+          "date": "2018-09-30",
+          "label": "2018-09",
+          "value": 9.754344,
+          "netInterestUSD": 324697247987.3,
+          "receiptsUSD": 3328745113974.11
+        },
+        {
+          "date": "2018-10-31",
+          "label": "2018-10",
+          "value": 9.809123,
+          "netInterestUSD": 328222680286.75,
+          "receiptsUSD": 3346095990077.22
+        },
+        {
+          "date": "2018-11-30",
+          "label": "2018-11",
+          "value": 9.871943,
+          "netInterestUSD": 330086460374.32,
+          "receiptsUSD": 3343682856477.14
+        },
+        {
+          "date": "2018-12-31",
+          "label": "2018-12",
+          "value": 10.218052,
+          "netInterestUSD": 340309153913.25,
+          "receiptsUSD": 3330470004485.5
+        },
+        {
+          "date": "2019-01-31",
+          "label": "2019-01",
+          "value": 10.402132,
+          "netInterestUSD": 344249450618.41003,
+          "receiptsUSD": 3309412462341.2603
+        },
+        {
+          "date": "2019-02-28",
+          "label": "2019-02",
+          "value": 10.409647,
+          "netInterestUSD": 345710126543.98,
+          "receiptsUSD": 3321055213470.18
+        },
+        {
+          "date": "2019-03-31",
+          "label": "2019-03",
+          "value": 10.458621,
+          "netInterestUSD": 349216932300.28,
+          "receiptsUSD": 3339034074445.19
+        },
+        {
+          "date": "2019-04-30",
+          "label": "2019-04",
+          "value": 10.46287,
+          "netInterestUSD": 351984755760.94,
+          "receiptsUSD": 3364131936549.84
+        },
+        {
+          "date": "2019-05-31",
+          "label": "2019-05",
+          "value": 10.683279,
+          "netInterestUSD": 361000970400.45,
+          "receiptsUSD": 3379121496679.2803
+        },
+        {
+          "date": "2019-06-30",
+          "label": "2019-06",
+          "value": 10.841049,
+          "netInterestUSD": 368248273381.73,
+          "receiptsUSD": 3396795635091.46
+        },
+        {
+          "date": "2019-07-31",
+          "label": "2019-07",
+          "value": 10.74864,
+          "netInterestUSD": 367912747376.19,
+          "receiptsUSD": 3422877199411.3
+        },
+        {
+          "date": "2019-08-31",
+          "label": "2019-08",
+          "value": 10.83204,
+          "netInterestUSD": 371726047294.96,
+          "receiptsUSD": 3431726910868.82
+        },
+        {
+          "date": "2019-09-30",
+          "label": "2019-09",
+          "value": 10.848832,
+          "netInterestUSD": 375607780432.02997,
+          "receiptsUSD": 3462195724014.29
+        },
+        {
+          "date": "2019-10-31",
+          "label": "2019-10",
+          "value": 10.885821,
+          "netInterestUSD": 376107774086.82,
+          "receiptsUSD": 3455024354974.38
+        },
+        {
+          "date": "2019-11-30",
+          "label": "2019-11",
+          "value": 10.795227,
+          "netInterestUSD": 375053024294.08997,
+          "receiptsUSD": 3474248641897.36
+        },
+        {
+          "date": "2019-12-31",
+          "label": "2019-12",
+          "value": 10.733535,
+          "netInterestUSD": 375402182092.32,
+          "receiptsUSD": 3497470005123.92
+        },
+        {
+          "date": "2020-01-31",
+          "label": "2020-01",
+          "value": 10.70429,
+          "netInterestUSD": 377837675925.9,
+          "receiptsUSD": 3529777870250.24
+        },
+        {
+          "date": "2020-02-29",
+          "label": "2020-02",
+          "value": 10.806759,
+          "netInterestUSD": 383689976546.15,
+          "receiptsUSD": 3550462941721.48
+        },
+        {
+          "date": "2020-03-31",
+          "label": "2020-03",
+          "value": 10.813541,
+          "netInterestUSD": 384790989173.83,
+          "receiptsUSD": 3558417942764.32
+        },
+        {
+          "date": "2020-04-30",
+          "label": "2020-04",
+          "value": 11.722828,
+          "netInterestUSD": 382719445968.06,
+          "receiptsUSD": 3264736420704.65
+        },
+        {
+          "date": "2020-05-31",
+          "label": "2020-05",
+          "value": 11.476501,
+          "netInterestUSD": 367997745929.76,
+          "receiptsUSD": 3206532479619.45
+        },
+        {
+          "date": "2020-06-30",
+          "label": "2020-06",
+          "value": 11.141801,
+          "netInterestUSD": 346889821990.69,
+          "receiptsUSD": 3113408815458.4
+        },
+        {
+          "date": "2020-07-31",
+          "label": "2020-07",
+          "value": 9.971663,
+          "netInterestUSD": 341584969876.23,
+          "receiptsUSD": 3425556691467.15
+        },
+        {
+          "date": "2020-08-31",
+          "label": "2020-08",
+          "value": 10.010662,
+          "netInterestUSD": 342446036780.04,
+          "receiptsUSD": 3420812990892.1
+        },
+        {
+          "date": "2020-09-30",
+          "label": "2020-09",
+          "value": 10.079271,
+          "netInterestUSD": 344706465519.63,
+          "receiptsUSD": 3419954180341.93
+        },
+        {
+          "date": "2020-10-31",
+          "label": "2020-10",
+          "value": 10.100092,
+          "netInterestUSD": 344628475059.64,
+          "receiptsUSD": 3412131988910.13
+        },
+        {
+          "date": "2020-11-30",
+          "label": "2020-11",
+          "value": 10.026237,
+          "netInterestUSD": 341543688409.12,
+          "receiptsUSD": 3406499169000.95
+        },
+        {
+          "date": "2020-12-31",
+          "label": "2020-12",
+          "value": 9.734424,
+          "netInterestUSD": 332607072096.27,
+          "receiptsUSD": 3416812995912.9697
+        },
+        {
+          "date": "2021-01-31",
+          "label": "2021-01",
+          "value": 9.508645,
+          "netInterestUSD": 326068158760.01,
+          "receiptsUSD": 3429175861102.39
+        },
+        {
+          "date": "2021-02-28",
+          "label": "2021-02",
+          "value": 9.203136,
+          "netInterestUSD": 321147044596.1,
+          "receiptsUSD": 3489539378228.52
+        },
+        {
+          "date": "2021-03-31",
+          "label": "2021-03",
+          "value": 8.937254,
+          "netInterestUSD": 314625984394.73,
+          "receiptsUSD": 3520387465779.9697
+        },
+        {
+          "date": "2021-04-30",
+          "label": "2021-04",
+          "value": 8.41043,
+          "netInterestUSD": 312675436896.69,
+          "receiptsUSD": 3717710652776.53
+        },
+        {
+          "date": "2021-05-31",
+          "label": "2021-05",
+          "value": 8.078174,
+          "netInterestUSD": 323740480127.09,
+          "receiptsUSD": 4007594984191.73
+        },
+        {
+          "date": "2021-06-30",
+          "label": "2021-06",
+          "value": 8.147577,
+          "netInterestUSD": 343499003150.51,
+          "receiptsUSD": 4215964982323.75
+        },
+        {
+          "date": "2021-07-31",
+          "label": "2021-07",
+          "value": 8.984688,
+          "netInterestUSD": 351702841218.03,
+          "receiptsUSD": 3914469018802.67
+        },
+        {
+          "date": "2021-08-31",
+          "label": "2021-08",
+          "value": 9.014509,
+          "netInterestUSD": 356940806992.68,
+          "receiptsUSD": 3959625824690.29
+        },
+        {
+          "date": "2021-09-30",
+          "label": "2021-09",
+          "value": 8.70652,
+          "netInterestUSD": 352264027527.21,
+          "receiptsUSD": 4045979567828.19
+        },
+        {
+          "date": "2021-10-31",
+          "label": "2021-10",
+          "value": 8.54652,
+          "netInterestUSD": 349741453815.67,
+          "receiptsUSD": 4092208962643.66
+        },
+        {
+          "date": "2021-11-30",
+          "label": "2021-11",
+          "value": 8.441146,
+          "netInterestUSD": 350633771210.03,
+          "receiptsUSD": 4153864398885.38
+        },
+        {
+          "date": "2021-12-31",
+          "label": "2021-12",
+          "value": 8.53994,
+          "netInterestUSD": 366746270789.15,
+          "receiptsUSD": 4294483072046.01
+        },
+        {
+          "date": "2022-01-31",
+          "label": "2022-01",
+          "value": 8.5939,
+          "netInterestUSD": 375975495695.07,
+          "receiptsUSD": 4374911065335.38
+        },
+        {
+          "date": "2022-02-28",
+          "label": "2022-02",
+          "value": 8.659733,
+          "netInterestUSD": 382455603837.63,
+          "receiptsUSD": 4416482752008.1
+        },
+        {
+          "date": "2022-03-31",
+          "label": "2022-03",
+          "value": 8.834802,
+          "netInterestUSD": 394389165671.37,
+          "receiptsUSD": 4464040589089.57
+        },
+        {
+          "date": "2022-04-30",
+          "label": "2022-04",
+          "value": 8.268107,
+          "netInterestUSD": 404186649942.79,
+          "receiptsUSD": 4888503002340.19
+        },
+        {
+          "date": "2022-05-31",
+          "label": "2022-05",
+          "value": 8.793722,
+          "netInterestUSD": 423307902039.62,
+          "receiptsUSD": 4813751261779.61
+        },
+        {
+          "date": "2022-06-30",
+          "label": "2022-06",
+          "value": 8.855077,
+          "netInterestUSD": 427285278317.39,
+          "receiptsUSD": 4825314007162.34
+        },
+        {
+          "date": "2022-07-31",
+          "label": "2022-07",
+          "value": 9.201779,
+          "netInterestUSD": 444689731365.75,
+          "receiptsUSD": 4832649361434.31
+        },
+        {
+          "date": "2022-08-31",
+          "label": "2022-08",
+          "value": 9.563705,
+          "netInterestUSD": 465560932903.53,
+          "receiptsUSD": 4867997679131.36
+        },
+        {
+          "date": "2022-09-30",
+          "label": "2022-09",
+          "value": 9.703874,
+          "netInterestUSD": 475120812162.87,
+          "receiptsUSD": 4896197477413.25
+        },
+        {
+          "date": "2022-10-31",
+          "label": "2022-10",
+          "value": 9.90114,
+          "netInterestUSD": 488210039259.04,
+          "receiptsUSD": 4930846523851.55
+        },
+        {
+          "date": "2022-11-30",
+          "label": "2022-11",
+          "value": 10.309911,
+          "netInterestUSD": 505365991310.1,
+          "receiptsUSD": 4901749301004.13
+        },
+        {
+          "date": "2022-12-31",
+          "label": "2022-12",
+          "value": 10.62985,
+          "netInterestUSD": 517668802086.4,
+          "receiptsUSD": 4869953771106.11
+        },
+        {
+          "date": "2023-01-31",
+          "label": "2023-01",
+          "value": 10.986444,
+          "netInterestUSD": 533080212430.97003,
+          "receiptsUSD": 4852163316820.91
+        },
+        {
+          "date": "2023-02-28",
+          "label": "2023-02",
+          "value": 11.2247,
+          "netInterestUSD": 541523472815.56,
+          "receiptsUSD": 4824391482867.89
+        },
+        {
+          "date": "2023-03-31",
+          "label": "2023-03",
+          "value": 11.713173,
+          "netInterestUSD": 564863064596.0,
+          "receiptsUSD": 4822459691115.58
+        },
+        {
+          "date": "2023-04-30",
+          "label": "2023-04",
+          "value": 12.69331,
+          "netInterestUSD": 583553527114.99,
+          "receiptsUSD": 4597331443710.99
+        },
+        {
+          "date": "2023-05-31",
+          "label": "2023-05",
+          "value": 13.024131,
+          "netInterestUSD": 588146981708.24,
+          "receiptsUSD": 4515825176268.21
+        },
+        {
+          "date": "2023-06-30",
+          "label": "2023-06",
+          "value": 13.765177,
+          "netInterestUSD": 615768744962.42,
+          "receiptsUSD": 4473380666769.71
+        },
+        {
+          "date": "2023-07-31",
+          "label": "2023-07",
+          "value": 14.007042,
+          "netInterestUSD": 627544399537.33,
+          "receiptsUSD": 4480206467021.9795
+        },
+        {
+          "date": "2023-08-31",
+          "label": "2023-08",
+          "value": 14.210029,
+          "netInterestUSD": 633711913531.73,
+          "receiptsUSD": 4459610272584.4
+        },
+        {
+          "date": "2023-09-30",
+          "label": "2023-09",
+          "value": 14.848589,
+          "netInterestUSD": 659182313283.3301,
+          "receiptsUSD": 4439360067722.32
+        },
+        {
+          "date": "2023-10-31",
+          "label": "2023-10",
+          "value": 15.299144,
+          "netInterestUSD": 692166512952.3301,
+          "receiptsUSD": 4524217200981.25
+        },
+        {
+          "date": "2023-11-30",
+          "label": "2023-11",
+          "value": 15.761852,
+          "netInterestUSD": 716681381153.78,
+          "receiptsUSD": 4546936427780.0
+        },
+        {
+          "date": "2023-12-31",
+          "label": "2023-12",
+          "value": 16.155456,
+          "netInterestUSD": 730437376244.34,
+          "receiptsUSD": 4521304710686.56
+        },
+        {
+          "date": "2024-01-31",
+          "label": "2024-01",
+          "value": 16.44233,
+          "netInterestUSD": 748345678085.87,
+          "receiptsUSD": 4551336048181.43
+        },
+        {
+          "date": "2024-02-29",
+          "label": "2024-02",
+          "value": 16.990798,
+          "netInterestUSD": 774839531465.73,
+          "receiptsUSD": 4560348207444.64
+        },
+        {
+          "date": "2024-03-31",
+          "label": "2024-03",
+          "value": 17.193859,
+          "netInterestUSD": 787341001376.27,
+          "receiptsUSD": 4579198852180.24
+        },
+        {
+          "date": "2024-04-30",
+          "label": "2024-04",
+          "value": 17.164038,
+          "netInterestUSD": 809606474611.81,
+          "receiptsUSD": 4716876584198.67
+        },
+        {
+          "date": "2024-05-31",
+          "label": "2024-05",
+          "value": 17.665484,
+          "netInterestUSD": 836113830161.16,
+          "receiptsUSD": 4733036690826.66
+        },
+        {
+          "date": "2024-06-30",
+          "label": "2024-06",
+          "value": 17.723217,
+          "netInterestUSD": 847342528474.81,
+          "receiptsUSD": 4780974706864.86
+        },
+        {
+          "date": "2024-07-31",
+          "label": "2024-07",
+          "value": 17.809428,
+          "netInterestUSD": 861119912310.74,
+          "receiptsUSD": 4835191281021.1
+        },
+        {
+          "date": "2024-08-31",
+          "label": "2024-08",
+          "value": 17.957426,
+          "netInterestUSD": 872479621508.9,
+          "receiptsUSD": 4858600811883.16
+        },
+        {
+          "date": "2024-09-30",
+          "label": "2024-09",
+          "value": 17.924297,
+          "netInterestUSD": 881650995035.46,
+          "receiptsUSD": 4918747839490.28
+        },
+        {
+          "date": "2024-10-31",
+          "label": "2024-10",
+          "value": 18.297296,
+          "netInterestUSD": 885970531161.45,
+          "receiptsUSD": 4842084534628.58
+        },
+        {
+          "date": "2024-11-30",
+          "label": "2024-11",
+          "value": 18.351397,
+          "netInterestUSD": 893531144983.09,
+          "receiptsUSD": 4869008798660.22
+        },
+        {
+          "date": "2024-12-31",
+          "label": "2024-12",
+          "value": 18.544487,
+          "netInterestUSD": 907588113953.02,
+          "receiptsUSD": 4894112852585.61
+        },
+        {
+          "date": "2025-01-31",
+          "label": "2025-01",
+          "value": 18.674142,
+          "netInterestUSD": 920651551691.2,
+          "receiptsUSD": 4930087539780.38
+        },
+        {
+          "date": "2025-02-28",
+          "label": "2025-02",
+          "value": 18.721116,
+          "netInterestUSD": 927703427310.91,
+          "receiptsUSD": 4955385154843.86
+        },
+        {
+          "date": "2025-03-31",
+          "label": "2025-03",
+          "value": 18.865111,
+          "netInterestUSD": 941544348135.53,
+          "receiptsUSD": 4990929316686.17
+        },
+        {
+          "date": "2025-04-30",
+          "label": "2025-04",
+          "value": 18.68114,
+          "netInterestUSD": 946181178340.94,
+          "receiptsUSD": 5064900541282.04
+        },
+        {
+          "date": "2025-05-31",
+          "label": "2025-05",
+          "value": 18.486125,
+          "netInterestUSD": 945099904747.22,
+          "receiptsUSD": 5112482411414.4
+        },
+        {
+          "date": "2025-06-30",
+          "label": "2025-06",
+          "value": 18.333076,
+          "netInterestUSD": 948310028884.91,
+          "receiptsUSD": 5172672844764.21
+        },
+        {
+          "date": "2025-07-31",
+          "label": "2025-07",
+          "value": 18.520587,
+          "netInterestUSD": 959512208724.17,
+          "receiptsUSD": 5180787264887.29
+        },
+        {
+          "date": "2025-08-31",
+          "label": "2025-08",
+          "value": 18.626333,
+          "netInterestUSD": 972026875339.61,
+          "receiptsUSD": 5218562849878.29
+        },
+        {
+          "date": "2025-09-30",
+          "label": "2025-09",
+          "value": 18.543145,
+          "netInterestUSD": 970660603077.72,
+          "receiptsUSD": 5234606126362.43
+        },
+        {
+          "date": "2025-10-31",
+          "label": "2025-10",
+          "value": 18.471081,
+          "netInterestUSD": 981222086686.81,
+          "receiptsUSD": 5312207239278.03
+        },
+        {
+          "date": "2025-11-30",
+          "label": "2025-11",
+          "value": 18.511273,
+          "netInterestUSD": 989696721116.71,
+          "receiptsUSD": 5346454135175.2
+        },
+        {
+          "date": "2025-12-31",
+          "label": "2025-12",
+          "value": 18.588961,
+          "netInterestUSD": 999421256627.73,
+          "receiptsUSD": 5376423442222.98
+        },
+        {
+          "date": "2026-01-31",
+          "label": "2026-01",
+          "value": 18.340065,
+          "netInterestUSD": 994593574486.25,
+          "receiptsUSD": 5423064545501.76
+        },
+        {
+          "date": "2026-02-28",
+          "label": "2026-02",
+          "value": 18.366092,
+          "netInterestUSD": 999071786819.36,
+          "receiptsUSD": 5439762546926.03
+        },
+        {
+          "date": "2026-03-31",
+          "label": "2026-03",
+          "value": 18.334893,
+          "netInterestUSD": 1000533242480.95,
+          "receiptsUSD": 5456989952971.5
+        },
+        {
+          "date": "2026-04-30",
+          "label": "2026-04",
+          "value": 18.510144,
+          "netInterestUSD": 1007722000012.94,
+          "receiptsUSD": 5444160759447.22
+        },
+        {
+          "date": "2026-05-31",
+          "label": "2026-05",
+          "value": 19.01955,
+          "netInterestUSD": 1028661728589.98,
+          "receiptsUSD": 5408444085563.88
+        },
+        {
+          "date": "2026-06-30",
+          "label": "2026-06",
+          "value": 19.502687,
+          "netInterestUSD": 1048807723369.85,
+          "receiptsUSD": 5377760215375.61
+        },
+        {
+          "date": "2026-07-31",
+          "label": "2026-07",
+          "value": 19.745026,
+          "netInterestUSD": 1060955167118.83,
+          "receiptsUSD": 5373278242508.23
+        },
+        {
+          "date": "2026-08-31",
+          "label": "2026-08",
+          "value": 19.555906,
+          "netInterestUSD": 1053866915010.16,
+          "receiptsUSD": 5388995656339.33
+        },
+        {
+          "date": "2026-09-30",
+          "label": "2026-09",
+          "value": 19.465369,
+          "netInterestUSD": 1051754218958.03,
+          "receiptsUSD": 5403207188116.35
+        }
+      ],
+      "unit": "%",
+      "source": "美國財政部 MTS Table 9 · Net Interest / Total Receipts",
+      "sourceUrl": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?filter=line_code_nbr%3Ain%3A%28120%2C320%29%2Crecord_date%3Agte%3A2015-01-01&sort=record_date&page%5Bsize%5D=1000",
+      "definition": "最近連續 12 個月聯邦淨利息支出合計 ÷ 同期財政收入合計 × 100%。分子為 MTS Table 9 的 Net Interest（320），分母為 Receipts 的 Total（120），均為每月實際美元值；非每月比例平均或財政年度累計。",
+      "frequency": "每月",
+      "periodType": "monthly",
+      "checkedAt": "2026-10-24T15:39:39.327331+00:00",
+      "lastSuccess": "2026-10-24T15:39:39.327331+00:00",
       "error": null
     }
   }
