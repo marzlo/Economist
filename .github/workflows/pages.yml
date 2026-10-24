@@ -27,6 +27,7 @@ jobs:
           python3 -B test-public-news.py
           node test-civic.cjs
           node test-civic-keywords.cjs
+          node test-weekly.cjs
       - name: Update public topic news recommendations
         run: python3 -B update-public-news.py
       - name: Fetch latest YouTube videos
