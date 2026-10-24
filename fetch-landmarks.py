@@ -49,8 +49,8 @@ def run():
             license_name = clean(metadata.get('LicenseShortName', {}).get('value', ''))
             if not (license_name.startswith(('CC BY', 'CC0')) or license_name == 'Public domain'):
                 raise ValueError('圖片授權需另行審查：' + license_name)
-            url = info.get('thumburl') or info['url']
-            if urllib.parse.urlsplit(url).hostname != 'upload.wikimedia.org':
+            url = urllib.parse.urljoin('https://commons.wikimedia.org', info.get('thumburl') or info['url'])
+            if urllib.parse.urlsplit(url).hostname not in ('upload.wikimedia.org', 'commons.wikimedia.org'):
                 raise ValueError('不是 Commons 圖片主機')
             req = urllib.request.Request(url, headers=HEADERS)
             with urllib.request.urlopen(req, timeout=45) as response:
