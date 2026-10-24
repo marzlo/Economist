@@ -1,5 +1,6 @@
 {
   "金門縣": {
+    "selection": "莒光樓",
     "name": "莒光樓",
     "file": "landmarks/landmark-22.jpg",
     "originalFile": "Juguanglou.JPG",
@@ -7,6 +8,259 @@
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "source": "https://commons.wikimedia.org/wiki/File:Juguanglou.JPG",
-    "changes": "Resized by Wikimedia; displayed cropped with a translucent overlay."
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "中央": {
+    "selection": "\"Presidential Office Building\" Taipei filetype:bitmap",
+    "name": "總統府",
+    "file": "landmarks/landmark-00.jpg",
+    "originalFile": "At the Budō activity in the New Park of Taihoku 1939.jpg",
+    "author": "李火增",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:At_the_Bud%C5%8D_activity_in_the_New_Park_of_Taihoku_1939.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "國際": {
+    "selection": "聯合國總部",
+    "name": "聯合國總部",
+    "file": "landmarks/landmark-01.jpg",
+    "originalFile": "UNO_New_York.JPG",
+    "author": "Wikimedia Commons contributor",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:UNO_New_York.JPG",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "臺北市": {
+    "selection": "Taipei 101 2009 amk.jpg",
+    "name": "台北101",
+    "file": "landmarks/landmark-02.jpg",
+    "originalFile": "Taipei 101 2009 amk.jpg",
+    "author": "AngMoKio",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Taipei_101_2009_amk.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "新北市": {
+    "selection": "紅毛城",
+    "name": "淡水紅毛城",
+    "file": "landmarks/landmark-03.jpg",
+    "originalFile": "國旗飄揚紅毛城.JPG",
+    "author": "Husky221",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E5%9C%8B%E6%97%97%E9%A3%84%E6%8F%9A%E7%B4%85%E6%AF%9B%E5%9F%8E.JPG",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "桃園市": {
+    "selection": "大溪老街",
+    "name": "大溪老街",
+    "file": "landmarks/landmark-04.jpg",
+    "originalFile": "大溪_和平路老街_Daxi_Old_Street_-_panoramio.jpg",
+    "author": "Foxy Who \\(^∀^)/",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%BA%AA_%E5%92%8C%E5%B9%B3%E8%B7%AF%E8%80%81%E8%A1%97_Daxi_Old_Street_-_panoramio.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "臺中市": {
+    "selection": "臺中國家歌劇院",
+    "name": "臺中國家歌劇院",
+    "file": "landmarks/landmark-05.jpg",
+    "originalFile": "National_Taichung_Theater_aerial_view_2019.jpg",
+    "author": "Wpcpey",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:National_Taichung_Theater_aerial_view_2019.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "臺南市": {
+    "selection": "赤崁樓",
+    "name": "赤崁樓",
+    "file": "landmarks/landmark-06.jpg",
+    "originalFile": "台南_赤崁樓.jpg",
+    "author": "Tess1223",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E5%8D%97_%E8%B5%A4%E5%B4%81%E6%A8%93.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "高雄市": {
+    "selection": "高雄85大樓",
+    "name": "高雄85大樓",
+    "file": "landmarks/landmark-07.jpg",
+    "originalFile": "Kaohsiung_Taiwan_Kaohsiung-85-Building-01.jpg",
+    "author": "CEphoto, Uwe Aranas",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kaohsiung_Taiwan_Kaohsiung-85-Building-01.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "基隆市": {
+    "selection": "基隆港",
+    "name": "基隆港",
+    "file": "landmarks/landmark-08.jpg",
+    "originalFile": "2022_Port_of_Keelung.jpg",
+    "author": "Taiwankengo",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:2022_Port_of_Keelung.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "新竹市": {
+    "selection": "迎曦門",
+    "name": "新竹東門城",
+    "file": "landmarks/landmark-09.jpg",
+    "originalFile": "竹塹城迎曦門_East_Gate_of_Hsinchu_City.jpg",
+    "author": "yunlin2003 from Yunlin County, Taiwan, the R.O.C.",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E7%AB%B9%E5%A1%B9%E5%9F%8E%E8%BF%8E%E6%9B%A6%E9%96%80_East_Gate_of_Hsinchu_City.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "嘉義市": {
+    "selection": "射日塔",
+    "name": "嘉義射日塔",
+    "file": "landmarks/landmark-10.jpg",
+    "originalFile": "TW_Chiayi_sun-shooting_tower_20051008.jpg",
+    "author": "\"User:Cloudcolors\"",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:TW_Chiayi_sun-shooting_tower_20051008.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "新竹縣": {
+    "selection": "內灣老街",
+    "name": "內灣老街",
+    "file": "landmarks/landmark-11.jpg",
+    "originalFile": "Neiwan_Old_Theatre.jpg",
+    "author": "Yuriy kosygin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Neiwan_Old_Theatre.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "苗栗縣": {
+    "selection": "魚藤坪斷橋",
+    "name": "龍騰斷橋",
+    "file": "landmarks/landmark-12.jpg",
+    "originalFile": "Yutengping_Bridge_(Longteng_Bridge)_Sanyi,_Miaoli_County,_(Taiwan).jpg",
+    "author": "Mk2010",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Yutengping_Bridge_(Longteng_Bridge)_Sanyi,_Miaoli_County,_(Taiwan).jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "彰化縣": {
+    "selection": "八卦山大佛",
+    "name": "八卦山大佛",
+    "file": "landmarks/landmark-13.jpg",
+    "originalFile": "彰化地標_八卦山大佛_遠拍.jpg",
+    "author": "Guan Zhen Chen",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E5%BD%B0%E5%8C%96%E5%9C%B0%E6%A8%99_%E5%85%AB%E5%8D%A6%E5%B1%B1%E5%A4%A7%E4%BD%9B_%E9%81%A0%E6%8B%8D.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "南投縣": {
+    "selection": "日月潭文武廟",
+    "name": "日月潭文武廟",
+    "file": "landmarks/landmark-14.jpg",
+    "originalFile": "Remote_views_of_the_Wen_Wu_Temple,_Sun_Moon_Lake_03_20251107.jpg",
+    "author": "阿道",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Remote_views_of_the_Wen_Wu_Temple,_Sun_Moon_Lake_03_20251107.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "雲林縣": {
+    "selection": "北港朝天宮",
+    "name": "北港朝天宮",
+    "file": "landmarks/landmark-15.jpg",
+    "originalFile": "北港朝天宮_三川殿.jpg",
+    "author": "蔡祐祐",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E5%8C%97%E6%B8%AF%E6%9C%9D%E5%A4%A9%E5%AE%AE_%E4%B8%89%E5%B7%9D%E6%AE%BF.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "嘉義縣": {
+    "selection": "阿里山森林鐵路",
+    "name": "阿里山森林鐵路",
+    "file": "landmarks/landmark-16.jpg",
+    "originalFile": "20240918_-_Alishan_Forest_Railway_-_15_(54379442709).jpg",
+    "author": "eugene_o",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:20240918_-_Alishan_Forest_Railway_-_15_(54379442709).jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "屏東縣": {
+    "selection": "鵝鑾鼻燈塔",
+    "name": "鵝鑾鼻燈塔",
+    "file": "landmarks/landmark-17.jpg",
+    "originalFile": "Eluanbi_Lighthouse_20240918-3.jpg",
+    "author": "Suicasmo",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Eluanbi_Lighthouse_20240918-3.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "宜蘭縣": {
+    "selection": "蘭陽博物館",
+    "name": "蘭陽博物館",
+    "file": "landmarks/landmark-18.jpg",
+    "originalFile": "宜蘭_蘭陽博物館_I-lan_LanYang_Museum_Taiwan.jpg",
+    "author": "Jerry Lai",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E5%AE%9C%E8%98%AD_%E8%98%AD%E9%99%BD%E5%8D%9A%E7%89%A9%E9%A4%A8_I-lan_LanYang_Museum_Taiwan.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "花蓮縣": {
+    "selection": "太魯閣國家公園",
+    "name": "太魯閣國家公園",
+    "file": "landmarks/landmark-19.jpg",
+    "originalFile": "Taiwan_2009_HuaLien_Taroko_Gorge_Biking_PB160057.jpg",
+    "author": "Tom Cheng",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Taiwan_2009_HuaLien_Taroko_Gorge_Biking_PB160057.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "臺東縣": {
+    "selection": "三仙台",
+    "name": "三仙台",
+    "file": "landmarks/landmark-20.jpg",
+    "originalFile": "Sansiantai_Bridge_02.jpg",
+    "author": "Bernard Gagnon",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sansiantai_Bridge_02.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "澎湖縣": {
+    "selection": "雙心石滬",
+    "name": "七美雙心石滬",
+    "file": "landmarks/landmark-21.jpg",
+    "originalFile": "Double-Heart_of_Stacked_Stones_20150721.jpg",
+    "author": "Zeze0729",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Double-Heart_of_Stacked_Stones_20150721.jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
+  },
+  "連江縣": {
+    "selection": "北海坑道 (南竿鄉)",
+    "name": "馬祖北海坑道",
+    "file": "landmarks/landmark-23.jpg",
+    "originalFile": "Beihai_Military_Tunnel_北海坑道_-_panoramio_(1).jpg",
+    "author": "lienyuan lee",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Beihai_Military_Tunnel_%E5%8C%97%E6%B5%B7%E5%9D%91%E9%81%93_-_panoramio_(1).jpg",
+    "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
   }
 }
