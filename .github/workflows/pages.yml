@@ -30,7 +30,7 @@ jobs:
           node test-civic-keywords.cjs
           node test-weekly.cjs
           node test-weekly-drafts.cjs
-          python3 -B test-weekly-generator.py
+          python3 -B test-weekly-publisher.py
       - name: Update public topic news recommendations
         run: python3 -B update-public-news.py
       - name: Fetch latest YouTube videos

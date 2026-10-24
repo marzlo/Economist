@@ -36,21 +36,17 @@ GitHub Pages 網址：https://marzlo.github.io/Economist/
 
 首頁「每週回望」呈現圖文卡片，連到 `dist/weekly/2026-10-12/` 的完整週報。第一期收錄 2026/10/12–10/18 的 18 篇不重複記事，依四條閱讀線整理，保留原文、來源影片、篩選與搜尋，並提供圖文 PDF、Markdown 及資料下載。圖像為 AI 生成的概念插畫。
 
-已發布週報為當時記事的閱讀快照，編輯 `issues.json`、更新影片或新聞不會自動改寫週報；後續週報由每週一排程或管理入口產生草稿，預覽確認後才發布。新增一期時建立新的日期資料夾、更新 `dist/weekly/index.json` 與首頁卡片，再執行 `node test-weekly.cjs`，確認日期、篇數、章節對應、引句與下載資源一致。來源篇數使用網站原有歸週方式（建立日期換算台灣時間；無建立時間則採記事日期），同篇跨議題記事先去重。週報獨立路由可返回首頁；開啟過的週報資源由 service worker 按需快取。
+已發布週報為當時記事的閱讀快照，編輯 `issues.json`、更新影片或新聞不會自動改寫週報；後續週報採對話中人工整理、確認後再發布，不會自動呼叫付費 AI API。新增一期時建立新的日期資料夾、更新 `dist/weekly/index.json` 與首頁卡片，再執行 `node test-weekly.cjs`，確認日期、篇數、章節對應、引句與下載資源一致。來源篇數使用網站原有歸週方式（建立日期換算台灣時間；無建立時間則採記事日期），同篇跨議題記事先去重。週報獨立路由可返回首頁；開啟過的週報資源由 service worker 按需快取。
 
 
-### 自動草稿與人工發布
+### 不使用付費 API 的週報流程
 
-首頁「每週回望 → 管理週報草稿」可選擇週一日期產生草稿，預設上個完整週，也可選本週（截至目前）。每週一台灣時間 09:10 的排程同樣只產生上週草稿；GitHub 排程可能延遲。空白週不呼叫 AI、不覆寫舊草稿。
+週報採對話中整理、預覽確認後再發布：在這個對話中提出「幫我整理上週記事」，產出並確認敘事內容後，可加入 `_weekly/drafts/` 供首頁「管理週報草稿」預覽、修改與發布。此流程不需要 AI API 金鑰，沒有每週自動生成排程，也沒有呼叫文字或圖片生成 API 的程式。聊天本身依使用者既有方案及用量限制使用。
 
-先在本儲存庫 **Settings → Secrets and variables → Actions → Repository secrets** 設定 `WEEKLY_AI_API_KEY`，值為 OpenAI API 金鑰。金鑰僅交給 GitHub Actions 的文字生成步驟，不進入網頁、原記事、提示或草稿。若已有 repository secret `OPENAI_API_KEY`，也可沿用，不必重建。API 用量由你的 OpenAI 專案計費，與 ChatGPT 訂閱分開。可選的 repository variable `WEEKLY_AI_MODEL` 預設為 `gpt-5-mini`，須支援 Responses API 與 JSON schema。瀏覽器沿用原有 GitHub 權杖（Contents、Actions 的 Read and write），不需把 AI 金鑰輸入網站。
+`scripts/weekly.py draft --week YYYY-MM-DD --narrative /path/to/editorial.json` 可將已整理的結構化文字與該週原記事組成草稿；它只讀本機檔案，驗證每篇記事歸入一章、引句逐字符合原文，再保存版本識別。所有草稿都保存在公開儲存庫，但不會直接更新正式週報。沒有稿件時保留現有內容，不用範例文字充當生成結果。
 
-1. 按「產生週報草稿」，等待工作流程完成，再開啟草稿。
-2. 展開修改欄位，可調整標題、導讀、分類名稱、章節敘事、概念圖與問題；引句只能逐字摘取原記事。重新預覽後按「儲存草稿」。
-3. 按「發布這一期」並確認，才會建立正式 HTML、原記事快照、Markdown 與 PDF，更新首頁和歷次週報清單並部署。重新產生或跨裝置編輯後，舊版預覽的發布請求會被拒絕，避免誤發未看過的版本。
+首頁管理入口沿用既有 GitHub 權杖（Contents、Actions 的 Read and write）。可預覽、修改、儲存已整理稿件，再按「發布這一期」；舊版本預覽的發布請求會被拒絕。`.github/workflows/weekly.yml` 只有手動 `publish`，必須提供所選週次與確切的已審閱草稿 `revision`，不接受生成操作。發布會建立正式 HTML、原記事快照、Markdown 與圖文 PDF，並更新首頁及歷次週報；現有封面插畫可重用，沒有額外圖片 API 呼叫。
 
-`_weekly/drafts/` 保存草稿，`_weekly/published/` 保存已發布的版本識別；這是公開儲存庫，草稿原始檔也公開，但尚未列入正式週報。發布可替換同一期，較早一期的重新發布不會把首頁從最新一期倒退。排程、生成錯誤或缺少金鑰都不會更新正式週報。
+`_weekly/drafts/` 保存草稿，`_weekly/published/` 保存已發布版本；編輯記事或更新影片不會自動改寫已發布週報。較早一期重新發布不會把首頁從最新一期倒退。發布失敗保留正式站原版，並與既有 Pages 更新共用部署佇列。PDF 使用 Playwright 1.62.1 與 Chrome/Chromium，工作流程自動準備套件與中文字型。
 
-`scripts/weekly.py` 呼叫文字 AI 並驗證每篇記事恰好分入一章、沒有虛構記事 ID，引用逐字符合原文，篇數與來源數皆由程式計算。無法驗證的 AI 回覆至多修正重試一次，失敗保留現有資料。記事過多會明確報錯，不截斷或靜默漏掉。網頁預覽使用隔離 iframe，AI 字串以文字呈現；封面先共用現有概念插畫，不會另外呼叫付費圖片生成。發布步驟用 Playwright 1.62.1 與 Chrome/Chromium 建立 PDF，工作流程自動準備套件及中文字型。正式發布與既有 Pages 工作流程共用部署佇列。
-
-驗證：`python3 -B test-weekly-generator.py`、`node test-weekly-drafts.cjs`，以及原有 `node test-weekly.cjs`。`weekly.yml` 支援手動 `generate` / `publish`；發布必須提供確切的已審閱草稿 `revision`。開發驗證提交訊息可用 `[weekly-draft]` 觸發一次真實生成，仍不會自動發布。
+驗證：`python3 -B test-weekly-publisher.py`、`node test-weekly-drafts.cjs`、`node test-weekly.cjs`。

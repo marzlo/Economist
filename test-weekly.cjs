@@ -13,7 +13,7 @@ for(const issue of catalog.issues){
  assert.deepEqual(issue.chapters.map(c=>c.notes),data.chapters.map(c=>c.ids.length));
  const html=fs.readFileSync(path.join(dir,'index.html'),'utf8');assert(!html.includes('設計預覽'));assert(!html.includes('尚未加入正式網站'));assert(html.includes('href="../../#weekly-review"'));
  const embedded=html.match(/const DATA=(\{[\s\S]*?\})\s*;\s*(?:const esc=|<\/script>)/);assert(embedded);assert.deepEqual(JSON.parse(embedded[1]),data);
- const quote=data.quote?.text||(!data.ai&&issue.id==='2026-10-12'?'人類的價值在於思考，思考重視的就是過程，也就是理解。':null);if(quote){assert(data.notes.some(n=>n.text.includes(quote)));if(!data.ai)assert(html.includes(quote))}
+ const quote=data.quote?.text||(!data.ai&&!data.editorial&&issue.id==='2026-10-12'?'人類的價值在於思考，思考重視的就是過程，也就是理解。':null);if(quote){assert(data.notes.some(n=>n.text.includes(quote)));if(!data.ai&&!data.editorial)assert(html.includes(quote))}
  for(const resource of ['weekly-review.pdf','weekly-review.md'])assert(fs.statSync(path.join(dir,resource)).size>0);assert(fs.existsSync(path.join(dir,'weekly-hero.png'))||fs.existsSync(path.join(root,'weekly/weekly-hero.png')));
  if(issue.id===catalog.latest){const home=fs.readFileSync(path.join(root,'index.html'),'utf8');assert(home.includes('id="weekly-review"'));assert(home.includes('href="'+issue.path+'"'))}
 }

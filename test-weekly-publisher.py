@@ -1,12 +1,10 @@
 import copy
 from datetime import date
 import importlib.util
-import io
 import json
 from pathlib import Path
 import tempfile
 import unittest
-import urllib.error
 from unittest.mock import patch
 
 BASE = Path(__file__).resolve().parent
@@ -46,6 +44,17 @@ class WeeklyTests(unittest.TestCase):
         self.clock.start()
         self.addCleanup(self.clock.stop)
 
+    def test_no_paid_generation_entrypoints(self):
+        source = (BASE / 'scripts/weekly.py').read_text()
+        workflow = (BASE / '.github/workflows/weekly.yml').read_text()
+        manager = (BASE / 'dist/weekly-manager.js').read_text()
+        self.assertNotIn('api.openai.com', source)
+        self.assertNotIn('urllib.request', source)
+        self.assertNotIn('WEEKLY_AI_API_KEY', source + workflow + manager)
+        self.assertNotIn('  schedule:', workflow)
+        self.assertIn('options: [publish]', workflow)
+        self.assertNotIn('weekly-generate', manager)
+
     def test_default_week_is_previous_complete_taipei_week(self):
         self.assertEqual(weekly.selected_week(), date(2026, 10, 12))
         self.assertEqual(weekly.selected_week('2026-10-19'), date(2026, 10, 19))
@@ -55,7 +64,7 @@ class WeeklyTests(unittest.TestCase):
             weekly.selected_week('2026-10-26')
 
     def test_coverage_quote_and_counts_are_verified(self):
-        data = weekly.make_draft(date(2026, 10, 12), self.notes, self.narrative, 'test-fixture')
+        data = weekly.make_draft(date(2026, 10, 12), self.notes, self.narrative)
         self.assertEqual(len(data['notes']), 3)
         self.assertEqual(data['videoCount'], 2)
         self.assertEqual(data['topicCount'], 3)
@@ -80,43 +89,11 @@ class WeeklyTests(unittest.TestCase):
 
     def test_outside_week_notes_are_rejected(self):
         with self.assertRaisesRegex(ValueError, '範圍'):
-            weekly.make_draft(date(2026, 10, 19), self.notes, self.narrative, 'test-fixture')
+            weekly.make_draft(date(2026, 10, 19), self.notes, self.narrative)
 
-    def test_api_failure_never_prints_key(self):
-        error = urllib.error.HTTPError('https://api.openai.com/v1/responses', 401, 'Unauthorized', {},
-                                      io.BytesIO(b'{"error":{"code":"invalid_api_key"}}'))
-        with patch.object(weekly.urllib.request, 'urlopen', side_effect=error):
-            with self.assertRaisesRegex(RuntimeError, 'invalid_api_key') as caught:
-                weekly.request_narrative(self.notes, 'gpt-5-mini', 'TEST_PRIVATE_SECRET')
-        self.assertNotIn('TEST_PRIVATE_SECRET', str(caught.exception))
 
-    def test_empty_week_never_calls_ai(self):
-        with patch.object(weekly.subprocess, 'check_output', return_value='[]'), patch.object(weekly, 'request_narrative') as request:
-            weekly.generate(date(2026, 10, 12))
-            request.assert_not_called()
 
-    def test_bad_model_output_is_retried_then_saved_only_as_draft(self):
-        root, before = self.make_root()
-        invalid = copy.deepcopy(self.narrative)
-        invalid['quote']['text'] = '非原文'
-        with patch.object(weekly, 'ROOT', root), patch.object(weekly.subprocess, 'check_output', return_value=json.dumps(self.notes)), \
-             patch.dict(weekly.os.environ, {'WEEKLY_AI_API_KEY': 'test-only'}), \
-             patch.object(weekly, 'request_narrative', side_effect=[invalid, self.narrative]) as request:
-            weekly.generate(date(2026, 10, 12))
-        self.assertEqual(request.call_count, 2)
-        self.assertEqual((root / 'dist/index.html').read_text(), '<article class="weekly-digest">OLD</article><a class="weekly-date" href="old">old</a>')
-        draft = json.loads((root / '_weekly/drafts/2026-10-12.json').read_text())
-        self.assertEqual(draft['status'], 'draft')
-        self.assertNotEqual(draft['revision'], before['revision'])
 
-    def test_missing_key_preserves_previous_draft(self):
-        root, data = self.make_root()
-        previous = (root / '_weekly/drafts/2026-10-12.json').read_bytes()
-        with patch.object(weekly, 'ROOT', root), patch.object(weekly.subprocess, 'check_output', return_value=json.dumps(self.notes)), \
-             patch.dict(weekly.os.environ, {}, clear=True):
-            with self.assertRaisesRegex(RuntimeError, 'WEEKLY_AI_API_KEY'):
-                weekly.generate(date(2026, 10, 12))
-        self.assertEqual((root / '_weekly/drafts/2026-10-12.json').read_bytes(), previous)
 
     def make_root(self):
         temp = tempfile.TemporaryDirectory()
@@ -126,7 +103,7 @@ class WeeklyTests(unittest.TestCase):
         (root / 'dist/weekly/template.html').write_text((BASE / 'dist/weekly/template.html').read_text())
         (root / 'dist/index.html').write_text('<article class="weekly-digest">OLD</article><a class="weekly-date" href="old">old</a>')
         weekly.write_json(root / 'dist/weekly/index.json', {'latest': '', 'issues': []})
-        data = weekly.make_draft(date(2026, 10, 12), self.notes, self.narrative, 'test-fixture')
+        data = weekly.make_draft(date(2026, 10, 12), self.notes, self.narrative)
         weekly.write_json(root / '_weekly/drafts/2026-10-12.json', data)
         return root, data
 

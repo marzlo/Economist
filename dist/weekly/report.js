@@ -7,7 +7,7 @@ const set=(id,text)=>document.getElementById(id).textContent=text;
 set('weekly-title',DATA.title);set('weekly-subtitle',DATA.subtitle);set('weekly-intro',DATA.intro);
 set('weekly-period','每週回望 / '+DATA.start+'—'+DATA.end+(DATA.inProgress?' / 截至 '+DATA.compiledAt:'')+(DATA.status==='draft'?' / 草稿預覽':''));
 set('weekly-range',DATA.start+' — '+DATA.end);set('weekly-note-count',notes.length);set('weekly-topic-count',DATA.topicCount);set('weekly-video-count',DATA.videoCount);
-set('weekly-method','整理範圍：'+DATA.start+'—'+DATA.end+'。依台灣時間建立日期歸週；無建立時間則採記事日期，同篇跨議題記事去重。依 '+DATA.compiledAt+' 已同步資料整理，後續記事編輯不會自動改寫本期內容。敘事、關係圖與延伸問題為 AI 輔助整理，引號保留原文；新聞與數字未另行查核。封面為共用概念插畫。');
+set('weekly-method','整理範圍：'+DATA.start+'—'+DATA.end+'。依台灣時間建立日期歸週；無建立時間則採記事日期，同篇跨議題記事去重。依 '+DATA.compiledAt+' 已同步資料整理，後續記事編輯不會自動改寫本期內容。敘事、關係圖與延伸問題為整理，引號保留原文；新聞與數字未另行查核。封面為共用概念插畫。');
 const days=Array.from({length:7},(_,i)=>{const d=new Date(DATA.start+'T00:00:00Z');d.setUTCDate(d.getUTCDate()+i);return d.toISOString().slice(0,10)}),counts=days.map(day=>notes.filter(n=>n.statDate===day).length),max=Math.max(1,...counts);
 document.getElementById('days').innerHTML=counts.map((n,i)=>`<div class="day" aria-label="${esc(days[i])}，${n}篇記事"><b>${n}</b><i style="height:${n/max*78}px"></i><small>${esc(days[i].slice(5).replace('-','/'))}</small></div>`).join('');
 const icon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" aria-hidden="true"><path d="M4 4h6v6H4ZM14 4h6v6h-6ZM9 15h6v6H9ZM7 10v3h10v-3M12 13v2"/></svg>';
