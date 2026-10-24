@@ -18,3 +18,6 @@ for(const issue of catalog.issues){
  if(issue.id===catalog.latest){const home=fs.readFileSync(path.join(root,'index.html'),'utf8');assert(home.includes('id="weekly-review"'));assert(home.includes('href="'+issue.path+'"'))}
 }
 console.log('Weekly archive validated: dates, unique notes, chapter coverage, source counts, original quote, downloads and homepage route');
+
+const latest=catalog.issues.find(i=>i.id===catalog.latest),latestData=JSON.parse(fs.readFileSync(path.join(root,latest.path,'report-data.json')));
+if(latestData.cover){const image=path.join(root,latest.path,latestData.cover.file);assert(fs.existsSync(image));assert(fs.readFileSync(path.join(root,'index.html'),'utf8').includes('src="'+latest.path+latestData.cover.file+'"'));const previous=catalog.issues.find(i=>i.id!==latest.id);if(previous){const prior=path.join(root,previous.path,'weekly-hero.png');if(fs.existsSync(prior))assert(!fs.readFileSync(image).equals(fs.readFileSync(prior)),'Consecutive weekly covers must differ')}}

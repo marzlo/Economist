@@ -72,3 +72,9 @@ GitHub Pages 網址：https://marzlo.github.io/Economist/
 來源可能延遲公布；「最新統計期間」與「最後成功取得時間」分開顯示。
 同日期新資料覆蓋舊值，不混入記事摘錄、預測或示意數字。
 執行 `python3 -B test-observations.py` 檢查期間差分、單位、缺月、歷史修訂及失敗保留。
+
+每期人工整理週報時，另外準備符合本期主題的封面，放在
+`dist/weekly/YYYY-MM-DD/weekly-hero.png`，並在草稿設定
+`cover: {"file": "weekly-hero.png", "alt": "本期插畫說明"}`。
+發布器會保留這份封面設定，首頁、內頁與 PDF 使用同一期圖片；
+不覆寫其他期的封面，也不透過排程呼叫付費圖片生成 API。

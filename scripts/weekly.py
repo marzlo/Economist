@@ -145,7 +145,11 @@ def markdown(data):
 def render(data):
     template = (ROOT / 'dist/weekly/template.html').read_text()
     values = {'__TITLE__': html.escape(data['title']), '__DATA__': json.dumps(data, ensure_ascii=False).replace('<', '\\u003c')}
-    return re.sub(r'__TITLE__|__DATA__', lambda match: values[match.group()], template)
+    page = re.sub(r'__TITLE__|__DATA__', lambda match: values[match.group()], template)
+    if data.get('cover', {}).get('file') == 'weekly-hero.png':
+        page = page.replace('src="../weekly-hero.png"', 'src="weekly-hero.png"', 1)
+        page = page.replace('alt="紙張拼貼概念插畫：能源船、制度與城市之橋，連到吉他、筆記與思考的人"', 'alt="' + html.escape(data['cover'].get('alt', ''), quote=True) + '"', 1)
+    return page
 
 def pdf(path):
     browser = next((shutil.which(name) for name in ['google-chrome', 'chromium', 'chromium-browser'] if shutil.which(name)), None)
@@ -167,9 +171,11 @@ def pdf(path):
 def home_card(data):
     esc = lambda value: html.escape(str(value), quote=True)
     target = 'weekly/' + data['start'] + '/'
+    image = 'weekly/' + data['start'] + '/weekly-hero.png' if data.get('cover', {}).get('file') == 'weekly-hero.png' else 'weekly/weekly-hero.png'
+    image_alt = data.get('cover', {}).get('alt', '能源、制度與人的創作，概念拼貼插畫')
     tags = ''.join('<span>' + esc(c['name']) + ' · ' + str(len(c['ids'])) + '</span>' for c in data['chapters'])
     quote = ('<blockquote>「' + esc(data['quote']['text']) + '」<small>— 記事原文</small></blockquote>') if data.get('quote') else ''
-    return f'''<article class="weekly-digest"><a class="weekly-digest-image" href="{target}" aria-label="閱讀每週回望"><img src="weekly/weekly-hero.png" width="1942" height="809" alt="能源、制度與人的創作，概念拼貼插畫" loading="lazy" decoding="async"><span>AI 生成概念插畫</span></a><div class="weekly-digest-copy"><div class="weekly-eyebrow">每週回望 / {data['start']}—{data['end']}</div><h3><a href="{target}">{esc(data['title'])}</a></h3><p>{esc(data['subtitle'])}</p><div class="weekly-digest-tags">{tags}</div>{quote}<div class="weekly-digest-bottom"><span>{len(data['notes'])} 篇記事 · {data['topicCount']} 個議題 · {data['videoCount']} 部影片</span><a class="weekly-read" href="{target}">閱讀這期整理 →</a></div></div></article>'''
+    return f'''<article class="weekly-digest"><a class="weekly-digest-image" href="{target}" aria-label="閱讀每週回望"><img src="{image}" width="1942" height="809" alt="{esc(image_alt)}" loading="lazy" decoding="async"><span>AI 生成概念插畫</span></a><div class="weekly-digest-copy"><div class="weekly-eyebrow">每週回望 / {data['start']}—{data['end']}</div><h3><a href="{target}">{esc(data['title'])}</a></h3><p>{esc(data['subtitle'])}</p><div class="weekly-digest-tags">{tags}</div>{quote}<div class="weekly-digest-bottom"><span>{len(data['notes'])} 篇記事 · {data['topicCount']} 個議題 · {data['videoCount']} 部影片</span><a class="weekly-read" href="{target}">閱讀這期整理 →</a></div></div></article>'''
 
 def publish(start, revision):
     data = read_json(ROOT / '_weekly/drafts' / (start.isoformat() + '.json'))
@@ -180,8 +186,11 @@ def publish(start, revision):
         raise ValueError('草稿日期不正確')
     # Derived metrics and chapter ownership are recomputed, never taken from edited counts.
     data = {**make_draft(start, data['notes'], clean),
-            'revision': revision, 'compiledAt': data['compiledAt'], 'status': 'published'}
+            'revision': revision, 'compiledAt': data['compiledAt'], 'status': 'published',
+            **({'cover': data['cover']} if data.get('cover') else {})}
     target = ROOT / 'dist/weekly' / start.isoformat()
+    if data.get('cover', {}).get('file') == 'weekly-hero.png' and not (target / 'weekly-hero.png').is_file():
+        raise ValueError('本期封面圖片不存在，請先準備封面再發布')
     previous = {p.name: p.read_bytes() for p in target.iterdir()} if target.exists() else None
     target.mkdir(parents=True, exist_ok=True)
     try:

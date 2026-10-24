@@ -2,6 +2,11 @@
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safe=value=>{try{const u=new URL(value);return ['https:','http:'].includes(u.protocol)?u.href:null}catch{return null}};
 const color=c=>/^#[0-9a-f]{6}$/i.test(c.color)?c.color:'#5e7c62';
+if(DATA.cover?.file==='weekly-hero.png'&&/^\d{4}-\d{2}-\d{2}$/.test(DATA.start)){
+ const cover=document.querySelector('.cover');const img=cover.querySelector('img');
+ img.src='../'+DATA.start+'/weekly-hero.png';img.alt=DATA.cover.alt||'本期概念插畫';
+ cover.classList.add('issue-cover');
+}
 const notes=DATA.notes,noteMap=new Map(notes.map(n=>[n.id,n]));
 const set=(id,text)=>document.getElementById(id).textContent=text;
 set('weekly-title',DATA.title);set('weekly-subtitle',DATA.subtitle);set('weekly-intro',DATA.intro);
