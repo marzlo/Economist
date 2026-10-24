@@ -51,7 +51,7 @@ def run():
                 raise ValueError('圖片授權需另行審查：' + license_name)
             url = urllib.parse.urljoin('https://commons.wikimedia.org', info.get('thumburl') or info['url'])
             if urllib.parse.urlsplit(url).hostname not in ('upload.wikimedia.org', 'commons.wikimedia.org'):
-                raise ValueError('不是 Commons 圖片主機')
+                raise ValueError('不是 Commons 圖片主機：' + repr(url))
             req = urllib.request.Request(url, headers=HEADERS)
             with urllib.request.urlopen(req, timeout=45) as response:
                 content_type = response.headers.get_content_type()
