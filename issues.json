@@ -1048,7 +1048,28 @@
         "status": "待查證"
       }
     ],
-    "entries": []
+    "entries": [
+      {
+        "title": "蔣萬安提松機改建AI園區最新網路民調出爐 61%贊成、38%反對 - UDN",
+        "region": "auto",
+        "country": "auto",
+        "createdAt": "2026-10-24T02:02:04.159Z",
+        "updatedAt": "2026-10-24T02:02:04.159Z",
+        "id": "8427a110-f350-40cb-974c-7837b72f7de0",
+        "date": "2026-10-24",
+        "label": "筆記",
+        "text": "來源重點：\n\n與追蹤方向的關聯：",
+        "links": [
+          {
+            "title": "蔣萬安提松機改建AI園區最新網路民調出爐 61%贊成、38%反對 - UDN",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBNdjlUa3hDakpfcWNTQmNvTllPTll3Y2JKQ1VBeHRiMFNXdE1ibDlaOWhQMzlDd1BrWFhQQTI3TXBDcjVFaUt0dzFtdmhTbG5SRVRJ0gFYQVVfeXFMTTdERnR0THNPOEJhNzEyRkxjSUN2UTJxWHBOalloc2FEc2pIaEJMd1Y2MzFqWkJ3T1FQM28zdzZrTGZDVHBuX0l1OExpV3VkUVFWSXdObmNEUA?oc=5"
+          }
+        ],
+        "issueIds": [
+          "civic-songshan-airport"
+        ]
+      }
+    ]
   },
   {
     "id": "6888a325-cefe-4010-ac34-0830f50332bb",
