@@ -66,40 +66,51 @@ def diesel():
 
 
 def parse_treasury(rows):
-    monthly = {}
+    interest, receipts = {}, {}
     for row in rows:
-        if row.get('classification_desc', '').strip().lower() != 'net interest':
+        code, label = str(row.get('line_code_nbr', '')), row.get('classification_desc', '').strip().lower()
+        if code == '320' and label == 'net interest':
+            target = interest
+        elif code == '120' and label == 'total' and row.get('sequence_number_cd') == '1.8':
+            target = receipts  # Table 9 has a second Total: outlays (340), not receipts.
+        else:
             continue
         day = row['record_date']
         value = number(row['current_month_rcpt_outly_amt'])
-        if day in monthly and monthly[day] != value:
-            raise ValueError('同月淨利息資料不一致')
-        monthly[day] = value
-    dates = sorted(monthly)
+        if day in target and target[day] != value:
+            raise ValueError('同月財政資料不一致')
+        target[day] = value
+    if interest.keys() != receipts.keys():
+        raise ValueError('淨利息與財政收入月份不一致，保留原資料')
+    dates = sorted(interest)
     if len(dates) < 12:
-        raise ValueError('淨利息資料不足 12 個月')
+        raise ValueError('淨利息與財政收入不足 12 個月')
     points = []
     for end in range(11, len(dates)):
         window = dates[end-11:end+1]
         months = [int(d[:4]) * 12 + int(d[5:7]) for d in window]
         if months[-1] - months[0] != 11:
-            raise ValueError('淨利息資料缺月，保留原資料')
+            raise ValueError('財政資料缺月，保留原資料')
+        numerator = sum(interest[d] for d in window)
+        denominator = sum(receipts[d] for d in window)
+        if denominator <= 0:
+            raise ValueError('同期財政收入必須大於零')
         points.append({'date': window[-1], 'label': window[-1][:7],
-                       'value': round(sum(monthly[d] for d in window) / 1e9, 6),
-                       'monthlyAmountUSD': monthly[window[-1]]})
+                       'value': round(numerator / denominator * 100, 6),
+                       'netInterestUSD': numerator, 'receiptsUSD': denominator})
     return points
 
 
 def treasury():
-    params = urllib.parse.urlencode({'filter': 'classification_desc:eq:Net Interest,record_date:gte:2015-01-01',
+    params = urllib.parse.urlencode({'filter': 'line_code_nbr:in:(120,320),record_date:gte:2015-01-01',
                                      'sort': 'record_date', 'page[size]': '1000'})
     url = TREASURY + '?' + params
     data = json.loads(download(url))
     if int(data.get('meta', {}).get('total-pages', 1)) != 1:
-        raise ValueError('淨利息 API 分頁增加，需更新抓取方式')
-    return {'points': parse_treasury(data['data']), 'unit': '十億美元',
-            'source': '美國財政部 MTS Table 9 · Net Interest', 'sourceUrl': url,
-            'definition': '聯邦淨利息支出，依 MTS Table 9 每月實際值加總最近連續 12 個月；單位為十億美元，非單月或財政年度累計。',
+        raise ValueError('財政 API 分頁增加，需更新抓取方式')
+    return {'points': parse_treasury(data['data']), 'unit': '%',
+            'source': '美國財政部 MTS Table 9 · Net Interest / Total Receipts', 'sourceUrl': url,
+            'definition': '最近連續 12 個月聯邦淨利息支出合計 ÷ 同期財政收入合計 × 100%。分子為 MTS Table 9 的 Net Interest（320），分母為 Receipts 的 Total（120），均為每月實際美元值；非每月比例平均或財政年度累計。',
             'frequency': '每月', 'periodType': 'monthly'}
 
 
@@ -246,7 +257,7 @@ def refresh(old, fetchers, now=None):
 
 def main():
     old = json.loads(DEST.read_text()) if DEST.exists() else {}
-    output = refresh(old, {'diesel': diesel, 'treasury': treasury, 'tsmc': lambda: tsmc(old.get('series', {}).get('tsmc', {}))})
+    output = refresh(old, {'diesel': diesel, 'treasury-share': treasury, 'tsmc': lambda: tsmc(old.get('series', {}).get('tsmc', {}))})
     temp = DEST.with_suffix('.tmp')
     temp.write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n')
     os.replace(temp, DEST)

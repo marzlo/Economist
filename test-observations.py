@@ -40,17 +40,33 @@ class Observations(unittest.TestCase):
         q4 = M.parse_mops(financials(quarter=4), 2025, 4)
         self.assertEqual(q4['revenueYTD'], 100000)
 
-    def test_net_interest_trailing_months_not_fytd(self):
-        rows = [{'classification_desc': 'Net Interest', 'record_date': f'2024-{m:02d}-28',
-                 'current_month_rcpt_outly_amt': str(m * 1e9), 'current_fytd_rcpt_outly_amt': '999999999999'} for m in range(1, 13)]
-        rows.append({'classification_desc': 'Interest', 'record_date': '2024-12-28', 'current_month_rcpt_outly_amt': '999999999999'})
-        self.assertEqual(M.parse_treasury(rows)[0]['value'], 78)
+    def test_interest_share_uses_matching_12_month_sums(self):
+        rows = []
+        for m in range(1, 13):
+            for code, label, seq, value in [('320', 'Net Interest', '2.18', m * 1e9), ('120', 'Total', '1.8', m * 10e9), ('340', 'Total', '2.20', 999999999999)]:
+                rows.append({'line_code_nbr': code, 'classification_desc': label, 'sequence_number_cd': seq,
+                             'record_date': f'2024-{m:02d}-28', 'current_month_rcpt_outly_amt': str(value),
+                             'current_fytd_rcpt_outly_amt': '999999999999'})
+        point = M.parse_treasury(rows)[0]
+        self.assertEqual(point['value'], 10)
+        self.assertEqual(point['netInterestUSD'], 78e9)
+        self.assertEqual(point['receiptsUSD'], 780e9)
+        # The required ratio is of sums, not a simple average of monthly ratios.
+        varied = copy.deepcopy(rows)
+        next(r for r in varied if r['line_code_nbr'] == '120')['current_month_rcpt_outly_amt'] = '100000000000'
+        self.assertAlmostEqual(M.parse_treasury(varied)[0]['value'], 78 / 870 * 100, places=6)
+        missing = [r for r in rows if not (r['line_code_nbr'] == '120' and r['record_date'] == '2024-06-28')]
+        with self.assertRaises(ValueError):
+            M.parse_treasury(missing)
         gap = [r for r in rows if r['record_date'] != '2024-06-28']
         with self.assertRaises(ValueError):
             M.parse_treasury(gap)
-        gap.append({'classification_desc': 'Net Interest', 'record_date': '2025-02-28', 'current_month_rcpt_outly_amt': '100'})
+        zero = copy.deepcopy(rows)
+        for r in zero:
+            if r['line_code_nbr'] == '120':
+                r['current_month_rcpt_outly_amt'] = '0'
         with self.assertRaises(ValueError):
-            M.parse_treasury(gap)
+            M.parse_treasury(zero)
 
     def test_merge_preserves_history_and_revisions(self):
         self.assertEqual(M.merge_points([{'date': '2024-01-01', 'value': 3}], [{'date': '2024-01-01', 'value': 4}, {'date': '2024-02-01', 'value': 5}]),
