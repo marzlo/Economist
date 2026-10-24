@@ -1,0 +1,10 @@
+const assert=require('node:assert/strict'),K=require('./dist/civic-keywords.js');
+assert.equal(K.mergeKeywords('自訂詞, 台南光電',['臺南光電','太陽光電']),'自訂詞, 台南光電, 太陽光電');
+assert.deepEqual(K.parseSuggestions('```json\n{"keywords":[{"term":"臺南光電","reason":"限縮地區"},"台南光電","太陽光電"]}\n```'),[{term:'臺南光電',reason:'限縮地區'},{term:'太陽光電',reason:''}]);
+assert.throws(()=>K.parseSuggestions('不是JSON'),/JSON/);
+assert.throws(()=>K.parseSuggestions('{"keywords":[null,5,"a","a,b"]}'),/沒有可使用/);
+assert.equal(K.parseSuggestions({keywords:Array.from({length:12},(_,i)=>'光電'+i)}).length,8);
+assert.throws(()=>K.buildPrompt({name:' '}),/議題名稱/);
+const prompt=K.buildPrompt({name:'光電',scope:'臺南市',note:'追蹤土地使用',criteria:'公開環評',keys:'自訂詞'});
+for(const text of ['臺南市','光電','追蹤土地使用','公開環評','自訂詞'])assert(prompt.includes(text));
+console.log('Keyword context, JSON validation, limits, aliases and non-destructive merging passed');
