@@ -11,14 +11,14 @@
     "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
   },
   "中央": {
-    "selection": "intitle:\"Presidential Office Building\" intitle:Taipei filetype:bitmap",
+    "selection": "Taipei Taiwan Presidential-Office-Building-01.jpg",
     "name": "總統府",
     "file": "landmarks/landmark-00.jpg",
-    "originalFile": "Taipei Taiwan Presidential-Office-Building-10.jpg",
+    "originalFile": "Taipei Taiwan Presidential-Office-Building-01.jpg",
     "author": "CEphoto, Uwe Aranas",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_Presidential-Office-Building-10.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_Presidential-Office-Building-01.jpg",
     "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
   },
   "國際": {
