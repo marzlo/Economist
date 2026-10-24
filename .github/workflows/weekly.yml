@@ -9,7 +9,7 @@ on:
         default: publish
         required: true
       week:
-        description: 'Reviewed week starting Monday, YYYY-MM-DD'
+        description: 'Reviewed week starting Sunday, YYYY-MM-DD'
         required: false
         default: ''
       revision:

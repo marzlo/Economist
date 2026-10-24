@@ -1,7 +1,8 @@
 (()=>{
 const dateString=d=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).format(d);
 function monday(value){const d=new Date(value+'T00:00:00Z');d.setUTCDate(d.getUTCDate()-(d.getUTCDay()+6)%7);return d.toISOString().slice(0,10)}
-function previousWeek(value){const d=new Date(monday(value)+'T00:00:00Z');d.setUTCDate(d.getUTCDate()-7);return d.toISOString().slice(0,10)}
+function weekStart(value){const d=new Date(value+'T00:00:00Z');d.setUTCDate(d.getUTCDate()-d.getUTCDay());return d.toISOString().slice(0,10)}
+function previousWeek(value){const d=new Date(weekStart(value)+'T00:00:00Z');d.setUTCDate(d.getUTCDate()-7);return d.toISOString().slice(0,10)}
 function validate(data){
  if(!data||!/^\d{4}-\d{2}-\d{2}$/.test(data.start)||!Array.isArray(data.notes)||!data.notes.length||!Array.isArray(data.chapters))throw Error('草稿格式不正確');
  const ids=new Set(data.notes.map(n=>n.id)),seen=new Set();if(ids.size!==data.notes.length)throw Error('原記事重複');
@@ -14,5 +15,5 @@ function validate(data){
  return data;
 }
 function previewDocument(template,data,base){validate(data);const serialized=JSON.stringify({...data,status:'draft'}).replace(/</g,'\\u003c');return template.replace('__TITLE__','週報草稿預覽').replace('__DATA__',()=>serialized).replace('<head>','<head><base href="'+new URL('weekly/draft/',base).href+'">')}
-const api={dateString,monday,previousWeek,validate,previewDocument};if(typeof module!=='undefined')module.exports=api;else globalThis.WeeklyDrafts=api;
+const api={dateString,monday,weekStart,previousWeek,validate,previewDocument};if(typeof module!=='undefined')module.exports=api;else globalThis.WeeklyDrafts=api;
 })();

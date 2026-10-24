@@ -22,12 +22,12 @@ def today():
     return datetime.now(ZoneInfo('Asia/Taipei')).date()
 
 def week_start(value):
-    return value - timedelta(days=value.weekday())
+    return value - timedelta(days=(value.weekday() + 1) % 7)
 
 def selected_week(value=None):
     start = date.fromisoformat(value) if value else week_start(today()) - timedelta(days=7)
-    if start.weekday() != 0 or start > week_start(today()):
-        raise ValueError('請選擇本週或更早一週的星期一')
+    if start.weekday() != 6 or start > week_start(today()):
+        raise ValueError('請選擇本週或更早一週的星期日')
     return start
 
 def read_json(path, default=None):

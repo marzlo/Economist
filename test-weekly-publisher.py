@@ -56,8 +56,10 @@ class WeeklyTests(unittest.TestCase):
         self.assertNotIn('weekly-generate', manager)
 
     def test_default_week_is_previous_complete_taipei_week(self):
-        self.assertEqual(weekly.selected_week(), date(2026, 10, 12))
-        self.assertEqual(weekly.selected_week('2026-10-19'), date(2026, 10, 19))
+        self.assertEqual(weekly.selected_week(), date(2026, 10, 11))
+        self.assertEqual(weekly.selected_week('2026-10-18'), date(2026, 10, 18))
+        with patch.object(weekly, 'today', return_value=date(2026, 10, 25)):
+            self.assertEqual(weekly.selected_week(), date(2026, 10, 18))
         with self.assertRaises(ValueError):
             weekly.selected_week('2026-10-20')
         with self.assertRaises(ValueError):

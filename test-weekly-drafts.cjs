@@ -1,5 +1,5 @@
 const assert=require('node:assert/strict'),M=require('./dist/weekly-drafts-model.js'),fs=require('node:fs');
-assert.equal(M.monday('2026-10-24'),'2026-10-19');assert.equal(M.previousWeek('2026-10-24'),'2026-10-12');assert.equal(M.previousWeek('2027-01-01'),'2026-12-21');
+assert.equal(M.monday('2026-10-24'),'2026-10-19');assert.equal(M.previousWeek('2026-10-24'),'2026-10-11');assert.equal(M.previousWeek('2027-01-01'),'2026-12-20');
 const old=JSON.parse(fs.readFileSync('dist/weekly/2026-10-12/report-data.json'));
 const data={...old,title:'測試週報',subtitle:'測試',intro:'測試導讀',quote:null,questions:['下一步？']};
 assert.equal(M.validate(data).notes.length,old.notes.length);
@@ -11,3 +11,5 @@ assert(!doc.includes('</script><img'));assert(doc.includes('base href="https://e
 console.log('Draft model passed: Taipei weeks, source coverage, literal quotations and safe preview serialization');
 const onlyJson=M.previewDocument('__DATA__',malicious,'https://example.com/');assert.equal(JSON.parse(onlyJson).title,malicious.title);
 const dollar=structuredClone(data);dollar.title='價格 $& $\' $`';assert.equal(JSON.parse(M.previewDocument('__DATA__',dollar,'https://example.com/')).title,dollar.title);
+
+assert.equal(M.weekStart('2026-10-24'),'2026-10-18');assert.equal(M.previousWeek('2026-10-25'),'2026-10-18');
