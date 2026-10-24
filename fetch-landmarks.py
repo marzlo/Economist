@@ -30,6 +30,7 @@ def run():
     credits_path = folder / 'credits.json'
     credits = json.loads(credits_path.read_text()) if credits_path.exists() else {}
     failures = []
+    report = {}
     for index, (scope, landmark) in enumerate(catalog.items()):
         if landmark.get('illustration'):
             continue
@@ -69,8 +70,10 @@ def run():
             print(scope, landmark['name'], license_name, len(image), flush=True)
         except Exception as error:
             failures.append(scope)
+            report[scope] = type(error).__name__ + ': ' + str(error)
             print('Landmark unavailable:', scope, type(error).__name__, str(error), flush=True)
         time.sleep(1)
+    (folder / 'fetch-report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
     credits_path.write_text(json.dumps(credits, ensure_ascii=False, indent=2) + '\n')
     if failures:
         raise RuntimeError('Missing landmark photographs: ' + ', '.join(failures))
