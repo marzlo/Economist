@@ -1,0 +1,15 @@
+(()=>{
+const root=document.getElementById('long-term-observations');
+if(!root)return;
+const trackers=[
+ {name:'AI 投資能不能回本？',category:'產業與資金',metric:'台積電資本支出／營收',frequency:'每季',definition:'同一季的資本支出除以合併營收，以相同幣別計算；搭配營收年增率與自由現金流。',question:'支出增加之後，收入與現金流有沒有跟上？',caution:'公司整體資本支出包含其他用途，不能全部當作 AI 投資。季度波動需搭配全年趨勢。',source:'台積電季度財報',url:'https://investor.tsmc.com/chinese/quarterly-results',ids:['0480b43f-1e59-437d-9f5e-7981596ddb1c','60e50a2b-266d-4a53-8beb-eac4ccb8b82b']},
+ {name:'政府還有多少能力照顧民生？',category:'財政與生活',metric:'美國聯邦淨利息支出／財政收入',frequency:'每月，觀察近 12 個月',definition:'近 12 個月聯邦淨利息支出合計，除以同期間財政收入合計；避免單月稅收季節性干擾。',question:'政府每收進 100 元，有多少先拿去付利息？',caution:'利息負擔不能單獨判斷公共服務品質；各國的淨利息與財政統計口徑也未必相同。',source:'美國財政部 Monthly Treasury Statement',url:'https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/',ids:['d37e0c93-dedd-49bc-928d-796881ae958c','c64ff033-d344-4da3-86d5-9da3b791f811']},
+ {name:'能源衝擊有沒有傳到生活？',category:'能源與物價',metric:'美國柴油零售價格',frequency:'每週；食品 CPI 每月',definition:'使用 EIA 全美公路柴油含稅零售價（美元／加侖），搭配 BLS 美國食品 CPI 年增率分開觀察。',question:'柴油漲價之後，食品價格是否也持續上升？',caution:'兩項數據頻率不同，也可能受天氣、工資與供需影響；一起上漲不代表已證明因果。',source:'EIA 柴油週價格',url:'https://www.eia.gov/petroleum/gasdiesel/',secondary:{name:'BLS 食品 CPI',url:'https://www.bls.gov/cpi/'},ids:['13285c87-0bba-4931-9c79-fe91005c9af2','e007fa68-8334-47c1-a8b9-a0287cabe59e','bc5cb1d2-6719-4886-a6ac-8e6c0bd0c2c2']}
+];
+let signature='';
+function render(){
+const notes=ReviewModel.collect(issues);signature=JSON.stringify(issues);
+root.innerHTML=`<div class="ob-heading"><div><div class="ob-eyebrow">LONG VIEW / 長期數據觀察</div><h2 id="observations-heading">讓閱讀留下可以回頭驗證的問題。</h2><p>從過去記事挑出三條觀察線，累積數據，也持續修正自己的理解。</p></div><span class="ob-status">觀察清單 · 待建立數據基準</span></div><div class="ob-grid">${trackers.map((t,i)=>`<article class="ob-card"><div class="ob-eyebrow">0${i+1} / ${esc(t.category)}</div><h3>${esc(t.name)}</h3><p class="ob-question">${esc(t.question)}</p><dl><dt>追蹤指標</dt><dd>${esc(t.metric)}</dd><dt>資料頻率</dt><dd>${esc(t.frequency)}</dd></dl><div class="ob-baseline"><strong>尚未建立已核對數值</strong><p>記事中的數字保留為閱讀紀錄；核對原始資料與統計期間後，再建立走勢。</p></div><details><summary>怎麼讀這項數據</summary><p>${esc(t.definition)}</p><p>${esc(t.caution)}</p></details><div class="ob-sources"><a href="${t.url}" target="_blank" rel="noopener">${esc(t.source)} ↗</a>${t.secondary?`<a href="${t.secondary.url}" target="_blank" rel="noopener">${esc(t.secondary.name)} ↗</a>`:''}</div><details class="ob-notes"><summary>從我的記事出發（${notes.filter(n=>t.ids.includes(n.id)).length}）</summary>${t.ids.map(id=>notes.find(n=>n.id===id)).filter(Boolean).map(n=>`<details class="ob-note"><summary><time>${esc(n.date||'')}</time><span>${esc(n.title)}</span></summary><p>${esc(n.text||'')}</p>${(n.links||[]).filter(l=>safeLink(l.url)).map(l=>`<a href="${esc(safeLink(l.url))}" target="_blank" rel="noopener">${esc(l.title||'記事來源')} ↗</a>`).join('')}</details>`).join('')||'<p>相關記事尚未載入或已移除。</p>'}</details></article>`).join('')}</div><p class="ob-footnote">這裡先建立觀察方法與來源，尚未自動擷取數據。每日影片與新聞更新不會改變這裡的數值；不會呼叫付費 AI。</p>`;
+}
+render();setInterval(()=>{if(!document.hidden&&signature!==JSON.stringify(issues))render()},1500);
+})();
