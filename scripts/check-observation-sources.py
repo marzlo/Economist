@@ -12,7 +12,9 @@ def get(pair):
  name,url=pair
  try:
   req=urllib.request.Request(url,headers={'User-Agent':'Economist reading tracker contact https://github.com/marzlo/Economist','Accept':'application/json,text/csv,*/*'})
-  raw=urllib.request.urlopen(req,timeout=40).read().decode('utf-8-sig')
+  blob=urllib.request.urlopen(req,timeout=40).read()
+  try:raw=blob.decode('utf-8-sig')
+  except UnicodeDecodeError:raw=blob.decode('cp950')
   if name.startswith('html_'):
    import re
    return name,{'links':re.findall(r'href=[\"\']([^\"\']+)',raw),'text':re.sub('<[^>]+>',' ',raw)[:100000]}
