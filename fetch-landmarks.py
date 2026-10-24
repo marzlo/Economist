@@ -35,7 +35,7 @@ def prepare(index, scope, landmark, existing):
         pages = api('commons.wikimedia.org', generator='search', gsrsearch=landmark['commonsSearch'],
                     gsrnamespace=6, gsrlimit=5, prop='imageinfo', iiprop='url|extmetadata', iiurlwidth=1280)['query']['pages']
         candidates = sorted(pages.values(), key=lambda p: p.get('index', 999))
-        candidate = next(p for p in candidates if p['title'].lower().endswith(('.jpg', '.jpeg')))
+        candidate = next(p for p in candidates if p['title'].lower().endswith(('.jpg', '.jpeg')) and 'presidential' in p['title'].lower() and 'taipei' in p['title'].lower())
         filename = candidate['title'].removeprefix('File:')
         info = candidate['imageinfo'][0]
     else:

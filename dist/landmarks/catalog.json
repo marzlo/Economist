@@ -2,7 +2,7 @@
   "中央": {
     "name": "總統府",
     "article": "中華民國總統府",
-    "commonsSearch": "\"Presidential Office Building\" Taipei filetype:bitmap"
+    "commonsSearch": "intitle:\"Presidential Office Building\" intitle:Taipei filetype:bitmap"
   },
   "國際": {
     "name": "聯合國總部",
