@@ -1,7 +1,8 @@
 import concurrent.futures,json,urllib.request
 from pathlib import Path
 URLS={
- 'sec':'https://data.sec.gov/api/xbrl/companyfacts/CIK0001046179.json',
+ 'tsmc_html':'https://investor.tsmc.com/english/quarterly-results',
+ 'treasury9':'https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_9?sort=-record_date&page%5Bsize%5D=100',
  'diesel':'https://fred.stlouisfed.org/graph/fredgraph.csv?id=GASDESW',
  'treasury':'https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/mts/mts_table_3?sort=-record_date&page%5Bsize%5D=80',
  'twse_income':'https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci',
@@ -12,6 +13,9 @@ def get(pair):
  try:
   req=urllib.request.Request(url,headers={'User-Agent':'Economist reading tracker contact https://github.com/marzlo/Economist','Accept':'application/json,text/csv,*/*'})
   raw=urllib.request.urlopen(req,timeout=40).read().decode('utf-8-sig')
+  if name=='tsmc_html':
+   import re
+   return name,{'links':re.findall(r'href=[\"\']([^\"\']+)',raw),'text':re.sub('<[^>]+>',' ',raw)[-30000:]}
   if name=='diesel':return name,{'sample':raw[:400],'tail':raw[-400:]}
   data=json.loads(raw)
   if name=='sec':
