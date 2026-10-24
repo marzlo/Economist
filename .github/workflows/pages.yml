@@ -2,7 +2,7 @@ name: Update videos and deploy Pages
 on:
   push:
     branches: [main]
-    paths-ignore: ['_weekly/**']
+    paths-ignore: ['_weekly/**', '_observations/**']
   workflow_dispatch:
   schedule:
     - cron: '17 0,4,10 * * *'
@@ -26,11 +26,14 @@ jobs:
           python3 -B test-fetch-fallback.py
           python3 -B test-youtube-api.py
           python3 -B test-public-news.py
+          python3 -B test-observations.py
           node test-civic.cjs
           node test-civic-keywords.cjs
           node test-weekly.cjs
           node test-weekly-drafts.cjs
           python3 -B test-weekly-publisher.py
+      - name: Update long-term observation data
+        run: python3 -B update-observations.py
       - name: Update public topic news recommendations
         run: python3 -B update-public-news.py
       - name: Fetch latest YouTube videos
@@ -40,11 +43,11 @@ jobs:
         shell: bash
         run: |
           python3 fetch-youtube-api.py
-      - name: Save videos and public topic recommendations
+      - name: Save videos, recommendations and observation data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dist/videos.json dist/public-news.json
+          git add dist/videos.json dist/public-news.json dist/observations.json
           if ! git diff --cached --quiet; then
             git commit -m "Update videos and public topic recommendations"
             git pull --rebase origin main

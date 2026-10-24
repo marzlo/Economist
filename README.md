@@ -50,3 +50,23 @@ GitHub Pages 網址：https://marzlo.github.io/Economist/
 `_weekly/drafts/` 保存草稿，`_weekly/published/` 保存已發布版本；編輯記事或更新影片不會自動改寫已發布週報。較早一期重新發布不會把首頁從最新一期倒退。發布失敗保留正式站原版，並與既有 Pages 更新共用部署佇列。PDF 使用 Playwright 1.62.1 與 Chrome/Chromium，工作流程自動準備套件與中文字型。
 
 驗證：`python3 -B test-weekly-publisher.py`、`node test-weekly-drafts.cjs`、`node test-weekly.cjs`。
+
+### 長期觀察數據
+
+`python3 -B update-observations.py` 更新 `dist/observations.json`。沿用 Pages
+排程（臺灣時間 08:17、12:17、18:17；GitHub 排程可能延遲）及手動更新，不需 API 金鑰。
+三個來源獨立抓取；失敗時保留該項歷史與最後成功時間，記錄錯誤後繼續部署。
+瀏覽器載入、回到頁面及開啟期間每 15 分鐘重新讀取網站快照。
+
+- 台積電：TWSE 開放資料確認最新申報季度，再從公開資訊觀測站 `t164sb01`
+  讀取合併財報。B02700「取得不動產、廠房及設備」現金支出 / 4000 營業收入。
+  以同年度累計差分算單季；幣別新臺幣、報表單位仟元。
+  不含無形資產與非現金交易，可能不同於公司資本預算口徑。首次回填近三年，
+  後續重讀本年與前年以納入修訂，保留更早歷史。
+- 美國政府：財政部 MTS Table 9 `Net Interest` 每月實際金額（美元），
+  加總連續 12 個月並換成十億美元。不是財政年度累計、總利息或利息／收入比。
+- 柴油：EIA 經 FRED 發布的 `GASDESW`，全美公路柴油含稅週價格，美元／美制加侖。
+
+來源可能延遲公布；「最新統計期間」與「最後成功取得時間」分開顯示。
+同日期新資料覆蓋舊值，不混入記事摘錄、預測或示意數字。
+執行 `python3 -B test-observations.py` 檢查期間差分、單位、缺月、歷史修訂及失敗保留。
