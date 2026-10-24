@@ -16,5 +16,5 @@ function mount(){const field=document.createElement('fieldset');field.innerHTML=
  document.getElementById('entry-image-add').onclick=()=>{const input=document.getElementById('entry-image-url'),src=safeLink(input.value.trim());if(!src){message('請輸入有效的 http 或 https 圖片網址。');return}if(images.length>=max){message('每篇最多 3 張圖片，請先移除再加入。');return}images.push({src,caption:''});input.value='';message('');render()};
  document.getElementById('entry-image-file').onchange=async e=>{const files=[...e.target.files];if(images.length+files.length>max){message('每篇最多 3 張圖片，請減少選取張數。');e.target.value='';return}busy=true;message('正在處理圖片…');try{const added=[];for(const file of files)added.push({src:await compress(file),caption:''});images.push(...added);render();message('圖片已加入，可填寫說明後儲存記事。')}catch(error){message(error.message)}finally{busy=false;e.target.value=''}};
 }
-return {html,reset,mount,get(){if(busy)throw Error('圖片仍在處理中，請稍候再儲存。');return images.map(i=>({...i}))}};
+return {html,compress,valid,reset,mount,get(){if(busy)throw Error('圖片仍在處理中，請稍候再儲存。');return images.map(i=>({...i}))}};
 })();
