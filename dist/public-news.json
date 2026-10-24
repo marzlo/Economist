@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24T01:56:39.610370+00:00",
+  "updated": "2026-10-24T01:59:22.062882+00:00",
   "topics": [
     {
       "id": "civic-songshan-airport",
@@ -32,6 +32,26 @@
         }
       ],
       "entries": []
+    },
+    {
+      "id": "6888a325-cefe-4010-ac34-0830f50332bb",
+      "kind": "civic",
+      "entries": [],
+      "then": "",
+      "name": "光電",
+      "scope": "臺南市",
+      "keys": [
+        "光電"
+      ],
+      "note": "",
+      "status": "觀察中",
+      "criteria": [
+        {
+          "id": "aff03d36-bf4d-4a35-9aa7-73e69dd0a9ca",
+          "text": "待",
+          "status": "待查證"
+        }
+      ]
     }
   ],
   "results": {
@@ -58,6 +78,14 @@
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5UMU91YW1laE1mcEhialRZZXg5TFA5eEoya0JzSnVKRXRMN19vOWVrN3U2Smg5ZXktM09sMDJWR3V3ejQtR2F3MGZDS0hVaVBWaEI40gFYQVVfeXFMTnA4NkdOM3o4ZzBqWnVhdlpfZVdmcnJjWXQyMTk2ZlhPeVBvM3dLdGZicUdvT3FZSlVsLWF1RTlDMzZnY0UyV2NkUTdPeVRndUJMYjZhZVNUUg?oc=5",
           "source": "UDN",
           "published": "2026-10-22T16:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "蔣萬安：遷松機願與中央來討論 可保留機坪救災後送 - 自由時報",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBYMlJsR20yZ3JHV3RmbjlROGh5OUpiZUtqTVRiaXc0SFE3UkVnQWZSMVdvYTQxS29POXhsbEliWTEtREVFeURHcDlBOF9uaVk1WFAzOWZkQi1jcW1md2dEM1dua3lCclltaGfSAW9BVV95cUxOcGE3SHpaVEtIYk1mM29TZkRWd2VlOHVuT1J4eFlDN1hMcTg4ZGR4SnlqRGdtZjVCX2U0RG1IQ2RlMzNLQnZDUWRyV25aaTFTNU9PcDZPbUVNSW0xOEkwRF84Z1QwUmtXRmN5SW12Slk?oc=5",
+          "source": "自由時報",
+          "published": "2026-10-22T12:48:20+00:00",
           "type": "文章",
           "description": ""
         },
@@ -148,24 +176,146 @@
           "published": "2026-10-21T03:17:00+00:00",
           "type": "文章",
           "description": ""
-        },
-        {
-          "title": "挺松機遷建 民團：松機噪音、空汙累計早逝人數恐破千人 - UDN",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBLVkwyUWJIUmlvUkxhU282eldWcUdrNERGaUh3MFhLSVdWV092d1V2SWhpRG9FMTJvQlZHXzBVZWpDdEVzWTJrcWV2djl0NGRl0gFWQVVfeXFMTlp3N3dMbEd3WlhYMUJXLU5LaDFqRGNEaXk2SWx3MXE5V0lMUXBKSnA4aEFhRldCNlAtNkFoTU9aZ0xoT3B6Y3duRGxwa2tFV0pmOTBKcHc?oc=5",
-          "source": "UDN",
-          "published": "2026-10-21T02:43:33+00:00",
-          "type": "文章",
-          "description": ""
         }
       ],
-      "updated": "2026-10-24T01:51:16.570625+00:00",
-      "checkedAt": "2026-10-24T01:56:39.610370+00:00",
+      "updated": "2026-10-24T01:59:22.062882+00:00",
+      "checkedAt": "2026-10-24T01:59:22.062882+00:00",
       "keys": [
         "松山機場",
         "松機",
         "松山機場遷建"
       ],
-      "error": true
+      "error": false
+    },
+    "6888a325-cefe-4010-ac34-0830f50332bb": {
+      "items": [
+        {
+          "title": "花蓮鳳林光電弊案涉賄近5千萬 上市公司董座總經理前鎮長等人全押了 - UDN",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBqOFJPYUh5bXR6a0haNzlIbzVEMzJjS05JOU1QdlVpYTVfenVKSFh1Z3lDVU9tRTlFUXJlcWZMazBEZ015bXhHVGJBbWxjZ0ZV0gFWQVVfeXFMT3YzZVVKVUUweERrMHBVVmRIZ09pZVFFMDlBY1ZtSTRDbGNkNTgxN05YZmFfUDBXODVKSGR2SGlHdnJnbDJwemJDNkl5bVNmeFZsS2NZT3c?oc=5",
+          "source": "UDN",
+          "published": "2026-10-23T01:01:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "被銅箔基板大佬開法會？台光電聯茂談「PTFE難成主流」 台虹、台郡雙挫逾半根 - Yahoo股市",
+          "url": "https://news.google.com/rss/articles/CBMi7gNBVV95cUxOaks1R0ltN25DQnBOd05QRjVXVFpla1NfaUh4WjY4aG9jcVY0RVRrV29hVDFxZEU2dXFZNXNJbGxYUC1LbkV3NkxXVDY2TFVZRDZWS29SU1ZJOThOYUpJazRrWWtKVlVSUXY4ZWR1ZEx2Y29fcW56dWtKQUNmaHE5aktqOUYtMWFvOW9MU1h2RDJoNXRwUVh1T0UzM0pkUVhCOWtDemd6cGRrZ0tnMlNKMENxZHZEXzZ6b0xKa2c2aGJkSl9MOXJYVTk0TVR1bEIwT3lUcUVZZWpCa3huLUdNeWlGQnA2NE91N2VkWjlLakU1R1djbEN3eDc5LVFHc1Z1MVFReV9BT3JPUVo1N3FLVkg0RlhJelVxRzBYSV9iREsyYldiZDhINHVOWTRIZ20wZkpFZHhEbFdod01RQ1ZUVTAwVlhhYjZpWEpYNGsxU2J6bEoybHRHeVFXMFJQemdjVkwxNWxCOTZDbS05d0JhNXI0NjN2U01YVXNXb3NtMzlHQ2xrdkZqOXkzZjNCWE9oZkUtdjQ1MTFXd3FTcjNCR25WU21KQVlsWkhWR1Bpa2ZEdGRVZGd6Qjc0VzhXbkg1bjJBOTk0eFgzclNGMU1LZHdNQUd6c0I5MDM4ZUlhNEJ6QktrbXl4QUhCY3NVZw?oc=5",
+          "source": "Yahoo股市",
+          "published": "2026-10-22T03:58:01+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "花蓮鳳林光電弊案爆近5000萬賄款 前鎮長、縣農會前總幹事遭聲押 - UDN",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBhZHpqRVZ0bUFBUF82UEFwbnl2em1JRld6UExxV2ZCNGVLZENzNjdHYk1hVGhWNFljRGlRdWp5bU9jQXJYc21FSm1GeUlPMk4x0gFWQVVfeXFMT2xMZi14WG11VUtxd1FMRUlfQ1d0czBqSkNUcHN3YWhxd3NyMDlheHJ0bG1vNkRWZC1mbFVLc0Z2dm02YmRueWhkTVpLMmh6VW4wWkhFMkE?oc=5",
+          "source": "UDN",
+          "published": "2026-10-22T03:38:36+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "檢調搜花蓮查光電 傅崐萁駁弊案：17年未核准、唯一通過是蔡碧仲 - UDN",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9PeVlmVVJScFMzRndTa3kxVUw3NTBpenJyVWZNX1ZiRW9xVl9Za2lpWC1tWmdZUTlsejNrNUNlWGR2SmdzR2U5MHhtYmd6RXZo0gFWQVVfeXFMUGhMM2RGc0I1NkdFR1lIU0V2WjcwZVFRSFdBSDVraXR5c1RqVUxZdFpZMV80WWpKRy1KbllrX29FY2l6VGFZcExTQWZRZGwxcklnV2lRd2c?oc=5",
+          "source": "UDN",
+          "published": "2026-10-22T02:41:06+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "轉單效應來了？台光電飆漲停鎖死5485元 分析師曝：衝高還缺一條件 - Yahoo股市",
+          "url": "https://news.google.com/rss/articles/CBMisgNBVV95cUxPYWRvUEVGUV8yMWhSWWstY3ZwMTFHWE1kMEQwN3dQSWxEeDFNVUVwNkUxT2Rpem1Va0tuZHRwaV85d0Uyalc2NUdvT0dQS0VONTdTZEdKUzJsVE9FTTBhQmZKSzU4QUpOQThOX2N2TjJhR0xScmpPSVc0RlJvY05wS1V1OGNPU1Z1dTJiYXdUa01wRmc2cFhrRUdyNElhS3pWcklkY1VOTXFkLWlXUHg2c210dHMwNk1rNERtSnNTZTB5VlJBbnVKRl9mRFh6MkVhTTYtWHBGR3ZkTm9tZGlTU3J4UndiSkRqdFRfeGpNQVIyWjk5c1Q5QlFfNEl1M2NJWm5sa05iSkcweWF6cjFkRGRQOWRWd3FIWXNkU0R1OFdtUGUtTy1NNUhnMWtxMGlrQWFaSUlsNW1XZ1VDeVdBMEtXYzZvYjRqQ3hYWGl1VXp5bHZHMnFkM0RzWnZBa1JobGlGR3ZDMHN3c0NjRl9jRGRaTXREUnlrbGFHUEVOS0VkMkRaY0tGUW5TN1doVXBNNVJpT3h1bGxMcFVZazNMTmZXdWxtVEVGTlVLZkZockpidw?oc=5",
+          "source": "Yahoo股市",
+          "published": "2026-10-22T02:01:28+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "轉單效應來了？台光電飆漲停鎖死5485元 台燿強漲7%同歡 - Yahoo股市",
+          "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPZUprSTZpaElWRDlWWm5ZS2l4MnNMbFNvaUFydEdHdFE0c1I4U0FzMWNoWEFjM3J3c0V4cllGdTVGM0k4Z2pYTHczRlljWmdNbkNJZVVTWl9USzFiVktSemthX1dlZjNtV0pSRG5DbzlrbDNYVDhtNmU3T1BtY3hwZGF6eGVNaS14dUluQ2NiWl96T2FqOFVldUlZRFRUVk02a1ZEU0xkdWREZEJaSlhoX3ZLWXBoQ1piblhRdy1WQmFqdTlFZmJ4ZlRBbzZRdzRxSHF4OWdwWWpFZHhNQUtfZXZvQUg2M0Nib1BPMEJXamJMcGcxRFhIX3Q0dWR4RWtxeFBqbnFDcUVteUItVWVuZDIyclRRdWgwQUJZUmdVNl9hZlFiRWs5eVQ2aUJFSHE5NmtXZVIwaENLZWpHUVZ3aW0zVjZqXzE3cmJ6LWZBbmt0Z0xJNW5aN0VqcG00Y0NRdkxRWnZEOFdNYmc?oc=5",
+          "source": "Yahoo股市",
+          "published": "2026-10-22T01:37:59+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "【09:05 即時新聞】台光電(2383)亮燈漲停，高階CCL與AI板材買盤點火 - CMoney投資網誌",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRktDMlJuRDA0SlMxRklkaVRTeGZHbnF2UGpQQnUzd0J1LTZ4bWZnT1l6SXNMYktjRGRnMHdzTlUzTDlzRi1TY2ZzN0pZZFpSUHZaU3FKVHh4NkZQUC1OQjBOS0NXc3ppNHRyeDdETHdqUTk2aWdCbWF6Q1JadVItbU1VLWE3b1NrVzhQb3B3?oc=5",
+          "source": "CMoney投資網誌",
+          "published": "2026-10-22T01:05:52+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "疑為光電弊案而來？台南市調查處突襲花蓮縣府搜索 - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxORFpNbzBOWnBodmpWSm1XSGpMN3c5WnNkMXVORUx5RmFjQ1pNZjQ4UURVTjctNWFWR0VPdVlfZm5vZlpIbHdrR3FSemUtNkZnSnNtN0o2VnBlblQzc0cxbWE4TjFEeDJ4WHhXWkk1WDVmN3NUWG1fN2RPS1lsR0h1a0tWakJORjRVNENNOHUtM1Y2QUpZcGw4cHRXQ0g2WkFSMHBMMmRmVjhLUnVYSm5peHhzVU90Tk9RelB0X1lKaVlOTjA1d2JkSFNxQUxfM0tmX3VTRHYyZWU0QmJSRXd2bnpUNmk2TDNhQkhpMkVnVkZSbWhKUVNaZHRHbXlWS2pZZ3MtRlR5a2FTUjQtVW9mZ0FaRHMtSE5jNS0wdWxVQXlYZktrQTVra3dDMEFyUmthRk9MV0twNGdCLTNHLWhNdmRFb1EyUGRWZjZ5akFMMWF6VS0tekhKMGR4d1A?oc=5",
+          "source": "Yahoo新聞",
+          "published": "2026-10-21T09:44:05+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "「你有看到我在發抖嗎？」台光電董座回應PTFE挑戰 - 口袋證券",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9PTEtfR0dtYVRtSlQ5QUFQQXNnRmlDMi1CU0JrUUlhYnM0WERlLU4zd0VERmtncEtiY3VnQnpvS256bHZlU0tzcUdBZ1haT2lEUG5hcUR3VEJ0WHlwN21JN2M0VnI3UQ?oc=5",
+          "source": "口袋證券",
+          "published": "2026-10-21T06:34:27+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "快訊／花蓮縣府遭檢調搜索 疑光電開發案涉弊 - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxNcWZNMUNXYWt0emIwekk2cGNEbW9IbE9pUDhCSUplZ3ltdUwtaS0wQXlROGFrazNoLXdheFJQNWZfWWlHS3pWa0hoc0dhUWltRzJBc2JSYWt3ZzBaY0V5Q1Z6cmJhMkZzNktZRG5jUnN3QXhBWlRjSjJFNWI2SFFYQzBwM3B4QXhkZjVjM1VRLUJtVDRJZzFDRlN6U1lTTlFOenoyMUlpQXlCbmxrM205TjhQQXRpYWNwemhuX3ZlY2JCdUFTVFBhZ0U5YkI3aXNOQlhiR0JFZld0UVRtTGZoY3RQQ2poZWhybHgzWTNXZkM2cTdHQVhpTGd1WDhVTzMtQ1BPc0huay12MnliZ1pmdU12cDNPdDJVRjZZSDFUZG9pdlk1RUZNTGlGNEZjaEZRWUdjTUFVdFUtdw?oc=5",
+          "source": "Yahoo新聞",
+          "published": "2026-10-21T02:51:30+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "PTFE恐取代玻纖布？ 台光電董定宇：有看到我發抖嗎 - Yahoo股市",
+          "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxOMmptNXBrcHROYmlQUGkzU3JSTkRIUlNCYkVuSFEtS3ZKSVQ0NUVLaW9CT0ljcl9iTXBYekVseFlock9kRUJRaEo4dFNoSWJkQ290TkpLcFU0QkVXZkNRMGtXVlVZcnBWSHVEX1JsdXpicEhQcWljcmdHenRNRkdDSUVuZXNCdG1CRks2V0hTYnZCbFpTTEJJZjVKeFBBc0NaeF9zWjJ5T25mbEJzMTl2Z2JrMzRRUktpN3RNaDZxYWgxM0UzNmpTdGFfXzVDRFN1OHBFeTNXVW1hSnFZeGdGYVRoXzN2VHlTZ0FTZkxSdDd3RVd4eDRFV1o1NE9FaTVHU3ZmZVFrdVUyalMxV1JWQ1AzdGxaRGZLM1FwY0pGNmV1ZG1qRnNhQ0FHSVp6cjI3b1ZzSldFN1E4NnVhRlU1cmhUazRkZXc?oc=5",
+          "source": "Yahoo股市",
+          "published": "2026-10-20T09:43:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "欣興簡山傑、臻鼎沈慶芳、台光電董定宇齊聚開金口 TPCA大佬談話一次看 - Yahoo股市",
+          "url": "https://news.google.com/rss/articles/CBMiygNBVV95cUxPTTZ5ZHVuTzBzMVRxcy05TjdXNW9ZdUdlTlRkWlFaa1hjVHp0bDA0UzNmTTNwU05KSl94b3J0TW5wMV9jV3JDcTk1Q3pqTm9rN1AwUDFlOGYxRU11YmtuaXFObkotWDBoVUpQRnZmWGg0b284cWJfTnhRTDZLT3J4WGpmOUdyeG9mRG4tZ3J2WkNlZ0U3b2ZYRlpKZWk3cWREcnQ3OGo4R1ZPWmd3eGN3MzhhdnZ2Q3MyaHFuLWVscFFSTFFuLVg1QmNPTjZlOVgzNko5MXBRRnJoX0dFa3Rac2NOd050ekhZenM3WHZPLUhaLWxvMkNDUWx2QWx2T0FSTWFXUzNIVkRFTmhRbmxjVm5nV0hidldTMVBVTnQ5cEFVTDNLXzRzVlpqY3QxSlRZNDZxR1EtX0k3WDJtT3lJelN5YTZFUm9HemdOM09vVmpFeHZUVFVGUmd2bGhvZ2pRMlhWUXdzWE1zQTNScVZHdUU0UzJScFpoOTlIZkQ0TzdCRHl3aUZpdnVmOEVPSDdFdVkyc3JBMUNxejFrc3hSTldvSUl2VlZFaktDVkFnNDdkcWZZSVozSGZNNGpPejVrSlRxQ3had0hwdw?oc=5",
+          "source": "Yahoo股市",
+          "published": "2026-10-20T09:19:14+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "《TPCA展》台光電看旺高階CCL至2030 看PTFE難為主流- 新聞 - MoneyDJ理財網",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNR19TcUFmS01ldnBEMjVYVDZfQ3VOTnJaTE45b1pLTzg1MVBnMXhwNVU3N0ZOX3RjUzNnOVpUMHJhVC1KR0Y4QkVHV2xLSmlMcVc1ZURlcDY4My1fRE9GUTFnZEthZnJ5Ni1EQTZRWGtsMlBrVFN1MldJNUJKVFhHSS12TGZEWENENC05ZTlUYXBNQQ?oc=5",
+          "source": "MoneyDJ理財網",
+          "published": "2026-10-20T07:35:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "不看好PTFE新材料！台光電董座：你有看到我在發抖嗎？ - 自由財經",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA0RzhjMDR6U2VaLXRpa2FoSl8xQl9CV05BcnZlMklxWmlkdnlhOXdjaGdNbHhRcXNBeENfYmhNVElaanVYN0pWUWpDb2pqcHhHNVpXQmdFMlNWUEM3ME1R0gFkQVVfeXFMTlhDdkpBNEdBazJNSlQ0MXc0SnBWRy0yYkt6WWNGUTRXUHdrWkRWMUlpeGRWSmRxNE44YThiNjdEZlhoVkVVVlV2QkVqRXBITjdiS29GYlNuSXcyWFhjQ25QMXZmUA?oc=5",
+          "source": "自由財經",
+          "published": "2026-10-20T04:26:07+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "台光電董座：明年續樂觀高階 CCL 旺到2030 PTFE 難成主流 - 經濟日報",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBYM3U2RHMxSDBna0RxVzZpTDdmUk9DNF8wUjVlNnVBRG1nM19wTkRSSFB2SnU3ZUpEOEFLaW51SzBTY1NHRVpVOHBDeTRJbFdHeEYyWXVTcWxIQdIBX0FVX3lxTFBxM0t0N0h1R0hhSFpnN0tCYk1yaVEyWGwzS24xZ25lSHdpcG1VcjN2MTJzZ1JWejRRdFo2cHVvb1hKOTVLSTl5Tm5TSlFnUUJCNi1EcTA1LVc2Y2d1RzFF?oc=5",
+          "source": "經濟日報",
+          "published": "2026-10-20T04:10:04+00:00",
+          "type": "文章",
+          "description": ""
+        }
+      ],
+      "updated": "2026-10-24T01:59:22.062882+00:00",
+      "checkedAt": "2026-10-24T01:59:22.062882+00:00",
+      "keys": [
+        "光電"
+      ],
+      "error": false
     }
   }
 }
