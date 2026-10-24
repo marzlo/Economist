@@ -11,14 +11,14 @@
     "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
   },
   "中央": {
-    "selection": "\"Presidential Office Building\" Taipei filetype:bitmap",
+    "selection": "intitle:\"Presidential Office Building\" intitle:Taipei filetype:bitmap",
     "name": "總統府",
     "file": "landmarks/landmark-00.jpg",
-    "originalFile": "At the Budō activity in the New Park of Taihoku 1939.jpg",
-    "author": "李火增",
-    "license": "Public domain",
-    "licenseUrl": "",
-    "source": "https://commons.wikimedia.org/wiki/File:At_the_Bud%C5%8D_activity_in_the_New_Park_of_Taihoku_1939.jpg",
+    "originalFile": "Taipei Taiwan Presidential-Office-Building-10.jpg",
+    "author": "CEphoto, Uwe Aranas",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_Presidential-Office-Building-10.jpg",
     "changes": "Resized and converted to JPEG; displayed cropped with a translucent overlay."
   },
   "國際": {
