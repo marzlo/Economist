@@ -15,7 +15,8 @@ window.renderCivic=function(){
  if(!list.some(i=>i.id===activeTopic))activeTopic=list[0]?.id||null;
  if(activeTopic)localStorage.setItem('civic-selected-topic',activeTopic);
  $('#civic-scope-title').textContent=scope==='全部'?'全部議題':scope;
- $('#civic-city-tabs').innerHTML=['中央','臺北市','新北市','國際'].map(city=>`<button data-civic-city="${esc(city)}" class="${city===scope?'active':''}" aria-pressed="${city===scope}">${esc(city)}</button>`).join('');
+ $('#civic-city-tabs').innerHTML=['中央',...M.scopes.filter(city=>city!=='中央'&&city!=='國際'),'國際'].map(city=>`<button data-civic-city="${esc(city)}" class="${city===scope?'active':''}" aria-pressed="${city===scope}">${esc(city)}</button>`).join('');
+ requestAnimationFrame(()=>{const nav=$('#civic-city-tabs'),active=nav.querySelector('[aria-pressed="true"]');if(active&&nav.scrollWidth>nav.clientWidth){const a=active.getBoundingClientRect(),n=nav.getBoundingClientRect();if(a.left<n.left)nav.scrollLeft+=a.left-n.left-8;else if(a.right>n.right)nav.scrollLeft+=a.right-n.right+8}});
  $('#civic-topic-tabs').innerHTML=list.map(i=>`<button class="${i.id===activeTopic?'active':''}" data-civic-topic="${esc(i.id)}" aria-pressed="${i.id===activeTopic}">${esc(i.name)}</button>`).join('');
  $('#civic-feed-status').textContent=feedError||'推薦隨每日資料更新'+(feed.updated?' · 最近檢查 '+new Date(feed.updated).toLocaleString('zh-TW',{timeZone:'Asia/Taipei',hour12:false}):' · 尚未取得新聞')+'；新增關鍵字於下次更新後取得推薦。';
  setLandmark(scope);
