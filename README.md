@@ -84,3 +84,7 @@ GitHub Pages 網址：https://marzlo.github.io/Economist/
 閱讀版在本機格式化並清理 HTML，表格可水平滑動。
 靜態依賴 Marked 15.0.12、DOMPurify 3.3.0 位於 `dist/vendor`，附原始授權；
 不從外部 CDN 載入，也不呼叫 AI API。
+
+週報修訂可加入 `comparison`：前一完整週的記事快照、逐項引用的前週／本週記事 ID，
+以及延續、修正、延伸或新增的整理。前週來源另列，不計入本期篇數；發布前驗證
+週次相鄰、兩週記事不重複及引用存在。修訂草稿未確認前不改動已發布週報。

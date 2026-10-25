@@ -44,6 +44,41 @@ def text_field(value, name, limit):
         raise ValueError('週報欄位格式不正確：' + name)
     return value.strip()
 
+def validate_comparison(value, notes):
+    if value is None:
+        return None
+    if not isinstance(value, dict):
+        raise ValueError('跨週比較格式不正確')
+    start, end = date.fromisoformat(value['start']), date.fromisoformat(value['end'])
+    if end != start + timedelta(days=6):
+        raise ValueError('比較週必須為七天')
+    previous = value.get('notes', [])
+    if not previous or len({n['id'] for n in previous}) != len(previous):
+        raise ValueError('比較週記事不可空白或重複')
+    if any(not start.isoformat() <= n.get('statDate', '') <= end.isoformat() for n in previous):
+        raise ValueError('比較記事不在前週範圍')
+    prior_ids, current_ids = {n['id'] for n in previous}, {n['id'] for n in notes}
+    if prior_ids & current_ids:
+        raise ValueError('兩週記事不得重複計算')
+    items = value.get('items', [])
+    if not 1 <= len(items) <= 6:
+        raise ValueError('請提供 1–6 項跨週比較')
+    clean = []
+    for item in items:
+        text = {k: text_field(item.get(k), k, limit) for k, limit in
+                [('title', 100), ('kind', 12), ('previous', 700), ('current', 900), ('meaning', 700), ('next', 300)]}
+        before, after = item.get('priorIds'), item.get('currentIds')
+        if not isinstance(before, list) or not isinstance(after, list) or not after:
+            raise ValueError('比較需標明前週與本週記事')
+        if not set(before) <= prior_ids or not set(after) <= current_ids:
+            raise ValueError('比較引用了不存在的記事')
+        if not before and text['kind'] != '新增':
+            raise ValueError('沒有前週來源的項目應標示新增')
+        clean.append({**text, 'priorIds': before, 'currentIds': after})
+    return {'start': start.isoformat(), 'end': end.isoformat(), 'notes': previous, 'items': clean,
+            'note': text_field(value.get('note'), 'comparison note', 900)}
+
+
 def validate_narrative(value, notes):
     if not isinstance(value, dict):
         raise ValueError('週報文字格式不正確')
@@ -85,6 +120,9 @@ def validate_narrative(value, notes):
     questions = value.get('questions')
     if not isinstance(questions, list) or not 1 <= len(questions) <= 4:
         raise ValueError('請提供 1–4 個延伸問題')
+    comparison = validate_comparison(value.get('comparison'), notes)
+    if comparison:
+        clean['comparison'] = comparison
     clean.update(chapters=clean_chapters, quote=quote,
                  questions=[text_field(q, 'question', 300) for q in questions])
     return clean
@@ -106,6 +144,8 @@ def video_ids(notes):
 
 def make_draft(start, notes, narrative):
     clean = validate_narrative(narrative, notes)
+    if clean.get('comparison') and clean['comparison']['start'] != (start - timedelta(days=7)).isoformat():
+        raise ValueError('比較週必須緊接本週之前')
     if any(not start.isoformat() <= n.get('statDate', '') <= min(today(), start + timedelta(days=6)).isoformat() for n in notes):
         raise ValueError('來源記事不在所選週次範圍內')
     assigned = {ident: c['id'] for c in clean['chapters'] for ident in c['ids']}
@@ -127,6 +167,11 @@ def update_draft_index():
 
 def markdown(data):
     parts = ['# 每週回望｜' + data['start'] + '—' + data['end'], '', '# ' + data['title'], '', data['intro'], '']
+    if data.get('comparison'):
+        comp = data['comparison']
+        parts += ['## 與再上一週的呼應｜' + comp['start'] + '—' + comp['end'], '', comp['note'], '']
+        for item in comp['items']:
+            parts += ['### ' + item['kind'] + '｜' + item['title'], '', '再上一週：' + item['previous'], '', '本週：' + item['current'], '', '呼應與變化：' + item['meaning'], '', '繼續追問：' + item['next'], '']
     for c in data['chapters']:
         parts += ['## ' + c['name'] + '｜' + c['title'], '', c['summary'], '', c['observation'], '',
                   '下次閱讀的問題：' + c['question'], '']
@@ -140,6 +185,10 @@ def markdown(data):
             if urlparse(link.get('url', '')).scheme in ('http', 'https'):
                 parts.append('- [' + link.get('title', link['url']).replace('[', '（').replace(']', '）') + '](' + link['url'] + ')')
         parts += ['']
+    if data.get('comparison'):
+        parts += ['## 比較用前週記事（不計入本期記事數）', '']
+        for n in data['comparison']['notes']:
+            parts += ['### ' + n['statDate'] + '｜' + n.get('title', '記事'), '', n.get('text', ''), '']
     return '\n'.join(parts) + '\n'
 
 def render(data):

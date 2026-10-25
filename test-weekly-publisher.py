@@ -97,6 +97,29 @@ class WeeklyTests(unittest.TestCase):
 
 
 
+    def test_comparison_keeps_periods_and_counts_separate(self):
+        narrative = copy.deepcopy(self.narrative)
+        prior = {**self.notes[0], 'id': 'prior', 'date': '2026-10-06', 'statDate': '2026-10-06'}
+        narrative['comparison'] = {'start': '2026-10-05', 'end': '2026-10-11', 'notes': [prior], 'note': '以一致週界比較',
+            'items': [{'title': '財政問題的延續', 'kind': '延續', 'previous': '前週問題', 'current': '本週補充', 'meaning': '仍待觀察', 'next': '繼續追問', 'priorIds': ['prior'], 'currentIds': [self.notes[0]['id']]}]}
+        data = weekly.make_draft(date(2026, 10, 12), self.notes, narrative)
+        self.assertEqual(len(data['notes']), 3)
+        self.assertEqual(len(data['comparison']['notes']), 1)
+        self.assertIn('與再上一週的呼應', weekly.markdown(data))
+        bad = copy.deepcopy(narrative)
+        bad['comparison']['items'][0]['priorIds'] = ['missing']
+        with self.assertRaisesRegex(ValueError, '不存在'):
+            weekly.make_draft(date(2026, 10, 12), self.notes, bad)
+        bad = copy.deepcopy(narrative)
+        bad['comparison']['notes'][0]['id'] = self.notes[0]['id']
+        with self.assertRaisesRegex(ValueError, '重複'):
+            weekly.make_draft(date(2026, 10, 12), self.notes, bad)
+        bad = copy.deepcopy(narrative)
+        bad['comparison'].update(start='2026-09-28', end='2026-10-04')
+        bad['comparison']['notes'][0]['statDate'] = '2026-09-30'
+        with self.assertRaisesRegex(ValueError, '緊接'):
+            weekly.make_draft(date(2026, 10, 12), self.notes, bad)
+
     def make_root(self):
         temp = tempfile.TemporaryDirectory()
         self.addCleanup(temp.cleanup)
