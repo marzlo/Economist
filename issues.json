@@ -1244,6 +1244,27 @@
         "images": [],
         "country": "tw",
         "region": "asia"
+      },
+      {
+        "title": "都市更新是否應該以公共安全為優先考量？ - UDN",
+        "region": "auto",
+        "country": "auto",
+        "createdAt": "2026-10-25T04:23:26.044Z",
+        "updatedAt": "2026-10-25T04:23:26.044Z",
+        "id": "7847934f-d00a-42e5-8800-87f940a6c54a",
+        "date": "2026-10-25",
+        "label": "筆記",
+        "text": "都市更新也應從「以老論獎」轉向「以危論序」，將危險建築優先處理\n容積獎勵的政策也要嚴加審視，避免圖利廠商\n",
+        "images": [],
+        "links": [
+          {
+            "title": "都市更新是否應該以公共安全為優先考量？ - UDN",
+            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQ0ZTYlBmRm1lSnBsVERsS1BsZHVnUDJrX1Z1d3VpcW1OZDVjNjZpZXVYcUhPVjB5QWc2RGpTYktYMnQ5aXh2TzNJU3plTE9KRlRwWGFGWi15SV9JbGdjY3pmbTFIU0JqMWhxamdsYllxbzJZaFdOQlFUdWZPT1lLX3NvMjFQQzlVZFRzdTBycXhvdUs1dkJmcGZB?oc=5"
+          }
+        ],
+        "issueIds": [
+          "4446ca7b-5593-4f73-8513-8f6f3e78f2c6"
+        ]
       }
     ],
     "then": "",
