@@ -24,8 +24,9 @@ function saveCriterion(topic,value,criterionId,id){
  return {...topic,criteria:before?list.map(c=>c.id===criterionId?item:c):[...list,item]};
 }
 function removeCriterion(topic,id){return {...topic,criteria:(topic.criteria||[]).filter(c=>c.id!==id)}}
+function criterionRecords(topic,id){const c=(topic.criteria||[]).find(c=>c.id===id);return (topic.entries||[]).filter(e=>e.criterionId?e.criterionId===id:!!c&&e.label==='進度紀錄'&&e.title===c.text)}
 function landmark(scope,credits){const item=credits[scope];if(!item||!/^landmarks\/[a-z0-9-]+\.(jpg|png|webp|svg)$/.test(item.file)||!safeUrl(item.source))return null;return item}
 function removeTopic(list,id){return list.filter(i=>i.id!==id).map(i=>({...i,entries:(i.entries||[]).map(e=>Array.isArray(e.issueIds)&&e.issueIds.includes(id)?{...e,issueIds:e.issueIds.filter(owner=>owner!==id)}:e)}))}
-const api={scopes,states,safeUrl,normalize,recommendations,criteria,saveCriterion,removeCriterion,landmark,removeTopic};
+const api={scopes,states,safeUrl,normalize,recommendations,criteria,saveCriterion,removeCriterion,criterionRecords,landmark,removeTopic};
 if(typeof module!=='undefined')module.exports=api;else globalThis.CivicModel=api;
 })();

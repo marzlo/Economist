@@ -33,3 +33,7 @@ assert.equal(renamed.criteria[0].id,'kept');assert.equal(renamed.criteria[0].sta
 const appended=M.saveCriterion(tracked,'分階段時程',null,()=> 'new');assert.equal(appended.criteria.at(-1).status,'待查證');assert.equal(appended.criteria.at(-1).id,'new');
 assert.throws(()=>M.saveCriterion(tracked,'成本評估',null,()=> 'duplicate'),/相同/);assert.throws(()=>M.saveCriterion(tracked,' ',null,()=> 'blank'),/填寫/);assert.throws(()=>M.saveCriterion(tracked,'changed','missing',()=> 'x'),/不存在/);
 const removed=M.removeCriterion(tracked,'kept');assert.deepEqual(removed.entries,tracked.entries);assert.equal(removed.criteria.length,1);assert.equal(tracked.criteria.length,2);
+
+const linkedTopic={criteria:[{id:'one',text:'已改名指標'}],entries:[{id:'new',criterionId:'one',title:'舊名稱',label:'進度紀錄'},{id:'legacy',label:'進度紀錄',title:'已改名指標'},{id:'ordinary',title:'已改名指標',label:'筆記'},{id:'removed',criterionId:'different',label:'進度紀錄',title:'已改名指標'}]};
+assert.deepEqual(M.criterionRecords(linkedTopic,'one').map(e=>e.id),['new','legacy']);
+assert.deepEqual(M.criterionRecords(M.removeCriterion(linkedTopic,'one'),'one').map(e=>e.id),['new']);
