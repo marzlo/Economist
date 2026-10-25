@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T00:53:21.326459+00:00",
+  "updated": "2026-10-25T00:53:46.860013+00:00",
   "topics": [
     {
       "id": "civic-songshan-airport",
@@ -29,7 +29,7 @@
           "id": "652a22e2-7acb-4589-bd2c-6a7169fe006b",
           "text": "完成具體的可行性評估，提出可執行的分階段時程",
           "status": "待查證",
-          "updatedAt": "2026-10-25T00:52:46.625Z"
+          "updatedAt": "2026-10-25T00:53:14.756Z"
         }
       ],
       "entries": [
@@ -58,6 +58,20 @@
               "caption": ""
             }
           ]
+        },
+        {
+          "id": "e2af2116-7677-4170-b632-3f4f817569dd",
+          "issueIds": [
+            "civic-songshan-airport"
+          ],
+          "date": "2026-10-25",
+          "createdAt": "2026-10-25T00:53:14.756Z",
+          "label": "進度紀錄",
+          "title": "完成具體的可行性評估，提出可執行的分階段時程",
+          "text": "待查證 → 待查證\n台北市政府何時公開正式的成本效益評估，以及交通部是否提出可量化的替代方案與成本",
+          "links": [],
+          "country": "tw",
+          "region": "asia"
         }
       ],
       "image": {
@@ -234,8 +248,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-10-25T00:53:21.326459+00:00",
-      "checkedAt": "2026-10-25T00:53:21.326459+00:00",
+      "updated": "2026-10-25T00:53:46.860013+00:00",
+      "checkedAt": "2026-10-25T00:53:46.860013+00:00",
       "keys": [
         "松山機場",
         "松機",
@@ -245,14 +259,6 @@
     },
     "4446ca7b-5593-4f73-8513-8f6f3e78f2c6": {
       "items": [
-        {
-          "title": "鳥松山水段運動休閒專用區土地都市更新事業簽約陳其邁：以市民利益為優先公私協力提升城市樂活環境 - 蕃新聞",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1wNDRDNV9XVTIwMlo4YklsY1NoLU1QVFBhSHNycFBhMmREZmdscEpvRlNUeGQ1N0xMQ0ZZV3pCUmtpTzh4dVRTMllLRTJtbzNYT1E?oc=5",
-          "source": "蕃新聞",
-          "published": "2026-10-22T00:00:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
         {
           "title": "鳥松山水段運動休閒專用區土地都市更新事業簽約陳其邁：以市民利益為優先公私協力提升城市樂活環境 - 高雄市政府全球資訊網",
           "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSXNTQXNhdHpZZkMxc2tybnVUOFdNNW43ajlOaEtHQUdZZWVWSE9XZzlkUkdBUDZtdHlrZ3V3V3FEbWVkQzhxSkwxd0o1ZVNRZXRKRkUzdFc3Z0l6V0xsMjZGRG9DcnY4Ny1YdHdwZXpXVVZ4VWl3R19WMGNpZDVld3lHM2VoMVBCMlM0?oc=5",
@@ -266,6 +272,14 @@
           "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQ0ZTYlBmRm1lSnBsVERsS1BsZHVnUDJrX1Z1d3VpcW1OZDVjNjZpZXVYcUhPVjB5QWc2RGpTYktYMnQ5aXh2TzNJU3plTE9KRlRwWGFGWi15SV9JbGdjY3pmbTFIU0JqMWhxamdsYllxbzJZaFdOQlFUdWZPT1lLX3NvMjFQQzlVZFRzdTBycXhvdUs1dkJmcGZB?oc=5",
           "source": "UDN",
           "published": "2026-10-18T16:41:37+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "討論牆 | 加速都市更新！蔣萬安拋雙新政：意願門檻降至50％、大街廓容積率提高到300 - LINE TODAY",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5WTmp2QW01amRkRkZaUFpvbURSME40eXozZ2xVX3VIQk9SZWZXbnozWmh0WG5DMGVnZGtBQXc4Sm1GWGJHQ2NjZW96S1E5VGJHSWMxeTNyaDJaMlhJdmVrYXlLN0I?oc=5",
+          "source": "LINE TODAY",
+          "published": "2026-10-16T09:22:07+00:00",
           "type": "文章",
           "description": ""
         },
@@ -298,6 +312,14 @@
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE45Vi1uYXlVM2xBVGpkZ2E4TDA5THhxTk1sMXpCUFNIRVZNblR5TUR2NXRHWjFZbHRDa1FYNHhSTEV6NEhBQlF3R0hOZnhKQzRTNUE?oc=5",
           "source": "中華新聞雲／中華日報",
           "published": "2026-10-13T13:30:03+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "鄭丞宏競選議員辦公室今開幕 提五泰林交通改善及都市更新 - UDN",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9WM0VZclZlV1FsNFpva3BoOXIxNVlMbmVPUWFhQ1RtMU1OSVV4WHJuLVlsRTRQX1UyeDZUbjYxVmkwR2xQaVVtaTdqVDU3Skgzd3RB0gFYQVVfeXFMTkxuUmtKaFZ2WDRWUEoyd29qUTJQOFZUVmdIREhYMjlMcVJNT05jUEdBZDlJV0NEX2VzYnBkQ3loMFBKQy12Qm1vSEVRVFpuNEwwVjRRanRLcg?oc=5",
+          "source": "UDN",
+          "published": "2026-10-11T07:00:00+00:00",
           "type": "文章",
           "description": ""
         },
@@ -356,18 +378,10 @@
           "published": "2026-10-04T07:00:00+00:00",
           "type": "文章",
           "description": ""
-        },
-        {
-          "title": "當房子老去：從人性、制度到共識，找到都市更新真正的解方- 社會新聞 - PChome Online 新聞",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTUtKaFNWUWhIV0pmcEhDdml2Y2VhdFlvX1JHak9GTUd4QVVyQXR1ajhJWjNjY25QLUZIaXJsVzRyVnhQbk5jR3VGeDlZTEowSDZybEtiTU5jUEMtaDE3aG80OGpnNkpiWndWc0hMZW9YYS1EdW9FXzdSbklpOElFOHZ6R0tIRUlz?oc=5",
-          "source": "PChome Online 新聞",
-          "published": "2026-10-02T07:00:00+00:00",
-          "type": "文章",
-          "description": ""
         }
       ],
-      "updated": "2026-10-25T00:53:21.326459+00:00",
-      "checkedAt": "2026-10-25T00:53:21.326459+00:00",
+      "updated": "2026-10-25T00:53:46.860013+00:00",
+      "checkedAt": "2026-10-25T00:53:46.860013+00:00",
       "keys": [
         "臺北都市更新",
         "都市更新",
