@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T04:15:26.381396+00:00",
+  "updated": "2026-10-25T04:20:38.763166+00:00",
   "topics": [
     {
       "id": "civic-songshan-airport",
@@ -118,6 +118,23 @@
           ],
           "country": "tw",
           "region": "asia"
+        },
+        {
+          "id": "72038a8e-ddbc-469d-a4e1-f73664f125fb",
+          "issueIds": [
+            "4446ca7b-5593-4f73-8513-8f6f3e78f2c6"
+          ],
+          "date": "2026-10-25",
+          "createdAt": "2026-10-25T04:20:09.354Z",
+          "label": "進度紀錄",
+          "criterionId": "8c83531f-44b5-46c0-9e8f-57b134dff47f",
+          "criterionText": "在地都更與中繼安置",
+          "title": "在地都更與中繼安置",
+          "text": "待查證 → 待查證\n需考量房型是否契合，例如一至兩房的個人空間或家庭的三房配置；同一城市不代表相同生活圈，還得衡量租金與搬遷成本。",
+          "links": [],
+          "images": [],
+          "country": "tw",
+          "region": "asia"
         }
       ],
       "then": "",
@@ -136,7 +153,7 @@
           "id": "8c83531f-44b5-46c0-9e8f-57b134dff47f",
           "text": "在地都更與中繼安置",
           "status": "待查證",
-          "updatedAt": "2026-10-24T23:39:28.984Z"
+          "updatedAt": "2026-10-25T04:20:09.357Z"
         },
         {
           "id": "eca667e0-2a81-4be5-8180-a14d0f972738",
@@ -167,14 +184,6 @@
           "description": ""
         },
         {
-          "title": "松機遷移 蔣指可保留機坪救災 - 中時新聞網",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1BMHBQTk9xRXEyNjJKcFZvMl9HSWw0VDh4NjRZUUNTVk01VW1Yb01lT1JxOWwwQ01FamVXbHI4eG5kZTAtWVk3UjNSZjh5VFpmaTcxVklIeG56X1VyUkM0XzBDRjJSeGt5VkdZ?oc=5",
-          "source": "中時新聞網",
-          "published": "2026-10-22T20:10:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
           "title": "松機遷建 蔣萬安促十年規畫、藍分享水湳機場經驗 - UDN",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5UMU91YW1laE1mcEhialRZZXg5TFA5eEoya0JzSnVKRXRMN19vOWVrN3U2Smg5ZXktM09sMDJWR3V3ejQtR2F3MGZDS0hVaVBWaEI40gFYQVVfeXFMTnA4NkdOM3o4ZzBqWnVhdlpfZVdmcnJjWXQyMTk2ZlhPeVBvM3dLdGZicUdvT3FZSlVsLWF1RTlDMzZnY0UyV2NkUTdPeVRndUJMYjZhZVNUUg?oc=5",
           "source": "UDN",
@@ -195,14 +204,6 @@
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1lVUQ1X2dWM3JkZ0NTZWhydGhBbmd1eS1tNFM1SG9FSkN3bU9pUmI5aEVnN1Q0TFhDMDJ3Rl9PaVpVOXdxWUhub1loUWd5b016bnctUi1VT25UMjQt?oc=5",
           "source": "太報 TaiSounds",
           "published": "2026-10-22T11:43:25+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "蔣萬安拋遷移松機恐衝擊離島急救 金門縣長陳福海表態：堅決反對 - UDN",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8wVXE2UzBnNkxYVjl4VFlJY2JiN1NjWm9MT00tVjJXYm9LYnJkMWcwWXA0a1NnaURZU3VtcDBveDdmc0Z5ODl0bFNtdGs0bVVidGE00gFYQVVfeXFMTUtlQlMxNmV2Y1lqVURwSE41M0RlaTlrUVNBZnVuVVFZcG9EejFnLXI4enpWMDYyVk0xb0lOa2ZVZkhObVlueFFvME8wNDlTeE1PS3lucjZnRQ?oc=5",
-          "source": "UDN",
-          "published": "2026-10-22T09:36:32+00:00",
           "type": "文章",
           "description": ""
         },
@@ -269,10 +270,26 @@
           "published": "2026-10-21T03:32:00+00:00",
           "type": "文章",
           "description": ""
+        },
+        {
+          "title": "松山機場遷移蔣萬安赴議會報告提現在就應啟動| 政治 - 中央社 CNA",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBuc2NiM2F4WVVsYUZMQk80STVFOUMycU1OT0c1MTM5dmpuUjVVb2pyRXBjamZPV2ZUamVBYnprU3QtN2Z5dTN4UEpMNTg1akp3SEpCMmM0M19tUzJyaHJV?oc=5",
+          "source": "中央社 CNA",
+          "published": "2026-10-21T03:17:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "挺松機遷建 民團：松機噪音、空汙累計早逝人數恐破千人 - UDN",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBLVkwyUWJIUmlvUkxhU282eldWcUdrNERGaUh3MFhLSVdWV092d1V2SWhpRG9FMTJvQlZHXzBVZWpDdEVzWTJrcWV2djl0NGRl0gFWQVVfeXFMTlp3N3dMbEd3WlhYMUJXLU5LaDFqRGNEaXk2SWx3MXE5V0lMUXBKSnA4aEFhRldCNlAtNkFoTU9aZ0xoT3B6Y3duRGxwa2tFV0pmOTBKcHc?oc=5",
+          "source": "UDN",
+          "published": "2026-10-21T02:43:33+00:00",
+          "type": "文章",
+          "description": ""
         }
       ],
-      "updated": "2026-10-25T04:15:26.381396+00:00",
-      "checkedAt": "2026-10-25T04:15:26.381396+00:00",
+      "updated": "2026-10-25T04:20:38.763166+00:00",
+      "checkedAt": "2026-10-25T04:20:38.763166+00:00",
       "keys": [
         "松山機場",
         "松機",
@@ -282,6 +299,14 @@
     },
     "4446ca7b-5593-4f73-8513-8f6f3e78f2c6": {
       "items": [
+        {
+          "title": "鳥松山水段運動休閒專用區土地都市更新事業簽約陳其邁：以市民利益為優先公私協力提升城市樂活環境 - 蕃新聞",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1wNDRDNV9XVTIwMlo4YklsY1NoLU1QVFBhSHNycFBhMmREZmdscEpvRlNUeGQ1N0xMQ0ZZV3pCUmtpTzh4dVRTMllLRTJtbzNYT1E?oc=5",
+          "source": "蕃新聞",
+          "published": "2026-10-22T00:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
         {
           "title": "鳥松山水段運動休閒專用區土地都市更新事業簽約陳其邁：以市民利益為優先公私協力提升城市樂活環境 - 高雄市政府全球資訊網",
           "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSXNTQXNhdHpZZkMxc2tybnVUOFdNNW43ajlOaEtHQUdZZWVWSE9XZzlkUkdBUDZtdHlrZ3V3V3FEbWVkQzhxSkwxd0o1ZVNRZXRKRkUzdFc3Z0l6V0xsMjZGRG9DcnY4Ny1YdHdwZXpXVVZ4VWl3R19WMGNpZDVld3lHM2VoMVBCMlM0?oc=5",
@@ -339,14 +364,6 @@
           "description": ""
         },
         {
-          "title": "鄭丞宏競選議員辦公室今開幕 提五泰林交通改善及都市更新 - UDN",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9WM0VZclZlV1FsNFpva3BoOXIxNVlMbmVPUWFhQ1RtMU1OSVV4WHJuLVlsRTRQX1UyeDZUbjYxVmkwR2xQaVVtaTdqVDU3Skgzd3RB0gFYQVVfeXFMTkxuUmtKaFZ2WDRWUEoyd29qUTJQOFZUVmdIREhYMjlMcVJNT05jUEdBZDlJV0NEX2VzYnBkQ3loMFBKQy12Qm1vSEVRVFpuNEwwVjRRanRLcg?oc=5",
-          "source": "UDN",
-          "published": "2026-10-11T07:00:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
           "title": "基隆仁愛區後援會成立湧人潮謝國樑：推動老舊建築與商圈都市更新| 2026九合一選舉 - UDN",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5WNTB1OGI3N3AtY0Q4bmlxcVdfN2FtblZkWUl5R0NmQVZ3emFCVFJQTTBXOTZXWlpGYTNDYUUtTnkzSGs4OXlqZzViaVV2Uy15RDN0Zzg3TVM?oc=5",
           "source": "UDN",
@@ -395,16 +412,16 @@
           "description": ""
         },
         {
-          "title": "員山火災釀4死 吳宗憲提「防災型都市更新」三大防線 | 中華日報 - LINE TODAY",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9rMHNEM0ZwbFMyemQxY25wb2lNUVNweWlqTzJBV2QyMjJRZ1J3b2NFLWFLNmNFRjNpaks0T0RHNGxEWnRsanowSWxkVEREeTd2cDNad3lR?oc=5",
-          "source": "LINE TODAY",
+          "title": "員山火災釀4死 吳宗憲提「防災型都市更新」三大防線 - 中華新聞雲／中華日報",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4wZ3l3all1eS0xLUMtNTdha3JCbHV6T0Z4ekgzQXdSWE5xT2NHUXZURVNpS3VCcHBiWmU4Q0N3LXlqa3BDdE5nejY3SUNVb21KWUE?oc=5",
+          "source": "中華新聞雲／中華日報",
           "published": "2026-10-04T07:00:00+00:00",
           "type": "文章",
           "description": ""
         }
       ],
-      "updated": "2026-10-25T04:15:26.381396+00:00",
-      "checkedAt": "2026-10-25T04:15:26.381396+00:00",
+      "updated": "2026-10-25T04:20:38.763166+00:00",
+      "checkedAt": "2026-10-25T04:20:38.763166+00:00",
       "keys": [
         "臺北都市更新",
         "都市更新",
