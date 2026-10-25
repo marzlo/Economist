@@ -23,3 +23,5 @@ html{scroll-behavior:smooth}#videos-section,#issues-section{scroll-margin-top:20
   .desktop-nav a:hover,.desktop-nav a:focus-visible{background:var(--wash);color:var(--accent)}
   #videos-section,#issues-section,main #reading-review{scroll-margin-top:88px}
 }
+
+@media(max-width:850px){.mobile-nav a{min-width:0;white-space:nowrap}}
