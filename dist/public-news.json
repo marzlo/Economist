@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T02:21:56.044620+00:00",
+  "updated": "2026-10-25T04:06:03.597834+00:00",
   "topics": [
     {
       "id": "civic-songshan-airport",
@@ -248,8 +248,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-10-25T02:21:56.044620+00:00",
-      "checkedAt": "2026-10-25T02:21:56.044620+00:00",
+      "updated": "2026-10-25T04:06:03.597834+00:00",
+      "checkedAt": "2026-10-25T04:06:03.597834+00:00",
       "keys": [
         "松山機場",
         "松機",
@@ -280,6 +280,14 @@
           "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQ0ZTYlBmRm1lSnBsVERsS1BsZHVnUDJrX1Z1d3VpcW1OZDVjNjZpZXVYcUhPVjB5QWc2RGpTYktYMnQ5aXh2TzNJU3plTE9KRlRwWGFGWi15SV9JbGdjY3pmbTFIU0JqMWhxamdsYllxbzJZaFdOQlFUdWZPT1lLX3NvMjFQQzlVZFRzdTBycXhvdUs1dkJmcGZB?oc=5",
           "source": "UDN",
           "published": "2026-10-18T16:41:37+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "討論牆 | 加速都市更新！蔣萬安拋雙新政：意願門檻降至50％、大街廓容積率提高到300 - LINE TODAY",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5WTmp2QW01amRkRkZaUFpvbURSME40eXozZ2xVX3VIQk9SZWZXbnozWmh0WG5DMGVnZGtBQXc4Sm1GWGJHQ2NjZW96S1E5VGJHSWMxeTNyaDJaMlhJdmVrYXlLN0I?oc=5",
+          "source": "LINE TODAY",
+          "published": "2026-10-16T09:22:07+00:00",
           "type": "文章",
           "description": ""
         },
@@ -370,18 +378,10 @@
           "published": "2026-10-04T07:00:00+00:00",
           "type": "文章",
           "description": ""
-        },
-        {
-          "title": "當房子老去：從人性、制度到共識，找到都市更新真正的解方- 社會新聞 - PChome Online 新聞",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTUtKaFNWUWhIV0pmcEhDdml2Y2VhdFlvX1JHak9GTUd4QVVyQXR1ajhJWjNjY25QLUZIaXJsVzRyVnhQbk5jR3VGeDlZTEowSDZybEtiTU5jUEMtaDE3aG80OGpnNkpiWndWc0hMZW9YYS1EdW9FXzdSbklpOElFOHZ6R0tIRUlz?oc=5",
-          "source": "PChome Online 新聞",
-          "published": "2026-10-02T07:00:00+00:00",
-          "type": "文章",
-          "description": ""
         }
       ],
-      "updated": "2026-10-25T02:21:56.044620+00:00",
-      "checkedAt": "2026-10-25T02:21:56.044620+00:00",
+      "updated": "2026-10-25T04:06:03.597834+00:00",
+      "checkedAt": "2026-10-25T04:06:03.597834+00:00",
       "keys": [
         "臺北都市更新",
         "都市更新",
