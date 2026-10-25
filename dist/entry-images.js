@@ -30,7 +30,7 @@ function mount(){const field=document.createElement('fieldset');field.innerHTML=
   if(!files.length)files=[...(clipboard.files||[])].filter(file=>file.type.startsWith('image/'));
   if(!files.length)return; // Plain text keeps the browser's normal paste behavior.
   e.preventDefault();
-  const text=clipboard.getData('text/plain');if(text){content.setRangeText(text,content.selectionStart,content.selectionEnd,'end');content.dispatchEvent(new Event('input',{bubbles:true}))}
+  const text=e.noteFormattedText||clipboard.getData('text/plain');if(text){content.setRangeText(text,content.selectionStart,content.selectionEnd,'end');content.dispatchEvent(new Event('input',{bubbles:true}))}
   addFiles(files);
  });
 

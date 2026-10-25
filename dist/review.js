@@ -7,7 +7,7 @@ const addDays=(s,n)=>{const d=new Date(s+'T00:00:00Z');d.setUTCDate(d.getUTCDate
 const periodLabel=s=>s==='all'?'所有記事':s.replaceAll('-','/')+' — '+addDays(s,6).slice(5).replace('-','/');
 function links(n){return (n.links||[]).filter(l=>safeLink(l.url)).map(l=>`<a target="_blank" rel="noopener" href="${h(safeLink(l.url))}">↗ ${h(l.title||l.url)}</a>`).join('')}
 function tags(n){return n.topics.map(t=>`<span class="rv-tag">${h(t.name)}</span>`).join('')}
-function body(n){return `<p class="rv-text">${h(n.text||'')}</p>${EntryImages.html(n)}<div class="rv-sources">${links(n)}</div>`}
+function body(n){return `<div class="rv-text entry-content">${NoteContent.render(n.text||'')}</div>${EntryImages.html(n)}<div class="rv-sources">${links(n)}</div>`}
 function noteRow(n){return `<details class="rv-note"><summary><time>${h(n.date||n.statDate)}</time><div><span class="rv-note-title">${h(n.title)}</span><div class="rv-tags">${tags(n)}</div></div><span aria-hidden="true">›</span></summary><div class="rv-note-body">${body(n)}<button type="button" data-edit-review="${h(n.id)}">編輯記事</button></div></details>`}
 function empty(){return `<div class="rv-empty"><h3>${query?'沒有符合搜尋的記事':'這個期間還沒有記事'}</h3><p>${query?'可清除搜尋、換個關鍵字，或切換「所有記事」。':'可切換其他週次或「所有記事」查看累積內容。'}</p></div>`}
 function render(){

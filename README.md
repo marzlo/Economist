@@ -78,3 +78,9 @@ GitHub Pages 網址：https://marzlo.github.io/Economist/
 `cover: {"file": "weekly-hero.png", "alt": "本期插畫說明"}`。
 發布器會保留這份封面設定，首頁、內頁與 PDF 使用同一期圖片；
 不覆寫其他期的封面，也不透過排程呼叫付費圖片生成 API。
+
+記事內容以純文字 Markdown 儲存，支援 GFM 表格、標題、清單與程式碼區塊。
+貼上 HTML 表格時轉為 Markdown；直接貼上 Markdown 或多列 Tab 分隔資料也可預覽。
+閱讀版在本機格式化並清理 HTML，表格可水平滑動。
+靜態依賴 Marked 15.0.12、DOMPurify 3.3.0 位於 `dist/vendor`，附原始授權；
+不從外部 CDN 載入，也不呼叫 AI API。
