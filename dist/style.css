@@ -25,3 +25,5 @@ html{scroll-behavior:smooth}#videos-section,#issues-section{scroll-margin-top:20
 }
 
 @media(max-width:850px){.mobile-nav a{min-width:0;white-space:nowrap}}
+
+.entry-link-notice{padding:16px 20px;margin-bottom:24px;border:1px solid var(--line);background:var(--paper);border-radius:8px;line-height:1.8}.entry-link-notice p{margin:0 0 8px}.entry-link-notice a{color:var(--accent)}
