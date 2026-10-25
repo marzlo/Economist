@@ -27,3 +27,15 @@ html{scroll-behavior:smooth}#videos-section,#issues-section{scroll-margin-top:20
 @media(max-width:850px){.mobile-nav a{min-width:0;white-space:nowrap}}
 
 .entry-link-notice{padding:16px 20px;margin-bottom:24px;border:1px solid var(--line);background:var(--paper);border-radius:8px;line-height:1.8}.entry-link-notice p{margin:0 0 8px}.entry-link-notice a{color:var(--accent)}
+
+.mobile-nav-picker{display:none}
+@media(max-width:600px){
+ .mobile-nav>a{display:none}
+ .mobile-nav{padding:12px 18px calc(12px + env(safe-area-inset-bottom))}
+ .mobile-nav-picker{display:flex;align-items:center;gap:14px;width:100%;margin:0;font-size:16px;color:var(--ink)}
+ .mobile-nav-picker>span{flex-shrink:0;font-weight:600}
+ .mobile-nav-picker select{flex:1;min-width:0;width:auto;min-height:52px;margin:0;padding:10px 14px;font:inherit;font-size:18px;font-weight:600;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:8px;color-scheme:light}
+ body.dark .mobile-nav-picker select{color-scheme:dark}
+ .mobile-nav-picker select:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+ #weekly-review,#long-term-observations,#reading-review,#civic-section{scroll-margin-top:20px}
+}
