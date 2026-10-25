@@ -25,3 +25,11 @@ assert.deepEqual(Object.keys(catalog).sort(),[...M.scopes].sort());
 const original=[{id:'delete-me',entries:[{id:'unique',text:'only here'}]},{id:'keep-me',entries:[{id:'shared',text:'retain shared note',links:[{url:'https://example.com'}],issueIds:['delete-me','keep-me']}]}];
 const remaining=M.removeTopic(original,'delete-me');
 assert.equal(remaining.length,1);assert.equal(remaining[0].id,'keep-me');assert.equal(remaining[0].entries[0].text,'retain shared note');assert.deepEqual(remaining[0].entries[0].issueIds,['keep-me']);assert.equal(remaining[0].entries[0].links[0].url,'https://example.com');assert.equal(original.length,2);assert.deepEqual(original[1].entries[0].issueIds,['delete-me','keep-me']);
+
+// Managing one criterion must not reset progress, remove history, or edit siblings.
+const tracked={id:'topic',criteria:[{id:'kept',text:'成立專案小組',status:'推進中',updatedAt:'before'},{id:'other',text:'成本評估',status:'已達成'}],entries:[{id:'history',text:'既有進度紀錄'}]};
+const renamed=M.saveCriterion(tracked,'成立正式跨部會專案小組','kept',()=>{throw Error('Must preserve ID')});
+assert.equal(renamed.criteria[0].id,'kept');assert.equal(renamed.criteria[0].status,'推進中');assert.deepEqual(renamed.criteria[1],tracked.criteria[1]);assert.deepEqual(renamed.entries,tracked.entries);assert.equal(tracked.criteria[0].text,'成立專案小組');
+const appended=M.saveCriterion(tracked,'分階段時程',null,()=> 'new');assert.equal(appended.criteria.at(-1).status,'待查證');assert.equal(appended.criteria.at(-1).id,'new');
+assert.throws(()=>M.saveCriterion(tracked,'成本評估',null,()=> 'duplicate'),/相同/);assert.throws(()=>M.saveCriterion(tracked,' ',null,()=> 'blank'),/填寫/);assert.throws(()=>M.saveCriterion(tracked,'changed','missing',()=> 'x'),/不存在/);
+const removed=M.removeCriterion(tracked,'kept');assert.deepEqual(removed.entries,tracked.entries);assert.equal(removed.criteria.length,1);assert.equal(tracked.criteria.length,2);
