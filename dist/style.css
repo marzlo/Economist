@@ -39,3 +39,20 @@ html{scroll-behavior:smooth}#videos-section,#issues-section{scroll-margin-top:20
  .mobile-nav-picker select:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
  #weekly-review,#long-term-observations,#reading-review,#civic-section{scroll-margin-top:20px}
 }
+
+/* Full-width video text on phones; prevent Safari's narrow-column text inflation. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media(max-width:600px){
+ #news>article{grid-template-columns:minmax(0,1fr);gap:12px;padding:24px 0}
+ #news>article>div{min-width:0}
+ #news>article>a{display:block;min-width:0}
+ #news>article>a>img{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;margin:0;border-radius:8px}
+ #news>article h3{font-size:18px;line-height:1.65;overflow-wrap:anywhere;margin:8px 0 12px}
+ #news>article p{font-size:15px;line-height:1.85}
+ #news>article .meta{font-size:12px;flex-wrap:wrap;gap:8px}
+ #news>article .watch{font-size:14px}
+ #news>article .chapters{font-size:14px}
+ #news>article .chapters summary{font-size:15px}
+ #news>article .chapters li{padding:6px 0}
+ #news>article .chapters a{gap:10px}
+}
