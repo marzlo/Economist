@@ -55,3 +55,14 @@ body.dark .journey-miniature .journey-city{opacity:.28}
    when a sticky flex navigation grows as the miniature appears. */
 .journey-dock .journey-miniature{position:absolute;inset:0;height:var(--journey-dock-height,100%)}
 .journey-miniature .journey-city,.journey-miniature .journey-city-track,.journey-miniature .journey-city-track img{height:var(--journey-dock-height,100%)}
+
+.journey-stopped .journey-city-track,.journey-stopped .journey-wheel,.journey-stopped .journey-vehicle{animation-play-state:paused!important}
+.journey-doorway{position:absolute;inset:0;width:100%;height:100%;opacity:var(--door-open,0);pointer-events:none}
+.journey-vehicle>.journey-ramp{position:absolute;inset:0;clip-path:polygon(82% 66%,86% 65%,99% 97%,91% 98%,82% 75%);transform-origin:83% 70%;transform:rotate(var(--ramp-angle,-95deg));opacity:var(--door-open,0);pointer-events:none}
+.journey-traveler{position:absolute;left:84%;top:73%;width:4.2%;height:24%;opacity:0;transform:translate(-50%,-100%) scaleX(var(--person-direction,1));pointer-events:none}
+.journey-traveler svg{display:block;width:100%;height:100%;overflow:visible}
+.journey-leg,.journey-arm{transform-box:fill-box;transform-origin:top center}
+.journey-traveler.is-walking .journey-leg{animation:journey-step .65s ease-in-out infinite alternate}
+.journey-traveler.is-walking .journey-leg-back{animation-delay:-.65s}
+.journey-traveler.is-walking .journey-arm{animation:journey-step .65s ease-in-out infinite alternate-reverse}
+@keyframes journey-step{from{transform:rotate(-17deg)}to{transform:rotate(17deg)}}

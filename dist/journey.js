@@ -24,8 +24,64 @@
   [banner, miniature].forEach(scene => scene.querySelector('.journey-toggle').addEventListener('click', () => {
     paused = !paused;
     applyPause();
+  const scenes = [banner, miniature];
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  let elapsed = 0;
+  let previousTime;
+  let lastStopped;
+  const renderCycle = state => {
+    scenes.forEach(scene => {
+      if (lastStopped !== state.stopped) scene.classList.toggle('journey-stopped', state.stopped);
+      const vehicle = scene.querySelector('.journey-vehicle');
+      vehicle.style.setProperty('--door-open', state.door);
+      vehicle.style.setProperty('--ramp-angle', ((1 - state.door) * -95) + 'deg');
+      const person = scene.querySelector('.journey-traveler');
+      person.style.left = state.person.x + '%';
+      person.style.top = state.person.y + '%';
+      person.style.opacity = state.person.opacity;
+      person.style.setProperty('--person-direction', state.person.direction);
+      person.classList.toggle('is-walking', state.person.walking);
+    });
+    lastStopped = state.stopped;
+  };
+  renderCycle(JourneyCycle.at(0));
+  const tick = now => {
+    if (previousTime !== undefined && !paused && !document.hidden && !reducedMotion.matches) elapsed += Math.min(now - previousTime, 100);
+    previousTime = now;
+    if (!paused) renderCycle(JourneyCycle.at(reducedMotion.matches ? 0 : elapsed));
+    requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
   }));
   applyPause();
+  const scenes = [banner, miniature];
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  let elapsed = 0;
+  let previousTime;
+  let lastStopped;
+  const renderCycle = state => {
+    scenes.forEach(scene => {
+      if (lastStopped !== state.stopped) scene.classList.toggle('journey-stopped', state.stopped);
+      const vehicle = scene.querySelector('.journey-vehicle');
+      vehicle.style.setProperty('--door-open', state.door);
+      vehicle.style.setProperty('--ramp-angle', ((1 - state.door) * -95) + 'deg');
+      const person = scene.querySelector('.journey-traveler');
+      person.style.left = state.person.x + '%';
+      person.style.top = state.person.y + '%';
+      person.style.opacity = state.person.opacity;
+      person.style.setProperty('--person-direction', state.person.direction);
+      person.classList.toggle('is-walking', state.person.walking);
+    });
+    lastStopped = state.stopped;
+  };
+  renderCycle(JourneyCycle.at(0));
+  const tick = now => {
+    if (previousTime !== undefined && !paused && !document.hidden && !reducedMotion.matches) elapsed += Math.min(now - previousTime, 100);
+    previousTime = now;
+    if (!paused) renderCycle(JourneyCycle.at(reducedMotion.matches ? 0 : elapsed));
+    requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
   const smallScreen = matchMedia('(max-width:850px)');
   const fitDock = () => {
     const nav = dock.parentElement;
