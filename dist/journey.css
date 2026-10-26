@@ -1,0 +1,18 @@
+.journey-banner{position:relative;overflow:hidden;border-radius:16px;margin:-18px 0 34px;isolation:isolate;background:#eee3d0}
+.journey-banner svg{display:block;width:100%;height:auto}
+.journey-toggle{position:absolute;right:12px;bottom:10px;font-size:12px;padding:5px 9px;background:#fff9ece8;color:#344c48;border-color:#c6b89d;border-radius:20px}
+.journey-toggle:hover{background:#344c48;color:#fff9ec}
+.journey-far{animation:journey-pass 100s linear infinite}
+.journey-scenery{animation:journey-pass 22s linear infinite}
+.journey-road{animation:journey-pass 7s linear infinite}
+.journey-wheel{animation:journey-spin 2.2s linear infinite}
+.journey-car{animation:journey-bob 1.2s ease-in-out infinite}
+.journey-flag{animation:journey-flutter 1.5s ease-in-out infinite;transform-box:fill-box;transform-origin:left center}
+.journey-banner.is-paused *{animation-play-state:paused!important}
+@keyframes journey-pass{to{transform:translateX(-1200px)}}
+@keyframes journey-spin{to{transform:rotate(360deg)}}
+@keyframes journey-bob{50%{transform:translateY(-1.7px)}}
+@keyframes journey-flutter{50%{transform:scaleY(.8) skewY(5deg)}}
+@media(max-width:600px){.journey-banner{margin:0 0 28px;border-radius:12px}.journey-banner svg{width:180%;max-width:none;margin-left:-40%}.journey-toggle{font-size:12px;min-height:32px;bottom:7px;right:8px}}
+@media(prefers-reduced-motion:reduce){.journey-banner *{animation:none!important}.journey-toggle{display:none}}
+@media print{.journey-banner{display:none}}
