@@ -17,8 +17,8 @@ main>header .status{width:100%;max-width:280px;justify-self:end}
 @keyframes journey-spin{to{transform:rotate(360deg)}}
 
 .journey-city{position:absolute;inset:0 0 10px;z-index:-1;overflow:hidden;opacity:.78;mask-image:linear-gradient(to bottom,transparent,#000 10%,#000 88%,transparent)}
-.journey-city-track{display:flex;width:600%;height:100%;animation:journey-city-pass 90s linear infinite;will-change:transform}
-.journey-city-track img{display:block;width:25%;height:100%;flex:0 0 25%;object-fit:cover;object-position:center bottom}
+.journey-city-track{display:flex;width:4800px;height:100%;animation:journey-city-pass 140s linear infinite;will-change:transform}
+.journey-city-track img{display:block;width:600px;height:100%;flex:0 0 600px;object-fit:cover;object-position:center bottom}
 @keyframes journey-city-pass{to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.journey-city-track{will-change:auto}}
 
@@ -29,8 +29,8 @@ main>header .status{width:100%;max-width:280px;justify-self:end}
 .journey-dock{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
 .journey-dock .journey-miniature{width:100%;height:100%;max-width:none;min-height:0;margin:0;mask-image:none;border-radius:0;pointer-events:none}
 .journey-miniature .journey-city{inset:0;opacity:.42;mask-image:none}
-.journey-miniature .journey-city-track{width:2400px}
-.journey-miniature .journey-city-track img{width:300px;flex:0 0 300px;object-fit:cover;object-position:center bottom}
+.journey-miniature .journey-city-track{width:2880px}
+.journey-miniature .journey-city-track img{width:360px;flex:0 0 360px;object-fit:cover;object-position:center bottom}
 .journey-miniature .journey-vehicle{width:145px;left:auto;right:30px;bottom:5px}
 .journey-miniature .journey-ground-shadow{left:auto;right:45px;width:115px;bottom:4px;height:3px;filter:blur(2px)}
 .journey-miniature .journey-toggle{display:block;pointer-events:auto;right:3px;bottom:6px;min-height:28px;min-width:28px;font-size:12px;padding:2px;background:var(--paper)}
@@ -47,3 +47,6 @@ body.dark .journey-miniature .journey-city{opacity:.28}
 @media(max-width:600px){.journey-docked .mobile-nav{align-items:center;min-height:82px}.journey-docked .mobile-nav-picker{flex:1;min-width:0;margin-left:126px}.journey-docked .mobile-nav-picker>span{display:none}.journey-docked .mobile-nav-picker select{width:100%}.journey-miniature .journey-vehicle{width:120px;left:8px;right:auto;bottom:10px}.journey-miniature .journey-ground-shadow{left:15px;right:auto;width:105px;bottom:9px}.journey-miniature .journey-toggle{left:2px;right:auto;bottom:0;min-width:24px;min-height:24px}.journey-miniature .journey-city{opacity:.48}}
 @media(max-width:360px){.journey-docked .mobile-nav-picker{margin-left:104px}.journey-miniature .journey-vehicle{width:100px;left:4px}}
 @media print{.journey-dock{display:none}}
+
+/* Matched mirrored edges join without transparent seams; four tiles repeat exactly. */
+.journey-city-track img:nth-child(even){transform:scaleX(-1)}
