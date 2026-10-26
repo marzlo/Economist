@@ -56,3 +56,5 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
  #news>article .chapters li{padding:6px 0}
  #news>article .chapters a{gap:10px}
 }
+
+#news>article>a[hidden]{display:none}
