@@ -1,22 +1,27 @@
-/* Shared timeline for the header and the docked miniature. Times are milliseconds. */
+/* One deterministic timeline, shared by both scenes. Milliseconds. */
 ((root) => {
-  const duration = 20000;
+  const duration = 26000;
   const clamp = x => Math.max(0, Math.min(1, x));
   const mix = (a, b, x) => a + (b - a) * clamp(x);
+  function member(t, index) {
+    const local = t - (5600 + index * 650);
+    const far = 108 + index * 4;
+    let x = 81, y = 80, direction = 1;
+    if (local < 700) x = mix(81, 87, local / 700);
+    else if (local < 2800) { x = mix(87, 99, (local - 700) / 2100); y = mix(80, 97, (local - 700) / 2100); }
+    else if (local < 4300) { x = mix(99, far, (local - 2800) / 1500); y = 97; }
+    else if (local < 7000) { x = far; y = 97; }
+    else if (local < 8500) { x = mix(far, 99, (local - 7000) / 1500); y = 97; direction = -1; }
+    else if (local < 10800) { x = mix(99, 87, (local - 8500) / 2300); y = mix(97, 80, (local - 8500) / 2300); direction = -1; }
+    else { x = mix(87, 81, (local - 10800) / 700); y = 80; direction = -1; }
+    const visible = local >= 0 && local < 11500;
+    return {x, y, direction, visible, walking: visible && !(local >= 4300 && local < 7000)};
+  }
   function at(elapsed) {
     const t = ((elapsed % duration) + duration) % duration;
-    const stopped = t >= 3500 && t < 16500;
-    const door = t < 3800 ? 0 : t < 5200 ? clamp((t - 3800) / 1400) : t < 14300 ? 1 : 1 - clamp((t - 14300) / 1400);
-    let x = 84, y = 73, direction = 1;
-    if (t < 8000) { x = mix(84, 99, (t - 5600) / 2400); y = mix(73, 97, (t - 5600) / 2400); }
-    else if (t < 9500) { x = mix(99, 110, (t - 8000) / 1500); y = 97; }
-    else if (t < 10800) { x = 110; y = 97; }
-    else if (t < 12300) { x = mix(110, 99, (t - 10800) / 1500); y = 97; direction = -1; }
-    else { x = mix(99, 84, (t - 12300) / 2000); y = mix(97, 73, (t - 12300) / 2000); direction = -1; }
-    const visible = t >= 5600 && t < 14300;
-    const walking = visible && !(t >= 9500 && t < 10800);
-    const opacity = visible ? Math.min(1, (t - 5600) / 250, (14300 - t) / 250) : 0;
-    return {t, stopped, door, person: {x, y, direction, visible, walking, opacity}};
+    const stopped = t >= 3500 && t < 22000;
+    const door = t < 3800 ? 0 : t < 5200 ? clamp((t - 3800) / 1400) : t < 19000 ? 1 : 1 - clamp((t - 19000) / 1700);
+    return {t, stopped, door, people: [0, 1, 2].map(index => member(t, index))};
   }
   root.JourneyCycle = {at, duration};
   if (typeof module !== 'undefined') module.exports = root.JourneyCycle;

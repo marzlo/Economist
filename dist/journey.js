@@ -24,61 +24,40 @@
   [banner, miniature].forEach(scene => scene.querySelector('.journey-toggle').addEventListener('click', () => {
     paused = !paused;
     applyPause();
-  const scenes = [banner, miniature];
-  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-  let elapsed = 0;
-  let previousTime;
-  let lastStopped;
-  const renderCycle = state => {
-    scenes.forEach(scene => {
-      if (lastStopped !== state.stopped) scene.classList.toggle('journey-stopped', state.stopped);
-      const vehicle = scene.querySelector('.journey-vehicle');
-      vehicle.style.setProperty('--door-open', state.door);
-      vehicle.style.setProperty('--ramp-angle', ((1 - state.door) * -95) + 'deg');
-      const person = scene.querySelector('.journey-traveler');
-      person.style.left = state.person.x + '%';
-      person.style.top = state.person.y + '%';
-      person.style.opacity = state.person.opacity;
-      person.style.setProperty('--person-direction', state.person.direction);
-      person.classList.toggle('is-walking', state.person.walking);
-    });
-    lastStopped = state.stopped;
-  };
-  renderCycle(JourneyCycle.at(0));
-  const tick = now => {
-    if (previousTime !== undefined && !paused && !document.hidden && !reducedMotion.matches) elapsed += Math.min(now - previousTime, 100);
-    previousTime = now;
-    if (!paused) renderCycle(JourneyCycle.at(reducedMotion.matches ? 0 : elapsed));
-    requestAnimationFrame(tick);
-  };
-  requestAnimationFrame(tick);
   }));
   applyPause();
   const scenes = [banner, miniature];
+  const views = scenes.map(scene => ({scene, vehicle: scene.querySelector('.journey-vehicle'), people: [...scene.querySelectorAll('.journey-traveler')]}));
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   let elapsed = 0;
   let previousTime;
   let lastStopped;
   const renderCycle = state => {
-    scenes.forEach(scene => {
+    views.forEach(({scene, vehicle, people}) => {
       if (lastStopped !== state.stopped) scene.classList.toggle('journey-stopped', state.stopped);
-      const vehicle = scene.querySelector('.journey-vehicle');
+      if ((scene === miniature && dock.hidden) || (scene === banner && !dock.hidden)) return;
       vehicle.style.setProperty('--door-open', state.door);
       vehicle.style.setProperty('--ramp-angle', ((1 - state.door) * -95) + 'deg');
-      const person = scene.querySelector('.journey-traveler');
-      person.style.left = state.person.x + '%';
-      person.style.top = state.person.y + '%';
-      person.style.opacity = state.person.opacity;
-      person.style.setProperty('--person-direction', state.person.direction);
-      person.classList.toggle('is-walking', state.person.walking);
+      people.forEach((person, index) => {
+        const member = state.people[index];
+        person.style.left = member.x + '%';
+        person.style.top = member.y + '%';
+        person.style.visibility = member.visible ? 'visible' : 'hidden';
+        person.style.setProperty('--person-direction', member.direction);
+        person.classList.toggle('is-walking', member.walking);
+      });
     });
     lastStopped = state.stopped;
   };
   renderCycle(JourneyCycle.at(0));
+  let previousRender = -Infinity;
   const tick = now => {
     if (previousTime !== undefined && !paused && !document.hidden && !reducedMotion.matches) elapsed += Math.min(now - previousTime, 100);
     previousTime = now;
-    if (!paused) renderCycle(JourneyCycle.at(reducedMotion.matches ? 0 : elapsed));
+    if (!paused && !document.hidden && now - previousRender >= 32) {
+      renderCycle(JourneyCycle.at(reducedMotion.matches ? 0 : elapsed));
+      previousRender = now;
+    }
     requestAnimationFrame(tick);
   };
   requestAnimationFrame(tick);
