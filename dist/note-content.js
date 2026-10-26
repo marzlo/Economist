@@ -3,12 +3,16 @@ window.NoteContent=(()=>{
 const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const renderer=new marked.Renderer();renderer.html=token=>/^<br\s*\/?>$/i.test(token.text.trim())?'<br>':escape(token.text);
 const options={gfm:true,breaks:true,renderer};
-const tags=['p','br','strong','b','em','i','del','s','h1','h2','h3','h4','h5','h6','ul','ol','li','blockquote','pre','code','hr','table','thead','tbody','tfoot','tr','th','td','a'];
-const config={ALLOWED_TAGS:tags,ALLOWED_ATTR:['class','href','title','colspan','rowspan','start','align'],ALLOW_DATA_ATTR:false};
+const tags=['p','br','strong','b','em','i','del','s','h1','h2','h3','h4','h5','h6','ul','ol','li','blockquote','pre','code','hr','table','thead','tbody','tfoot','tr','th','td','a','img'];
+const config={ALLOWED_TAGS:tags,ALLOWED_ATTR:['src','alt','class','href','title','colspan','rowspan','start','align'],ALLOW_DATA_ATTR:false};
 function safeURL(value){if(!value||typeof value!=='string')return null;try{const url=new URL(value,location.href);return ['http:','https:'].includes(url.protocol)?url.href:null}catch{return null}}
 function finish(html){
  const box=document.createElement('div');box.innerHTML=DOMPurify.sanitize(html,config);
  box.querySelectorAll('a').forEach(a=>{const url=safeURL(a.getAttribute('href')||'');if(!a.hasAttribute('href')||!url)a.removeAttribute('href');else{a.href=url;a.target='_blank';a.rel='noopener noreferrer'}});
+ box.querySelectorAll('img').forEach(img=>{
+  const url=safeURL(img.getAttribute('src'));if(!url){img.replaceWith(document.createTextNode(img.alt||''));return}
+  img.src=url;img.loading='lazy';img.decoding='async';img.className='entry-inline-image';
+ });
  box.querySelectorAll('table').forEach(table=>{const scroll=document.createElement('div');scroll.className='entry-table-scroll';scroll.tabIndex=0;scroll.setAttribute('role','region');scroll.setAttribute('aria-label','記事表格，可左右滑動');table.before(scroll);scroll.append(table);table.querySelectorAll('th').forEach(th=>th.scope='col')});
  box.querySelectorAll('pre>code.language-mermaid').forEach(code=>{
   const html=window.NoteDiagrams?.render(code.textContent);if(!html)return;
@@ -17,7 +21,7 @@ function finish(html){
  return box.innerHTML;
 }
 function render(value){try{return finish(marked.parse(String(value||''),options))}catch{return '<p>'+escape(value).replace(/\n/g,'<br>')+'</p>'}}
-function tables(value){if(!String(value).includes('|')&&!String(value).includes('mermaid'))return '';const tokens=marked.lexer(String(value),options),only=tokens.filter(t=>t.type==='table'||(t.type==='code'&&t.lang==='mermaid'));only.links=tokens.links;return only.length?finish(marked.parser(only,options)):''}
+function tables(value){if(/!\[[^\]]*\]\(/.test(String(value)))return render(value);if(!String(value).includes('|')&&!String(value).includes('mermaid'))return '';const tokens=marked.lexer(String(value),options),only=tokens.filter(t=>t.type==='table'||(t.type==='code'&&t.lang==='mermaid'));only.links=tokens.links;return only.length?finish(marked.parser(only,options)):''}
 const mdEscape=value=>String(value).replace(/\\/g,'\\\\').replace(/([`*_[\]])/g,'\\$1');
 function grid(rows){
  const width=Math.max(...rows.map(r=>r.length));if(!width)return '';
@@ -34,6 +38,7 @@ function fromHTML(html){
    const rows=[...node.rows].filter(row=>row.closest('table')===node).map(row=>[...row.cells].flatMap(cell=>{const value=[...cell.childNodes].map(walk).join('').trim();return [value,...Array(Math.min(30,Math.max(1,cell.colSpan||1))-1).fill('')]}));
    return rows.length?grid(rows):'';
   }
+  if(tag==='img'){const url=safeURL(node.getAttribute('src'));return url?'\n\n!['+mdEscape(node.getAttribute('alt')||'記事圖片')+'](<'+url.replace(/</g,'%3C').replace(/>/g,'%3E')+'>)\n\n':''}
   if(tag==='br')return '<br>';
   if(tag==='pre'){const code=node.textContent;const fence='`'.repeat(Math.max(3,...(code.match(/`+/g)||[]).map(s=>s.length+1)));return '\n\n'+fence+(node.querySelector('code.language-mermaid')?'mermaid':'')+'\n'+code+'\n'+fence+'\n\n'}
   if(tag==='code'){const text=node.textContent;const fence='`'.repeat(Math.max(1,...(text.match(/`+/g)||[]).map(s=>s.length+1)));return fence+text+fence}
@@ -61,7 +66,7 @@ function mount(){
   const dialog=area.closest('dialog');if(dialog)new MutationObserver(update).observe(dialog,{attributes:true,attributeFilter:['open']});
   area.addEventListener('paste',e=>{
    const data=e.clipboardData;if(!data)return;const html=data.getData('text/html'),plain=data.getData('text/plain');
-   let text=/<table[\s>]/i.test(html)?fromHTML(html):fromTSV(plain);
+   let text=/<(?:table|img)[\s>]/i.test(html)?fromHTML(html):fromTSV(plain);
    if(!text||text===plain)return;
    const image=[...(data.items||[])].some(i=>i.kind==='file'&&i.type.startsWith('image/'))||[...(data.files||[])].some(f=>f.type.startsWith('image/'));
    if(image){e.noteFormattedText=text;return}

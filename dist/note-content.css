@@ -11,3 +11,5 @@
 .note-diagram-edges path{fill:none;stroke:var(--accent,#a56b23);stroke-width:2}
 .note-diagram-tools{margin:8px 0}.note-diagram-tools button{font-size:14px}
 @media print{.entry-diagram-scroll{overflow:visible}.entry-diagram{min-width:0}}
+
+.entry-content .entry-inline-image{display:block;max-width:100%;width:auto;height:auto;aspect-ratio:auto;object-fit:contain;margin:18px auto;border-radius:10px}
