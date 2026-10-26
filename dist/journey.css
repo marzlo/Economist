@@ -50,3 +50,8 @@ body.dark .journey-miniature .journey-city{opacity:.28}
 
 /* Matched mirrored edges join without transparent seams; four tiles repeat exactly. */
 .journey-city-track img:nth-child(even){transform:scaleX(-1)}
+
+/* Use measured navigation height: Safari can retain an old percentage height
+   when a sticky flex navigation grows as the miniature appears. */
+.journey-dock .journey-miniature{position:absolute;inset:0;height:var(--journey-dock-height,100%)}
+.journey-miniature .journey-city,.journey-miniature .journey-city-track,.journey-miniature .journey-city-track img{height:var(--journey-dock-height,100%)}

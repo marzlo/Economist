@@ -27,8 +27,16 @@
   }));
   applyPause();
   const smallScreen = matchMedia('(max-width:850px)');
+  const fitDock = () => {
+    const nav = dock.parentElement;
+    if (nav && nav.clientHeight) dock.style.setProperty('--journey-dock-height', nav.clientHeight + 'px');
+  };
+  const navSize = new ResizeObserver(fitDock);
+  navSize.observe(desktopNav);
+  navSize.observe(mobileNav);
   const placeDock = () => {
     (smallScreen.matches ? mobileNav : desktopNav).append(dock);
+    fitDock();
   };
   placeDock();
   smallScreen.addEventListener('change', placeDock);
@@ -38,6 +46,7 @@
     dock.hidden = !docked;
     document.body.classList.toggle('journey-docked', docked);
     banner.classList.toggle('journey-offscreen', docked);
+    fitDock();
   }, {threshold: 0});
   observer.observe(banner);
 })();
