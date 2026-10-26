@@ -1,0 +1,27 @@
+/* Shared phone reading scale: title 20px, body 16px, metadata 14px. */
+@media screen and (max-width:600px){
+ body{font-size:16px}
+ main>header p{font-size:16px;line-height:1.85}
+ .muted,.note,.status small,.status b,.intro,.civic-scope-hint{font-size:14px;line-height:1.7}
+ main h2,#weekly-heading,.civic-header h2,.ob-heading h2{font-size:22px;line-height:1.55}
+ #news>article h3,#weekly-review .weekly-digest-copy h3,.issue h3,.civic-intro h3,.civic-scope-head h3,.ob-chart-heading h3{font-size:20px;line-height:1.65}
+ #news>article p,#news>article .chapters,#news>article .chapters summary,
+ .issue p,.issue ul,.issue .timeline .entry-content,.rv-text.entry-content,
+ .rv-note-title,.rv-sources a,.source-link,.civic-entry .entry-content,.civic-source .entry-content,
+ #civic-section .civic-header p,#civic-section .civic-intro p,#civic-section .civic-understanding>p,
+ #civic-section .civic-criteria li,#civic-section .civic-recommendation a,#civic-section .civic-source>a,
+ #weekly-review .weekly-digest-copy>p,#weekly-review .weekly-digest-copy blockquote,
+ .ob-heading p,.ob-story p,.ob-note p,.ob-note summary span,.ob-metadata dd{font-size:16px;line-height:1.85}
+ .civic-row h4,.civic-sources-heading,.ob-story h4{font-size:18px;line-height:1.65}
+ label,input,textarea,select,button,#civic-section input,#civic-section textarea{font-size:16px}
+ #news>article .watch,.rv-mode-tabs button,.rv-controls label,#civic-city-tabs button,#civic-topic-tabs button,
+ .civic-row button,.civic-recommendation button,.civic-criteria button,.chapter-actions button,.issue-actions button{font-size:14px}
+ #news>article .meta,.meta,.timeline-head,.rv-note time,.rv-tag,.rv-stat-note,.rv-stats span,
+ .weekly-eyebrow,.weekly-date,.weekly-digest-tags span,.weekly-digest-bottom,.weekly-read,
+ .weekly-digest-copy blockquote small,#weekly-manager>summary,#weekly-published-archive summary,
+ .ob-data-notice,.ob-change,.ob-record-status,.ob-footnote,.ob-chart-caption,.ob-metadata dt,
+ #civic-section .meta,#civic-section .civic-footer p,#civic-section .civic-disclaimer,.entry-images figcaption{font-size:14px;line-height:1.7}
+ .ob-label{font-size:14px;line-height:1.7}
+ .entry-content h1{font-size:24px}.entry-content h2{font-size:22px}.entry-content h3{font-size:20px}
+ #entry-editor,.civic-entry .entry-content,.issue .entry-content{font-size:16px}
+}
