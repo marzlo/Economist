@@ -59,19 +59,22 @@ body.dark .journey-miniature .journey-city{opacity:.28}
 .journey-stopped .journey-city-track,.journey-stopped .journey-wheel,.journey-stopped .journey-vehicle{animation-play-state:paused!important}
 .journey-doorway{position:absolute;inset:0;width:100%;height:100%;opacity:var(--door-open,0);pointer-events:none}
 .journey-vehicle>.journey-ramp{position:absolute;inset:0;clip-path:polygon(82% 66%,86% 65%,99% 97%,91% 98%,82% 75%);transform-origin:83% 70%;transform:rotate(var(--ramp-angle,-95deg));opacity:var(--door-open,0);pointer-events:none}
-.journey-traveler{position:absolute;left:84%;top:73%;width:4.8%;height:22%;visibility:hidden;transform:translate(-50%,-100%) scaleX(var(--person-direction,1));pointer-events:none}
-.journey-traveler svg{display:block;width:100%;height:100%;overflow:visible}
-.journey-leg,.journey-arm{transform-box:fill-box;transform-origin:top center}
-.journey-traveler.is-walking .journey-leg{animation:journey-step .65s ease-in-out infinite alternate}
-.journey-traveler.is-walking .journey-leg-back{animation-delay:-.65s}
-.journey-traveler.is-walking .journey-arm{animation:journey-step .65s ease-in-out infinite alternate-reverse}
-@keyframes journey-step{from{transform:rotate(-17deg)}to{transform:rotate(17deg)}}
-
 /* Hull occludes the crew at the doorway: they enter it rather than fade away. */
 .journey-team{position:absolute;inset:0;clip-path:polygon(84% 55%,120% 55%,120% 110%,90% 110%,90% 84%,84% 84%);pointer-events:none}
-.journey-arm-back{animation-delay:-.25s!important}
-.journey-traveler.is-walking .journey-leg{animation-duration:.28s}
-.journey-traveler.is-walking .journey-leg-back{animation-delay:-.28s}
-.journey-traveler.is-walking .journey-arm{animation-duration:.28s}
-.journey-traveler.is-walking>svg{animation:journey-run-bob .28s ease-in-out infinite alternate}
-@keyframes journey-run-bob{to{transform:translateY(-3px)}}
+/* Textured crew sprites share the vehicle's realistic materials and lighting. */
+.journey-traveler{position:absolute;left:84%;top:73%;width:3.6%;height:24%;visibility:hidden;transform:translate(-50%,-100%) scaleX(var(--person-direction,1));pointer-events:none}
+.journey-crew-figure{position:absolute;inset:0;display:block}
+.journey-crew-body,.journey-crew-leg{position:absolute;inset:0;display:block;background-image:url('journey-crew.webp?v=1');background-repeat:no-repeat;background-size:300% 100%}
+.journey-guard{--crew-position:0%}
+.journey-radio{--crew-position:50%}
+.journey-engineer{--crew-position:100%}
+.journey-crew-body,.journey-crew-leg{background-position:var(--crew-position) 0}
+.journey-crew-body{clip-path:inset(0 0 33% 0)}
+.journey-crew-leg{transform-origin:50% 67%}
+.journey-crew-leg-back{clip-path:polygon(10% 67%,52% 67%,55% 100%,5% 100%)}
+.journey-crew-leg-front{clip-path:polygon(48% 67%,95% 67%,100% 100%,48% 100%)}
+.journey-traveler.is-walking .journey-crew-leg{animation:journey-crew-stride .32s ease-in-out infinite alternate}
+.journey-traveler.is-walking .journey-crew-leg-back{animation-delay:-.32s}
+.journey-traveler.is-walking .journey-crew-figure{animation:journey-crew-bob .32s ease-in-out infinite alternate}
+@keyframes journey-crew-stride{from{transform:rotate(-15deg)}to{transform:rotate(15deg)}}
+@keyframes journey-crew-bob{to{transform:translateY(-1px)}}
