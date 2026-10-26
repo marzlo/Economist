@@ -1,16 +1,11 @@
-main>header{display:grid;grid-template-columns:minmax(230px,.95fr) minmax(260px,1.5fr) minmax(210px,.8fr);align-items:center;gap:18px}
+main>header{display:grid;grid-template-columns:minmax(230px,.95fr) minmax(260px,1.5fr) minmax(210px,.8fr);align-items:center;gap:18px;border-bottom:0}
 main>header>div:first-child{min-width:0}
 main>header .status{width:100%;max-width:280px;justify-self:end}
 .journey-banner{position:relative;min-width:0;width:100%;height:260px;overflow:hidden;isolation:isolate;background:transparent;mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent)}
-.journey-landscape{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
-.journey-vehicle{position:absolute;width:66%;max-width:none;height:auto;left:17%;bottom:22px;animation:journey-bob 1.6s ease-in-out infinite}
+.journey-vehicle{position:absolute;width:66%;max-width:none;height:auto;left:17%;bottom:29px;animation:journey-bob 1.6s ease-in-out infinite}
 .journey-toggle{position:absolute;right:12px;bottom:0;font-size:11px;padding:5px 8px;color:var(--muted);border:0;background:transparent;border-radius:4px;z-index:2}
 .journey-toggle:hover{background:var(--wash);color:var(--ink)}
-.journey-far{animation:journey-pass 90s linear infinite}
-.journey-scenery{animation:journey-pass 20s linear infinite}
-.journey-road{animation:journey-pass 7s linear infinite}
 .journey-banner.is-paused *{animation-play-state:paused!important}
-@keyframes journey-pass{to{transform:translateX(-800px)}}
 @keyframes journey-bob{50%{transform:translateY(-1.5px) rotate(.12deg)}}
 @media(max-width:1000px) and (min-width:701px){main>header{grid-template-columns:minmax(200px,1fr) minmax(220px,1.25fr);gap:12px}main>header .status{grid-column:1/-1;max-width:none;text-align:left;justify-self:stretch}.journey-banner{height:210px}}
 @media(max-width:700px){main>header{grid-template-columns:1fr;gap:14px}.journey-banner{height:230px;max-width:480px;margin:-8px auto 0}.journey-vehicle{width:68%;left:16%}main>header .status{max-width:none;justify-self:stretch;text-align:left}.journey-toggle{font-size:12px;min-height:32px;right:12px}}
@@ -21,8 +16,10 @@ main>header .status{width:100%;max-width:280px;justify-self:end}
 .journey-vehicle>.journey-wheel{position:absolute;inset:0;clip-path:ellipse(5.5% 14.3% at var(--wheel-x) 84.2%);transform-origin:var(--wheel-x) 84.2%;animation:journey-spin 5s linear infinite}
 @keyframes journey-spin{to{transform:rotate(360deg)}}
 
-.journey-city{position:absolute;inset:0 0 22px;z-index:-1;overflow:hidden;opacity:.78;mask-image:linear-gradient(to bottom,transparent,#000 10%,#000 82%,transparent)}
-.journey-city-track{display:flex;width:200%;height:100%;animation:journey-city-pass 55s linear infinite;will-change:transform}
-.journey-city-track img{display:block;width:50%;height:100%;flex:0 0 50%;object-fit:cover;object-position:center bottom}
+.journey-city{position:absolute;inset:0 0 10px;z-index:-1;overflow:hidden;opacity:.78;mask-image:linear-gradient(to bottom,transparent,#000 10%,#000 88%,transparent)}
+.journey-city-track{display:flex;width:600%;height:100%;animation:journey-city-pass 90s linear infinite;will-change:transform}
+.journey-city-track img{display:block;width:25%;height:100%;flex:0 0 25%;object-fit:cover;object-position:center bottom}
 @keyframes journey-city-pass{to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.journey-city-track{will-change:auto}}
+
+.journey-ground-shadow{position:absolute;left:23%;right:22%;bottom:28px;height:8px;border-radius:50%;background:#47443526;filter:blur(5px);pointer-events:none}
