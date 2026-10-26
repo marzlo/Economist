@@ -91,6 +91,9 @@
   const crewProbe = new Image();
   crewProbe.onerror = () => scene.style.setProperty('--crew-art', 'url("journey-crew.png?v=1")');
   crewProbe.src = 'journey-crew.webp?v=1';
+  const mechProbe = new Image();
+  mechProbe.onerror = () => scene.style.setProperty('--mech-art', 'url("journey-mech.png?v=1")');
+  mechProbe.src = 'journey-mech.webp?v=1';
   const motionNote = document.createElement('span');
   motionNote.className = 'journey-static-note';
   motionNote.textContent = '已依系統設定減少動態效果';

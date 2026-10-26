@@ -89,3 +89,23 @@ body.dark .journey-miniature .journey-city{opacity:.28}
 
 .journey-static-note{position:absolute;bottom:2px;left:16px;font-size:11px;color:var(--muted)}
 .journey-static-note[hidden],.journey-miniature .journey-static-note{display:none}
+
+/* A hydraulically articulated escort walker follows behind the transport. */
+.journey-mech{position:absolute;left:4%;bottom:29px;width:14%;height:0;padding-bottom:21%;pointer-events:none}
+.journey-mech-figure{position:absolute;inset:0;display:block;animation:journey-mech-weight 1.2s ease-in-out infinite}
+.journey-mech-body,.journey-mech-leg{position:absolute;inset:0;display:block;background-image:var(--mech-art,url('journey-mech.webp?v=1'));background-size:100% 100%;background-repeat:no-repeat}
+.journey-mech-body{clip-path:polygon(0 0,100% 0,100% 70%,80% 70%,75% 51%,27% 51%,20% 70%,0 70%)}
+.journey-mech-leg{transform-origin:50% 50%;animation:journey-mech-step 1.2s ease-in-out infinite alternate}
+.journey-mech-leg-back{clip-path:polygon(28% 43%,54% 43%,54% 70%,48% 100%,5% 100%,18% 70%);animation-delay:-1.2s;filter:brightness(.84)}
+.journey-mech-leg-front{clip-path:polygon(49% 43%,75% 43%,80% 72%,100% 100%,52% 100%)}
+.journey-stopped .journey-mech-leg{animation:none;transform:rotate(0deg)}
+.journey-stopped .journey-mech-figure{animation-play-state:paused!important}
+@keyframes journey-mech-step{from{transform:rotate(-8deg)}to{transform:rotate(8deg)}}
+@keyframes journey-mech-weight{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+.journey-miniature .journey-mech{height:46px;padding-bottom:0;width:31px;left:auto;right:182px;bottom:5px}
+@media(min-width:851px) and (max-width:1050px){.journey-miniature .journey-mech{width:27px;right:150px}}
+@media(min-width:601px) and (max-width:850px){.journey-miniature .journey-mech{width:26px;right:144px}}
+@media(max-width:600px){.journey-miniature .journey-vehicle{left:30px;width:108px}.journey-miniature .journey-mech{width:26px;left:3px;right:auto;bottom:10px}}
+@media(max-width:360px){.journey-miniature .journey-vehicle{left:24px;width:85px}.journey-miniature .journey-mech{width:23px;left:0}}
+
+.journey-mech-leg-back{transform-origin:43% 47%}.journey-mech-leg-front{transform-origin:63% 47%}
