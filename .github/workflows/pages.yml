@@ -35,6 +35,7 @@ jobs:
           node test-weekly-drafts.cjs
           node test-journey-cycle.cjs
           node test-journey-loading.cjs
+          node test-note-diagrams.cjs
           python3 -B test-weekly-publisher.py
       - name: Update long-term observation data
         run: python3 -B update-observations.py

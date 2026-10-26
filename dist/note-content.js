@@ -4,16 +4,20 @@ const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&
 const renderer=new marked.Renderer();renderer.html=token=>/^<br\s*\/?>$/i.test(token.text.trim())?'<br>':escape(token.text);
 const options={gfm:true,breaks:true,renderer};
 const tags=['p','br','strong','b','em','i','del','s','h1','h2','h3','h4','h5','h6','ul','ol','li','blockquote','pre','code','hr','table','thead','tbody','tfoot','tr','th','td','a'];
-const config={ALLOWED_TAGS:tags,ALLOWED_ATTR:['href','title','colspan','rowspan','start','align'],ALLOW_DATA_ATTR:false};
+const config={ALLOWED_TAGS:tags,ALLOWED_ATTR:['class','href','title','colspan','rowspan','start','align'],ALLOW_DATA_ATTR:false};
 function safeURL(value){if(!value||typeof value!=='string')return null;try{const url=new URL(value,location.href);return ['http:','https:'].includes(url.protocol)?url.href:null}catch{return null}}
 function finish(html){
  const box=document.createElement('div');box.innerHTML=DOMPurify.sanitize(html,config);
  box.querySelectorAll('a').forEach(a=>{const url=safeURL(a.getAttribute('href')||'');if(!a.hasAttribute('href')||!url)a.removeAttribute('href');else{a.href=url;a.target='_blank';a.rel='noopener noreferrer'}});
  box.querySelectorAll('table').forEach(table=>{const scroll=document.createElement('div');scroll.className='entry-table-scroll';scroll.tabIndex=0;scroll.setAttribute('role','region');scroll.setAttribute('aria-label','記事表格，可左右滑動');table.before(scroll);scroll.append(table);table.querySelectorAll('th').forEach(th=>th.scope='col')});
+ box.querySelectorAll('pre>code.language-mermaid').forEach(code=>{
+  const html=window.NoteDiagrams?.render(code.textContent);if(!html)return;
+  const figure=document.createElement('figure');figure.className='entry-flowchart';figure.innerHTML=html;code.parentElement.replaceWith(figure);
+ });
  return box.innerHTML;
 }
 function render(value){try{return finish(marked.parse(String(value||''),options))}catch{return '<p>'+escape(value).replace(/\n/g,'<br>')+'</p>'}}
-function tables(value){if(!String(value).includes('|'))return '';const tokens=marked.lexer(String(value),options),only=tokens.filter(t=>t.type==='table');only.links=tokens.links;return only.length?finish(marked.parser(only,options)):''}
+function tables(value){if(!String(value).includes('|')&&!String(value).includes('mermaid'))return '';const tokens=marked.lexer(String(value),options),only=tokens.filter(t=>t.type==='table'||(t.type==='code'&&t.lang==='mermaid'));only.links=tokens.links;return only.length?finish(marked.parser(only,options)):''}
 const mdEscape=value=>String(value).replace(/\\/g,'\\\\').replace(/([`*_[\]])/g,'\\$1');
 function grid(rows){
  const width=Math.max(...rows.map(r=>r.length));if(!width)return '';
@@ -31,7 +35,7 @@ function fromHTML(html){
    return rows.length?grid(rows):'';
   }
   if(tag==='br')return '<br>';
-  if(tag==='pre'){const code=node.textContent;const fence='`'.repeat(Math.max(3,...(code.match(/`+/g)||[]).map(s=>s.length+1)));return '\n\n'+fence+'\n'+code+'\n'+fence+'\n\n'}
+  if(tag==='pre'){const code=node.textContent;const fence='`'.repeat(Math.max(3,...(code.match(/`+/g)||[]).map(s=>s.length+1)));return '\n\n'+fence+(node.querySelector('code.language-mermaid')?'mermaid':'')+'\n'+code+'\n'+fence+'\n\n'}
   if(tag==='code'){const text=node.textContent;const fence='`'.repeat(Math.max(1,...(text.match(/`+/g)||[]).map(s=>s.length+1)));return fence+text+fence}
   if(tag==='strong'||tag==='b')return '**'+children()+'**';
   if(tag==='em'||tag==='i')return '*'+children()+'*';
@@ -47,8 +51,12 @@ function fromHTML(html){
 function fromTSV(text){if(/```|~~~/.test(text))return text;const lines=text.split(/\r?\n/),output=[];for(let i=0;i<lines.length;){if(!lines[i].includes('\t')){output.push(lines[i++]);continue}const rows=[];while(i<lines.length&&lines[i].includes('\t'))rows.push(lines[i++].split('\t'));output.push(rows.length>1?grid(rows):rows[0].join('\t'))}return output.join('\n')}
 function mount(){
  document.querySelectorAll('#entry-text,#civic-progress-note').forEach(area=>{
-  const preview=document.createElement('details');preview.className='entry-table-preview';preview.open=true;preview.hidden=true;preview.innerHTML='<summary>表格預覽</summary><div class="entry-content"></div>';area.parentElement.after(preview);
+  const preview=document.createElement('details');preview.className='entry-table-preview';preview.open=true;preview.hidden=true;preview.innerHTML='<summary>圖表預覽</summary><div class="entry-content"></div>';area.parentElement.after(preview);
   const update=()=>{const html=tables(area.value);preview.hidden=!html;preview.querySelector('.entry-content').innerHTML=html};
+  const tools=document.createElement('div');tools.className='note-diagram-tools';
+  const insert=document.createElement('button');insert.type='button';insert.textContent='＋ 插入流程圖';
+  insert.addEventListener('click',()=>{const sample='\n\n```mermaid\nflowchart TD\n A["起點<br/>補充說明"] --> B["下一步<br/>補充說明"]\n B --> C["結果"]\n```\n';area.setRangeText(sample,area.selectionStart,area.selectionEnd,'end');area.dispatchEvent(new Event('input',{bubbles:true}));area.focus()});
+  tools.append(insert);area.parentElement.after(tools);
   area.addEventListener('input',update);area.addEventListener('focus',update);
   const dialog=area.closest('dialog');if(dialog)new MutationObserver(update).observe(dialog,{attributes:true,attributeFilter:['open']});
   area.addEventListener('paste',e=>{
