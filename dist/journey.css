@@ -24,18 +24,26 @@ main>header .status{width:100%;max-width:280px;justify-self:end}
 
 .journey-ground-shadow{position:absolute;left:23%;right:22%;bottom:28px;height:8px;border-radius:50%;background:#47443526;filter:blur(5px);pointer-events:none}
 
-/* Keep the miniature within navigation space, away from article text. */
+/* The city fills navigation; controls sit above it on legible surfaces. */
 .journey-dock[hidden]{display:none}
-.journey-dock{flex:0 0 170px;width:170px;margin-left:auto;align-self:center;height:58px;overflow:hidden}
-.journey-dock .journey-miniature{width:170px;height:58px;max-width:none;min-height:0;margin:0;border-radius:0;pointer-events:none}
-.journey-miniature .journey-city{inset:0 0 3px}
-.journey-miniature .journey-vehicle{bottom:5px;width:66%;left:17%}
-.journey-miniature .journey-ground-shadow{bottom:4px;height:3px;filter:blur(2px)}
-.journey-miniature .journey-toggle{display:block;pointer-events:auto;right:0;bottom:0;min-height:24px;min-width:24px;font-size:12px;padding:2px;background:var(--bg)}
+.journey-dock{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.journey-dock .journey-miniature{width:100%;height:100%;max-width:none;min-height:0;margin:0;mask-image:none;border-radius:0;pointer-events:none}
+.journey-miniature .journey-city{inset:0;opacity:.42;mask-image:none}
+.journey-miniature .journey-city-track{width:2400px}
+.journey-miniature .journey-city-track img{width:300px;flex:0 0 300px;object-fit:cover;object-position:center bottom}
+.journey-miniature .journey-vehicle{width:145px;left:auto;right:30px;bottom:5px}
+.journey-miniature .journey-ground-shadow{left:auto;right:45px;width:115px;bottom:4px;height:3px;filter:blur(2px)}
+.journey-miniature .journey-toggle{display:block;pointer-events:auto;right:3px;bottom:6px;min-height:28px;min-width:28px;font-size:12px;padding:2px;background:var(--paper)}
 .journey-offscreen *{animation-play-state:paused!important}
-@media(min-width:851px){.journey-docked .desktop-nav{gap:8px;align-items:center}.journey-docked .desktop-nav>a{padding:10px 9px;white-space:nowrap}}
-@media(min-width:851px) and (max-width:1050px){.journey-dock{flex-basis:130px;width:130px}.journey-dock .journey-miniature{width:130px}.journey-docked .desktop-nav{gap:0}.journey-docked .desktop-nav>a{padding:10px 6px;font-size:13px}}
-@media(max-width:850px){.journey-dock{flex-basis:120px;width:120px;margin-left:8px}.journey-dock .journey-miniature{width:120px}.journey-docked .mobile-nav{align-items:center}}
-@media(max-width:600px){.journey-dock{order:-1;margin:0 12px 0 0;flex-basis:120px}.journey-docked .mobile-nav-picker{flex:1;min-width:0}.journey-docked .mobile-nav-picker>span{display:none}.journey-docked .mobile-nav-picker select{width:100%}}
-@media(max-width:360px){.journey-dock{flex-basis:100px;width:100px;margin-right:8px}.journey-dock .journey-miniature{width:100px}}
+.journey-docked .desktop-nav>a,.journey-docked .mobile-nav>a,.journey-docked .mobile-nav-picker{position:relative;z-index:1}
+.journey-docked .desktop-nav>a,.journey-docked .mobile-nav>a{background:var(--paper);background:color-mix(in srgb,var(--paper) 93%,transparent);color:var(--ink);font-weight:600;border-radius:6px}
+.journey-docked .desktop-nav>a:hover,.journey-docked .desktop-nav>a:focus-visible,.journey-docked .mobile-nav>a:focus-visible{background:var(--ink);color:var(--bg)}
+.journey-docked .mobile-nav a[href="#issues-section"]{background:var(--ink);color:var(--bg)}
+.journey-docked .mobile-nav-picker select{background:var(--paper);color:var(--ink);border-color:var(--muted);box-shadow:0 1px 8px #0000000c}
+body.dark .journey-miniature .journey-city{opacity:.28}
+@media(min-width:851px){.journey-docked .desktop-nav{gap:8px;align-items:center;padding-right:185px;min-height:76px}.journey-docked .desktop-nav>a{padding:10px 9px;white-space:nowrap}}
+@media(min-width:851px) and (max-width:1050px){.journey-docked .desktop-nav{gap:4px;padding-right:150px}.journey-docked .desktop-nav>a{padding:10px 6px;font-size:13px}.journey-miniature .journey-vehicle{width:115px}}
+@media(min-width:601px) and (max-width:850px){.journey-docked .mobile-nav{align-items:center;gap:5px;padding-right:140px;min-height:76px}.journey-miniature .journey-vehicle{width:110px}}
+@media(max-width:600px){.journey-docked .mobile-nav{align-items:center;min-height:82px}.journey-docked .mobile-nav-picker{flex:1;min-width:0;margin-left:126px}.journey-docked .mobile-nav-picker>span{display:none}.journey-docked .mobile-nav-picker select{width:100%}.journey-miniature .journey-vehicle{width:120px;left:8px;right:auto;bottom:10px}.journey-miniature .journey-ground-shadow{left:15px;right:auto;width:105px;bottom:9px}.journey-miniature .journey-toggle{left:2px;right:auto;bottom:0;min-width:24px;min-height:24px}.journey-miniature .journey-city{opacity:.48}}
+@media(max-width:360px){.journey-docked .mobile-nav-picker{margin-left:104px}.journey-miniature .journey-vehicle{width:100px;left:4px}}
 @media print{.journey-dock{display:none}}

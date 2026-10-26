@@ -10,6 +10,8 @@
   const miniature = banner.cloneNode(true);
   miniature.classList.add('journey-miniature');
   miniature.setAttribute('aria-label', '城市探險車縮圖');
+  const cityTrack = miniature.querySelector('.journey-city-track');
+  cityTrack.append(...Array.from(cityTrack.children, image => image.cloneNode(true)));
   dock.append(miniature);
   let paused = false;
   const applyPause = () => {
