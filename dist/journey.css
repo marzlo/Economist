@@ -64,7 +64,7 @@ body.dark .journey-miniature .journey-city{opacity:.28}
 /* Textured crew sprites share the vehicle's realistic materials and lighting. */
 .journey-traveler{position:absolute;left:84%;top:73%;width:3.6%;height:24%;visibility:hidden;transform:translate(-50%,-100%) scaleX(var(--person-direction,1));pointer-events:none}
 .journey-crew-figure{position:absolute;inset:0;display:block}
-.journey-crew-body,.journey-crew-leg{position:absolute;inset:0;display:block;background-image:url('journey-crew.webp?v=1');background-repeat:no-repeat;background-size:300% 100%}
+.journey-crew-body,.journey-crew-leg{position:absolute;inset:0;display:block;background-image:var(--crew-art,url('journey-crew.webp?v=1'));background-repeat:no-repeat;background-size:300% 100%}
 .journey-guard{--crew-position:0%}
 .journey-radio{--crew-position:50%}
 .journey-engineer{--crew-position:100%}
@@ -78,3 +78,14 @@ body.dark .journey-miniature .journey-city{opacity:.28}
 .journey-traveler.is-walking .journey-crew-figure{animation:journey-crew-bob .32s ease-in-out infinite alternate}
 @keyframes journey-crew-stride{from{transform:rotate(-15deg)}to{transform:rotate(15deg)}}
 @keyframes journey-crew-bob{to{transform:translateY(-1px)}}
+
+/* A stable slot lets a single scene move between header and navigation. */
+.journey-slot{min-width:0;height:260px}
+.journey-slot>.journey-banner{height:100%;margin:0}
+.journey-traveler{left:0;top:0}
+@media(max-width:1000px) and (min-width:701px){.journey-slot{height:210px}}
+@media(max-width:700px){.journey-slot{height:230px;max-width:480px;width:100%;margin:-8px auto 0}}
+@media print{.journey-slot{display:none}}
+
+.journey-static-note{position:absolute;bottom:2px;left:16px;font-size:11px;color:var(--muted)}
+.journey-static-note[hidden],.journey-miniature .journey-static-note{display:none}
