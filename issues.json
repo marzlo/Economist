@@ -841,6 +841,22 @@
         "issueIds": [
           "world"
         ]
+      },
+      {
+        "title": "",
+        "region": "auto",
+        "country": "auto",
+        "createdAt": "2026-10-27T23:58:55.242Z",
+        "updatedAt": "2026-10-27T23:58:55.242Z",
+        "id": "b9b41c65-19d8-4a96-971c-c04d468127e4",
+        "date": "2026-10-28",
+        "label": "筆記",
+        "text": "W",
+        "images": [],
+        "links": [],
+        "issueIds": [
+          "world"
+        ]
       }
     ],
     "status": "觀察中",
