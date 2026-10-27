@@ -6,12 +6,14 @@ const options={gfm:true,breaks:true,renderer};
 const tags=['p','br','strong','b','em','i','del','s','h1','h2','h3','h4','h5','h6','ul','ol','li','blockquote','pre','code','hr','table','thead','tbody','tfoot','tr','th','td','a','img'];
 const config={ALLOWED_TAGS:tags,ALLOWED_ATTR:['src','alt','class','href','title','colspan','rowspan','start','align'],ALLOW_DATA_ATTR:false};
 function safeURL(value){if(!value||typeof value!=='string')return null;try{const url=new URL(value,location.href);return ['http:','https:'].includes(url.protocol)?url.href:null}catch{return null}}
-function finish(html){
+function finish(html,images=[]){
  const box=document.createElement('div');box.innerHTML=DOMPurify.sanitize(html,config);
  box.querySelectorAll('a').forEach(a=>{const url=safeURL(a.getAttribute('href')||'');if(!a.hasAttribute('href')||!url)a.removeAttribute('href');else{a.href=url;a.target='_blank';a.rel='noopener noreferrer'}});
  box.querySelectorAll('img').forEach(img=>{
-  const url=safeURL(img.getAttribute('src'));if(!url){img.replaceWith(document.createTextNode(img.alt||''));return}
+  const ref=img.getAttribute('src')||'',attachment=ref.startsWith('#entry-image-')?images.find(i=>i.id===ref.slice(13)):null;
+  const url=attachment&&(/^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(attachment.src)||safeURL(attachment.src))?attachment.src:(ref.startsWith('#entry-image-')?null:safeURL(ref));if(!url){img.replaceWith(document.createTextNode(img.alt||''));return}
   img.src=url;img.loading='lazy';img.decoding='async';img.className='entry-inline-image';
+  if(attachment?.caption){const figure=document.createElement('figure'),caption=document.createElement('figcaption');caption.textContent=attachment.caption;img.before(figure);figure.append(img,caption)}
  });
  box.querySelectorAll('table').forEach(table=>{const scroll=document.createElement('div');scroll.className='entry-table-scroll';scroll.tabIndex=0;scroll.setAttribute('role','region');scroll.setAttribute('aria-label','記事表格，可左右滑動');table.before(scroll);scroll.append(table);table.querySelectorAll('th').forEach(th=>th.scope='col')});
  box.querySelectorAll('pre>code.language-mermaid').forEach(code=>{
@@ -26,8 +28,8 @@ function normalize(value){
  if(!/```|~~~/.test(text))return text;
  try{return marked.lexer(text,options).map(token=>token.type==='code'&&/^(?:markdown|md)?$/i.test(token.lang||'')&&isArticle(token.text)?token.text+'\n\n':token.raw).join('')}catch{return text}
 }
-function render(value){try{return finish(marked.parse(normalize(value),options))}catch{return '<p>'+escape(value).replace(/\n/g,'<br>')+'</p>'}}
-function tables(value){value=normalize(value);if(/!\[[^\]]*\]\(/.test(String(value)))return render(value);if(!String(value).includes('|')&&!String(value).includes('mermaid'))return '';const tokens=marked.lexer(String(value),options),only=tokens.filter(t=>t.type==='table'||(t.type==='code'&&t.lang==='mermaid'));only.links=tokens.links;return only.length?finish(marked.parser(only,options)):''}
+function render(value,images=[]){try{return finish(marked.parse(normalize(value),options),images)}catch{return '<p>'+escape(value).replace(/\n/g,'<br>')+'</p>'}}
+function tables(value,images=[]){value=normalize(value);if(/!\[[^\]]*\]\(/.test(String(value)))return render(value,images);if(!String(value).includes('|')&&!String(value).includes('mermaid'))return '';const tokens=marked.lexer(String(value),options),only=tokens.filter(t=>t.type==='table'||(t.type==='code'&&t.lang==='mermaid'));only.links=tokens.links;return only.length?finish(marked.parser(only,options)):''}
 const mdEscape=value=>String(value).replace(/\\/g,'\\\\').replace(/([`*_[\]])/g,'\\$1');
 function grid(rows){
  const width=Math.max(...rows.map(r=>r.length));if(!width)return '';
@@ -63,7 +65,7 @@ function fromTSV(text){if(/```|~~~/.test(text))return text;const lines=text.spli
 function mount(){
  document.querySelectorAll('#entry-text,#civic-progress-note').forEach(area=>{
   const preview=document.createElement('details');preview.className='entry-table-preview';preview.open=true;preview.hidden=true;preview.innerHTML='<summary>圖表預覽</summary><div class="entry-content"></div>';area.parentElement.after(preview);
-  const update=()=>{const html=tables(area.value);preview.hidden=!html;preview.querySelector('.entry-content').innerHTML=html};
+  const update=()=>{const html=tables(area.value,area.noteImages?.()||[]);preview.hidden=!html;preview.querySelector('.entry-content').innerHTML=html};
   const tools=document.createElement('div');tools.className='note-diagram-tools';
   const insert=document.createElement('button');insert.type='button';insert.textContent='＋ 插入流程圖';
   insert.addEventListener('click',()=>{const sample='\n\n```mermaid\nflowchart TD\n A["起點<br/>補充說明"] --> B["下一步<br/>補充說明"]\n B --> C["結果"]\n```\n';area.setRangeText(sample,area.selectionStart,area.selectionEnd,'end');area.dispatchEvent(new Event('input',{bubbles:true}));area.focus()});

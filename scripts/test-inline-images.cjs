@@ -1,0 +1,17 @@
+const {chromium}=require('playwright'),assert=require('node:assert/strict');
+(async()=>{const browser=await chromium.launch({executablePath:'/usr/bin/chromium',headless:true,args:['--no-sandbox']});const page=await browser.newPage();await page.route('http://localhost:8123/**',route=>route.fulfill({body:'<html></html>',contentType:'text/html'}));await page.goto('http://localhost:8123/');await page.setContent('<label><textarea id="entry-text"></textarea></label><label><textarea id="entry-links"></textarea></label><div id="output"></div>');
+await page.evaluate(()=>{window.esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));window.safeLink=s=>/^https?:\/\//.test(s)?s:null});
+for(const name of ['vendor/marked.js','vendor/purify.js','entry-images.js','note-content.js'])await page.addScriptTag({path:require('node:path').join(__dirname,'../dist',name)});
+await page.evaluate(()=>{EntryImages.mount();EntryImages.reset({images:[{src:'https://example.com/old.png'}]});const area=document.querySelector('textarea');area.value='第一段\n\n第二段';area.focus();area.setSelectionRange(3,3);area.dispatchEvent(new Event('click'))});
+await page.click('[data-image-insert="0"]');
+let result=await page.evaluate(()=>{const area=document.querySelector('textarea'),images=EntryImages.get();return {text:area.value,html:NoteContent.render(area.value,images),bottom:EntryImages.html({text:area.value,images}),images}});
+assert.match(result.text,/第一段\n\n!\[記事圖片\]/);assert.match(result.html,/old.png/);assert.equal(result.bottom,'');assert(result.html.indexOf('第一段')<result.html.indexOf('<img'));assert(result.html.indexOf('<img')<result.html.indexOf('第二段'));
+// Reopening saved content preserves placement and no duplicate gallery.
+await page.evaluate(data=>{EntryImages.reset(data);document.querySelector('textarea').value=data.text},{text:result.text,images:result.images});
+await page.evaluate(()=>{const area=document.querySelector('textarea');area.setSelectionRange(0,0);area.dispatchEvent(new Event('click'));const canvas=document.createElement('canvas');canvas.width=20;canvas.height=20;canvas.getContext('2d').fillRect(0,0,20,20);const raw=atob(canvas.toDataURL('image/png').split(',')[1]);const file=new File([Uint8Array.from(raw,c=>c.charCodeAt(0))],'test.png',{type:'image/png'});const dt=new DataTransfer();dt.items.add(file);area.dispatchEvent(new ClipboardEvent('paste',{clipboardData:dt,bubbles:true,cancelable:true}))});
+await page.waitForFunction(()=>{try{return EntryImages.get().length===2}catch{return false}});
+result=await page.evaluate(()=>({text:document.querySelector('textarea').value,html:NoteContent.render(document.querySelector('textarea').value,EntryImages.get()),bottom:EntryImages.html({text:document.querySelector('textarea').value,images:EntryImages.get()})}));assert.match(result.html,/data:image\/jpeg;base64/);assert.equal(result.bottom,'');
+assert(!await page.evaluate(()=>NoteContent.render('![bad](data:image/svg+xml;base64,PHN2Zz4=)').includes('<img')));
+await page.click('[data-image-remove="1"]');assert.equal(await page.evaluate(()=>EntryImages.get().length),1);
+assert.equal(await page.evaluate(()=>document.querySelector('textarea').value.match(/#entry-image-/g).length),1);
+console.log('PASS: existing image insertion, middle placement, saved reopen, pasted compressed image, duplicate suppression, removal and unsafe URL rejection');await browser.close()})().catch(e=>{console.error(e);process.exit(1)});
