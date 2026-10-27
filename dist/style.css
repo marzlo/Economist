@@ -60,3 +60,5 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 #news>article>a[hidden]{display:none}
 
 .note-sync-status{font-size:14px;line-height:1.8;margin:12px 0}.note-sync-status:empty{display:none}.note-sync-status.sync-error{border-left:3px solid var(--accent);padding:10px 14px;background:var(--wash);color:var(--ink)}
+
+.note-backup-check{margin-top:24px;border-top:1px solid var(--line);padding-top:16px}.note-backup-check button{margin:10px 0}.note-backup-check li{margin:12px 0;line-height:1.8}
