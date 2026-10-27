@@ -1384,7 +1384,13 @@
     "id": "de668d5d-e7db-4828-a05c-37f8632400a4",
     "kind": "civic",
     "entries": [],
-    "criteria": [],
+    "criteria": [
+      {
+        "id": "dcd6246a-3853-41bf-b9c0-e11b2c5e3714",
+        "text": "教師到底是招不到，還是留不住？ 請公布近五年各科招聘、報到、離職及留任數據。",
+        "status": "待查證"
+      }
+    ],
     "then": "",
     "image": null,
     "name": "台北市國中教育缺老師",
