@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T00:04:38.849101+00:00",
+  "updated": "2026-10-27T00:11:13.911925+00:00",
   "topics": [
     {
       "id": "civic-songshan-airport",
@@ -183,6 +183,23 @@
           "updatedAt": "2026-10-25T04:14:35.704Z"
         }
       ]
+    },
+    {
+      "id": "de668d5d-e7db-4828-a05c-37f8632400a4",
+      "kind": "civic",
+      "entries": [],
+      "criteria": [],
+      "then": "",
+      "image": null,
+      "name": "台北市國中教育缺老師",
+      "scope": "臺北市",
+      "keys": [
+        "台北教育",
+        "國中缺師率",
+        "AI行政減量"
+      ],
+      "note": "在台北生活成本升高、教師行政工作繁重、科技業強力工人才的情況底下，台北市政府如何補充教師",
+      "status": "觀察中"
     }
   ],
   "results": {
@@ -217,14 +234,6 @@
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5UTmtlaHVtZzVCay1WdjlqbFNkcHgwMElVcmF5empqUURHTDJMaWZ4VUdpeDNCcEthSGZZNEhsN1g3TWgxN2d3bDR0c0NWV2dJVGlrMDVVMWI?oc=5",
           "source": "UDN",
           "published": "2026-10-26T05:45:35+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "松機遷移被問離島急重症後送！苗博雅批蔣萬安：問Ａ答Ｂ，根本沒準備好 - 放言Fount Media",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE55S1p4TjdEenFHeW9qSDdiQnZGY2FFdGdQbzg3NkxYTXV6NllMOUFLejFkYk1TNFg2dEhjcDk4dlBVX1BEbV8xMXl4cnE3cndNeEE?oc=5",
-          "source": "放言Fount Media",
-          "published": "2026-10-26T03:47:59+00:00",
           "type": "文章",
           "description": ""
         },
@@ -307,10 +316,18 @@
           "published": "2026-10-23T08:42:17+00:00",
           "type": "文章",
           "description": ""
+        },
+        {
+          "title": "蔣萬安提松機改建AI園區最新網路民調出爐 61%贊成、38%反對 - UDN",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBNdjlUa3hDakpfcWNTQmNvTllPTll3Y2JKQ1VBeHRiMFNXdE1ibDlaOWhQMzlDd1BrWFhQQTI3TXBDcjVFaUt0dzFtdmhTbG5SRVRJ0gFYQVVfeXFMTTdERnR0THNPOEJhNzEyRkxjSUN2UTJxWHBOalloc2FEc2pIaEJMd1Y2MzFqWkJ3T1FQM28zdzZrTGZDVHBuX0l1OExpV3VkUVFWSXdObmNEUA?oc=5",
+          "source": "UDN",
+          "published": "2026-10-23T04:02:50+00:00",
+          "type": "文章",
+          "description": ""
         }
       ],
-      "updated": "2026-10-27T00:04:38.849101+00:00",
-      "checkedAt": "2026-10-27T00:04:38.849101+00:00",
+      "updated": "2026-10-27T00:11:13.911925+00:00",
+      "checkedAt": "2026-10-27T00:11:13.911925+00:00",
       "keys": [
         "松山機場",
         "松機",
@@ -320,14 +337,6 @@
     },
     "4446ca7b-5593-4f73-8513-8f6f3e78f2c6": {
       "items": [
-        {
-          "title": "新北 讓都更順暢 議員促盤點中繼宅 - Yahoo股市",
-          "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPNWZvNjBsdGQteXloMnJYakVQallIakRFMXdsNTRVMlJlZ1BWYVNUczFwQnUxdGpxZ0xuRzNjTGZMUE15SUFYMUg4NUpJZE9IbUhKa0w2M1JvUHRIM0pZWmUwTVA5X0dBU0p1eGRObTBDLVRKZW1KTFktbHFxY0ZOOXNPZDhrWHNRdVpDUUtLTTUxSndiTjVja1BfRnJ0cERCMGdyTDZkTWVub09xRmhQN0NxWnh4OHVrTmVxQnR6MHdZaW5YVXBQcEVjSU15Vl8xOWRZTmgxaUxRVkx0RTFZaTRTV0JXZWhNUXNBMlVhZzE4eFZjeXNvRUNESzF4OFBkdERzclYyUWxMMmdxbHoyUGFn?oc=5",
-          "source": "Yahoo股市",
-          "published": "2026-10-26T20:10:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
         {
           "title": "新北 讓都更順暢 議員促盤點中繼宅 - 中時新聞網",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAtVllhZEp2Y3JYZWNYVVFVMERoR1F2RmVKRGc0dW1iRHlxNWRYWWFwZmxUcUE4ajZjZzJLUXFBaHhselpCZWoxbHl5c3J0bzdudTVxcUFTZXFTZzItaV9hWG5CcGhPcEI2WlVZ?oc=5",
@@ -345,26 +354,10 @@
           "description": ""
         },
         {
-          "title": "鳥松山水段運動休閒專用區土地都市更新事業簽約陳其邁：以市民利益為優先公私協力提升城市樂活環境 - 蕃新聞",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1wNDRDNV9XVTIwMlo4YklsY1NoLU1QVFBhSHNycFBhMmREZmdscEpvRlNUeGQ1N0xMQ0ZZV3pCUmtpTzh4dVRTMllLRTJtbzNYT1E?oc=5",
-          "source": "蕃新聞",
-          "published": "2026-10-22T00:00:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
           "title": "鳥松山水段運動休閒專用區土地都市更新事業簽約陳其邁：以市民利益為優先公私協力提升城市樂活環境 - 高雄市政府全球資訊網",
           "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSXNTQXNhdHpZZkMxc2tybnVUOFdNNW43ajlOaEtHQUdZZWVWSE9XZzlkUkdBUDZtdHlrZ3V3V3FEbWVkQzhxSkwxd0o1ZVNRZXRKRkUzdFc3Z0l6V0xsMjZGRG9DcnY4Ny1YdHdwZXpXVVZ4VWl3R19WMGNpZDVld3lHM2VoMVBCMlM0?oc=5",
           "source": "高雄市政府全球資訊網",
           "published": "2026-10-21T10:42:23+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "都市更新是否應該以公共安全為優先考量？ - UDN",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQ0ZTYlBmRm1lSnBsVERsS1BsZHVnUDJrX1Z1d3VpcW1OZDVjNjZpZXVYcUhPVjB5QWc2RGpTYktYMnQ5aXh2TzNJU3plTE9KRlRwWGFGWi15SV9JbGdjY3pmbTFIU0JqMWhxamdsYllxbzJZaFdOQlFUdWZPT1lLX3NvMjFQQzlVZFRzdTBycXhvdUs1dkJmcGZB?oc=5",
-          "source": "UDN",
-          "published": "2026-10-18T16:41:37+00:00",
           "type": "文章",
           "description": ""
         },
@@ -385,50 +378,10 @@
           "description": ""
         },
         {
-          "title": "林秉宥提2,000戶中繼宅構想 盼都更社區整批安置 - 蕃新聞",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBKelhRWFMzTGxZVzdqc3JoZ3hXckN0TjVIQVF4Nmg3a0dUYXAyNWU1YjRuWDVGR0o1R2ROMGJJMWFBY3pWOWNsVVFDUmFMcy1hYmc?oc=5",
-          "source": "蕃新聞",
-          "published": "2026-10-14T07:00:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "蘇巧慧住宅政見 拋設都市更新局 - 中華新聞雲／中華日報",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE45Vi1uYXlVM2xBVGpkZ2E4TDA5THhxTk1sMXpCUFNIRVZNblR5TUR2NXRHWjFZbHRDa1FYNHhSTEV6NEhBQlF3R0hOZnhKQzRTNUE?oc=5",
-          "source": "中華新聞雲／中華日報",
-          "published": "2026-10-13T13:30:03+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "基隆仁愛區後援會成立湧人潮謝國樑：推動老舊建築與商圈都市更新| 2026九合一選舉 - UDN",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5WNTB1OGI3N3AtY0Q4bmlxcVdfN2FtblZkWUl5R0NmQVZ3emFCVFJQTTBXOTZXWlpGYTNDYUUtTnkzSGs4OXlqZzViaVV2Uy15RDN0Zzg3TVM?oc=5",
-          "source": "UDN",
-          "published": "2026-10-09T07:00:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "2026得獎名單》最佳都市更新重建類 昇陽國際ONE360 - 都更全都通",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9MVGNLNGxpeC02UDFZT2trZHNkMndPVVl5LXowUXo4ZklILTItSWpKY2ZKa3I3QjRwSzZTemJDMS10UF9KdzhYMFVxUkFvaXk1bTFpQW9GdTJlM2QwQU4ydw?oc=5",
-          "source": "都更全都通",
-          "published": "2026-10-05T16:31:31+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "2026得獎名單》最佳都市更新重建類 軟園尊邸 - 都更全都通",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1EZWt2OEhWS042U2lDeHBOTklYaHpCNHo4SWg1LXA5ZnlGejQ3Vm05cFdnd0tQc0tUY29jLU82N2paUWZKNWdGNm5QbjdBNHg2ZHA1NFV0aVV0SjQwTlBwRQ?oc=5",
-          "source": "都更全都通",
-          "published": "2026-10-05T16:31:28+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "2026得獎名單》最佳都市更新重建類 松山民權東公辦都更 - 都更全都通",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlNTFObXZQcjF1d1lINmd3MkJCaENDMVNrd3lGNURNeTlTMVMwX2w0WlZJN0JoR29ITnRybVFtMXJaeGVMdUZoMkR6bXVoM0JrYmZiYW42OEo2VHNkbHluZw?oc=5",
-          "source": "都更全都通",
-          "published": "2026-10-05T16:31:27+00:00",
+          "title": "都市更新自己來！內政部最高補助1100萬 - 自由時報",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ZOWExWG5mRGc4V0prQlExZGtmOHRGNG8tWVIwZXVMLVE2UzNfaHR2NkRnMW5uSHlMUG5PWjJ6MzdHN2JENE9nZGRLU042QnpmTFQ1S0ZIVGZ6a0JTUW9hQUlQOVAyV3BtbHfSAW9BVV95cUxOWnVTLXptejBxUkxmekZNTFFyc2lsQ09ybW91RmxBeVhVbmhEU29lV01wd29rUmZmNERtSDRkUmNyUUlWek5rNkUxNG5BcWJ2ZGtFM2Y5dDA5NkJBVlVuMVZMbE54LXo4SmdlSkpQX0U?oc=5",
+          "source": "自由時報",
+          "published": "2026-10-07T07:00:00+00:00",
           "type": "文章",
           "description": ""
         },
@@ -439,14 +392,98 @@
           "published": "2026-10-05T07:00:00+00:00",
           "type": "文章",
           "description": ""
+        },
+        {
+          "title": "嘉義市忠孝路346巷都市更新案 審議通過 - 台灣好新聞",
+          "url": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxNV3dFRGM3TVFPZ0RSbl9pMTdXTnBNTi16MDYwQXVYZEdIMl9xYXZyVmU2SlhlYWtVakVPRGlnaGRGUTZIREJkb3hiWXY3VVY1ZHk1aUFRWlc0cGd1eVdBXzA5a0JxZlNidkdaaDgzVGhKdUVMbll6QnJ6X2otUzh3a1MtbWdDNjExSl8weERDUXpwY01lSWpNeUNaelkwTkhwTVVRNm5lYzI2UmR2QllaQUF2Nk10WjRCTFBMRENZTFRwUkhBT3U5elZNQmp4dTI1bGFoem5qbW5EZlRiNjN0a1ZIWGpuYmVheGhxdVBpWHplYlBRYjhJUElRcHlKYWNIZjd0QU1NNFRoSkd4ZXJtMTluVjFRSHFXd0FCd0p6dnhrQVBvM1EwR2tLY3FXcld5Zjk5b2hReHB2NDFOcTJtRHJIM19zcDhabG5GdkRkNFgybDA?oc=5",
+          "source": "台灣好新聞",
+          "published": "2026-08-13T07:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "《都市危險及老舊建築物加速重建條例》及《都市更新條例》修正草案 - 行政院",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQOGtCZ2dReDBqU1Jjem9TRHpadHRmUE9YSTlYNlZKUXFPaHl2QUVNX3NLUmlmd2N0RnRoSTdXVVdPR2hxbzNKX2pPWHRCYjV6OXdlSmtFcVpHWDZFNF9ueHluRFJnTWE1S1c1ZHI4c18tTlRSVEdLTDJMWmpmZl9Kd0hLT1ZiYjA?oc=5",
+          "source": "行政院",
+          "published": "2026-07-31T13:21:27+00:00",
+          "type": "文章",
+          "description": ""
         }
       ],
-      "updated": "2026-10-27T00:04:38.849101+00:00",
-      "checkedAt": "2026-10-27T00:04:38.849101+00:00",
+      "updated": "2026-10-27T00:11:13.911925+00:00",
+      "checkedAt": "2026-10-27T00:11:13.911925+00:00",
       "keys": [
         "臺北都市更新",
         "都市更新",
         "中繼宅"
+      ],
+      "error": false
+    },
+    "de668d5d-e7db-4828-a05c-37f8632400a4": {
+      "items": [
+        {
+          "title": "會議紀錄3小時縮至30分鐘 張明文赴東京分享新北AI行政減量成果 - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMikwNBVV95cUxQT1cxaHhQTUhiMTlJVE95SldweHVGMHlJUmVlZG5INTFEMDBKUFRfR2wxQ0ZxR1lDS0NFVnFkMVdENG0tV0NuMjVrTktwc0FiTzlGNGxacWtiaFQzQ3pLeGwyYWhzTWFKSnVYckE5YTIwRk83ZjhfbWcwcm9xeHVvbmpyR2tjOHlHT3Vnc3JPUlZGaTh3Ny03c1k1ZU5SdFItU0lSbzFnX2I5NnY1dkNHS0lTdmZFcUZkTFJNNkZETXI2ODhZTFNvR3BZWHA2c054clVDZldDMll2WWtCOW11a2liZ0FRLWFUUUtqY0NkR1BvTGZIOGlISGtoNjd0bUIzYVoyTERUM0dCaGp6ajNZekF6UXlDYkxjdjFDaC1MOEVuZ2otVV9yX2p4RjFIbGxTbWRKaUVjbDNleHFMODdENXhqckwzR3BtY2l0TXFYczJ2UFRoSUM5UWpMRkxnMHpMcjlQcDdISGdnRVFlNVpEaHdCZnBZRG93aXNFOGFYeUM2a296VnhjbHJFX1ljM2h2Rk9J?oc=5",
+          "source": "Yahoo新聞",
+          "published": "2026-10-26T06:25:43+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "台北教育平權專案獲國際肯定 奪首爾智慧城市銅獎 (圖) - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxNaTFSMHhiamlzcEtyOXJ1WnltRllhTTF3ckFjVW5iUU5TUnlla2xQUVdpZzg5LUZ3LUlkY1ZsQmRiQ0pMdTFxS082SkJXckh6d0hCQWpsWS1TVEl5NTBLNnM5Qm9FN2U3UVpVc24tS3pPbUNwemNKTnBlT2ZpM09MREpUU0JaQWNLNFBSSUNFZTlFRWpYQlFTazU1dlFlaENSWlMydjRzbHFVNUY2WUVkc2lTdExuTU1hX1J3TFFud2FLRmxmRC02ZjZVQXRhY01Na0lMcFBIb3NKbUpzemlGelljY0V2cmJXVXZoRTBwcUY2dzJ4cDVEaldDRFlUbGcta1NnM2VGcFFQeUpiMkhWb2RndG9xLWtlb3ZHc1o4dW1RMmJRS2NRTUhWSVlkb041QXNPQWd2TFA0VmhZX21TQjRkV05ueE9paURXTk50VVZORzItMHQ3VWdFTHFhOTBpSUUtUTRScndJZw?oc=5",
+          "source": "Yahoo新聞",
+          "published": "2026-10-07T07:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "蘇巧慧拋社福願景 推AI行政減量 - 中華日報",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1lUUc3emtFTVZ2cXdreDJkeXdzUEgtWi1qQU82aU9tRndJMFBzbDdLbUpMS0ZmWThyZlh2Q1pTVnFRd2xUQW1ZSDVKZDlNTXZoenc?oc=5",
+          "source": "中華日報",
+          "published": "2026-09-30T07:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "蘇巧慧提社福政見：「95公分友善視角」、AI行政減量 盼擴大民間參與照顧 - Taiwan News",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBCcktQczI1YmNVZW9ubHBIcXJ6b1hGQ2tFZlFYeHZiMThfUkNjSXQ5M0N3bXdmT01sb2JhMF9FUEt3QU4zUVRBaWhrY0dyZXpFOVFmWkV4ci0?oc=5",
+          "source": "Taiwan News",
+          "published": "2026-09-30T07:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "台北教育局、沈伯洋交鋒 鍾沛君赴金華國中揭午餐「過關斬將」 流程 - 匯流新聞網",
+          "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9rcnpHQUZlX293dkFpZW03SmtxM2xmOVBqbmJORURUbXVaelAwSjJSbmxUdU0tWEdkeWVZOW1udmRaTUl6bXhWQW5B?oc=5",
+          "source": "匯流新聞網",
+          "published": "2026-09-24T07:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "臺東表揚優秀教師 導入智慧AI行政減量 - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQMFg1RmQxcl9HbHlQanVheG9SRkh1THhGazJNREhsdHMybm5kc05ZXzlYUGtWZ0c4Wk5zd1lxWEtHMjdSVHljb0tVcFFNaDBZbE5wUkZkV2JLMHdJY0hURDc3S1l2bkw1NExNWVRlcDU5ZndkMUVGai1jOEZfbV9pb0M4S192SW8zQ1AxbHk3cEdLdlRCSUhnY0VDeTdPdWZEYzdMMGd1eHZ5SUMyUW9iOXI5cXBZazUyMjk4NjRKODB4RUZ1dEdhcGx6cGd1c25Mc1ZzVjNfSzQ2b2FlSWh2dXRhTThSWDNrZ1czaEpoS0VSbkpxb3dNOENvZ0ZwQ25maVc0Q3dZX1o5U2JodEwxcmptUF9IZkk?oc=5",
+          "source": "Yahoo新聞",
+          "published": "2026-09-21T07:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "蔣萬安子獲選赴美交流 台北教育局：規則公開透明 - Sing Tao Daily 星島日報加拿大",
+          "url": "https://news.google.com/rss/articles/CBMi5gJBVV95cUxQdUl5VnFiOVk5VjBhM1VabkpVLTctRWllazVOU25vRmh2V0xYc05qakpTbDZhem43NV9LQ1dTNXR0anVob216ckxtTVJlejFJYWNjWVlnX25SVktNM2xzZGlhOWswak1BNDNkamtfRFAtcGVnMDZya2JPOE5OM3RKRmhZT1Z4T2hXY3VFc2M2NlBTRkxFN2JzMVNOWlVaNl8ybm1uMWFUWVJodkJZeTBVTDlIRXhvS1NkbmRxWXdCWlMzVXloQUNWSWtTaFZBQkF2THFvRlZzRzNTMU5MVVJfb1FVSFFqUGJ5MjFKekNfRHhQeGtBTmdaRktTUmlnLVM3N0lXR1RmcDFPbm1rTmVjSUZEcFM1NWhLVTdUWnFWOWR4Q2Z4dFVwRW5zblk5emtoYkpITzVpQ0hyRlVkS1I1d0tVSHU5dk4wY1Z4WlBfWFNWMGNxT3UwUENVYlFwUWc5eERKMzNB0gGKAUFVX3lxTFBFZmlUaUZ2SFZrMDNqWlNLQ2J1bHNFWGFKM1A0bXJ5SVZoeWkwVXlFUEtEd3U3MlFJMDA5dzNHUXRrTUVRZkNqU2cxemQyVzJpUF9OMXFneDhYd2drclAtOThxUUQxcy16cHgweDJtV25jb2RTeXJfb3F1UW05Q1pZa3RvbnB1b1pLdw?oc=5",
+          "source": "Sing Tao Daily 星島日報加拿大",
+          "published": "2026-09-02T07:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        }
+      ],
+      "updated": "2026-10-27T00:11:13.911925+00:00",
+      "checkedAt": "2026-10-27T00:11:13.911925+00:00",
+      "keys": [
+        "台北教育",
+        "國中缺師率",
+        "AI行政減量"
       ],
       "error": false
     }
