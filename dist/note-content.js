@@ -74,7 +74,10 @@ function mount(){
   const dialog=area.closest('dialog');if(dialog)new MutationObserver(update).observe(dialog,{attributes:true,attributeFilter:['open']});
   area.addEventListener('paste',e=>{
    const data=e.clipboardData;if(!data)return;const html=data.getData('text/html'),plain=data.getData('text/plain');
-   let text=normalize(/<(?:table|img|pre)[\s>]/i.test(html)?fromHTML(html):fromTSV(plain));
+   // Preserve rich headings, lists, emphasis, links, tables and externally hosted images.
+   // Some apps put only plain text on the clipboard; images cannot be recovered from it.
+   const rich=/<(?:h[1-6]|table|img|pre|ul|ol|blockquote|strong|b|em|i|a)(?:\s|>)/i.test(html);
+   let text=normalize(rich?fromHTML(html):fromTSV(plain));
    if(!text||text===plain)return;
    const image=[...(data.items||[])].some(i=>i.kind==='file'&&i.type.startsWith('image/'))||[...(data.files||[])].some(f=>f.type.startsWith('image/'));
    if(image){e.noteFormattedText=text;return}
