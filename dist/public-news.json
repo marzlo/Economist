@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T16:43:06.059326+00:00",
+  "updated": "2026-10-31T00:40:27.484470+00:00",
   "topics": [
     {
       "id": "civic-songshan-airport",
@@ -72,6 +72,22 @@
           "links": [],
           "country": "tw",
           "region": "asia"
+        },
+        {
+          "title": "",
+          "region": "auto",
+          "country": "auto",
+          "createdAt": "2026-10-31T00:39:39.402Z",
+          "updatedAt": "2026-10-31T00:39:39.402Z",
+          "id": "388f591a-0f77-40a3-8b7e-f97201c2759c",
+          "date": "2026-10-31",
+          "label": "筆記",
+          "text": "蔣萬安政見\n松山機場遷移與臺北 AI 園區｜接下來：整合 300 公頃：AI 產業聚落 100 公頃、國際永續生活聚落 90 公頃，以及北側 110 公頃「台北中央公園」，結合基隆河大直段河岸再造；有機會從基湖路、敬業三路、北安路新增跨河廊道，穿越機場腹地銜接松山及信義",
+          "images": [],
+          "links": [],
+          "issueIds": [
+            "civic-songshan-airport"
+          ]
         }
       ],
       "image": {
@@ -381,8 +397,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-10-30T16:43:06.059326+00:00",
-      "checkedAt": "2026-10-30T16:43:06.059326+00:00",
+      "updated": "2026-10-31T00:40:27.484470+00:00",
+      "checkedAt": "2026-10-31T00:40:27.484470+00:00",
       "keys": [
         "松山機場",
         "松機",
@@ -413,14 +429,6 @@
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0tVHk3ODBMRDJVN2M0MF95MkFVUFhaYkZKeGVNNzRyS0dmT0dJeV9saXdCN2d0S1BEU0NWb3VXeUtCaFRyVk1HRDR4anZtdV9nNkE?oc=5",
           "source": "澳門特別行政區政府入口網站",
           "published": "2026-10-29T02:00:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "聽取各界意見 精進都市更新政策 內政部多管齊下提升居住品質兼顧都市環境乘載與公眾利益 - 蕃新聞",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBtRGVOUWRFTkpjZUNLNzJ3dWZlSUZ6MkFpUFQ0OWNRVC1KU3pZMUpVTlpfM1RjZEdlUzJBbHNxMFR4eDlXcE9aeHc5V1ktTzMzdUE?oc=5",
-          "source": "蕃新聞",
-          "published": "2026-10-29T00:00:00+00:00",
           "type": "文章",
           "description": ""
         },
@@ -473,8 +481,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-10-30T16:43:06.059326+00:00",
-      "checkedAt": "2026-10-30T16:43:06.059326+00:00",
+      "updated": "2026-10-31T00:40:27.484470+00:00",
+      "checkedAt": "2026-10-31T00:40:27.484470+00:00",
       "keys": [
         "臺北都市更新",
         "都市更新",
@@ -513,6 +521,14 @@
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5ZNTdLYmY0d0R0U084LVoxaGxCNVhLWVZxX2xzaW05Qzl3UlNqZzZOSGxjZ2RUVkN5S092WHB3MEVnVl85OUVlNFR5eUhvVHpaM3ZsSk9WeXkybFowNWtQVk1YNHVHRktscGV3?oc=5",
           "source": "天下學習Cheers快樂工作人",
           "published": "2026-10-29T13:31:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "教育部擬公布職場不法侵害指引 納教師「離線權」 - 公視新聞",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE50X0RtMmJ5V0ZwNmxLMXBPbzZka2hnMVUyTXVjZXVESkZyeF9yaEd3cHIzQ0xjNTVGbVc1S01RZ0E4bU10NFNjcXVaZ0E1eEU?oc=5",
+          "source": "公視新聞",
+          "published": "2026-10-29T11:40:00+00:00",
           "type": "文章",
           "description": ""
         },
@@ -581,10 +597,10 @@
           "description": ""
         },
         {
-          "title": "衝突頻傳⋯校園推普特融合教育 教團籲「別讓老師疲於奔命」 - UDN",
+          "title": "衝突頻傳⋯校園推普特融合教育 教團籲「別讓老師疲於奔命」 - udn",
           "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE94QWZKMFRDd1hJanlZbnl4X09nMFBqZlpIZk9Rc3huRzBpQlpHaVFrdUVzeUFQLVBnQndHTm1ndkNIMjBacUlmTHZvdG4wVjE00gFWQVVfeXFMT1ROcGxSamZfMmc0SXRvWnNORTlXZk5lZnBKWjVIMmJpNHVzaDY4VGVXdzVfUnVmc1J3dXh3eWpKR04wNUVsZWNMUGlxRktpWXlBQ1h6VHc?oc=5",
-          "source": "UDN",
-          "published": "2026-10-21T16:00:00+00:00",
+          "source": "udn",
+          "published": "2026-10-22T07:00:00+00:00",
           "type": "文章",
           "description": ""
         },
@@ -595,18 +611,10 @@
           "published": "2026-10-21T07:00:00+00:00",
           "type": "文章",
           "description": ""
-        },
-        {
-          "title": "教育部全球資訊網 - 教育部全球資訊網",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9IT3hxRkxKNXVrM0JqejhaMXF4TlVEbzJjVHRlaUNBS3RfYWNVWU41SUJqZUdudkVaeUdzQ01BMUJGS0dkRGUtNDFaODlwUmliQTFCcXd4VXoyWlBmS05qSjQ2SmhnemQ0WDdkZlRGSjVoeUJxZExlQlNGel9xNDA?oc=5",
-          "source": "教育部全球資訊網",
-          "published": "2026-10-21T05:48:23+00:00",
-          "type": "文章",
-          "description": ""
         }
       ],
-      "updated": "2026-10-30T16:43:06.059326+00:00",
-      "checkedAt": "2026-10-30T16:43:06.059326+00:00",
+      "updated": "2026-10-31T00:40:27.484470+00:00",
+      "checkedAt": "2026-10-31T00:40:27.484470+00:00",
       "keys": [
         "台北教育",
         "國中缺師率",
