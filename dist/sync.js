@@ -8,7 +8,18 @@ const headers=()=>({Accept:'application/vnd.github+json',...(token()?{Authorizat
 const encodeIssues=value=>btoa(Array.from(new TextEncoder().encode(JSON.stringify(value,null,2)+'\n'),b=>String.fromCharCode(b)).join(''));
 const decodeIssues=value=>JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(value.replace(/\s/g,'')),c=>c.charCodeAt(0))));
 function normalizeIssues(value){if(!Array.isArray(value)||!value.every(i=>typeof i.id==='string'&&typeof i.name==='string'&&Array.isArray(i.keys)))throw Error('議題資料格式不正確');return value.map(i=>({...i,entries:i.entries||[],status:i.status||'觀察中',then:i.then||'',note:i.note||''}))}
-async function remoteIssues(){const r=await fetch(issueEndpoint+'?ref=main&t='+Date.now(),{headers:headers(),cache:'no-store',signal:AbortSignal.timeout(20000)});if(!r.ok)throw Error(r.status===401?'權杖無效或已過期':'GitHub 讀取失敗（'+r.status+'）');const data=await r.json();return {sha:data.sha,issues:normalizeIssues(decodeIssues(data.content))}}
+async function remoteIssues(){
+ const r=await fetch(issueEndpoint+'?ref=main&t='+Date.now(),{headers:headers(),cache:'no-store',signal:AbortSignal.timeout(20000)});
+ if(!r.ok)throw Error(r.status===401?'權杖無效或已過期':'GitHub 讀取失敗（'+r.status+'）');
+ const data=await r.json();let value;
+ // Contents omits inline content above 1 MB. Fetch the exact blob so the data and PUT SHA agree.
+ if(data.encoding==='none'||!data.content){
+  const raw=await fetch('https://api.github.com/repos/marzlo/Economist/git/blobs/'+encodeURIComponent(data.sha)+'?t='+Date.now(),{headers:{...headers(),Accept:'application/vnd.github.raw+json'},cache:'no-store',signal:AbortSignal.timeout(20000)});
+  if(!raw.ok)throw Error('GitHub 完整記事讀取失敗（'+raw.status+'）');
+  value=await raw.json();
+ }else value=decodeIssues(data.content);
+ return {sha:data.sha,issues:normalizeIssues(value)};
+}
 let baseIssues=JSON.parse(localStorage.getItem('economist-sync-base')||'null');
 
 const equal=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
