@@ -6,6 +6,7 @@ if(DATA.cover?.file==='weekly-hero.png'&&/^\d{4}-\d{2}-\d{2}$/.test(DATA.start))
  const cover=document.querySelector('.cover');const img=cover.querySelector('img');
  img.src='../'+DATA.start+'/weekly-hero.png';img.alt=DATA.cover.alt||'本期概念插畫';
  cover.classList.add('issue-cover');
+ if(DATA.cover.label)cover.querySelector('.cover-label').textContent=DATA.cover.label;
 }
 const notes=DATA.notes,noteMap=new Map(notes.map(n=>[n.id,n]));
 const set=(id,text)=>document.getElementById(id).textContent=text;
