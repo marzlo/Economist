@@ -196,7 +196,11 @@ def render(data):
     values = {'__TITLE__': html.escape(data['title']), '__DATA__': json.dumps(data, ensure_ascii=False).replace('<', '\\u003c')}
     page = re.sub(r'__TITLE__|__DATA__', lambda match: values[match.group()], template)
     if data.get('cover', {}).get('file') == 'weekly-hero.png':
-        page = page.replace('src="../weekly-hero.png"', 'src="weekly-hero.png"', 1)
+        image = 'weekly-hero.png'
+        if data['cover'].get('version'):
+            from urllib.parse import quote
+            image += '?v=' + quote(str(data['cover']['version']), safe='')
+        page = page.replace('src="../weekly-hero.png"', 'src="' + html.escape(image, quote=True) + '"', 1)
         page = page.replace('alt="紙張拼貼概念插畫：能源船、制度與城市之橋，連到吉他、筆記與思考的人"', 'alt="' + html.escape(data['cover'].get('alt', ''), quote=True) + '"', 1)
     return page
 
@@ -221,6 +225,9 @@ def home_card(data):
     esc = lambda value: html.escape(str(value), quote=True)
     target = 'weekly/' + data['start'] + '/'
     image = 'weekly/' + data['start'] + '/weekly-hero.png' if data.get('cover', {}).get('file') == 'weekly-hero.png' else 'weekly/weekly-hero.png'
+    if data.get('cover', {}).get('version'):
+        from urllib.parse import quote
+        image += '?v=' + quote(str(data['cover']['version']), safe='')
     image_alt = data.get('cover', {}).get('alt', '能源、制度與人的創作，概念拼貼插畫')
     tags = ''.join('<span>' + esc(c['name']) + ' · ' + str(len(c['ids'])) + '</span>' for c in data['chapters'])
     quote = ('<blockquote>「' + esc(data['quote']['text']) + '」<small>— 記事原文</small></blockquote>') if data.get('quote') else ''

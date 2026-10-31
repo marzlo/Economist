@@ -1816,7 +1816,7 @@
   ],
   "topicCount": 7,
   "videoCount": 5,
-  "revision": "ea5f97d8-c518-4fab-b3c7-f12229691511",
+  "revision": "143f459a-9f92-45be-9343-a5929e55e27f",
   "status": "published",
   "sourceHash": "a668752abe9a5d9da0ac3c3c7e1dbfde264337bbaab3fd41df24014b8fbd06dc",
   "editorial": {
@@ -1824,7 +1824,8 @@
   },
   "cover": {
     "file": "weekly-hero.png",
-    "label": "本期概念關係圖",
-    "alt": "自行繪製的四幅概念圖：收支帳本、衛星替代能力、閱讀與成長、臺北政策查核，連結提出承諾、說明成本、確認執行與檢驗成果。"
+    "label": "AI 生成概念插畫",
+    "version": "20261101-editorial",
+    "alt": "米白與墨綠紙張拼貼：一隻手以黃銅放大鏡檢視打開的筆記，鏡內呈現臺北城市、校園與閱讀交流的人們，周圍融入衛星、帳本與金幣，象徵從願景查驗生活中的成果。"
   }
 }

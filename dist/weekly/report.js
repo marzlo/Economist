@@ -4,7 +4,7 @@ const safe=value=>{try{const u=new URL(value);return ['https:','http:'].includes
 const color=c=>/^#[0-9a-f]{6}$/i.test(c.color)?c.color:'#5e7c62';
 if(DATA.cover?.file==='weekly-hero.png'&&/^\d{4}-\d{2}-\d{2}$/.test(DATA.start)){
  const cover=document.querySelector('.cover');const img=cover.querySelector('img');
- img.src='../'+DATA.start+'/weekly-hero.png';img.alt=DATA.cover.alt||'本期概念插畫';
+ img.src='../'+DATA.start+'/weekly-hero.png'+(DATA.cover.version?'?v='+encodeURIComponent(DATA.cover.version):'');img.alt=DATA.cover.alt||'本期概念插畫';
  cover.classList.add('issue-cover');
  if(DATA.cover.label)cover.querySelector('.cover-label').textContent=DATA.cover.label;
 }
