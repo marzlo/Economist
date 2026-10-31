@@ -39,6 +39,7 @@ jobs:
           node test-note-paste.cjs
           node test-sync-pull.cjs
           node test-note-capacity.cjs
+          node test-app-update.cjs
           node test-note-backups.cjs
           python3 -B test-weekly-publisher.py
       - name: Update long-term observation data
