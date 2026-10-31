@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T00:40:27.484470+00:00",
+  "updated": "2026-10-31T00:42:16.246434+00:00",
   "topics": [
     {
       "id": "civic-songshan-airport",
@@ -78,13 +78,18 @@
           "region": "auto",
           "country": "auto",
           "createdAt": "2026-10-31T00:39:39.402Z",
-          "updatedAt": "2026-10-31T00:39:39.402Z",
+          "updatedAt": "2026-10-31T00:41:58.589Z",
           "id": "388f591a-0f77-40a3-8b7e-f97201c2759c",
           "date": "2026-10-31",
           "label": "筆記",
-          "text": "蔣萬安政見\n松山機場遷移與臺北 AI 園區｜接下來：整合 300 公頃：AI 產業聚落 100 公頃、國際永續生活聚落 90 公頃，以及北側 110 公頃「台北中央公園」，結合基隆河大直段河岸再造；有機會從基湖路、敬業三路、北安路新增跨河廊道，穿越機場腹地銜接松山及信義",
+          "text": "蔣萬安政見\n松山機場遷移與臺北 AI 園區｜接下來：整合 300 公頃：AI 產業聚落 100 公頃、國際永續生活聚落 90 公頃，以及北側 110 公頃「台北中央公園」，結合基隆河大直段河岸再造；有機會從基湖路、敬業三路、北安路新增跨河廊道，穿越機場腹地銜接松山及信義\n",
           "images": [],
-          "links": [],
+          "links": [
+            {
+              "title": "https://taipei-encore.pages.dev/policy/songshan/",
+              "url": "https://taipei-encore.pages.dev/policy/songshan/"
+            }
+          ],
           "issueIds": [
             "civic-songshan-airport"
           ]
@@ -397,8 +402,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-10-31T00:40:27.484470+00:00",
-      "checkedAt": "2026-10-31T00:40:27.484470+00:00",
+      "updated": "2026-10-31T00:42:16.246434+00:00",
+      "checkedAt": "2026-10-31T00:42:16.246434+00:00",
       "keys": [
         "松山機場",
         "松機",
@@ -409,14 +414,6 @@
     "4446ca7b-5593-4f73-8513-8f6f3e78f2c6": {
       "items": [
         {
-          "title": "以全域思維 審視都市更新與科技賦能 多維推動澳門高質量發展 - 澳門力報",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5BUTdpNDZJSnBaY1JKSFVjeC11LTF4bFJuc1R6clY4QkxjcWZ0aG1Na01RYzFjRGtldkNQajlTZXM5NjNTcXlwbWN0cUE1Q0l6aFVJ?oc=5",
-          "source": "澳門力報",
-          "published": "2026-10-29T23:04:14+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
           "title": "鳥松山水段運動休閒專用區土地都市更新事業簽約陳其邁：以市民利益為優先公私協力提升城市樂活環境 - 高雄市政府全球資訊網",
           "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSXNTQXNhdHpZZkMxc2tybnVUOFdNNW43ajlOaEtHQUdZZWVWSE9XZzlkUkdBUDZtdHlrZ3V3V3FEbWVkQzhxSkwxd0o1ZVNRZXRKRkUzdFc3Z0l6V0xsMjZGRG9DcnY4Ny1YdHdwZXpXVVZ4VWl3R19WMGNpZDVld3lHM2VoMVBCMlM0?oc=5",
           "source": "高雄市政府全球資訊網",
@@ -425,10 +422,10 @@
           "description": ""
         },
         {
-          "title": "土地工務局啟動樓宇狀況普查 為配合“三五”規劃推進都市更新提供數據支持 - 澳門特別行政區政府入口網站",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0tVHk3ODBMRDJVN2M0MF95MkFVUFhaYkZKeGVNNzRyS0dmT0dJeV9saXdCN2d0S1BEU0NWb3VXeUtCaFRyVk1HRDR4anZtdV9nNkE?oc=5",
-          "source": "澳門特別行政區政府入口網站",
-          "published": "2026-10-29T02:00:00+00:00",
+          "title": "聽取各界意見 精進都市更新政策 內政部多管齊下提升居住品質兼顧都市環境乘載與公眾利益 - 蕃新聞",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBtRGVOUWRFTkpjZUNLNzJ3dWZlSUZ6MkFpUFQ0OWNRVC1KU3pZMUpVTlpfM1RjZEdlUzJBbHNxMFR4eDlXcE9aeHc5V1ktTzMzdUE?oc=5",
+          "source": "蕃新聞",
+          "published": "2026-10-29T00:00:00+00:00",
           "type": "文章",
           "description": ""
         },
@@ -441,6 +438,14 @@
           "description": ""
         },
         {
+          "title": "鳥松山水段運動休閒專用區土地都市更新事業簽約陳其邁：以市民利益為優先公私協力提升城市樂活環境 - 蕃新聞",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1wNDRDNV9XVTIwMlo4YklsY1NoLU1QVFBhSHNycFBhMmREZmdscEpvRlNUeGQ1N0xMQ0ZZV3pCUmtpTzh4dVRTMllLRTJtbzNYT1E?oc=5",
+          "source": "蕃新聞",
+          "published": "2026-10-22T00:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
           "title": "加速都市更新！蔣萬安拋雙新政：意願門檻降至50％、大街廓容積率提高到300％ - 自由時報",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ONFFaSTRQOFdPV1h0ZXZta1NjVWVOcXVkWFFsTVFLYlJzZEhqREtpNTdJMHBobFhzV3BKc3l0S1RQaElVdm1wUXg4VXFWZ2ZCT3cwSmRra1hvOTdXTEl0S1paNFFBTGFRYnfSAW9BVV95cUxORVlHakpwNm1sUm0yQ3c3Ym5YUVdDZzNGMEtVSUI2R3FUYnRaTC16V18teGJ0czdFaXdWYnR6dE9la3VyTUVwZGo0c0ZhWTNwdXZGakRIbk1hTzBrcEJ0Q1JQMnFxSTllRkhrQUJMbHM?oc=5",
           "source": "自由時報",
@@ -449,10 +454,58 @@
           "description": ""
         },
         {
-          "title": "都市更新自己來！內政部最高補助1100萬 - 自由時報",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ZOWExWG5mRGc4V0prQlExZGtmOHRGNG8tWVIwZXVMLVE2UzNfaHR2NkRnMW5uSHlMUG5PWjJ6MzdHN2JENE9nZGRLU042QnpmTFQ1S0ZIVGZ6a0JTUW9hQUlQOVAyV3BtbHfSAW9BVV95cUxOWnVTLXptejBxUkxmekZNTFFyc2lsQ09ybW91RmxBeVhVbmhEU29lV01wd29rUmZmNERtSDRkUmNyUUlWek5rNkUxNG5BcWJ2ZGtFM2Y5dDA5NkJBVlVuMVZMbE54LXo4SmdlSkpQX0U?oc=5",
-          "source": "自由時報",
-          "published": "2026-10-07T07:00:00+00:00",
+          "title": "嘉興街案火警後續處理作業及聯繫資訊 - 國家住宅及都市更新中心",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5TMEIwN2dyWG1UOXo2eVdvVW5lZU96eGE3alV5aVZEdFpXU1RzeXNHRnpvcE9fdWVwTHNWUGhTYjktc3l0dHJjdzgzZDBrYkxiZXJNblJqTE10NExBRGg0Rlp3bHhRWkZxZmNzY0tVNk15TDA?oc=5",
+          "source": "國家住宅及都市更新中心",
+          "published": "2026-10-15T07:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "林秉宥提2,000戶中繼宅構想 盼都更社區整批安置 - 蕃新聞",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBKelhRWFMzTGxZVzdqc3JoZ3hXckN0TjVIQVF4Nmg3a0dUYXAyNWU1YjRuWDVGR0o1R2ROMGJJMWFBY3pWOWNsVVFDUmFMcy1hYmc?oc=5",
+          "source": "蕃新聞",
+          "published": "2026-10-14T07:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "蘇巧慧住宅政見 拋設都市更新局 - 中華新聞雲／中華日報",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE45Vi1uYXlVM2xBVGpkZ2E4TDA5THhxTk1sMXpCUFNIRVZNblR5TUR2NXRHWjFZbHRDa1FYNHhSTEV6NEhBQlF3R0hOZnhKQzRTNUE?oc=5",
+          "source": "中華新聞雲／中華日報",
+          "published": "2026-10-13T13:30:03+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "基隆仁愛區後援會成立湧人潮謝國樑：推動老舊建築與商圈都市更新| 2026九合一選舉 - UDN",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5WNTB1OGI3N3AtY0Q4bmlxcVdfN2FtblZkWUl5R0NmQVZ3emFCVFJQTTBXOTZXWlpGYTNDYUUtTnkzSGs4OXlqZzViaVV2Uy15RDN0Zzg3TVM?oc=5",
+          "source": "UDN",
+          "published": "2026-10-09T07:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "2026得獎名單》最佳都市更新重建類 昇陽國際ONE360 - 都更全都通",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9MVGNLNGxpeC02UDFZT2trZHNkMndPVVl5LXowUXo4ZklILTItSWpKY2ZKa3I3QjRwSzZTemJDMS10UF9KdzhYMFVxUkFvaXk1bTFpQW9GdTJlM2QwQU4ydw?oc=5",
+          "source": "都更全都通",
+          "published": "2026-10-05T16:31:31+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "2026得獎名單》最佳都市更新重建類 軟園尊邸 - 都更全都通",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1EZWt2OEhWS042U2lDeHBOTklYaHpCNHo4SWg1LXA5ZnlGejQ3Vm05cFdnd0tQc0tUY29jLU82N2paUWZKNWdGNm5QbjdBNHg2ZHA1NFV0aVV0SjQwTlBwRQ?oc=5",
+          "source": "都更全都通",
+          "published": "2026-10-05T16:31:28+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "2026得獎名單》最佳都市更新重建類 松山民權東公辦都更 - 都更全都通",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlNTFObXZQcjF1d1lINmd3MkJCaENDMVNrd3lGNURNeTlTMVMwX2w0WlZJN0JoR29ITnRybVFtMXJaeGVMdUZoMkR6bXVoM0JrYmZiYW42OEo2VHNkbHluZw?oc=5",
+          "source": "都更全都通",
+          "published": "2026-10-05T16:31:27+00:00",
           "type": "文章",
           "description": ""
         },
@@ -465,24 +518,24 @@
           "description": ""
         },
         {
-          "title": "嘉義市忠孝路346巷都市更新案 審議通過 - 台灣好新聞",
-          "url": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxNV3dFRGM3TVFPZ0RSbl9pMTdXTnBNTi16MDYwQXVYZEdIMl9xYXZyVmU2SlhlYWtVakVPRGlnaGRGUTZIREJkb3hiWXY3VVY1ZHk1aUFRWlc0cGd1eVdBXzA5a0JxZlNidkdaaDgzVGhKdUVMbll6QnJ6X2otUzh3a1MtbWdDNjExSl8weERDUXpwY01lSWpNeUNaelkwTkhwTVVRNm5lYzI2UmR2QllaQUF2Nk10WjRCTFBMRENZTFRwUkhBT3U5elZNQmp4dTI1bGFoem5qbW5EZlRiNjN0a1ZIWGpuYmVheGhxdVBpWHplYlBRYjhJUElRcHlKYWNIZjd0QU1NNFRoSkd4ZXJtMTluVjFRSHFXd0FCd0p6dnhrQVBvM1EwR2tLY3FXcld5Zjk5b2hReHB2NDFOcTJtRHJIM19zcDhabG5GdkRkNFgybDA?oc=5",
-          "source": "台灣好新聞",
-          "published": "2026-08-13T07:00:00+00:00",
+          "title": "員山火災釀4死～吳宗憲提「防災型都市更新」三大防線補強宜蘭安全網 - 葛瑪蘭新聞網",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5VSlhVN29WLXJxc05HS3pBMlBVZ2JsQXpGUzE5Y2ZSRHFpUGZhZThKVE04Tmd1MUxXSDFXOWRMYVJSMmd6V09kSTljUktnam14cUN2RXRrRXM2R2s?oc=5",
+          "source": "葛瑪蘭新聞網",
+          "published": "2026-10-04T07:00:00+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "挺青年成家！「好室成雙，育兒不慌」 中央社宅第3季1,500戶公告招租 8/14起受理申請 - 國家住宅及都市更新中心",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB0VnY0b3VGWXpxVkQ3QUc2d0dNTm9xNGU4MFZaa0NhN2JzOEZ2dWlYRVRHMngzdE50V0pxR0Z3VG5OZFF0cUFfa2U3b25yajVuNmpfZFFPZTM3QjZtS2JRWWhUbFdtTGNWNDhVLUZQWkxQdw?oc=5",
-          "source": "國家住宅及都市更新中心",
-          "published": "2026-08-04T07:00:00+00:00",
+          "title": "員山火災釀4死 吳宗憲提「防災型都市更新」三大防線 - 中華新聞雲／中華日報",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4wZ3l3all1eS0xLUMtNTdha3JCbHV6T0Z4ekgzQXdSWE5xT2NHUXZURVNpS3VCcHBiWmU4Q0N3LXlqa3BDdE5nejY3SUNVb21KWUE?oc=5",
+          "source": "中華新聞雲／中華日報",
+          "published": "2026-10-04T07:00:00+00:00",
           "type": "文章",
           "description": ""
         }
       ],
-      "updated": "2026-10-31T00:40:27.484470+00:00",
-      "checkedAt": "2026-10-31T00:40:27.484470+00:00",
+      "updated": "2026-10-31T00:42:16.246434+00:00",
+      "checkedAt": "2026-10-31T00:42:16.246434+00:00",
       "keys": [
         "臺北都市更新",
         "都市更新",
@@ -613,8 +666,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-10-31T00:40:27.484470+00:00",
-      "checkedAt": "2026-10-31T00:40:27.484470+00:00",
+      "updated": "2026-10-31T00:42:16.246434+00:00",
+      "checkedAt": "2026-10-31T00:42:16.246434+00:00",
       "keys": [
         "台北教育",
         "國中缺師率",
