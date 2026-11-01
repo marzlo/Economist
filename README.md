@@ -88,3 +88,24 @@ GitHub Pages 網址：https://marzlo.github.io/Economist/
 週報修訂可加入 `comparison`：前一完整週的記事快照、逐項引用的前週／本週記事 ID，
 以及延續、修正、延伸或新增的整理。前週來源另列，不計入本期篇數；發布前驗證
 週次相鄰、兩週記事不重複及引用存在。修訂草稿未確認前不改動已發布週報。
+
+
+### 新增的長期數據
+
+數據整理另接入四組免費公開來源，不使用 AI 推估填值：
+
+- 微軟、Alphabet、Meta、Amazon 分別使用 SEC Company Facts 的 USD 現金流資料：
+  `PaymentsToAcquirePropertyPlantAndEquipment / NetCashProvidedByUsedInOperatingActivities`。
+  先按公司自身財政年度將累計值差分成單季，再取連續四季合計比率；同時顯示自由現金流。
+  不含非現金租賃添置，也不能把公司全部資本支出當作 AI 支出。
+- 日本財務省十年期固定期限國債殖利率，按日本營業日發布，保留負殖利率歷史值。
+  支援和曆與西曆 CSV，優先讀取歷史資料；不是國債持有量或政府平均付息成本。
+- ECB `IRS/M.FR+DE.L.L40.CI.0000.EUR.N.Z` 的同月長期利率，法國減德國並換算基點。
+  不以單日數值、不同期限或不同月份相減。
+- BLS 經 FRED 提供的 `CPIUFDNS` 食品未季調指數，計算與去年同月相比的年增率；
+  包含在家與外食食品。與柴油分開顯示，不自動推論因果。
+
+來源失敗獨立記錄且保留舊資料；首次尚未取得的來源顯示等待，不產生模擬數值。
+台積電的季度辨識支援 TWSE 多季及重複申報列，選取已結束的最新期間。
+
+驗證：`python3 -B test-observation-sources.py`、`python3 -B test-observations.py`。

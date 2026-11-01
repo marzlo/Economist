@@ -8,7 +8,14 @@ const trackers=[
 ];
 
 
-const keys=['tsmc','treasury-share','diesel'];
+const companyNotes=['92b3a90d-3857-40ac-9f2d-780da97229f1','60e50a2b-266d-4a53-8beb-eac4ccb8b82b'];
+for(const [key,name,cik] of [['msft','微軟','789019'],['goog','Alphabet','1652044'],['meta','Meta','1326801'],['amzn','Amazon','1018724']])trackers.push({key:'capex-'+key,name:'AI 投資的現金壓力',category:'產業與資金',metric:name+' 現金資本支出／營業現金流',frequency:'每季（近四季）',definition:'近四季現金購置不動產、廠房及設備支出合計 ÷ 同期營業現金流合計 × 100%。',question:'企業自己產生的現金，能否支撐設備投資？',caution:'各公司分開觀察；資本支出不全是 AI 投資，不含非現金租賃添置。自由現金流為營業現金流減現金設備支出，不代表可自由分配的全部資金。',source:name+' · SEC 財報',url:'https://www.sec.gov/edgar/browse/?CIK='+cik,ids:companyNotes});
+trackers.push(
+ {key:'japan-10y',name:'日本政府借款成本',category:'財政與市場',metric:'日本十年期國債殖利率',frequency:'每日（日本營業日）',definition:'日本財務省十年期固定期限國債市場殖利率，年率百分比。',question:'日本新增借款與到期再融資，是否面臨較高的市場利率？',caution:'不是政府全部國債的平均付息成本，也不能由殖利率推論外資或美國買家的持有量。負殖利率是可能的歷史觀測值。',source:'日本財務省',url:'https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/index.htm',ids:['e43fddac-ce93-40a8-9291-cc389414e95f']},
+ {key:'fr-de-spread',unit:'基點',name:'歐洲財政的相對風險',category:'財政與市場',metric:'法國－德國十年期公債利差',frequency:'每月',definition:'同月法國十年期長期利率減德國同期利率，轉成基點；100 基點等於 1 個百分點。',question:'市場是否要求法國支付更高的相對融資成本？',caution:'使用 ECB 同口徑月資料；利差也受流動性與市場供需影響，不能單獨當作政治風險或違約機率。',source:'ECB 長期利率統計',url:'https://data.ecb.europa.eu/',ids:['528d0907-84dd-4244-9e37-3ab49e57a6ac','b9b41c65-19d8-4a96-971c-c04d468127e4']},
+ {key:'food-cpi',name:'能源與食品價格',category:'能源與物價',metric:'美國食品 CPI 年增率',frequency:'每月',definition:'BLS 食品 CPI 未季調指數，與去年同月相比的百分比變動，包含在家與外食食品。',question:'柴油漲價時，食品價格是否也持續上升？',caution:'與柴油分開繪圖，兩者一起上漲不代表因果。食品價格也受天氣、供需、工資與其他因素影響。',source:'BLS（FRED CPIUFDNS）',url:'https://fred.stlouisfed.org/series/CPIUFDNS',ids:['e007fa68-8334-47c1-a8b9-a0287cabe59e','bc5cb1d2-6719-4886-a6ac-8e6c0bd0c2c2']}
+);
+const keys=['tsmc','treasury-share','diesel',...trackers.slice(3).map(t=>t.key)];
 trackers[1].metric='美國淨利息／財政收入（近 12 月）';
 trackers[1].frequency='每月';
 trackers[2].frequency='每週';
@@ -16,14 +23,14 @@ let snapshot={series:{}},loadError='',signature='',selected=0;
 function current(index){
  const raw=snapshot.series?.[keys[index]]||{},points=(raw.points||[]).filter(p=>/^\d{4}-\d{2}-\d{2}$/.test(p.date)&&Number.isFinite(p.value)).sort((a,b)=>a.date.localeCompare(b.date));
  const latest=points.at(-1),prev=points.at(-2),delta=latest&&prev?latest.value-prev.value:null;
- return {...raw,points,period:latest?.label||latest?.date||'尚未取得',value:latest?format(latest.value,raw.unit==='USD／加侖'?3:2):'—',
+ return {...raw,unit:raw.unit||trackers[index].unit||'%',points,period:latest?.label||latest?.date||'尚未取得',value:latest?format(latest.value,raw.unit==='USD／加侖'?3:2):'—',
  change:delta===null?'等待可比較的歷史資料':`${delta>0?'▲':delta<0?'▼':'→'} ${format(Math.abs(delta),raw.unit==='USD／加侖'?3:2)} ${raw.unit==='%'?'個百分點':raw.unit||''}　較上期`,
  status:loadError?'資料讀取失敗':raw.error?(latest?'更新失敗 · 保留舊資料':'來源暫時無法取得'):latest?'公開來源數據':'等待首次更新'};
 }
 function format(value,digits=2){return value.toLocaleString('zh-TW',{minimumFractionDigits:digits,maximumFractionDigits:digits})}
 function stamp(value){return value?new Date(value).toLocaleString('zh-TW',{timeZone:'Asia/Taipei',hour12:false}):'尚未成功取得'}
 function line(data,small=false){
- const points=data.points.slice(data.periodType==='weekly'?-104:-40);
+ const points=data.points.slice(data.periodType==='daily'?-520:data.periodType==='weekly'?-104:data.periodType==='monthly'?-60:-40);
  if(points.length<2)return small?'<div class="ob-spark-empty">等待歷史資料</div>':'<div class="ob-chart-empty"><strong>尚無足夠資料繪製走勢</strong><p>來源恢復並取得至少兩筆資料後顯示，不使用示意值補齊。</p></div>';
  const width=small?240:930,height=small?64:280,left=small?5:75,right=small?235:870,top=small?8:35,bottom=small?56:230;
  const min=Math.min(...points.map(p=>p.value)),max=Math.max(...points.map(p=>p.value)),pad=Math.max((max-min)*.2,.01),lo=min-pad,hi=max+pad;
@@ -39,7 +46,11 @@ function render(){
 }
 function detail(notes){
  const t=trackers[selected],d=current(selected),related=t.ids.map(id=>notes.find(n=>n.id===id)).filter(Boolean),url=safeLink(d.sourceUrl||t.url);
- root.querySelector('#ob-detail').innerHTML=`<div class="ob-chart-heading"><div><div class="ob-eyebrow">${esc(t.category)} / 歷史走勢</div><h3>${esc(t.metric)}</h3><p>${esc(d.definition||'等待取得來源資料後顯示統計口徑。')}</p></div><span class="ob-status">${esc(d.status)}</span></div>${line(d)}${selected===1&&d.points.length?`<p class="ob-chart-caption">最新近 12 月淨利息支出：${format(d.points.at(-1).netInterestUSD/1e9)} 十億美元 ÷ 同期財政收入：${format(d.points.at(-1).receiptsUSD/1e9)} 十億美元 × 100% = ${d.value}%。</p>`:''}<dl class="ob-metadata"><div><dt>資料來源</dt><dd>${url?`<a href="${esc(url)}" target="_blank" rel="noopener">${esc(d.source||t.source)} ↗</a>`:'來源未提供'}</dd></div><div><dt>資料發布頻率</dt><dd>${esc(d.frequency||t.frequency)}</dd></div><div><dt>最新統計期間</dt><dd>${esc(d.period)}</dd></div><div><dt>最後成功取得（臺灣時間）</dt><dd>${esc(stamp(d.lastSuccess))}</dd></div></dl><p class="ob-footnote">最近檢查：${esc(stamp(d.checkedAt||snapshot.checkedAt))}${d.error?' · 此來源本次更新失敗，已保留舊資料。':''}</p><details class="ob-history-table"><summary>歷史數值（${d.points.length} 筆）</summary><div class="ob-table-scroll"><table><thead><tr><th>統計期間</th><th>數值（${esc(d.unit||'未取得單位')}）</th></tr></thead><tbody>${d.points.slice().reverse().map(p=>`<tr><td>${esc(p.label||p.date)}</td><td>${format(p.value,d.unit==='USD／加侖'?3:2)}</td></tr>`).join('')||'<tr><td colspan="2">尚未取得資料</td></tr>'}</tbody></table></div></details><div class="ob-story"><div><h4>我的觀察方向</h4><strong>${esc(t.question)}</strong><p>${esc(t.caution)}</p>${selected===1?'<p>採最近連續 12 個月加總，避免把財政年度重新起算或單月季節波動誤認為趨勢。分子、分母採相同月份與美元單位。</p>':''}</div><div><h4>從這些記事開始追蹤（${related.length}）</h4>${related.map(n=>`<details class="ob-note"><summary><time>${esc(n.date||'')}</time><span>${esc(n.title)}</span></summary><p>${esc(n.text||'')}</p>${typeof EntryImages!=='undefined'?EntryImages.html(n):''}${(n.links||[]).filter(l=>safeLink(l.url)).map(l=>`<a href="${esc(safeLink(l.url))}" target="_blank" rel="noopener">${esc(l.title||'記事來源')} ↗</a>`).join('')}</details>`).join('')||'<p>相關記事尚未載入或已移除。</p>'}</div></div>`;
+ const last=d.points.at(-1);let evidence='';
+ if(last&&keys[selected].startsWith('capex-'))evidence=`<p class="ob-chart-caption">近四季現金資本支出 ${format(last.capitalExpenditureUSD/1e9)} 十億美元 ÷ 同期營業現金流 ${format(last.operatingCashFlowUSD/1e9)} 十億美元 × 100% = ${d.value}%。自由現金流：${format(last.freeCashFlowUSD/1e9)} 十億美元。</p>`;
+ if(last&&keys[selected]==='fr-de-spread')evidence=`<p class="ob-chart-caption">同月法國 ${format(last.franceYield)}% − 德國 ${format(last.germanyYield)}% = ${d.value} 基點（100 基點 = 1 個百分點）。</p>`;
+ if(last&&keys[selected]==='food-cpi')evidence=`<p class="ob-chart-caption">當月食品指數 ${format(last.index)} ÷ 去年同月 ${format(last.yearAgoIndex)}，減 1 再乘 100% = ${d.value}%。</p>`;
+ root.querySelector('#ob-detail').innerHTML=`<div class="ob-chart-heading"><div><div class="ob-eyebrow">${esc(t.category)} / 歷史走勢</div><h3>${esc(t.metric)}</h3><p>${esc(d.definition||t.definition)}</p></div><span class="ob-status">${esc(d.status)}</span></div>${line(d)}${evidence}${selected===1&&d.points.length?`<p class="ob-chart-caption">最新近 12 月淨利息支出：${format(d.points.at(-1).netInterestUSD/1e9)} 十億美元 ÷ 同期財政收入：${format(d.points.at(-1).receiptsUSD/1e9)} 十億美元 × 100% = ${d.value}%。</p>`:''}<dl class="ob-metadata"><div><dt>資料來源</dt><dd>${url?`<a href="${esc(url)}" target="_blank" rel="noopener">${esc(d.source||t.source)} ↗</a>`:'來源未提供'}</dd></div><div><dt>資料發布頻率</dt><dd>${esc(d.frequency||t.frequency)}</dd></div><div><dt>最新統計期間</dt><dd>${esc(d.period)}</dd></div><div><dt>最後成功取得（臺灣時間）</dt><dd>${esc(stamp(d.lastSuccess))}</dd></div></dl><p class="ob-footnote">最近檢查：${esc(stamp(d.checkedAt||snapshot.checkedAt))}${d.error?' · 此來源本次更新失敗，已保留舊資料。':''}</p><details class="ob-history-table"><summary>歷史數值（${d.points.length} 筆）</summary><div class="ob-table-scroll"><table><thead><tr><th>統計期間</th><th>數值（${esc(d.unit||'未取得單位')}）</th></tr></thead><tbody>${d.points.slice().reverse().map(p=>`<tr><td>${esc(p.label||p.date)}</td><td>${format(p.value,d.unit==='USD／加侖'?3:2)}</td></tr>`).join('')||'<tr><td colspan="2">尚未取得資料</td></tr>'}</tbody></table></div></details><div class="ob-story"><div><h4>我的觀察方向</h4><strong>${esc(t.question)}</strong><p>${esc(t.caution)}</p>${selected===1?'<p>採最近連續 12 個月加總，避免把財政年度重新起算或單月季節波動誤認為趨勢。分子、分母採相同月份與美元單位。</p>':''}</div><div><h4>從這些記事開始追蹤（${related.length}）</h4>${related.map(n=>`<details class="ob-note"><summary><time>${esc(n.date||'')}</time><span>${esc(n.title)}</span></summary><div class="entry-content">${NoteContent.render(n.text||'',n.images)}</div>${typeof EntryImages!=='undefined'?EntryImages.html(n):''}${(n.links||[]).filter(l=>safeLink(l.url)).map(l=>`<a href="${esc(safeLink(l.url))}" target="_blank" rel="noopener">${esc(l.title||'記事來源')} ↗</a>`).join('')}</details>`).join('')||'<p>相關記事尚未載入或已移除。</p>'}</div></div>`;
 }
 render();
 let lastRead=0;

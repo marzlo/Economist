@@ -11,6 +11,8 @@ import os
 import time
 import urllib.parse
 import urllib.request
+import urllib.error
+import observation_sources as sources
 from datetime import date, datetime, timezone
 from pathlib import Path
 
@@ -30,6 +32,8 @@ def download(url):
                 return response.read()
         except Exception as exc:
             error = exc
+            if isinstance(exc, urllib.error.HTTPError) and exc.code in (400, 401, 403, 404):
+                break
             if attempt < 2:
                 time.sleep(attempt + 1)
     raise RuntimeError('公開來源暫時無法取得：' + str(error))
@@ -182,16 +186,29 @@ def report_url(year, quarter):
     return 'https://mopsov.twse.com.tw/server-java/t164sb01?' + params
 
 
+def latest_tsmc_period(rows, today=None):
+    today = today or date.today()
+    periods = set()
+    for row in rows:
+        if str(row.get('公司代號', '')).strip() != '2330':
+            continue
+        year, quarter = int(row['年度']), int(row['季別'])
+        if year < 1911:
+            year += 1911
+        if quarter not in (1, 2, 3, 4):
+            raise ValueError('財報季度無效')
+        month = quarter * 3
+        if date(year, month, calendar.monthrange(year, month)[1]) <= today:
+            periods.add((year, quarter))
+    if not periods:
+        raise ValueError('公開資料未提供台積電已結束的財報季度')
+    # TWSE can list multiple quarters and repeated filing rows; choose the latest period.
+    return max(periods)
+
+
 def tsmc(previous=None):
     rows = json.loads(download('https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci'))
-    rows = [r for r in rows if r.get('公司代號') == '2330']
-    if len(rows) != 1:
-        raise ValueError('無法唯一辨識台積電最新財報季度')
-    year, quarter = int(rows[0]['年度']), int(rows[0]['季別'])
-    if year < 1911:
-        year += 1911
-    if quarter not in (1, 2, 3, 4):
-        raise ValueError('財報季度無效')
+    year, quarter = latest_tsmc_period(rows)
     # Bootstrap three years; thereafter refresh this and last year so revisions
     # and YTD differencing remain consistent, retaining older archived points.
     start_year = year - (1 if (previous or {}).get('points') else 2)
@@ -257,7 +274,11 @@ def refresh(old, fetchers, now=None):
 
 def main():
     old = json.loads(DEST.read_text()) if DEST.exists() else {}
-    output = refresh(old, {'diesel': diesel, 'treasury-share': treasury, 'tsmc': lambda: tsmc(old.get('series', {}).get('tsmc', {}))})
+    fetchers = {'diesel': diesel, 'treasury-share': treasury, 'tsmc': lambda: tsmc(old.get('series', {}).get('tsmc', {})),
+                'food-cpi': lambda: sources.food(download), 'japan-10y': lambda: sources.japan(download),
+                'fr-de-spread': lambda: sources.spread(download)}
+    fetchers.update({'capex-' + key: (lambda key=key: sources.company(download, key)) for key in sources.COMPANIES})
+    output = refresh(old, fetchers)
     temp = DEST.with_suffix('.tmp')
     temp.write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n')
     os.replace(temp, DEST)

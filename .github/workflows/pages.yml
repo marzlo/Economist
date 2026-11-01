@@ -29,6 +29,7 @@ jobs:
           python3 -B test-youtube-api.py
           python3 -B test-public-news.py
           python3 -B test-observations.py
+          python3 -B test-observation-sources.py
           node test-civic.cjs
           node test-civic-keywords.cjs
           node test-weekly.cjs

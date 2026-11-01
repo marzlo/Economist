@@ -11,7 +11,7 @@ $('#install-close').onclick=()=>$('#install-dialog').close();
 $('#share-app').onclick=async()=>{const data={title:'下一章閱讀',text:'影片章節與議題整理，可安裝到手機主畫面。',url:'https://marzlo.github.io/Economist/'};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(data.url);$('#install-message').textContent='已複製分享網址'}}catch(e){if(e.name!=='AbortError')$('#install-message').textContent='分享網址：https://marzlo.github.io/Economist/'}};
 if(installed())$('#install-app').hidden=true;
 // A waiting worker cannot replace an open app until the user chooses to update.
-const pageVersion='2026.10.31.2';
+const pageVersion='2026.11.01.1';
 const version=document.createElement('p');version.id='app-version';version.className='muted';version.textContent='頁面版本 '+pageVersion;
 $('#load-status').after(version);
 let appRegistration=null,updateRequested=false,reloading=false;
