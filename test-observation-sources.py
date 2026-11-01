@@ -3,6 +3,8 @@ import importlib.util
 from datetime import date
 from pathlib import Path
 import unittest
+from unittest.mock import patch
+import urllib.parse
 import observation_sources as S
 
 spec = importlib.util.spec_from_file_location('observations', Path(__file__).with_name('update-observations.py'))
@@ -29,6 +31,26 @@ class PublicSources(unittest.TestCase):
         self.assertEqual(M.latest_tsmc_period(rows,date(2026,11,1)),(2026,3))
         self.assertEqual(M.latest_tsmc_period(rows,date(2026,8,1)),(2026,2))
         with self.assertRaises(ValueError):M.latest_tsmc_period([],date(2026,11,1))
+
+    def test_tsmc_checks_actual_filings_when_period_index_is_empty(self):
+        class FixedDate(date):
+            @classmethod
+            def today(cls):return cls(2026,11,1)
+        for q3_available in (False,True):
+            def download(url):
+                if 'openapi.twse' in url:return b'[]'
+                args=urllib.parse.parse_qs(urllib.parse.urlparse(url).query)
+                year,quarter=int(args['SYEAR'][0]),int(args['SSEASON'][0])
+                if (year,quarter)==(2026,3) and not q3_available:return b'<html>No matching report</html>'
+                revenue=100 if quarter in (2,3) else quarter*100
+                return (f'<title>2330 {year}Q{quarter}</title>新臺幣仟元'
+                    f'<table><tr><td>4000</td><td>營業收入</td><td>{revenue}</td><td>0</td><td>{quarter*100}</td></tr>'
+                    f'<tr><td>B02700</td><td>取得不動產</td><td>({quarter*30})</td></tr></table>').encode()
+            with patch.object(M,'date',FixedDate),patch.object(M,'download',download),patch.object(M.time,'sleep'):
+                result=M.tsmc({'points':[{'date':'2026-06-30','value':30}]})
+            self.assertEqual(result['points'][-1]['label'],'2026 Q3' if q3_available else '2026 Q2')
+            self.assertEqual('updateNote' in result,not q3_available)
+            self.assertEqual(result['points'][-1]['value'],30)
 
     def test_food_exact_year_ago_not_previous_available_row(self):
         raw='observation_date,CPIUFDNS\n2023-01-01,100\n2023-03-01,110\n2024-01-01,105\n2024-02-01,108\n2024-03-01,99\n'

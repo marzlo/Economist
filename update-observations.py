@@ -263,7 +263,8 @@ def tsmc(previous=None):
     return {'points': points, 'unit': '%', 'source': '公開資訊觀測站 · 台積電合併財報',
             'sourceUrl': report_url(year, quarter),
             'definition': '以財報現金流量表 B02700「取得不動產、廠房及設備」現金支出 ÷ 營業收入合計（4000）× 100%。同年度累計差分成單季，皆為新臺幣；不含無形資產及非現金交易，可能與公司公布的資本預算口徑不同。',
-            'frequency': '每季（以公開觀測站申報為準）', 'periodType': 'quarterly'}
+            'frequency': '每季（以公開觀測站申報為準）', 'periodType': 'quarterly',
+            **({'updateNote': f'已核對可取得的相符報表截至 {year} Q{quarter}；較新季度尚未取得相符申報報表，未填入預估值。'} if verified < completed else {})}
 
 
 def merge_points(old, new, today=None):
