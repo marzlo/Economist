@@ -207,6 +207,10 @@ def parse_company(data, today=None):
         quarters.append({'start': capex[end]['start'], 'end': end,
                          'capex': capex[end]['value'], 'operating': operating[end]['value'],
                          'accn': operating[end]['accn']})
+    return ttm_points(quarters)
+
+
+def ttm_points(quarters):
     points = []
     for n in range(3, len(quarters)):
         window = quarters[n-3:n+1]
@@ -228,18 +232,74 @@ def parse_company(data, today=None):
                            'value': round(numerator / denominator * 100, 6),
                            'capitalExpenditureUSD': numerator, 'operatingCashFlowUSD': denominator,
                            'freeCashFlowUSD': denominator - numerator, 'periodStart': window[0]['start'],
-                           'filingAccession': window[-1]['accn']})
+                           'filingAccession': window[-1].get('accn', '')})
     if not points:
-        raise ValueError('SEC 缺少連續四季可比較現金流；未以缺季或預估資料補齊')
+        raise ValueError('財報缺少連續四季可比較現金流；未以缺季或預估資料補齊')
     return points
 
 
+def parse_yahoo(data, symbol):
+    payload = data.get('timeseries', {})
+    if payload.get('error'):
+        raise ValueError('財報備援來源回報錯誤：' + str(payload['error'])[:160])
+    values = {'quarterlyPurchaseOfPPE': {}, 'quarterlyOperatingCashFlow': {}}
+    for series in payload.get('result') or []:
+        if series.get('meta', {}).get('symbol') not in ([symbol], None):
+            raise ValueError('財報備援公司代號不符')
+        for tag in values:
+            for row in series.get(tag, []):
+                if row.get('periodType') != '3M' or row.get('currencyCode') != 'USD':
+                    raise ValueError('財報備援需為單季美元，不能混用年度或幣別')
+                end = row['asOfDate']
+                day = date.fromisoformat(end)
+                if day.month not in (3, 6, 9, 12) or end != month_end(end):
+                    raise ValueError('財報備援未提供可確認起日的三個月季度')
+                values[tag][end] = finite(row['reportedValue']['raw'])
+    common = sorted(values['quarterlyPurchaseOfPPE'].keys() & values['quarterlyOperatingCashFlow'].keys())
+    quarters = []
+    for end in common:
+        day = date.fromisoformat(end)
+        start = date(day.year, day.month-2, 1).isoformat()
+        quarters.append({'start': start, 'end': end,
+                         'capex': abs(values['quarterlyPurchaseOfPPE'][end]),
+                         'operating': values['quarterlyOperatingCashFlow'][end]})
+    if len(quarters) < 4:
+        raise ValueError('財報備援缺少四季 PPE 購置與營業現金流；不以其他資本支出口徑替代')
+    return ttm_points(quarters)
+
+
 def company(download, key):
+    import urllib.parse
+    from datetime import datetime, timezone
     name, cik = COMPANIES[key]
-    data = json.loads(download('https://data.sec.gov/api/xbrl/companyfacts/CIK' + cik + '.json'))
-    if str(data.get('cik', '')).lstrip('0') != cik.lstrip('0'):
-        raise ValueError('SEC 公司代碼不符')
-    return {'points': parse_company(data), 'unit': '%', 'source': name + ' · SEC XBRL 公司財報',
-            'sourceUrl': 'https://www.sec.gov/edgar/browse/?CIK=' + str(int(cik)),
-            'definition': name + '近連續四季現金購置不動產、廠房及設備支出合計 ÷ 同期營業現金流合計 × 100%。以 SEC us-gaap 現金流量表累計差分成單季，再加總四季；不含非現金租賃添置，不採公司自行調整的資本支出數字。不是全部 AI 投資，也不是單季比例平均。',
+    source = name + ' · SEC XBRL 公司財報'
+    url = 'https://www.sec.gov/edgar/browse/?CIK=' + str(int(cik))
+    try:
+        raw = download('https://data.sec.gov/api/xbrl/companyfacts/CIK' + cik + '.json')
+    except RuntimeError as primary:
+        # Public standardized cash-flow rows only. Never substitute adjusted capex or estimates.
+        symbol = key.upper()
+        start = int(datetime(date.today().year-6, 1, 1, tzinfo=timezone.utc).timestamp())
+        stop = int(datetime.now(timezone.utc).timestamp())
+        query = urllib.parse.urlencode({'symbol': symbol,
+            'type': 'quarterlyPurchaseOfPPE,quarterlyOperatingCashFlow', 'period1': start, 'period2': stop})
+        errors = []
+        for host in ('query1.finance.yahoo.com', 'query2.finance.yahoo.com'):
+            try:
+                data = json.loads(download('https://' + host + '/ws/fundamentals-timeseries/v1/finance/timeseries/' + symbol + '?' + query))
+                points = parse_yahoo(data, symbol)
+                source = name + ' · Yahoo Finance 財報彙整（SEC 直讀受限時備援）'
+                url = 'https://finance.yahoo.com/quote/' + symbol + '/cash-flow/'
+                break
+            except Exception as exc:
+                errors.append(str(exc))
+        else:
+            raise ValueError('SEC：' + str(primary)[:100] + '；公開財報備援：' + '；'.join(errors)[:360])
+    else:
+        data = json.loads(raw)
+        if str(data.get('cik', '')).lstrip('0') != cik.lstrip('0'):
+            raise ValueError('SEC 公司代碼不符')
+        points = parse_company(data)
+    return {'points': points, 'unit': '%', 'source': source, 'sourceUrl': url,
+            'definition': name + '近連續四季現金購置不動產、廠房及設備支出合計 ÷ 同期營業現金流合計 × 100%。使用財報 PPE 購置現金流，累計申報差分成單季後加總四季；不含非現金租賃添置，不採公司自行調整的資本支出數字。不是全部 AI 投資，也不是單季比例平均。',
             'frequency': '每季（近四季合計）', 'periodType': 'quarterly'}

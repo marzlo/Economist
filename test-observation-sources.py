@@ -81,6 +81,23 @@ class PublicSources(unittest.TestCase):
         with self.assertRaises(ValueError):S.parse_company(facts(capex=(20,40,30,80,60)),today='2025-05-02')
         with self.assertRaises(ValueError):S.parse_company(facts(),today='2025-04-30')
 
+    def test_public_backup_requires_reported_usd_ppe_rows_and_four_quarters(self):
+        periods=['2024-03-31','2024-06-30','2024-09-30','2024-12-31','2025-03-31']
+        payload={'timeseries':{'result':[{'meta':{'symbol':['MSFT']},tag:[
+            {'asOfDate':end,'periodType':'3M','currencyCode':'USD','reportedValue':{'raw':value}}
+            for end,value in zip(periods,values)]} for tag,values in
+            [('quarterlyPurchaseOfPPE',[-20,-30,-40,-50,-60]),('quarterlyOperatingCashFlow',[100,110,120,130,140])]]}}
+        points=S.parse_yahoo(payload,'MSFT')
+        self.assertEqual(points[0]['capitalExpenditureUSD'],140)
+        self.assertEqual(points[0]['operatingCashFlowUSD'],460)
+        self.assertEqual(points[-1]['capitalExpenditureUSD'],180)
+        self.assertEqual(points[-1]['freeCashFlowUSD'],320)
+        bad=copy.deepcopy(payload);bad['timeseries']['result'][0]['quarterlyPurchaseOfPPE'][0]['currencyCode']='EUR'
+        with self.assertRaises(ValueError):S.parse_yahoo(bad,'MSFT')
+        bad=copy.deepcopy(payload);bad['timeseries']['result'][0].pop('quarterlyPurchaseOfPPE')
+        with self.assertRaises(ValueError):S.parse_yahoo(bad,'MSFT')
+        with self.assertRaises(ValueError):S.parse_yahoo(payload,'AMZN')
+
     def test_latest_filing_revisions_win_future_filings_ignored(self):
         records=[dict(start='2024-01-01',end='2024-03-31',val=1,form='10-Q',filed='2024-05-01'),
                  dict(start='2024-01-01',end='2024-03-31',val=2,form='10-Q/A',filed='2024-06-01'),

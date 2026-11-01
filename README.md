@@ -94,10 +94,13 @@ GitHub Pages 網址：https://marzlo.github.io/Economist/
 
 數據整理另接入四組免費公開來源，不使用 AI 推估填值：
 
-- 微軟、Alphabet、Meta、Amazon 分別使用 SEC Company Facts 的 USD 現金流資料：
+- 微軟、Alphabet、Meta、Amazon 優先使用 SEC Company Facts 的 USD 現金流資料：
   `PaymentsToAcquirePropertyPlantAndEquipment / NetCashProvidedByUsedInOperatingActivities`。
   先按公司自身財政年度將累計值差分成單季，再取連續四季合計比率；同時顯示自由現金流。
   不含非現金租賃添置，也不能把公司全部資本支出當作 AI 支出。
+  SEC 拒絕自動讀取時，備援為 Yahoo Finance 財報彙整中的 `quarterlyPurchaseOfPPE` 與
+  `quarterlyOperatingCashFlow` 已報告美元單季值，頁面會明示實際來源；不替換成調整後 capex
+  或分析師預估。未提供四個連續季度時不計算比率。
 - 日本財務省十年期固定期限國債殖利率，按日本營業日發布，保留負殖利率歷史值。
   支援和曆與西曆 CSV，優先讀取歷史資料；不是國債持有量或政府平均付息成本。
 - ECB `IRS/M.FR+DE.L.L40.CI.0000.EUR.N.Z` 的同月長期利率，法國減德國並換算基點。

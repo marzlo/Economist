@@ -207,8 +207,38 @@ def latest_tsmc_period(rows, today=None):
 
 
 def tsmc(previous=None):
-    rows = json.loads(download('https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci'))
-    year, quarter = latest_tsmc_period(rows)
+    reported = None
+    try:
+        rows = json.loads(download('https://openapi.twse.com.tw/v1/opendata/t187ap06_L_ci'))
+        reported = latest_tsmc_period(rows)
+    except (ValueError, RuntimeError):
+        pass
+    today = date.today()
+    completed = (today.year, (today.month-1)//3)
+    if completed[1] == 0:
+        completed = (today.year-1, 4)
+    before = (completed[0], completed[1]-1) if completed[1] > 1 else (completed[0]-1, 4)
+    candidates = sorted({completed, before, *([reported] if reported else [])}, reverse=True)
+    verified, cache, checks = None, {}, []
+    for y, q in candidates:
+        try:
+            raw = download(report_url(y, q))
+            try:
+                text = raw.decode('utf-8-sig')
+            except UnicodeDecodeError:
+                text = raw.decode('cp950')
+        except RuntimeError as exc:
+            checks.append(str(exc)[:100])
+            continue
+        if not re.search(r'2330\s+' + str(y) + 'Q' + str(q), text):
+            checks.append(re.sub(r'<[^>]+>', ' ', text[:800]).strip()[:180])
+            continue  # Candidate dates are not data: accept only the actual matching filed report.
+        cache[(y, q)] = parse_mops(text, y, q)
+        verified = (y, q)
+        break
+    if verified is None:
+        raise ValueError('無法取得並核對台積電已申報財報，保留舊資料：' + '；'.join(checks)[:450])
+    year, quarter = verified
     # Bootstrap three years; thereafter refresh this and last year so revisions
     # and YTD differencing remain consistent, retaining older archived points.
     start_year = year - (1 if (previous or {}).get('points') else 2)
@@ -216,12 +246,15 @@ def tsmc(previous=None):
     for y in range(start_year, year + 1):
         prior = None
         for q in range(1, (quarter if y == year else 4) + 1):
-            raw = download(report_url(y, q))
-            try:
-                text = raw.decode('utf-8-sig')
-            except UnicodeDecodeError:
-                text = raw.decode('cp950')
-            current = parse_mops(text, y, q)
+            if (y, q) in cache:
+                current = cache[(y, q)]
+            else:
+                raw = download(report_url(y, q))
+                try:
+                    text = raw.decode('utf-8-sig')
+                except UnicodeDecodeError:
+                    text = raw.decode('cp950')
+                current = parse_mops(text, y, q)
             point = quarterly_point(y, q, current, prior)
             point['sourceUrl'] = report_url(y, q)
             points.append(point)
