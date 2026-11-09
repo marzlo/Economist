@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T14:34:15.919794+00:00",
+  "updated": "2026-11-09T14:38:05.162175+00:00",
   "topics": [
     {
       "id": "civic-songshan-airport",
@@ -322,7 +322,8 @@
         {
           "id": "e2ab96ed-64e4-4dfe-b202-8008f547d549",
           "text": "人民福祉高於政黨利益",
-          "status": "待查證"
+          "status": "待查證",
+          "updatedAt": "2026-11-09T14:30:10.155Z"
         },
         {
           "id": "43bf8ba6-f324-4c30-a257-e6d36891b05d",
@@ -332,6 +333,16 @@
         {
           "id": "9d7f4247-b87b-42dc-b09a-575e18c3721f",
           "text": "合作必須具有對等性",
+          "status": "待查證"
+        },
+        {
+          "id": "ed256e20-8e3a-4f1e-95dd-4b835891ebb4",
+          "text": "信任必須透過行動驗證",
+          "status": "待查證"
+        },
+        {
+          "id": "c9a27dce-69ed-4cbe-8c91-0e95543a8866",
+          "text": "保留差異，而不是消滅差異",
           "status": "待查證"
         }
       ],
@@ -470,8 +481,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-09T14:34:15.919794+00:00",
-      "checkedAt": "2026-11-09T14:34:15.919794+00:00",
+      "updated": "2026-11-09T14:38:05.162175+00:00",
+      "checkedAt": "2026-11-09T14:38:05.162175+00:00",
       "keys": [
         "松山機場",
         "松機",
@@ -602,8 +613,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-09T14:34:15.919794+00:00",
-      "checkedAt": "2026-11-09T14:34:15.919794+00:00",
+      "updated": "2026-11-09T14:38:05.162175+00:00",
+      "checkedAt": "2026-11-09T14:38:05.162175+00:00",
       "keys": [
         "臺北都市更新",
         "都市更新",
@@ -613,6 +624,14 @@
     },
     "de668d5d-e7db-4828-a05c-37f8632400a4": {
       "items": [
+        {
+          "title": "淡水國小學童穿古裝走讀永續教育深耕在地文化| 大台北| 地方 - UDN",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1SeU1yczRUQnFpdVpEVllKaHh5M0x3cmNtdzVNWnBESVFFVW4zbVJEeUhUVV9jOGgzbG1KSnFiemJHaVNKb2VjdThXQkJlUmxSeUVQV1BEVGEybkRuelZOYjdla0ZBVkxrVERjMkJHTjA1Zw?oc=5",
+          "source": "UDN",
+          "published": "2026-11-09T14:16:31+00:00",
+          "type": "文章",
+          "description": ""
+        },
         {
           "title": "游淑貞感念吳清基 盼延續教育改革精神：讓花蓮孩子站上國際舞台 - 鏡報",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE83YTBvTW15ckk1dUhlVEFwRTdvNHdpWWZhN0MtSlVjYzhSWnI0TnFGeGYyNU5EaHU1b2RCWjBsNGpvdVIySlBDODVtaFFHbWxqZ1E?oc=5",
@@ -634,14 +653,6 @@
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE43VHRBbEstak11bG9tOGxKeVpMVnZpNnlRZFdITjlaUGRwVFAwZldLRndSUDVKdnVMZS1VV0VQVXpHV2g2WXBzVWk3S1ZQUGVkRDJvLTI1SUhGNW8?oc=5",
           "source": "翻轉教育",
           "published": "2026-11-09T10:39:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "第10屆公共藝術獎教育推廣獎 彰縣府陳獎共享榮耀 - 新頭條",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1Rb0VmLWRSajVxSUxpdTJ2LVlWMVhhTUxZOTU4YUJMQUM0RGtTaHhjV2tlMVZ1WlJZaUZRdlhMeDhYUWxMODA5NUw3Z3pZNng2cDFKOQ?oc=5",
-          "source": "新頭條",
-          "published": "2026-11-09T10:30:40+00:00",
           "type": "文章",
           "description": ""
         },
@@ -734,8 +745,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-09T14:34:15.919794+00:00",
-      "checkedAt": "2026-11-09T14:34:15.919794+00:00",
+      "updated": "2026-11-09T14:38:05.162175+00:00",
+      "checkedAt": "2026-11-09T14:38:05.162175+00:00",
       "keys": [
         "台北教育",
         "國中缺師率",
@@ -827,8 +838,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-09T14:34:15.919794+00:00",
-      "checkedAt": "2026-11-09T14:34:15.919794+00:00",
+      "updated": "2026-11-09T14:38:05.162175+00:00",
+      "checkedAt": "2026-11-09T14:38:05.162175+00:00",
       "keys": [
         "兩岸議題"
       ],
