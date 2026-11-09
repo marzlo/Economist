@@ -1760,5 +1760,20 @@
     ],
     "note": "在台北生活成本升高、教師行政工作繁重、科技業強力工人才的情況底下，台北市政府如何補充教師",
     "status": "觀察中"
+  },
+  {
+    "id": "10e1956d-d351-43b5-921b-7232e06c4237",
+    "kind": "civic",
+    "entries": [],
+    "criteria": [],
+    "then": "",
+    "image": null,
+    "name": "兩岸議題",
+    "scope": "中央",
+    "keys": [
+      "兩岸議題"
+    ],
+    "note": "選舉不是為了讓政治人物累積政治資本，而是讓公民培養公民素養\nElections are not meant to help politicians accumulate political capital, but rather to cultivate civic awareness and responsibility among citizens",
+    "status": "觀察中"
   }
 ]
