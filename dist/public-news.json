@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T14:19:26.452216+00:00",
+  "updated": "2026-11-09T14:34:15.919794+00:00",
   "topics": [
     {
       "id": "civic-songshan-airport",
@@ -318,7 +318,23 @@
       "id": "10e1956d-d351-43b5-921b-7232e06c4237",
       "kind": "civic",
       "entries": [],
-      "criteria": [],
+      "criteria": [
+        {
+          "id": "e2ab96ed-64e4-4dfe-b202-8008f547d549",
+          "text": "人民福祉高於政黨利益",
+          "status": "待查證"
+        },
+        {
+          "id": "43bf8ba6-f324-4c30-a257-e6d36891b05d",
+          "text": "合作不必以政治歸屬為前提",
+          "status": "待查證"
+        },
+        {
+          "id": "9d7f4247-b87b-42dc-b09a-575e18c3721f",
+          "text": "合作必須具有對等性",
+          "status": "待查證"
+        }
+      ],
       "then": "",
       "image": null,
       "name": "兩岸議題",
@@ -326,7 +342,7 @@
       "keys": [
         "兩岸議題"
       ],
-      "note": "選舉不是為了讓政治人物累積政治資本，而是讓公民培養公民素養\nElections are not meant to help politicians accumulate political capital, but rather to cultivate civic awareness and responsibility among citizens",
+      "note": "兩個政治共同體的關係，不只有領土歸屬，還有自治、權力分配、文化、經濟、安全、人民福祉等不同面向。\n因此，兩岸問題至少可以從七個角度討論：歷史認同、人民自決、憲政制度、經濟互賴、文化交流、安全保障，以及區域合作。\n當公共討論只剩統獨，就容易忽略其他可能對人民生活產生實際影響的問題\n\n選舉不是為了讓政治人物累積政治資本，而是讓公民培養公民素養\nElections are not meant to help politicians accumulate political capital, but rather to cultivate civic awareness and responsibility among citizens",
       "status": "觀察中"
     }
   ],
@@ -334,34 +350,10 @@
     "civic-songshan-airport": {
       "items": [
         {
-          "title": "松山機場提前到場卻進不了門 竟是宵禁未解除 - Yahoo新聞",
-          "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxPcXpOZzRNNjRGcmFQSVZqZ0NTa3BUVnVuVXhxX2Q0Sy1ncGFHVkZEOEFhb2s4R1NwYnRKaTJNMndVZ1V1ejJwV3g1X2gwT2E3bWpjNC0xY0JXbkxpeEZyTlFKZFp4YWQ5aUJDRkFMQzdZNGRhcXlvVnB1TUJGY1dJSzJ4c3U4SlYyZktRMmlCWDZYVVNjc2JKM0FNOWF3LUNVTGtUY0xnbXZxbnZkeTVyc2FvaDM4SERHR011WDdxS3hsWGRXdWg3ZXZTMGV2U3NhZ3F1ZG5RSG1uVXhHREo0SHpfSG9nQ1hPbm9WaHRHRHFPdWs4dTh2SHFqSUNaV3Q2aXlhMXN6Y0x5TjRtM1QzR05BYTFOakRfVzE3UXhaZFVDcHRHb3lPTEsyVERONkNseXFCM0NmRmFFVmZ6WkZDb2dXSms?oc=5",
-          "source": "Yahoo新聞",
-          "published": "2026-11-08T09:23:26+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
           "title": "搭早班機提早到航廈大門沒開！旅客傻等松機揭這條規定- 生活 - 工商時報",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9tc2taX1ZkcU50cDgtSndjWmpmZEFNUG1HOWJqNUs1LTF6Q3VlZzlxX2t2UUtCQ0poWUlNWS1RZWdZQWdYZlJnSllwWl9sTDNZWkdpOTVkYkF1VzVPRWxr?oc=5",
           "source": "工商時報",
           "published": "2026-11-08T07:40:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "清晨5點前到松機「沒開門？」 女乘客笑：我孤陋寡聞 - Yahoo新聞",
-          "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxOTHRfb3AtaXJwQXozSkZmbGs1RkJOTk9odGNlWTQ1ZmVCWGpfY0V5OVFJamlOc24wMEQ2akl0RTZGcE1uMXVTbXRtSDN5dzYtUFRhVVQ4UldIcG1oRFlWclJYLU12VVpMVmxBbHpGcEpQVWROREJsV0dUOHVhejF0MXlkTVZBbFNYRWlCWVpVMnA0NGpxVDMyVHNMdnZ3NHdqbDkxLXF4RF92cWJncksxbFI1clhvLUozcm8zTDhocGlvS1VYNFpIRm5nb0E3TG0teHc4aFRBRTdlYXZfcmxEbDdzbFdKWU1BV2Q0SkZLUUVubFhWRVdwTElVNjc4elA2MkpacFViQk9fcG1tLWhsQnpVN3JqWWRvOUp5NGhXWGlsbXV6Xy1ubkdHTFF0N1ZxWUkzLUd2dFQwRENr?oc=5",
-          "source": "Yahoo新聞",
-          "published": "2026-11-08T05:55:42+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "清晨5點前到松機「沒開門？」 女乘客笑：我孤陋寡聞 - 東森新聞",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1FaXRxTXVrQ1lQNU94bkNjZ0l1SEJFM2swaEc1V2dwWVdYSVE5QjlZOTQ1cnJwVkNabmdlN1R5ZFBkVkxnOEwtb1g4bFg2RWNyelJMZg?oc=5",
-          "source": "東森新聞",
-          "published": "2026-11-08T05:43:00+00:00",
           "type": "文章",
           "description": ""
         },
@@ -398,10 +390,26 @@
           "description": ""
         },
         {
+          "title": "蔣萬安拋松機遷建引爆爭議！宋楚瑜開直播潑冷水：不能說搬就搬 - 三立新聞網SETN.com",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1FY0pqY19rX0ZDR3dzLUxKMUttRF84NC01Vi16NFQweENqMHd1eDl6SWtwYmRYVFRLRUxLck5Od1NIWlpCR0gyONIBTEFVX3lxTFA2djlzb3NMZnZlVGFYazBVVEZyZXdNUlkwTzZXcm5GT0g2S0tPeW11eWVFSjVBQ1pFU0ltNG12dUVxUlA5d2JKckJ0bEc?oc=5",
+          "source": "三立新聞網SETN.com",
+          "published": "2026-11-06T14:01:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
           "title": "宋杯杯開講，蔣萬安聽好了！松山機場「不能說搬就搬」 宋楚瑜今晚8點談重大政策決策 - 放言Fount Media",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA1R0lON1J6NTN4VTMwZktDWXp2eEd5WVBKUWlyS0o3QlVlelVKWlkyMzBMU3RUV19nSzFoOTJmTmlxUW95WVZHQm9NWWtyeW1Hc0E?oc=5",
           "source": "放言Fount Media",
           "published": "2026-11-06T09:18:33+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "蔣萬安喊輝達鮮奶大巨蛋、松機遷移，台北就能長出AI產業聚落嗎？ - TNL The News Lens 關鍵評論網",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1lY3o2YkllUHpnZjlBVnpMUVE4eno1eE5TWG5RdWl5Y0Nra0N3WlRBbk1uUXFKcHNPUzVieEw1U1Z6UUM4dXA1T29xNG1acnNEbkQwUA?oc=5",
+          "source": "TNL The News Lens 關鍵評論網",
+          "published": "2026-11-06T09:00:00+00:00",
           "type": "文章",
           "description": ""
         },
@@ -414,6 +422,14 @@
           "description": ""
         },
         {
+          "title": "那個男人出現了！宋楚瑜開轟松機遷移：重大政策推動這麼簡單？ - 自由時報",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5nbzR3LXFVbkZPRjladGJvUE1nRkdUM1ppWld3XzhfalBhSVQwWERHZjgyWFpzWEpwWmxnakRQTklPczczaVY0dk5McG1jbm5rRVlBb2RTVHpXWldJNlVBcmhnNkVTOEJDblE?oc=5",
+          "source": "自由時報",
+          "published": "2026-11-06T07:03:16+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
           "title": "自由開講》蔣萬安對輝達與松機的3個謊言 - 自由評論網",
           "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA5UWpfNzZsb01tMy1XLW44OTN4SW5zMDMxZHNFU0tJRVVjMmxFN29PQ3FyZG5MZ1VZeTFILVJmWnpIekpIdG9sTXY5WlNNTE80eWI5SEhjTjhkYmRScnVVWFF30gFnQVVfeXFMTUxlSnVaaC1VaFB2UlJEc2FXM295RmFSTWNBbTlTV1E0b0xJS21aZlllUkktSnY0Zi02T3hkVlRTZDNndkZBOGpab0pCYm5ERjFKeGNHQVZKT0VqWTgzeG1VR3p4SlhhYw?oc=5",
           "source": "自由評論網",
@@ -422,10 +438,10 @@
           "description": ""
         },
         {
-          "title": "松山機場遷建成選戰話題-松山機場遷移 楊曜:真是夠了 - 澎湖日報",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBYUm1IWWJTY2lkWDhVMTlMNTVkVzV4SXpoUDdSajc1NG53aEZWaFdMejZlbWNOenBHVkZQMC13QXRHWnYxNDdLVzRMaDhROHhlZkloWUdmdDY3ZnFVU2lTU0FHME16d0N2am9kdg?oc=5",
-          "source": "澎湖日報",
-          "published": "2026-11-04T23:24:38+00:00",
+          "title": "松山機場不是24小時開放！旅客清晨5點前到門沒開：一群人傻眼站門外 | 生活 | CTWANT - CTWANT",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5veGwxbG5yOUJ4S0dIY3pKVnZta3dEMWFIX0FDWEhXMU0xY1hmTFlsUmFOYXJGWDFDbnJpLUpETHYyUU4teV9RVUF5c1BhajjSAVRBVV95cUxPc256eFBiY05WOHNHeWFudHNxbkwzeFg3Uy1ob0ZBWTN2RVMtaXdZMzNzZnpkcVlHS2ZxNHg1T0VuSURnVVUza3d4eWZyMlNab09DMm0?oc=5",
+          "source": "CTWANT",
+          "published": "2026-11-06T00:02:18+00:00",
           "type": "文章",
           "description": ""
         },
@@ -454,8 +470,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-09T14:19:26.452216+00:00",
-      "checkedAt": "2026-11-09T14:19:26.452216+00:00",
+      "updated": "2026-11-09T14:34:15.919794+00:00",
+      "checkedAt": "2026-11-09T14:34:15.919794+00:00",
       "keys": [
         "松山機場",
         "松機",
@@ -549,7 +565,7 @@
           "title": "2026得獎名單》最佳都市更新重建類 將捷旅境 - 都更全都通",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE95bmR2SWpINmdhZjZQR2tldllXcS05MXdidWN4dmRmbXNIUGc3YzM3dmdFNlVFenRjdUtaMlJPenZCQVZ2SGtvOWVnNkh5S1hPVTRZLTl5NkZxSEZYOTM2UA?oc=5",
           "source": "都更全都通",
-          "published": "2026-10-05T07:00:00+00:00",
+          "published": "2026-10-05T16:31:26+00:00",
           "type": "文章",
           "description": ""
         },
@@ -578,16 +594,16 @@
           "description": ""
         },
         {
-          "title": "竹市推動都市更新法令精進 高虹安：全面檢視地方制度、接軌中央修法 - 中央社 CNA",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1BMVBrUHF5VHduRzY0SGRzdks1NDMxRHB5dEFsX3p2UC1IejVjcjNPbjc2UWUwcnZWZklDYnZxd2ZnTURzRGlzV3hxd214M2dXWjlZRXpB?oc=5",
+          "title": "【專題演講】推動都市更新與老宅延壽政策 | 內政部 董建宏 政務次長 - 中央社 CNA",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1PdWY1anZqcHJPTS1hQmFuaVlHT2F5a2tmYklaWDFQTnFRc0FOeEs1VUEwQTVUTW1lM2NyNUdjbUF5aE1qLTIyUlpsanpEQ3M5YUJV?oc=5",
           "source": "中央社 CNA",
-          "published": "2026-09-08T07:00:00+00:00",
+          "published": "2026-08-27T07:00:00+00:00",
           "type": "文章",
           "description": ""
         }
       ],
-      "updated": "2026-11-09T14:19:26.452216+00:00",
-      "checkedAt": "2026-11-09T14:19:26.452216+00:00",
+      "updated": "2026-11-09T14:34:15.919794+00:00",
+      "checkedAt": "2026-11-09T14:34:15.919794+00:00",
       "keys": [
         "臺北都市更新",
         "都市更新",
@@ -718,8 +734,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-09T14:19:26.452216+00:00",
-      "checkedAt": "2026-11-09T14:19:26.452216+00:00",
+      "updated": "2026-11-09T14:34:15.919794+00:00",
+      "checkedAt": "2026-11-09T14:34:15.919794+00:00",
       "keys": [
         "台北教育",
         "國中缺師率",
@@ -811,8 +827,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-09T14:19:26.452216+00:00",
-      "checkedAt": "2026-11-09T14:19:26.452216+00:00",
+      "updated": "2026-11-09T14:34:15.919794+00:00",
+      "checkedAt": "2026-11-09T14:34:15.919794+00:00",
       "keys": [
         "兩岸議題"
       ],
