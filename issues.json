@@ -1765,7 +1765,13 @@
     "id": "10e1956d-d351-43b5-921b-7232e06c4237",
     "kind": "civic",
     "entries": [],
-    "criteria": [],
+    "criteria": [
+      {
+        "id": "e2ab96ed-64e4-4dfe-b202-8008f547d549",
+        "text": "人民福祉高於政黨利益",
+        "status": "待查證"
+      }
+    ],
     "then": "",
     "image": null,
     "name": "兩岸議題",
