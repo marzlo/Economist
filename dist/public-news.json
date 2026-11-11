@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T13:45:53.800626+00:00",
+  "updated": "2026-11-11T13:53:47.684457+00:00",
   "topics": [
     {
       "id": "civic-songshan-airport",
@@ -23,7 +23,8 @@
         {
           "id": "a6e91d65-8759-4fcf-9209-c50393be34b2",
           "text": "提出包含離島、醫療、國防與民航的替代方案及成本",
-          "status": "待查證"
+          "status": "待查證",
+          "updatedAt": "2026-11-11T13:48:40.306Z"
         },
         {
           "id": "652a22e2-7acb-4589-bd2c-6a7169fe006b",
@@ -114,6 +115,23 @@
           "issueIds": [
             "civic-songshan-airport"
           ]
+        },
+        {
+          "id": "f8be6db0-2636-4392-9330-604b2e2c7f2c",
+          "issueIds": [
+            "civic-songshan-airport"
+          ],
+          "date": "2026-11-11",
+          "createdAt": "2026-11-11T13:48:40.305Z",
+          "label": "進度紀錄",
+          "criterionId": "a6e91d65-8759-4fcf-9209-c50393be34b2",
+          "criterionText": "提出包含離島、醫療、國防與民航的替代方案及成本",
+          "title": "提出包含離島、醫療、國防與民航的替代方案及成本",
+          "text": "待查證 → 待查證\n如果要比較遷移與保留的成本，至少要納入：\n民航： 桃園跑道與航廈容量、ATR 等機型的混合起降效率、航空公司轉場成本。\n醫療： 增加的救護車時間、轉診接駁、病患住宿與交通補助。\n國防： 新基地、機庫、油料設施、通訊及戰備系統，還有戰時應變能力。\n土地收益： 釋出土地的經濟價值、解除航高限制後的都市更新效益，以及公共設施支出。\n目前公開資料尚不足以將這些項目合併計算成可比較的淨成本。",
+          "links": [],
+          "images": [],
+          "country": "tw",
+          "region": "asia"
         }
       ],
       "image": {
@@ -502,8 +520,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-11T13:45:53.800626+00:00",
-      "checkedAt": "2026-11-11T13:45:53.800626+00:00",
+      "updated": "2026-11-11T13:53:47.684457+00:00",
+      "checkedAt": "2026-11-11T13:53:47.684457+00:00",
       "keys": [
         "松山機場",
         "松機",
@@ -634,8 +652,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-11T13:45:53.800626+00:00",
-      "checkedAt": "2026-11-11T13:45:53.800626+00:00",
+      "updated": "2026-11-11T13:53:47.684457+00:00",
+      "checkedAt": "2026-11-11T13:53:47.684457+00:00",
       "keys": [
         "臺北都市更新",
         "都市更新",
@@ -670,18 +688,18 @@
           "description": ""
         },
         {
-          "title": "聯電課輔班20周年見證教育陪伴力量 - 墨新聞-MORE News",
-          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5HaU1VYkw1NHA3S2NIcFRCQko2SjZBZWFDUE1aZnFYMW45S1RVeXNjSHU0VXBhWGV6X3hTNTZuQ2Zadw?oc=5",
-          "source": "墨新聞-MORE News",
-          "published": "2026-11-11T11:22:12+00:00",
+          "title": "嘉市家庭教育中心整修落成50年老館舍重獲新生- 股市爆料同學會 - CMoney",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5COWUzWFV0cTNrTnRneWxWVHB5dDM3WTlrWkVfVWZ4cUE5RkxUUUpaZXhsc1d1elRhZTJreWhaNWw1N3hyMWhSelJ4cTdwck0zVzNSdTFubDc?oc=5",
+          "source": "CMoney",
+          "published": "2026-11-11T12:14:22+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "AI會取代思考嗎？高雄教育局長吳立森給出的答案讓人意外 《高雄教育新視野：當港都遇見世界》 - Yahoo新聞",
-          "url": "https://news.google.com/rss/articles/CBMiogRBVV95cUxORk1CdkR0ajNlZjBZVUxnRlc3SGl4QUowZmRIcDB5UEdabmZoeUt5d1MyeTdfU0tzZ3NNX3dwU2p1ai16LUNYb1dsbVpXME0zczdBRTJWaV9GWXEtekU2M3ZXc0lLVThzbGYtRUNwS3RPT1NYWjZuLXlrcGFVT29YSkhULUk0aXh1RmpzT1FfZUxxWXh0MWVpVDQxeURnLU1DaFNJMmUybFJZTzBGUXpGaTNIOEJacDExaUg3YTBTaVVhckpuSy1JSlVXYXl6WC1aWVdfRjdtTDE2VlhveVUtalBReWhWQ09JV0szU3NhQ1VXRExnWVJUeGFLMGYyQUMydlBENFc2ejdaSmxPY281eXFEWVQxN2JaTDR6aDFfS2lZYVMwblo5OG9Gdkhpd3M5V1doRXFhUUY4Y0tGV0pqUnpjcVQzbXp1VXVFNzBpNGRtNWlObHZzQ1ZXTkNVWGNVZGRtQ3ZLY2NYcmRzSlNILXhZakF4Z2NBOVdCYlVHX3hYY2ZJVTZLTlU3ekJOZDVCLUMwLVdGdWp5VHY3NEZHUUZTRG9LSjZIdGh3UkpsVW5pWS1qSndSTktVa2FucTlwVTRsQW8tcHdtUWd4aDd3bFk4bTdGblI5c2o5N3BaeW1BU2RpSERVWDZCdHhNS0U2dXlsYmotLUVFenpjY0pmZTJQRzR4b0ZtZ0I3RzBpLTMyaE4wc2JSME8tWHJaNHh1dGc?oc=5",
-          "source": "Yahoo新聞",
-          "published": "2026-11-11T11:00:00+00:00",
+          "title": "聯電課輔班20周年見證教育陪伴力量 - 墨新聞-MORE News",
+          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5HaU1VYkw1NHA3S2NIcFRCQko2SjZBZWFDUE1aZnFYMW45S1RVeXNjSHU0VXBhWGV6X3hTNTZuQ2Zadw?oc=5",
+          "source": "墨新聞-MORE News",
+          "published": "2026-11-11T11:22:12+00:00",
           "type": "文章",
           "description": ""
         },
@@ -742,10 +760,10 @@
           "description": ""
         },
         {
-          "title": "醫檢知識王熱血登場！中臺科大翻轉科學教育激發學子大健康潛能 - 104職場力",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE93T3ZlS3NwMHRWVlo3ZHhFbVE0emRqajR3T05uTURkLWlFNFdrUXQxY0xiX3ZWSlNzQ0lEQUNsZUM1VHgyQ1UyUkZSUjRDb2pqV0oyYjBFaF9rd1Fu?oc=5",
-          "source": "104職場力",
-          "published": "2026-11-11T09:12:56+00:00",
+          "title": "南大參與全國新宿舍運動展 從生活空間翻轉教育 - 中央社 CNA",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9KZGFNVzBZQlI3c1dVcE5FQ1VBVmlWamZsQ3FKTmpsUW5tNGI2cGZ6dDlXU2YyMDlaTHpzMnp2UXNVNG1xMFFSOXQ3LUNkUmE2NGF4R21R?oc=5",
+          "source": "中央社 CNA",
+          "published": "2026-11-11T09:02:56+00:00",
           "type": "文章",
           "description": ""
         },
@@ -766,8 +784,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-11T13:45:53.800626+00:00",
-      "checkedAt": "2026-11-11T13:45:53.800626+00:00",
+      "updated": "2026-11-11T13:53:47.684457+00:00",
+      "checkedAt": "2026-11-11T13:53:47.684457+00:00",
       "keys": [
         "台北教育",
         "國中缺師率",
@@ -851,8 +869,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-11T13:45:53.800626+00:00",
-      "checkedAt": "2026-11-11T13:45:53.800626+00:00",
+      "updated": "2026-11-11T13:53:47.684457+00:00",
+      "checkedAt": "2026-11-11T13:53:47.684457+00:00",
       "keys": [
         "兩岸議題"
       ],
