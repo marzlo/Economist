@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T13:53:47.684457+00:00",
+  "updated": "2026-11-11T17:55:18.734308+00:00",
   "topics": [
     {
       "id": "civic-songshan-airport",
@@ -520,8 +520,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-11T13:53:47.684457+00:00",
-      "checkedAt": "2026-11-11T13:53:47.684457+00:00",
+      "updated": "2026-11-11T17:55:18.734308+00:00",
+      "checkedAt": "2026-11-11T17:55:18.734308+00:00",
       "keys": [
         "松山機場",
         "松機",
@@ -652,8 +652,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-11T13:53:47.684457+00:00",
-      "checkedAt": "2026-11-11T13:53:47.684457+00:00",
+      "updated": "2026-11-11T17:55:18.734308+00:00",
+      "checkedAt": "2026-11-11T17:55:18.734308+00:00",
       "keys": [
         "臺北都市更新",
         "都市更新",
@@ -663,6 +663,46 @@
     },
     "de668d5d-e7db-4828-a05c-37f8632400a4": {
       "items": [
+        {
+          "title": "蔡筱穎觀點》記憶、主權與教育之爭法國一戰停戰日紀念風暴的國族角力| 國際 - Newtalk新聞",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9lWmVmR002UkZZWGxnSWE0Sk9BU2s3d1dUcHlGVi01R1p4SHFWWDJCNEdIVTQyc1gycmtmakxtOFZGeng2TGRhNk9YT0FZMl9GSGxZdGtRZGs3QlE?oc=5",
+          "source": "Newtalk新聞",
+          "published": "2026-11-11T16:55:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "新北教育8年投資5360億打造全方位學習環境| 文教新訊| 文教 - UDN",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9rbnlVSGpFVlpJZy1HR29mSkJYOW55ZEctcmJlbGlPTEx3elFzRUh4azdMVEhHaU45dmoxczI1MXI2SEx1Uy1NN05adzZDLW94YXcwR3pn?oc=5",
+          "source": "UDN",
+          "published": "2026-11-11T16:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "佛光山書展暨蔬食博覽會登場！高市教育局推廣健康蔬食 吳立森體驗趣味闖關 - 三星傳媒",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1YbkpqODlHYUltU094Mnd2QUZTbENHNHRKZUptbUlpUUxKcTFVREVsQUlRVmk0SFdWTDlxVDFwb3RzQkxUS2gwcUd0Y0w5eXgwR2tORGtpS3lHdnJWR2FmcEZR?oc=5",
+          "source": "三星傳媒",
+          "published": "2026-11-11T15:28:27+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "新北技職教育評比優等 連9年最高榮譽紀錄 - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPcVlINnJqWjd6YnlVSGktRUJ3RkhVNGZFWC1TSkhtT011dWk1Z2REMWI4SWd5dGphSjlobE5lSnZDSVRSYnpud3BkWmNhYkdfdGRjYUhhdzRJVFNKNUwzSWM0eE1IcW1oZHc4c1RzN1pRZjJRellpLU1HNklQakRscWFZVzBCdnNHUkVKMjJDZTd4dHpudWNscUEwUlNUdzZTbXRxTmpzOFFfbWhjUnZYZ1hIdEdrUXJnc1BfdXpnU1VRV1htX0RSWFhISTFiNDA1eVQ2TzFYOVBxelpBVWd3LU9nbk8zT2hHWTVIaGRveG4tbVBMX1RudmVsand0YW1HWnBjTWhnZU1sLTdSdEhSN0tYenVxYWhrUWdOSGs0ck5DSXRwbVU3TEdfWWpPZw?oc=5",
+          "source": "Yahoo新聞",
+          "published": "2026-11-11T14:19:28+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "偽造畢業證書！國小師「造假學歷」騙13年 教育局提告 - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxNZTd3cmd0TnMzZTBWOGYxcVFCMi12QVhlZEJTYXZUMlgwbGdCZjNLZUF4cnhpR0JlcWpzNWtjaW5ScjFDLWtlbmNwbDVrSXBjQ25JdE9Kbk9OT0tuUGNieTJocXFpdDVsSjE1TWl3VUNhdi1veE9qT2J2MnNFaGQtbGhVVFdudmlkQ3NVUlY2aXJTb1BWSWY0YWxPXzRwRkJlUGh4cEFKUWxIV1pEVGpKWGlQUWpyMG1NeDYtaGZlLUUzRkdUTDhKS1N1dmh1dGhZZEdQZVJ0LXZnM3ZZc0RKeFkxTEpxQU1DT193cy1yMTd3d2J6dkxUOWNLR3VrcnB2LWhpY215Vm5hRUU2QmtZc1JkWXVQY0xEZjZseU9BcnFLVG9HaVZ6dC1IR3lmV2Z0WksxMllla3F6NkxucHFybVpYNkZKOEFwMUhj?oc=5",
+          "source": "Yahoo新聞",
+          "published": "2026-11-11T13:48:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
         {
           "title": "玻利維亞教師發起48小時罷工憂地方財力不足教育恐私有化｜20261111 公視晚間新聞｜ 公視新聞PNN - 公視新聞",
           "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBHRnBtMURkd3J1cFBtSl9DdlVuaTdyZTIyd3VTOV9lQkg1VGNnQzlLTjZ0dUhXcjZmLXdXWUFKUEJJUGhjQmh3UFVnVQ?oc=5",
@@ -688,18 +728,26 @@
           "description": ""
         },
         {
-          "title": "嘉市家庭教育中心整修落成50年老館舍重獲新生- 股市爆料同學會 - CMoney",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5COWUzWFV0cTNrTnRneWxWVHB5dDM3WTlrWkVfVWZ4cUE5RkxUUUpaZXhsc1d1elRhZTJreWhaNWw1N3hyMWhSelJ4cTdwck0zVzNSdTFubDc?oc=5",
-          "source": "CMoney",
-          "published": "2026-11-11T12:14:22+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
           "title": "聯電課輔班20周年見證教育陪伴力量 - 墨新聞-MORE News",
           "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5HaU1VYkw1NHA3S2NIcFRCQko2SjZBZWFDUE1aZnFYMW45S1RVeXNjSHU0VXBhWGV6X3hTNTZuQ2Zadw?oc=5",
           "source": "墨新聞-MORE News",
           "published": "2026-11-11T11:22:12+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "AI會取代思考嗎？高雄教育局長吳立森給出的答案讓人意外 《高雄教育新視野：當港都遇見世界》 - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMiogRBVV95cUxORk1CdkR0ajNlZjBZVUxnRlc3SGl4QUowZmRIcDB5UEdabmZoeUt5d1MyeTdfU0tzZ3NNX3dwU2p1ai16LUNYb1dsbVpXME0zczdBRTJWaV9GWXEtekU2M3ZXc0lLVThzbGYtRUNwS3RPT1NYWjZuLXlrcGFVT29YSkhULUk0aXh1RmpzT1FfZUxxWXh0MWVpVDQxeURnLU1DaFNJMmUybFJZTzBGUXpGaTNIOEJacDExaUg3YTBTaVVhckpuSy1JSlVXYXl6WC1aWVdfRjdtTDE2VlhveVUtalBReWhWQ09JV0szU3NhQ1VXRExnWVJUeGFLMGYyQUMydlBENFc2ejdaSmxPY281eXFEWVQxN2JaTDR6aDFfS2lZYVMwblo5OG9Gdkhpd3M5V1doRXFhUUY4Y0tGV0pqUnpjcVQzbXp1VXVFNzBpNGRtNWlObHZzQ1ZXTkNVWGNVZGRtQ3ZLY2NYcmRzSlNILXhZakF4Z2NBOVdCYlVHX3hYY2ZJVTZLTlU3ekJOZDVCLUMwLVdGdWp5VHY3NEZHUUZTRG9LSjZIdGh3UkpsVW5pWS1qSndSTktVa2FucTlwVTRsQW8tcHdtUWd4aDd3bFk4bTdGblI5c2o5N3BaeW1BU2RpSERVWDZCdHhNS0U2dXlsYmotLUVFenpjY0pmZTJQRzR4b0ZtZ0I3RzBpLTMyaE4wc2JSME8tWHJaNHh1dGc?oc=5",
+          "source": "Yahoo新聞",
+          "published": "2026-11-11T11:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "教育部「新宿舍運動展」 見證大學生活新風貌 | 青年日報 - LINE TODAY",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE03Ti1qdWZMc2d4cWxJenlnWFJtY0ZncVp4alBuWEdPOFJSWlVfZXdSX0xBNHhjb2Vjb05uWFlLSXd6VU9PbkZRbTZsa0xZVUhycnlSOXpB?oc=5",
+          "source": "LINE TODAY",
+          "published": "2026-11-11T10:50:30+00:00",
           "type": "文章",
           "description": ""
         },
@@ -712,10 +760,18 @@
           "description": ""
         },
         {
-          "title": "教育部「新宿舍運動展」 見證大學生活新風貌 | 青年日報 - LINE TODAY",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE03Ti1qdWZMc2d4cWxJenlnWFJtY0ZncVp4alBuWEdPOFJSWlVfZXdSX0xBNHhjb2Vjb05uWFlLSXd6VU9PbkZRbTZsa0xZVUhycnlSOXpB?oc=5",
-          "source": "LINE TODAY",
-          "published": "2026-11-11T10:16:48+00:00",
+          "title": "八年投入5,360億元！新北教育打造全方位支持網 從品德培養到適性發展陪伴孩子成長 - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMi9ANBVV95cUxNaVl6SGYxRUhEZDVhclVVZllEWHItaEJSdGVDOWlLcVMzWk92UVVZV3NORm5YVDJ5cmNOTU0zWTcwcHF5bXBMbHZKc2FIWmVOUFZMQTF1RnFSTFY0ajZQLWhzM3lfY2JDa1dvTmxVSl9UMFBCZWJ1QmZpd2FDSUNNZmlPVHlMckptRS0wQmVadnBFQUk0cmQwU1VNR1hKMjZsUGZ6RWY2bWFpb2xyd3pkUzBRaXQ2M3dxeXhVUUpWLURKWUJnUE9fOVdXQzkyODFNRVliUHRDVlhtc2dOWXNMWThIVWhtZWZoZFc5Q1hGdkcwR2NaYjg0Q3BnLUtDcko1SzBhNi1BQVhlR2J1dVdBUUFZZ1NSbjVMUkJHek1BVnhfOHNZVl9ldEpSeklrMExpalVaOXM2UjY3WlFwTnZTOGJaWE5LSl9qV0hSUzRJMTNBUUd3cVBybUFTR0VmUmQwajdSM1NkZUdNX2JBZC1SWHpYVlBIV18wcHNHaFBCZkdfd1dFRTdSdUQzRmE3clVuTHVRUkRHT2g2RTNVSkNuTjZjWUlSUXRMOHRueFV4VHpWNHMzY2hHQW0wNmJObXo4S1ZiaFV3MHZRT08xWTVDR05SRmFyZnlSYjdCZXRfQXRfTWVMdjRSMUFmVjRRSkJlVkhBZQ?oc=5",
+          "source": "Yahoo新聞",
+          "published": "2026-11-11T10:30:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "讓夢想不再遙遠！瑪倉第四屆南投教育扶助 助學童走出希望之路 - 三星傳媒",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1kSHFIa2VPQUlTWlZQLVBpaTFIZ3BIZUdBdTd6bEJ3WFdNbThiVFZTdVBtWDhvdVpfWVZFaW52ckZiUVhvYnU4UjZOR3lmLTdmaG8zZW1iLWJ0UTRjdWhuakZB?oc=5",
+          "source": "三星傳媒",
+          "published": "2026-11-11T10:17:54+00:00",
           "type": "文章",
           "description": ""
         },
@@ -726,66 +782,10 @@
           "published": "2026-11-11T10:06:41+00:00",
           "type": "文章",
           "description": ""
-        },
-        {
-          "title": "高市教育局參展佛光山蔬食博覽會 趣味遊戲推廣健康飲食 - 中華新聞雲／中華日報",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBNV2o0LXdUNzV4eVg3UTZWUTVpd1FuNzlvcER4aXE2TXVuSDdueGcxaWNoYmluOVB1eDVWdjlZVmMtY2l5c2hyMEY1d29WMEZteFE?oc=5",
-          "source": "中華新聞雲／中華日報",
-          "published": "2026-11-11T10:06:40+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "【專題報導】攜手共議分工，為神學教育尋找出路 - 台灣教會公報新聞網",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBkMFB0eEdMcEw2eXZGaWUxbDJ2Q25XaE1oRGR5QzNaNW9XdFY2Z1VnSFFFdEEwZUlWeFRUV2Jra0dNUmVDem1xTHMtaw?oc=5",
-          "source": "台灣教會公報新聞網",
-          "published": "2026-11-11T10:05:25+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "臺韓餐飲教育交流 北市開平師生明年赴韓實作共學 - Yahoo新聞",
-          "url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxNODRycFVhWE5mWG83WnpnRFFsMmVDQ2xPQ2pibWZSTGdCZnozQXdUUk9lLXF3aldaZVBKY1gwVUxIYmRSOEhOdVlZa3dsSUd4ZEx0SnhHRVctWFI3YzU4azViRmNmZVZvUHlobEROT2NrSzZ6MkpvbU5tZVZwempIWWNpbGFxUkpuNlRFRXhXU1RDVTRDbjZncjI0MXo1cGJNVGx0VVdRTHU2aXE5RHF0dkNUQm8tZHgybnRsbU4zRTZLd0xHaUwxZlR1WFNFV0pMQTNYNWZGOGJsZG5YbmFQYVozcTA2QlFtaHhYczFhRHJWZVR2LXhOSklJR1R4YnR0aTM0cmNBalY0NE9LQUIzNmEtOUJrcW9GRUFKWlZnNm9Ib0htNmdDX3RXWHhReWZYWHc3bnNmTGdpam9aaXdicDVVaXBXbkk5VDRsX3VLYV9EU0F1M3JybjYtSFM?oc=5",
-          "source": "Yahoo新聞",
-          "published": "2026-11-11T09:15:47+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "新北教育八年投入5,360億元　陪伴孩子讓天分發光 - ETtoday新聞雲",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5EdnFmMGZpWHRqWWloSVQtZkhyZUFIZVdmQUNGVl9fWFg5Nk9xZFdQSVBTdkNiNUdUcnZXZ0NqdXktZHlsS0xiRTNENjFzSTg2OUd1b0czZDFienpmRGfSAUtBVV95cUxNZkZrYlktWTA3TWdyZmFpckR0SFVMUVlVZS1HOENvN2RrdklreGlDNUgwZjZyaUVPUXJEWUpSUEwyQkdJOTZjdkp6RDA?oc=5",
-          "source": "ETtoday新聞雲",
-          "published": "2026-11-11T09:13:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "南大參與全國新宿舍運動展 從生活空間翻轉教育 - 中央社 CNA",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9KZGFNVzBZQlI3c1dVcE5FQ1VBVmlWamZsQ3FKTmpsUW5tNGI2cGZ6dDlXU2YyMDlaTHpzMnp2UXNVNG1xMFFSOXQ3LUNkUmE2NGF4R21R?oc=5",
-          "source": "中央社 CNA",
-          "published": "2026-11-11T09:02:56+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "AI會取代思考嗎？高雄教育局長吳立森給出的答案讓人意外《高雄教育新視野：當港都遇見世界》 | 徐炳文 | 新聞 - 風傳媒",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFB6cXBUMm5NUDBCOWtLYUlHNTdfdWM3TjUwTm9BclNaZWlzeTdxUXBaSkRiSEhNZjRlVEFMX3lydEVXMW0wSTRPQzJqemFJUQ?oc=5",
-          "source": "風傳媒",
-          "published": "2026-11-11T09:00:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "立院初審偏遠地區教育條例廢除專聘教師| 政治 | 要聞 - UDN",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5nSHpXMUhWT245LTE0dnUtamJCb3RSci15RkdfTU94emNzSF9nX2phNVQyZEx5SW9LUlFXeEZUR2d0bFBDUVpucTh3YVdsQ2pr?oc=5",
-          "source": "UDN",
-          "published": "2026-11-11T08:58:33+00:00",
-          "type": "文章",
-          "description": ""
         }
       ],
-      "updated": "2026-11-11T13:53:47.684457+00:00",
-      "checkedAt": "2026-11-11T13:53:47.684457+00:00",
+      "updated": "2026-11-11T17:55:18.734308+00:00",
+      "checkedAt": "2026-11-11T17:55:18.734308+00:00",
       "keys": [
         "台北教育",
         "國中缺師率",
@@ -869,8 +869,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-11T13:53:47.684457+00:00",
-      "checkedAt": "2026-11-11T13:53:47.684457+00:00",
+      "updated": "2026-11-11T17:55:18.734308+00:00",
+      "checkedAt": "2026-11-11T17:55:18.734308+00:00",
       "keys": [
         "兩岸議題"
       ],
