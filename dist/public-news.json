@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T12:05:40.749533+00:00",
+  "updated": "2026-11-14T13:07:53.660296+00:00",
   "topics": [
     {
       "id": "civic-songshan-airport",
@@ -536,8 +536,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-14T12:05:40.749533+00:00",
-      "checkedAt": "2026-11-14T12:05:40.749533+00:00",
+      "updated": "2026-11-14T13:07:53.660296+00:00",
+      "checkedAt": "2026-11-14T13:07:53.660296+00:00",
       "keys": [
         "松山機場",
         "松機",
@@ -660,16 +660,16 @@
           "description": ""
         },
         {
-          "title": "【專題演講】推動都市更新與老宅延壽政策 | 內政部 董建宏 政務次長 - 中央社 CNA",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1PdWY1anZqcHJPTS1hQmFuaVlHT2F5a2tmYklaWDFQTnFRc0FOeEs1VUEwQTVUTW1lM2NyNUdjbUF5aE1qLTIyUlpsanpEQ3M5YUJV?oc=5",
-          "source": "中央社 CNA",
-          "published": "2026-08-27T07:00:00+00:00",
+          "title": "政大永續中心打造都市更新與前瞻綠建築合作平台 - 經濟日報",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HaHdrQnEtMG45OWEyVkJTNEFwUWU0RGxBZVlacEhFcmo4SkVuaVo1VjJ6ZHVlVW5tbmNHNnY5bEdhYy04OFMwQ1IyMkhuZDlsQVVVNnR4dHpGQdIBX0FVX3lxTE92NXhKNmhJdkhCZE9LVThvaU5WTDZEYmRULUMyNXUyZDh1MDlxd0RlQ2ZPYU1aV0VYUUhkeWREWkV3eURsaEpsRkxBSlY4bUFJSDRKaWZISk1ZOEh5cnQw?oc=5",
+          "source": "經濟日報",
+          "published": "2026-08-18T07:00:00+00:00",
           "type": "文章",
           "description": ""
         }
       ],
-      "updated": "2026-11-14T12:05:40.749533+00:00",
-      "checkedAt": "2026-11-14T12:05:40.749533+00:00",
+      "updated": "2026-11-14T13:07:53.660296+00:00",
+      "checkedAt": "2026-11-14T13:07:53.660296+00:00",
       "keys": [
         "臺北都市更新",
         "都市更新",
@@ -680,26 +680,34 @@
     "de668d5d-e7db-4828-a05c-37f8632400a4": {
       "items": [
         {
-          "title": "林世賢頒發彰化市自強戶子女教育補助費 - 中華新聞雲／中華日報",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1PVmJVX2xXMzhDOHlPSjBrLVdSNW1PMVJ2TDVBZXdkWWo2RHNzTHdLaDA4NDNSRmFEQkdoME4xaFlPU2FPM2hWMjI4NGR1TXlyWkE?oc=5",
-          "source": "中華新聞雲／中華日報",
-          "published": "2026-11-14T11:13:04+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "彰化市補助338名學子教育費 減輕弱勢家庭負擔 | 青年日報 - LINE TODAY",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBNVkp4WTRkREQ1WjRCc0xvMURKZ2ZKMV84M1dndnNMN214X3UyTDRzb09XT3hHWGhnb2pMNXl4eWhRRjJoVUZ4d2d4QnVfZjl6eGQ1dDdn?oc=5",
-          "source": "LINE TODAY",
-          "published": "2026-11-14T11:05:19+00:00",
+          "title": "（有影片）／窮不能窮教育！彰化市補助338名學子 發放349萬餘元 - 觀傳媒",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBua0o2QU1pVXd2dUVCTl9BTWtaQXNMeHctOWYyTG1SM0RkN3I1LWFFbHdXN2dOb05TcGo3YjNFNHI2RnRHWFdBTDg5WnNaQUt4dGhqWDFjTQ?oc=5",
+          "source": "觀傳媒",
+          "published": "2026-11-14T12:33:40+00:00",
           "type": "文章",
           "description": ""
         },
         {
           "title": "教育部補助換新交通車 確保身心障礙學生交通安全 | 青年日報 - LINE TODAY",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qQm5BZjhVeHM0cHg5ZHhWMzVLendvYS0zaEZ4U1prdDRFczJrb2tFOWdfQ3UxYWx5X2FhdEFLUWdQNThOR0NiUXNUVnp4aF9pMjM2cjJ3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBudVBBbWpPT2hlVXctV0x3YjNGNGt2ZlRTc21jbXh3ekdEMnJuZTU1U2pjTHVyQXJaTDFXOWxlUkNGanUzM1R6anNCZFRGYzVYMGRLU182RFNncDhMLXdLTmpEWkUzcnA4TXV4WnlJYTFwYTVX?oc=5",
           "source": "LINE TODAY",
-          "published": "2026-11-14T10:47:17+00:00",
+          "published": "2026-11-14T11:42:57+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "彰化市補助338名學子教育費 減輕弱勢家庭負擔 | 青年日報 - LINE TODAY",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9KM0x1SDFCZnNscGFtR1ZhNFdFRDV3ME5jT2RtMnlwM1YxNkRkUlFia0VYcXQ5bnF5QXFoM196Nk1FRlkzYzJEMUQweW9wRS1BR0tScVhGU3VtcjRiSnhTTGk4SUxqbURnVzNOUmN4blJWTkdh?oc=5",
+          "source": "LINE TODAY",
+          "published": "2026-11-14T11:42:57+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "林世賢頒發彰化市自強戶子女教育補助費 - 中華新聞雲／中華日報",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1PVmJVX2xXMzhDOHlPSjBrLVdSNW1PMVJ2TDVBZXdkWWo2RHNzTHdLaDA4NDNSRmFEQkdoME4xaFlPU2FPM2hWMjI4NGR1TXlyWkE?oc=5",
+          "source": "中華新聞雲／中華日報",
+          "published": "2026-11-14T11:13:04+00:00",
           "type": "文章",
           "description": ""
         },
@@ -716,6 +724,14 @@
           "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQazg5aS0yeXZSaDEyV3gtT2N6OEpocHpWR3RELWNaWUFIdDJ4aGVraG1VOGZDc3ZVdC1EWjhfaFplTDBhbmNFSkJqSXBRWnhLYk1XNHJfeTRiVE1aLTRXSWFIbXN5OEVMSDQ3V24yTlZMRFhlc21vY3BuT1RaWUhBQ2ZtcUhBOG9iU01HbkUxZ1ZTTWlIRzY0TDFYQ25DaUd2enQ1a0d5eXpLWHdYcXdMUHNYT1dqSm1aTkhvYVM2Qjc4Z1Iyb2U5WGVQbGljNUlFV3lWV2JJYVE0cHVQWHR1X2FYczdtbGxVajcwVU9KSG9lNVlRaXB6ZmtiSVFlcWZnS040RjlTelN1c25mNnZFTU9fa2RIUERMeHA1aFpTSEZYV09jS1E1M2VqR3YwN2k0bGdveFNVdEo0bGI1MFZkT1htc1ZlbFU?oc=5",
           "source": "Yahoo新聞",
           "published": "2026-11-14T09:58:07+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "新北教局攜手國北教大簽署合作備忘錄 成立AI教育學術辦公室結合研究改善教學與行政 - www.yesmedia.com.tw",
+          "url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxQMHZtdVRYUDhmRmRtOS1ZWkdBUDlKZnA1TjZvNWJvSjctMVhyTzVoNGc5V2pidFA1T1FqekNocklROHBKalFWNm15Tk5QUzhrem1FV0dZeGw4UHZLNzRmX2tZRk9UbnJwUVVIRldjRzFYcWtOWC1fUVcwSmdkdW5NQklOMUdnLWpfbmJ3bEVLTF9URjVFRzZFR2ViWkROaHNWLVhmWkdJRUR4ejNTV0tqSzdUVXlKYVRsOWhxTDZzbHUzb29kaG9CQXNzQnRTSmh6NTZTSEdobmdoaTlENEI5emtyQW1TMXJfV0ROZkQ3Ni1VUy1haXc5X3NPQVFUbUR0UERheFlBajFRWlkwU0plUHItenpFMEF3a2ktTDN5S3hJQTh3QmJXenVuWk9ERmxpVlV6d1M4QTJab3UzMDNGLXh4Y3dZSFgtTXZJSmNn?oc=5",
+          "source": "www.yesmedia.com.tw",
+          "published": "2026-11-14T09:43:12+00:00",
           "type": "文章",
           "description": ""
         },
@@ -760,6 +776,14 @@
           "description": ""
         },
         {
+          "title": "道安教材獲好評 投縣府前進臺灣教育科技展秀創意成果 - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxPZlpYQTI5YU4xNWtjMWJGSnFIVk4wcHF5ZzFfUzA3U0FkSWV2Qk1lNEt4VXFzR3N6LVFSZ2d4eDJJRE4xX2FtQ29HSGRidkZNUUxPZlh1dWFPblZMQU1EeTdWVl9Xdi1NRDltc01BS2YxSXoyZ1h3MklCc3RjdkNQS1ljdXlTQWpkSmY5dmhJbEtKMVdEc0lwWkhxcGd2VWtnaW1XOEVBbUw4RVNyLUxqSzVlX2Z2N1l3Znd0RUJPYWw5eVRzZ0lDMW00RHVJOGV5cVpkNXBhT1RnYzFmRm5hVmxRc29LNHVrejVIdVNaVDlRQjFkNEpGdkJUaHVib2hEeEF1eUJLdUhzSzdHSU55NFFfcmRSTk1BMjZnYmZPeU1HRVp3eDRSdUszYXJ3dUJvRzFSaXlMNlhpX1lBejJyWlNETjAwVldabGkzUlAtMjV0UzAtZFdWalFMOHVZUXJkNFVNaXRMMUtQZHI2empxRTl6b3I?oc=5",
+          "source": "Yahoo新聞",
+          "published": "2026-11-14T07:40:42+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
           "title": "AI助攻教育治理 新北與國北教大簽MOU深化學術合作 - 商傳媒",
           "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMGl5OHNyVmNwNEFBUWp4UVlyejU4NkdYN0YtTkllOG80M2cwaDVobjZpaFdobDJHZTd4YndRT1hNd18yZUYtUU5KNkVzWEtvTWhTVmpUWkc2WjQzRl9xb0REYlNZY1hHXzhCVXlLTC1BOE56bGdYdHk0LXMtYklPUnN0ZkdqamRaX3M5VnZSZ0RoVnRaM2pFSFJSa2NJZkZNSVF1alptRzBMbGRocEY0MUszcnNZZ2FqZV83YTNOWlc?oc=5",
           "source": "商傳媒",
@@ -774,34 +798,10 @@
           "published": "2026-11-14T07:26:14+00:00",
           "type": "文章",
           "description": ""
-        },
-        {
-          "title": "身心障礙生交通車　教育部補助3674萬助10縣市汰舊換新 - UDN",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9fNEx4S2dpUzA4cXIxXzJOT3JCVVhWOHZpa05DdDI4bF9iajZCMnQtQlQ0VUpmTmdDNXVSOF9ldEkzaUxBTXRjT3lUTEhhRnFk0gFWQVVfeXFMTnlzN3hqalhLSHYxOHFvemtiUjNUaUhFX2hNdGJiM3ZwSDFsa3hyaUZtamMyZEpsM25EU1RGLU0xc0JuRk5hRGVvSFEta0pSODNMR3g5UkE?oc=5",
-          "source": "UDN",
-          "published": "2026-11-14T07:22:55+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "徐欣瑩尖石服務處成立提原鄉交通醫療教育政見| 政治 - 中央社 CNA",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE42LVROR2VwQkdYOFJqazhqdUQxclN0amhDNXJNZzZNMnFTSW9wckRFSXNZWks0U1h3eHlEWDBnb25xbTFXS2RNeHRuQUp3czNLM2N6eV9GelZ2SmgxRzBV?oc=5",
-          "source": "中央社 CNA",
-          "published": "2026-11-14T07:22:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "關心教育反遭政治化 袋鼠媽媽發文肯定市府4年教育努力 - Yahoo新聞",
-          "url": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxNcG05YzhVblRjcUFXU2RwQ0ZrU00tdzlHZ09KeGJkbVplUnpESVVSRG9OYS10LTVMbjRFU3ZfbXN3QzlSTDA3cWw1MGg3UFRQYk0yQXY5bzFZbmtfa3RVVGxmeU1fejJ1YTd6TXRIRWNUaUM1LXJFZENhckZiU0dlWTkyNlRZZWcxOWZxMWk2elVzYnpoNGctUTNfand0bGxiZmxQeXBkd0FfNkJYMzVYTHBxNGpxQ3hPalpFRjQ4Y0ROb05TYW82d0RfenhVcXVLVVZFVmtqdWRPU1ZrakRwVW9lcTdGZTlMR3hVRDRsc0F1NW4yNHk1bHZDX2o2OGhZMHgxSExHcUhXcnZXTGRMMHltUE5nWmVNajB6UThLOGR5YnRWbzBEa3gxLVBjcW9JaFZsNUZvTW5sZ1NYVDgtcXBkNDJzX2pRVjBfdzR4YlJTQkJqZmJQbnVIUVN4THNqRHBWWEJnMHpTVjZ6bWtfYnlnWkZDZw?oc=5",
-          "source": "Yahoo新聞",
-          "published": "2026-11-14T07:11:39+00:00",
-          "type": "文章",
-          "description": ""
         }
       ],
-      "updated": "2026-11-14T12:05:40.749533+00:00",
-      "checkedAt": "2026-11-14T12:05:40.749533+00:00",
+      "updated": "2026-11-14T13:07:53.660296+00:00",
+      "checkedAt": "2026-11-14T13:07:53.660296+00:00",
       "keys": [
         "台北教育",
         "國中缺師率",
@@ -877,8 +877,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-14T12:05:40.749533+00:00",
-      "checkedAt": "2026-11-14T12:05:40.749533+00:00",
+      "updated": "2026-11-14T13:07:53.660296+00:00",
+      "checkedAt": "2026-11-14T13:07:53.660296+00:00",
       "keys": [
         "兩岸議題"
       ],
