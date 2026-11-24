@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T10:05:30.156284+00:00",
+  "updated": "2026-11-24T20:42:41.222754+00:00",
   "topics": [
     {
       "id": "civic-songshan-airport",
@@ -416,10 +416,82 @@
     "civic-songshan-airport": {
       "items": [
         {
+          "title": "蔣萬安稱松機遷移參考黃珊珊白皮書！張育萌翻舊帳酸：抄襲的極致 - 自由時報",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfNFFock9vQjhfcEkyNjBUX0NUVm94Nm0xMEpidEt5MVpmSFR5bzE2VndCRU10cUF3UERiZWkxcDRXai14VEdld2dza291cUNjZG1mVGhTWkwzQXVub0lIUm8zQllDU0c5TXfSAW9BVV95cUxNSnprNmk2SjFVdmptTWptVWFCa2dKbG5JMFdsdllod0FBd1RwbnFDUVphcDcwV3lQRjJKZjJwVjdsOGZ1MUwwUncydWphMkxCMGlqdUJ3YTItaEJVamhQbV93Nkt5N1J4MjAxLVVrQ3M?oc=5",
+          "source": "自由時報",
+          "published": "2026-11-22T07:59:09+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "蔣萬安稱松機遷移「參考白皮書」！他轟大甩鍋：沒配套怪給黃珊珊 - 三立新聞",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9IOG5NcTJGVFNPV2tublMwcXVvTFdVcVc4OFJsN1JXdVhoNXAyeEltMzVYbGY4NnpGbjUxZ0RJTXNTWE5aQk93TdIBTEFVX3lxTE0zMlhvWFJXLTZ3RDlEOXdxbllWSWRkd3MxcU02MkxNZXlnNVk5OGI4Q21DRzRpZHVPNWxHTHlIQ2NEaDhNRlVaMlQ4VjM?oc=5",
+          "source": "三立新聞",
+          "published": "2026-11-22T04:12:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "選舉公報未見松機遷移 蔣萬安反酸沈伯洋：陪伴都更、無限都更有嗎？ - 震傳媒",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBobUtRWTk4NkdYNHZ6STBiVlI3RGlpY2N0ZWxwVTZFVXkzNURxQjNXUXhlWE95ZGp4ZUh0ZWxLYlRKbTZlMTIwVzVNSXZfaWJBNmV2QXRBdFBKTFE?oc=5",
+          "source": "震傳媒",
+          "published": "2026-11-20T12:38:10+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "還沒投票先跳票！蔣萬安報告松機遷移案 政院：至今36天沒下文 - 自由時報",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOODVSd2I1TVBuTFRtNFY0U2ZPY2hnNDdJMU9KNHFFazdRZUlrVlpMUGY5ZHVscWpXUHBIUmhXczkzQTdvR09CemVQSmFVa3Zia01sX2M3RDNEcEhiMFJpeGNVa2pSNE1xZUVPdmIzd1BkQkloWTd4NmRTSFJaTndtZW1lLW5IZw?oc=5",
+          "source": "自由時報",
+          "published": "2026-11-19T10:05:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "還沒投票先跳票！蔣萬安報告松機遷移案 政院：至今36天沒下文 - 自由時報",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8td2oxTkl5ZldidlNWbzdfZXRhYXowdFEyRHpqM244dmJSRkN0Q3NoeW9RcEJGWUlJRTdaT0pXTVVZbG1JdlRiQlJSTjZWNmRVOG85V2Ytdk1uRW16cklKWHhMaVV2Y0lkdmfSAW9BVV95cUxQNVIzZ0VOaEFJdkJPZUFBODJCT1F2WEk2NEtUUXJaT0FHd1g4T29yYUNYTmpOaHhyTzVnZU54dlVvT2JNUjF5bzZpbS0ySm9VbGNzWXN2N3pYNm9JNW5aMS1rcUVSLTNId08tRjg1S1k?oc=5",
+          "source": "自由時報",
+          "published": "2026-11-19T06:09:39+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "蔣萬安拋松山機場遷建案　行政院證實：北市府已36天未聯繫、未交資料 - 三立新聞",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE11UGhITXlYR1hpbW1zMzFITWRLRjI3SkNvX2tfbWFMbVBtbzJBZW44ZTJpaGJyS0lMeHNpYVpCNF9xd1AxT2kxUNIBTEFVX3lxTFBDb0FlRUlKN1JxZm01Ulp6emJBVHJJVXpWZU15elIyb1FUb0h4ajdtak5YSmNSWnRQZ2pHa1BaT2ZFRllnZGc5YkdRNDY?oc=5",
+          "source": "三立新聞",
+          "published": "2026-11-19T05:58:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "蔣萬安10月赴院會提松機遷移　行政院：過36天未聯繫、未交資料 - ETtoday新聞雲",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1EaU9scV9qc0dTN0J2cUtKNjRsMW5yTEh4ZG44MV94ei1aRGN1cUVqVkpRQU5wMjB4UjJreHpCaUQxZllaUkR4Tnkyd0g3N2xuMVdSX1VuVXBURG5vUnfSAUtBVV95cUxOa1VMM0Jla1Y4TmE4R3U0U0NWQ3FQSHhQLUFxMXhVWG9VSU1tZnl4V3NLVGJCbkJfNlJhTkJ5WmVWbUhYYkNvVmFfUlk?oc=5",
+          "source": "ETtoday新聞雲",
+          "published": "2026-11-19T05:21:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "蔣萬安赴政院報告松機遷移 政院證實：市府過36天沒下文也沒聯繫 - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMinANBVV95cUxPNDZtdzZyQ2NwUm5pUnVJcE5WMlloWnBiUU9xSWZzc2RUU3A2QktSZjdsOUxQQnBVNy1pLTBIZ3JDV1RyeHFIZ0pZLVViZl80dGtLc1h1dHRTYXpCczY5UW1pd1FzU1piMlk5Y1MzRV9qRlZveTNVaUdNemR3Uy14MkNuZVd3MUcyOFJJMUxDQmNXRGlkdTRlS2dLNmJzQlk1Qmc5OFpjZjJlMmV3eUZUMDRZcXpJb1p4a25BOTZrcmI1eFA0SXRYYTJjM3Z3eHhFUVVrNGxRTDFEU19PVHBQVERPQ0ZFMEdXRVk1Rm9HYlFrT0JaQ2YxdndLRW94bVExMnlTbGtjSzE5ZUY4ejNpUkNvbno0RzVjbDREZEhVYklBWG5OWG5qV1R1bUJPUzhycnZoRHBjamhiVEpUYi1scjctdzEzZUx0WkRXQ0E0TXRZa0paQjdvdXdpUlhraTdUektJMVJ6ZTRNQjVvTmZBOHdVU3FSSW1BdmREZzlSd0FYTGFrM3lQZTBSb1RTVk01Y1R4aTBaSmk1ZTJ0?oc=5",
+          "source": "Yahoo新聞",
+          "published": "2026-11-19T05:04:53+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
           "title": "蔣萬安選舉公報未提松機遷建政院指北市府毫無聯繫、未交資料| 2026九合一選舉 - UDN",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBWQTNYMzl6WkxCQnphaUxrTlRHRDlUVFUzTzFmajh0M3hJaDBtU0hXZllKVGowY2xvd0JuT2VYdkVjTDIxOXgxeVhHeVZNeVhOVXRlSlFB?oc=5",
           "source": "UDN",
           "published": "2026-11-19T05:04:50+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "蔣萬安選舉公報未列松機遷建政院：北市府至今36天未送資料也沒聯繫| 政治焦點 - 太報 TaiSounds",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE53RGNUcVFibmd4WmY5ZEVBeV94Y1JCOHF5TV9vVUtQa0xkLVFrN0hHY1ZOZkpIWUViRS1jNGljQ1BuYzE0QnZiUy1oT1VwRHdPbUdSZkl2RVRIYmpM?oc=5",
+          "source": "太報 TaiSounds",
+          "published": "2026-11-19T04:34:06+00:00",
           "type": "文章",
           "description": ""
         },
@@ -432,112 +504,40 @@
           "description": ""
         },
         {
-          "title": "選舉公報政見未提松機遷建蔣萬安：已清楚說明| 地方 - 中央社 CNA",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBTRFhnLTJ0V0VRYU5BRkwxd0xDNVFkbmJVWHJTZlpRQWhSNDRTMm0wTGZwOXNRVVBQMllJb05zd29zZWZNOHFsRUZEdzlUaGs2cTBLdmlXWWdLcnI4eHlB?oc=5",
-          "source": "中央社 CNA",
-          "published": "2026-11-17T05:29:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "【蔣萬安選舉公報曝！最重要政策「松機遷移」消失了 李四川也未提】 又不遷松機了？ （#嘴邊肉） - Facebook",
-          "url": "https://news.google.com/rss/articles/CBMijwRBVV95cUxQa3Q5NVE0ZjVpWGg4d1dUSlE3aFBlRXdDT0dGVkdPbEpoWWVRR3pnNVpuRm1Ock9DZHNldUFobkZoalNlTnp4QkhRSnRCQVNfUW9IN0xwT1BFMHBEbmVXY3BsWGhWMXF3QkNZZFVPNWdZVV9rZlpjV3ozbE9UYXdrcXg2QWZJQlFBNW1qcy1RZ1hQNlVKQVNQWkVYWElGVk9lVlhNb0lxd1hsMndCV191UmVvZGo4dktXMTU5ZXdiYUN2U2R3aVRvaGpwTWFKaHFfc2Vob1NYM00yLVJxOEV4RU81Wjh0a29HYmJ0REV4SUtwelU0cVpDUzdYZzgtM0luQ0Nfbng4REtXeFNfdzdiRjMxNFpzNEItQTZjVklINWx5NEJxTHhoVkVNc0o1Zmo4STNSZ05QM001TzJVWm5uaGZxY180bjY5djhUbFdZdkk3b3d6M18teUVabHpzUXFPX3hTSlptTlRURWpwN0NFTzVMR0RSek53Z1lmV05mTDVUNzkzUVM1Skx4dWdGd0VkbU5UdElhUFJncXprSjU5VXJaTjJuaUtNcVVJbGRWMURLX2VvS3A0UE9KbEI2bmlJSHNEMV9HZVNPSlFRREJER3BQTE82cENwc2tiamRPN0QwVGQ1aExJdXZ1aGJ4d1VHODZyZ1BubHJrLUVPdXduQUFZV2k4SGtCYlQ1aWozdw?oc=5",
-          "source": "Facebook",
-          "published": "2026-11-17T02:48:01+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "搭早班機提早到航廈大門沒開！旅客傻等松機揭這條規定- 生活 - 工商時報",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9tc2taX1ZkcU50cDgtSndjWmpmZEFNUG1HOWJqNUs1LTF6Q3VlZzlxX2t2UUtCQ0poWUlNWS1RZWdZQWdYZlJnSllwWl9sTDNZWkdpOTVkYkF1VzVPRWxr?oc=5",
-          "source": "工商時報",
-          "published": "2026-11-08T08:00:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "松山機場搭早班機她提早到傻眼：一堆人被關門外- 生活 - 中時新聞網",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9qQ1hGcmtqRVc5aUgwQW0wbVBPMXVDbDJFT3VBWWlEUHB2NDE4YUJTZ3hkRzE4UG05bmgyQlFpUTczU2NMUVhpbks1a3FMbjMwMGFORWpaR192d2FfeVA2R180cTBOQnFGOGhMZ0pB?oc=5",
-          "source": "中時新聞網",
-          "published": "2026-11-07T08:00:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "自由開講》蔣萬安對輝達與松機的3個謊言 - 自由評論網",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA5UWpfNzZsb01tMy1XLW44OTN4SW5zMDMxZHNFU0tJRVVjMmxFN29PQ3FyZG5MZ1VZeTFILVJmWnpIekpIdG9sTXY5WlNNTE80eWI5SEhjTjhkYmRScnVVWFF30gFnQVVfeXFMTUxlSnVaaC1VaFB2UlJEc2FXM295RmFSTWNBbTlTV1E0b0xJS21aZlllUkktSnY0Zi02T3hkVlRTZDNndkZBOGpab0pCYm5ERjFKeGNHQVZKT0VqWTgzeG1VR3p4SlhhYw?oc=5",
-          "source": "自由評論網",
-          "published": "2026-11-06T08:00:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "松機遷建引熱議房市掀補漲行情- 日報 - 工商時報",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5kQ3djMDBsU005b3ZmOVRjVlk2b2JvSDJZekVWVWJxcXdTdjkyaHlLclJkRzZqVkxxYjh1M1J4dHR3OTQ4UzNVNGhMYjF2azFHMWpqTExFR0ZnR285Y2dR?oc=5",
-          "source": "工商時報",
-          "published": "2026-11-05T08:00:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "自由廣場》松山機場遷建的利與弊 - 自由評論網",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5JcTJ6UmtITmxEWG1wcl80S1h0WE9LVFl4SzR5bmd1bVVCT2dXZlQ4WHFkbTZuWFlfZ2ZzNUZwZU9hWGZQajJJNk9qOThZTVE2bW1GY2VnZDbSAV5BVV95cUxNM1dzTlZIMnowc2tJRE1Pdkl2UGZrcFM3QUQtakIwSldxcFN1bXVrSFdqcW94ZkZsWWtweWg5VkNwVnR3RFNJS25EZWMzX0oxa2Z6TEVvUTF2MVZueU53?oc=5",
-          "source": "自由評論網",
-          "published": "2026-11-04T08:00:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "重申堅決反對松機遷移 陳振中：未曾與蔣萬安及北市府聯繫 - 自由時報",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5nSFhuenlINzE4YWFkTUtxSUNCbjVWVENrZHEyenRHSVRaZXNCY0VHamZJMUNLYkY3TE5uclVWZ0JtRGJOay1jdnh0NHdaalBKclE2Nm9sQ1lES0xOS0hCWkZ4Y1dOQUtHc3fSAW9BVV95cUxQWUdKaTBLcVVSdnVxZEswTmU0c1Jhei14RTdHeFhhdE0wVGhreTA1dXNmejg0b240U3dObzk2RTlTQzlCY2ZfWG4xNGRTVWFPTDcyNlhSY2xQMHJaRHNkczNTSDloZ1RJaGFUVUNtMWc?oc=5",
-          "source": "自由時報",
-          "published": "2026-11-04T08:00:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "松山機場遷移議題吳淑瑾競總籲別拿話術幫陳振中洗地| 政治 - 中央社 CNA",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE02MExKM2RMODZmSWRITjQzYjFnUlVuYTMtYjhna29nQVNFSnc5R3VFVk92WTJ5MGZNNWNxSVFGd0Y1dUpYNjF6cjF2VTU3bl95eEJrR2hrcU96Z1phSFhj?oc=5",
-          "source": "中央社 CNA",
-          "published": "2026-11-04T08:00:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "由松山機場改AI園區談決策的方法| 雜誌 - UDN",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE40Q1F4aHI1NS1RSDM5YmotWGZMczYyZmVMYy1qbDROcEVHazZwWmpPZXE3Q1FBS0ZGajNqVlY4cHRVQlpwU09BWS0wVWEycDRP?oc=5",
+          "title": "質疑蔣萬安政見沒松機掀戰！鍾沛君轟「裝不懂」 黃暐瀚認了：釐清就好| 縣市長議員選戰| 要聞 - UDN",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBRLTQxMmZsb3UzOGU5NE5aQ256aGJOTnB3RHVFemhIMVVsRHNfNEMtSWJDamg3bmdTamVVT0tnZGNkd3JobHY0MmdVSkUtMjRDeFNZ?oc=5",
           "source": "UDN",
-          "published": "2026-11-04T08:00:00+00:00",
+          "published": "2026-11-18T01:47:52+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "選前熱議松山機場搬不搬？周邊公寓5年漲24% - 經濟日報",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1EZEVYTktuM18xODFMenJzZ3BZVk1URFJlVWtETDNjOU91X2dxeVBQcWFIMFRscV9zRTFHUkxSN0dWOUg4NTNGUVpYNHhEd21xYWZud045N0d6QdIBX0FVX3lxTE5yRFRSVDFuMjZQWXYwTVBhQjRfUG1TejJRak9hMnBQcWZJRlNmdTJabFFELVBWdWZpVUlXTU0zRU9GT1NydC1VdGlCb28wWDZ1b1VLa0tlMkNnQmlXXzU4?oc=5",
-          "source": "經濟日報",
-          "published": "2026-11-04T08:00:00+00:00",
+          "title": "蔣萬安選舉公報「未列松機遷移」被轟騙票！黃暐瀚曝時間差：這時才提出 - 三立新聞",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBBbWRwcHhuRW9OTHVCRF9JY0VWMkZueXBIek1yM0JIMUMwY3dqeldyVGhCYW5uQzFjY3lQRnctek1vRVRROW9IRtIBTEFVX3lxTE1EcVc3TlhjYVNZckdCYU9idkRhWWtwZ3dNa3d1cG53aHFuaGtmMWRadF9WUTJWbEE5N1gzY2t4QU92Ump5ZmVZUlVnNHk?oc=5",
+          "source": "三立新聞",
+          "published": "2026-11-17T22:50:00+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "松機搬遷4區房價有戲？　專家調侃：家祭無忘告乃翁 - ETtoday房產雲",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9JYUQ5Sm9yZkNsTkZIbDJfMHdWNTNqSF9fdjdjSVAzZkljOEJjR3hXQnJpQ1lmcFpaRjM2UG9PZVA1Y21BM2RGYWN0Qk83TmvSAU5BVV95cUxNS1F6a0xOekxIdWc5OUJpb2xDYjRXaU91dHlYbGFnZ2ZBQXNDVkRlYkNqR202OUkxQWxjM2t4aE9VYTJ2UEVJdF9fdWpwSmc?oc=5",
-          "source": "ETtoday房產雲",
-          "published": "2026-11-04T08:00:00+00:00",
+          "title": "蔣萬安選舉公報\"松機遷建\"消失 沈伯洋用Checklist - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxNdGhzam1RTkMyRHdwSV9BcEpleXl2VjdWTV81Yk11T19iMVk4S1FaUnVFWHZCVHN5TV9hZzlnVmdibVppb3FNYkZyb1VkcmVrWXdKYTBQSEtUcUhSR2diMXBJYUt0RWFFbXViYmNXcW5ncnRzdDJnbm9xMnl1MThqdGFCTXhlRnN3SE1HSkdYNDl5YjdCa01oeUQwRWFlSkc4YUNmalBfUnVLVjN3SUw4SVlMRmtaNVJGRXdOeEYwNGxZQ0o4R1o0VWhiYmlhUTg2blZtUVc4X3Azd2VWQ3JzcmdSRmhUR3p1cmJrU2VMRHBDMXdjNkhsS1k2dnZtdnktUEtLeGZkbXNBX3RpRWZOc1lyaUw2WlFVWGNtdVA2ZjVtRFVqYTVwa2k4REUxbVE?oc=5",
+          "source": "Yahoo新聞",
+          "published": "2026-11-17T22:01:05+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "反對松機遷移？ 沈伯洋稱沒必要改AI園區：社子島開發應優先 - 經濟日報",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1wczl5NTQ2WW5tVU5zWThPN3Q1djg3NEl3UzhQZ0FJaXVkbGZYcW45dXBoSURNSDRrX3lWdDVWYVVuTmlXeE1ESnNKdUhGNmpYbUtEQ2dyeXB0Y1JVWXNN0gFfQVVfeXFMTXBzOXk1NDZZbm1VTnNZOE83dDV2ODc0SXdTOFBnQUlpdWRsZlhxbjl1cGhJRE1INGtfeVZ0NVZhVW5OaVd4TURKc0p1SEY2alhtS0RDZ3J5cHRjUlVZc00?oc=5",
-          "source": "經濟日報",
-          "published": "2026-11-02T15:04:47+00:00",
+          "title": "松機遷建未列蔣萬安公報 綠批騙票 - 自由時報",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBfUjdXOWs2Wi1vYzByd0l0dFFMenNvSEYtNUIySFF3WGdPRTR0eWRvNFppX3JueWRTNl80eXVPcjNMeVJHZy1GemlnQnBxekZ4NklZN0VOZUg2LThfaWJnQdIBZkFVX3lxTE94Q21DSWtvZGxjTEJDZVNYd1hpLV9Ed0RzWkxwbTBKLU9vNXkxVWxaLUZSRnhkQldUWGt5YkMtR0NoTXpTRUNHazJNQlhSRTFldlpRSDZqdjBBX1NjRG5IZzVNN2RfZw?oc=5",
+          "source": "自由時報",
+          "published": "2026-11-17T21:30:00+00:00",
           "type": "文章",
           "description": ""
         }
       ],
-      "updated": "2026-11-24T10:05:30.156284+00:00",
-      "checkedAt": "2026-11-24T10:05:30.156284+00:00",
+      "updated": "2026-11-24T20:42:41.222754+00:00",
+      "checkedAt": "2026-11-24T20:42:41.222754+00:00",
       "keys": [
         "松山機場",
         "松機",
@@ -564,42 +564,66 @@
           "description": ""
         },
         {
-          "title": "社會住宅介紹 - 國家住宅及都市更新中心",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9WS3JteWUtRURCNTBEUHh4SFdjbUdpTzhlR0g5LTVmUEJqR0RSMTVjX1J5ZmttT3ZIcU5TNWZGbkRzcnZaOEVyejhzN1EyQ2dIazdHNE10UzZGQ1VPUmtyQV9ja1pqa1NmX3pCaW1Yb2ppU0k?oc=5",
-          "source": "國家住宅及都市更新中心",
+          "title": "都市更新案當選馬上辦 陳向鑫以觀光專業擘畫金湖新局 - 台灣新聞雲",
+          "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE0zdEVyc3lhOHV0VDVCdDJBeWlpaVhYS2wzdkpISV9NYWNqNlVVMTBiWjJSYmhMa2xnMVNGb1RZb1JTU2NEak5J?oc=5",
+          "source": "台灣新聞雲",
+          "published": "2026-11-19T12:19:16+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "高雄市住宅及都市更新中心 - maygoddejia.com.tw",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQYUNNN3AzMEJUWUtDaHZIQXYxOG5ZemtWc3BpQmtiRHRjdER3TF8xUHE3dllfdU5ldWMxNWNia2t2TE1iYjdhRjRRTVBsSXZjZS14cWNnX2l2eXpibW9DLVZvZE9YY1p0TG1LVGU0RFFabmxkTlFwY3BuMVZxWkYta21SMjM5UlJneDd2eFZLMnowNkoyWGo1MnJkZktqWG1OZHprT1N1c2FMM0dNNG9TZE43akZmbDdjSTlaSFhNemV4WXlFOUtjTWRITUtDeHRzaEZsUzcyaw?oc=5",
+          "source": "maygoddejia.com.tw",
           "published": "2026-11-19T08:00:00+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "都市更新工作有序推進 - 澳門會展經濟報",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA4SVFDWXZpVlFSTzRQQXc0SkhaUUJpTXB6bXpVbWFJTXFRMDNIRk9WODlmX0FLdzJnVGd0Sk1kbHZFY1dCb1NpRWFmbktSU0ZFbXpNTnh6Sm9SVjFC?oc=5",
-          "source": "澳門會展經濟報",
-          "published": "2026-11-18T17:39:23+00:00",
+          "title": "直搗藍鐵票倉永和 蘇巧慧拋設「都市更新局」 - 自由時報",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8wWkNHM1JfcGVlbWd5LVJFUHhJX1NhWlR1U1kyMDRTOWpaY002WWtqZGYzN0dlYWJ3UC05M3Nia2RWdEJtSThsMEYxT3BhMS1tR3NpNXV4MkRJaElhWkxVMVNPY295TVE2NGfSAW9BVV95cUxNenBRV0ZWdHdPTENKa0liajRJWUZaUHJGR3lkcWpuLWNRYjhHMFNKZktEdU9IR0RSM19WVlpmQkRGWm1HQUxkTXY4YTNNQktTajNTc2M0a0puX3ZnS0RzTGtXWWRTczN1b01zYVJ4RDA?oc=5",
+          "source": "自由時報",
+          "published": "2026-11-17T11:20:14+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "岑浩輝：政府、社會、居民協力 加快推進都市更新 - 澳門特別行政區政府入口網站",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4wN3RBWWIzSEsxNWZublBmR1FGbWJDU2ZFWHBTTVZIZS1PSlhUbHBoLXhMaDBCdy1LV2xpZENUYWM1RmFPOHozQ20tZnhwdldmUWc?oc=5",
-          "source": "澳門特別行政區政府入口網站",
-          "published": "2026-11-17T14:04:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "直搗藍鐵票倉永和 蘇巧慧拋設「都市更新局」 | 自由電子報 - LINE TODAY",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBlQTFUeTlSTjVrazZNbVpwZnprQjhpZmw5S0hVTWxfM29FX3l4VVRlTkFzbTJDN2xlTXpYTTRkM1RpZ2ZscmE4U3dkLXB6ZmRJUkhRMGJB?oc=5",
+          "title": "討論牆 | 首爾都市更新展引進AI設計與電漿技術 加速營造數位轉型 - LINE TODAY",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE85R2tTc2paVGkwM0VaN3U4TnJWNU91SVdqMzNNeUtURmhmNHc1cTVfdDVLSnllaWN4S3J4Q0JyX0VyS1FVcU0zNGZtVEdzanhzdjNpcDdYWVRNUndleTJVb3V2bng?oc=5",
           "source": "LINE TODAY",
-          "published": "2026-11-17T12:02:30+00:00",
+          "published": "2026-11-16T20:13:05+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "岑浩輝: 都市更新複雜且長遠 需全社會共同推動 - TDM",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNX3VkVzByeFBuLTlwQ2JqX05sNWFrS181VkZzWFRoajA0Zjc0TEtqV2FzcmxKTkJta0hXLUNlQ3FHQURreGVGVGI1bURNaEF4MDZZeFp5RDVRQXRRd2RMc2RRR3RYU3h0THpVb0k1NnpYYkloaWtlTzJhNHMwSmdodHpfSQ?oc=5",
-          "source": "TDM",
-          "published": "2026-11-17T08:55:05+00:00",
+          "title": "首爾都市更新展引進AI設計與電漿技術 加速營造數位轉型 - 蕃新聞",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GdE9hbE0xM3YxWlRGV25HM0EtR2h0Ry1BRnF5V0NrdzJNdkJaQmNtVW5tMW96di1OVkVmbWZ0RmdLX3lhNk5IUWJHMTVfU3B0Z2c?oc=5",
+          "source": "蕃新聞",
+          "published": "2026-11-16T00:49:10+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "9大產業園區到都市更新 蘇巧慧回顧42 場後援會勾勒新北願景 - 匯流新聞網",
+          "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5IQno0c21uQ2t1VzZjc292SjZoVmhqd2xYTHlNN1ZkdGJaT0FBNFVWWjN5UHd1NW9xNVF3MTF6NGx6cVpoaFZMMnpn?oc=5",
+          "source": "匯流新聞網",
+          "published": "2026-11-13T08:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "地主不安、分配衝突！都市更新「陪伴」之外　該聚焦點也超多　　 - 好房網News",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1JcG1EVXhSLVQ1N2dvU0FqSWFMc0JySVdtMUZNamdweHJPOVR6bFpXWnBGcXFpNlhFTHVoQ2RTVXhHMGZCeEd6aVhWMnI4RHZhbFp3aGRxZDNJOVd6Slc3RnNyX05fWTk0SGZj0gFwQVVfeXFMTVVCZ2c4LXd5SVY0VzBHTktNeUplblhHNXZPcTFaSXI0TXdicVJaVUZUbDN6UjRWY2NaUXoyTUFjSnZCb2hOZGk4Smt6ZEVuN0tyMmdzaHlkd19MVHNIZ2x4WUVCUUJZTlAyZ095TmRFZA?oc=5",
+          "source": "好房網News",
+          "published": "2026-11-12T08:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "臺南市政府公告南區喜樹灣裡公辦都市更新招商計畫 - 蕃新聞",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5XMXdzMWszcExvMEQ4SW56dmg2YUotNjFVTXFJWU9tWmlmMHhNNG9MOU15dWlYa3N5clpWMWd6b09hbVhVa2FQTHRpZ0Q2RkVQcHc?oc=5",
+          "source": "蕃新聞",
+          "published": "2026-11-10T08:00:00+00:00",
           "type": "文章",
           "description": ""
         },
@@ -620,56 +644,32 @@
           "description": ""
         },
         {
+          "title": "內壢車站站前蛻變！內壢仁愛段公辦都市更新正式動土 | 房市情報 | 商情 - 經濟日報",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ScTFyS3FmZGRtWDR4ZXRqV1MyVVlFTTlQczFTWkpSX3YwUnF1cFA0Z1RvaG5nV181Rm1XUWpZTUhWQklvck15S1JPUGR0c0pkajBtRDBPX3gtdw?oc=5",
+          "source": "經濟日報",
+          "published": "2026-11-05T08:00:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "彰化縣都市更新政策研討會 11月19日在彰化市舉行 - 住展雜誌",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE80QXUwV3hBckhBcUJnWFRJdElEMThkdkZRSEF4aEZmaW12X2Z4YnpQeGtFeFFrc0ZYRldQeW9OV2NJYWpncGdST2VMVkhxZVZDdmNqU1VUclJxanBfSzVPdUFySkZhdGFRMnBDeEI5Rm00WDhObUJBQ2RKZ25tQQ?oc=5",
+          "source": "住展雜誌",
+          "published": "2026-11-02T22:39:45+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
           "title": "直球對決！辯論攻勢拋「都市更新案例」問沈伯洋…蔣萬安轟：已讀亂回 - UDN",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBlV2FxSEtpZ3pEMWhRZnlEQlVZZVBmckY0d3VVMkFya29TcTdsRDdTaDdzeEpZVlRlTXZHWVhFZXVDOVN3aEpaM2g4TXF6SktQTGpZ0gFYQVVfeXFMTXNRUHBwWjdEc3dJUU52bkh1RDFFODRjdl9NMVRHd2UzSzcyTnlzWVNrdjVUVGQxMkFsLUFlejhsMC1qVHMxN0tMVUdkMzQtZzNXbGVPUVdRbg?oc=5",
           "source": "UDN",
           "published": "2026-10-31T07:00:00+00:00",
           "type": "文章",
           "description": ""
-        },
-        {
-          "title": "國有非公用土地參與都市更新方式 - 財政部全球資訊網",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOQ0FOWG42X3Y5ajdvSXhtR0J4LXh3aHRHcnRmN1Y1VVIwVnd4cmk0SGRfb1puMl9TeXc2bFRrMEhlT2J5QW55dGtySU50VGRlMW1oUm43Q2VvZF9ScnYzdDJfbVl2dGhNTXlmbm4yWU05clNWOENBRDE1alFSalRWUQ?oc=5",
-          "source": "財政部全球資訊網",
-          "published": "2026-10-28T07:00:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "嘉興街案火警後續處理作業及聯繫資訊 - 國家住宅及都市更新中心",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5TMEIwN2dyWG1UOXo2eVdvVW5lZU96eGE3alV5aVZEdFpXU1RzeXNHRnpvcE9fdWVwTHNWUGhTYjktc3l0dHJjdzgzZDBrYkxiZXJNblJqTE10NExBRGg0Rlp3bHhRWkZxZmNzY0tVNk15TDA?oc=5",
-          "source": "國家住宅及都市更新中心",
-          "published": "2026-10-15T07:00:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "都市更新自己來！內政部最高補助1100萬 - 自由時報",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ZOWExWG5mRGc4V0prQlExZGtmOHRGNG8tWVIwZXVMLVE2UzNfaHR2NkRnMW5uSHlMUG5PWjJ6MzdHN2JENE9nZGRLU042QnpmTFQ1S0ZIVGZ6a0JTUW9hQUlQOVAyV3BtbHfSAW9BVV95cUxOWnVTLXptejBxUkxmekZNTFFyc2lsQ09ybW91RmxBeVhVbmhEU29lV01wd29rUmZmNERtSDRkUmNyUUlWek5rNkUxNG5BcWJ2ZGtFM2Y5dDA5NkJBVlVuMVZMbE54LXo4SmdlSkpQX0U?oc=5",
-          "source": "自由時報",
-          "published": "2026-10-07T07:00:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "2026得獎名單》最佳都市更新重建類 將捷旅境 - 都更全都通",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE95bmR2SWpINmdhZjZQR2tldllXcS05MXdidWN4dmRmbXNIUGc3YzM3dmdFNlVFenRjdUtaMlJPenZCQVZ2SGtvOWVnNkh5S1hPVTRZLTl5NkZxSEZYOTM2UA?oc=5",
-          "source": "都更全都通",
-          "published": "2026-10-05T16:31:26+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "促進都市更新領導小組舉行首次會議 - 澳門特別行政區政府入口網站",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE53VmZiUlRWd1RueFhielpkeHNrWXRkaVA0M3plMjhnQ3B4bHdyVG15VmpRbUxGLVQ3WTlZcmRJZ04xVG5mR2F2OExUT0g0N05RMkE?oc=5",
-          "source": "澳門特別行政區政府入口網站",
-          "published": "2026-09-22T07:00:00+00:00",
-          "type": "文章",
-          "description": ""
         }
       ],
-      "updated": "2026-11-24T10:05:30.156284+00:00",
-      "checkedAt": "2026-11-24T10:05:30.156284+00:00",
+      "updated": "2026-11-24T20:42:41.222754+00:00",
+      "checkedAt": "2026-11-24T20:42:41.222754+00:00",
       "keys": [
         "臺北都市更新",
         "都市更新",
@@ -680,128 +680,128 @@
     "de668d5d-e7db-4828-a05c-37f8632400a4": {
       "items": [
         {
-          "title": "高雄市家庭教育中心家庭展能計畫 陪伴親子增進正向互動好時光 - 中央社 CNA",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5SLVNONVlneG8tUGI5N3ltLVB1Z2VvVWxGWEdZcnhRMnltS3otLWozYTZtZF9MSG9CbFpGeWpMTUdRWlBLZ3ZTMHcycDAyNnhGdGY4SGtR?oc=5",
-          "source": "中央社 CNA",
-          "published": "2026-11-24T09:52:34+00:00",
+          "title": "115年全民國防教育網際網路有獎徵答活動 425人獲好禮 | 青年日報 - LINE TODAY",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Xdy1abHF6cHV6b0FLN2NDTXNtVG9BZ0txZW00eDMyRS1SVDNER1hNX2J0Q3luTkZTQ2hlZHFhZjhPZ1JoTERDS2VSek1ERVZiUkxzN1Jn?oc=5",
+          "source": "LINE TODAY",
+          "published": "2026-11-24T18:03:44+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "匯聚韌性社會、科技平權與永續教育公益法寶 工研院展現科技公益理念 - 經濟日報",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBYY2IwSDdPR21uMG04aWJVaVU0eXJnb3BYdTJlU0lzUm5TckdzMFcwdkU0UmhNY3cxR1dkSzdYc0hhLWtoY21KdXlaN0tHZGF6OEQwWU5oS2Uwd9IBX0FVX3lxTE5FQjhQMl9jZ05KUG44WnBiekFEUWF1MUNfWWNWQUVoamVac0JjQnlnU1EwWExrYVpBaVBuZ1k2N0E3NjB1Z0ktYjBJcEtlalVNZWh4aTF2emhUWXh4VHlJ?oc=5",
-          "source": "經濟日報",
-          "published": "2026-11-24T09:35:34+00:00",
+          "title": "智能新勢力／教育創新邁向跨域互動體驗| 產業綜合| 產經 - UDN",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1WTmt2NjQ0aFV6NEJ2Ml9DRWNDdEZGS1NKMTVqM0V1bzhiTE5kLXJIQ1VEa29lcDFuTXltMGxBZVhzaTRLbnV6QnpNSkV5T1gt?oc=5",
+          "source": "UDN",
+          "published": "2026-11-24T17:50:38+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "南市安南親子悠遊館啟用 六大遊戲區兼具教育功能 - 台灣好新聞",
-          "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxPVkI3bXhRZXZ3OUZoRDRqeFV2TlQxV2Y4NmNrZTRUX2ZIRVVlQUxRd3BKcm0xMnJ4QjdzbmJ1eEs3UE9TbnZQemtlZ1BoMUFoSm1JSGlfa2FFT05OazNDaUN2NDZjUlpHVUwwenJYcUVLRXNoeFRQWlhPczRRM21XWnZ1b1hYSGN1NDFjSUdHRnlEemlEMXpYV20wUndFUkJUY3ZMOXNpcHdjOTNRaURJMXYwRktPUF9XanBFRHNzM2V4MnYtRUZFaUJ2YWpoX1AtVlhFMWdNV2xaaXF3c3UtcG50WmMzUm1uVnJ4Tjh2Qy0wWk9LVVlQdVQzWVZreHE4eXBpU0Vwc2dOdGVkRFZxOXBTak5Da3RQaDYzdnRPT2NxOUl2M1VGNW04dFk5dFZhY1g0cTJ1NGdQS1h3b1Baay1sdnZIek9iOEtsTzVvWG5pX2lzRF9VRnpB?oc=5",
-          "source": "台灣好新聞",
-          "published": "2026-11-24T09:33:45+00:00",
+          "title": "-扎根零歲教育 陳福海推動各階段優質學習環境 - 金門日報",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1URVVWU3I2S0RQOVozUU5VeTl5ek5uSmUzQThFSHdLMnlhUzk0NWJjZzNaRnNyUzZvN2xoOEY1NGFhNjNpU1UzSFZZN0pFelg4NTE2aUtGZEI?oc=5",
+          "source": "金門日報",
+          "published": "2026-11-24T16:06:58+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "南臺科大榮獲教育部4,500萬元補助- 商情 - 工商時報",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Weng4SzNHWi1ocG5UVFg5bGZ2alR4N09Vc2FLWURVRHFlZmhfR1V4U2pRaDh6TFpWNTZPdGJJMkRkblFNWXhGZTJyTThMSG9BOXdHV1hZaVpEenBiaU1V?oc=5",
-          "source": "工商時報",
-          "published": "2026-11-24T09:12:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "孩子未來不能等！吳旭智推全齡教育 打造竹北教育新優勢 - Yahoo新聞",
-          "url": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxQamcwMDZKSGpUa1c0emVKNFdHTFNXVUE0SEswM1diM2gxYUJaYmZwTUxsaHYwZHZMNC02bWRPQWsxakwxcnVlbjVXVGxkVEJHQkwtZTlxc2VScGkwTmpyclhPNThSVURXbzM5N29JYUNHMFFoOVlpZkxFQ0VuUDRzY3B2bFlSTDNkbTlyTXREQXhkTUcyZHA3eUxpVlZ6bGMyaUpsUkE0Si1IaFhoRnA5WmRSM1JzaDdGdGx4Smt6TzZINndOOXlxQkF0anNkam12aDVuVFlkb0lTcTVsSTdSY3lSaHU5dVVIYlJvOWxybnhpU0xPcUQycl9lbkwxYTdreFBhU2M3S0dtWEpmTnZnSkV0eExVWU45TXVfWjdUajRoV3hhQ1lkcUplZGZlR1MyU1o0LVhwUElmQXh3QkZxLTNzQUJCRFpzalFnMGVneDlWblRId3JPY1NORlUzZGFVNGtPRUVUdTA2RzJzOWZEUlZJVlZjUQ?oc=5",
-          "source": "Yahoo新聞",
-          "published": "2026-11-24T08:53:44+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "高雄半年3國小師離世！生前病假仍被逼辦公 5教團怒喊撤換教育局長 - Yahoo新聞",
-          "url": "https://news.google.com/rss/articles/CBMiqANBVV95cUxOUWNzN1hTN21iYmMwNXVQcjlwV3JEVTRMZGFET2xfZWFXQV9Zdkp1NHJXS2VhVFVzOUpqQlFqcGVxQXFQeEE5dkR1U1ZYUk83TFhLdjl6MjZMQXZOZWxuRGdpNlNQTDBKZGJnV0loTjhiLWRobTNQbnZuRlJWMnBMbGRPUE1XamtOSHhHVlpVdG5EN3Y3bEJQR0tSRXNvSnlDUFBwNzVCdEt5OUlQc1EwTTRMOF9ZTGRpOVNpN0x1Umhsa0FzY3ZjWG1ieVFtcFpXN0hIS3dQYnNXLUV3UnFWQWdzcUJCZmQ1VHV2b1pVbGktTEl2VzJVOWVTM29tV195TkhJQnJ2VExLc2tMc1JobF9YUXAzakZfNHVzZzFMRmhTa3FOR21zYzIwaFRjTGJRUmdNZHFONGlCa0plZ2p1TWZzaXVWTlpBV1MyTFQ5d2s5VFRyZjlscTRaOWNqM2pjclF6TGZzSUlLZWFFejR6c0ZoS08tUkZnaGFWSm1FVHZHVFljOUNwbHVqcFg5RWFlbm1OeHVobE5LMlhuTjMwMGlWamx2TlRP?oc=5",
-          "source": "Yahoo新聞",
-          "published": "2026-11-24T08:50:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "AI時代美語學習轉型寰宇家庭以沉浸式教育培養溝通力- 商情 - 工商時報",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5CRUo2bXhyb0VtaUlMUUxIWnJaOERhWEZHOUFzQVVVa0lJMWtkbzdMX0NkNmo3Vm0temU4MFE1NjFwbEpweW9yMjJGZFNLaDRyTHJkaGxRQ1VDazZ6Q2hJ?oc=5",
-          "source": "工商時報",
-          "published": "2026-11-24T08:44:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "匯聚韌性社會、科技平權與永續教育公益法寶 工研院展現科技公益理念 - 台灣好新聞",
-          "url": "https://news.google.com/rss/articles/CBMiwANBVV95cUxQOUN0ZFNqbnVhdmdrNjdfNVUxR1ZwU05pbTRSNmcwZm1BcGw1blBYQkNmWkcydVRyS0VPVDlqUWZqclJ0LWJSemxwZm8tcjlBT09VbVRjN1dhLXI4ajFMWmxvLVJWd0ljTEhSUnZoRzdmNXByRXZReG1BSGNCUHJzaXpLZkhESXVHWFRhdnlUVXZKM3ZOWnIwZktuREJ5NVdkWWtyaXdGYmhER05ieTlnZDNjSy1JQUJCbjFsbW90dFFMOC11TGNhYkxQYnUweXd6aXdlS1VMa1JGb1BEUEtmYzQxU1Zna2dyWi1CeG9fZ2g0bUlfSXBVbkIwYVBwSnFPUlU3OWlpQlZ1TnhJS3AtZHlPZnFBREhlaEhvSV9FOWJrbTFKZElySElWTFk5UktyZUZoeGdrQlU5QTVHN3V6ajc2QkxPRkFKOWtJR2NYOHl2Q1hUOGNwV1lSNjhMWFg2VUM3VVB1bmswOElsQWx3NWRWRlg0WUdZdDYzTi10V09nZlY3VWhZT0lkYW95cHdPM3VtcExKdVhwUl9QbjF4NHRGaTFDbkVWNGlCYjFfQU16THFjWEdkUWYzWUp6bE54?oc=5",
-          "source": "台灣好新聞",
-          "published": "2026-11-24T08:41:02+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "從校園走進社區：學生用行動回應真實世界 - 翻轉教育",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9TcE9rTVJOUmpTMl9MUGhNeGNSTXZkUldHQ3JPNV8yQi05ZVBrSHpyN2xYTnF0dnA5RUlxMmxyeERldmZVREpKUU1RWmhJbnZSWHRoLW42amZCeUE?oc=5",
-          "source": "翻轉教育",
-          "published": "2026-11-24T08:30:00+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "深耕校園防災教育有成 宜縣榮獲「防災教育輔導卓越獎」 - Yahoo新聞",
-          "url": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxNaEpwaXluWmNCbjBYRE85QzM2UmxrWS10dEs0TjEyaTFRUDlYSXhQOWphMV84YW1JOGN5NjI0SVpLS3A3SzFZV21kTUxCdG04eXNSLTE4QXpONjQxem5Ja0w1ampJTTBjX2d4RXNqblZuTTJRa2pCeWs0bE5iN2VNUGVTeE5hWjhYZjR4UWdPY1Y1QzZzdWpDOEhTLVQwcHhPd09RYWptVUh3dHRnNjBKSVV6aHg4UkNDbFlXTGlRb0gwOHRpT19oYmplbmhsMUY3ZTBVSVd5eU10Yk10S0JEZkFGQW11YWhZaW5kNnZJZms0TElJYnJ0Nkh0U0s2REV0UU9QZDI0TWNTSUFDLVFuSjdoT1RLNzdpR1VZTFVLanJweUN0LUJTY2x6M3dOajE4SXJRVVJoSnhlbXlCNzVRZ3F2TlBBaFBUazhMcGg2YXYtVTByMFBiQ3NjRzZjY0s5WjBVT2RicXRydw?oc=5",
-          "source": "Yahoo新聞",
-          "published": "2026-11-24T08:01:23+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "AI生成影像真假難辨 教育部教案引導學生掌握查證原則 - Yahoo新聞",
-          "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxNckN0ZmszeTNBVVRZUm1zUjJiYVRVWGZKZGlORkY3LUxpazh6eWZyaUZhTG9BeXJtb2pfTXQ1SmlWV0RzcHVHODBvMldoazZqWEQ0Z0JERHlFZW5oeDJERW9ObTlhRV9XVWpmWVB1RUUxUWdiM2N4WUNoMkpCbjVWTXliQ2hKMk5fdVdtcXdVS1MxOTVFX0VFZE9tc1NqVXVJNDlFQXlxSEdGVEVFY0VHZUd5YmMxdlE1dzE2OHJhT3JIQUdVcW1NckFNWFFycHJ2bzE2QjRRUDNneVRlOWxUZlBCdWxUbTFsWjdnbUhSRmF4SzlSMXVJeFdDZjJqeWpvaktlMVM4UmhmWEJkVFduVEFGazVIQ0JFdDFGS1d5UU1TMnltSm83d2V0ZDM2Ynp0Y3YwNWwxSFkyaXZuTWRyUW5EY0JYQ0lham5RcF8tZW5Vd0tjejcwRGNsZDZFOHhGM3JZZGxQTzVCblU?oc=5",
-          "source": "Yahoo新聞",
-          "published": "2026-11-24T07:54:25+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "九份子國中小國際教育再傳佳音 韓國介軍中學牽線促成西宗中學締結姊妹校 - 台灣好新聞",
-          "url": "https://news.google.com/rss/articles/CBMi3gNBVV95cUxQMHZoWlZ1dFRldEJSY2Vadkhac3lrX1VuNy1XaUNwbHJ1dU5tZUMxNWZvd0RwdGhVZVFEaTRORXc5RHBXNmxmUjFiSHZVTXZyb3E1Tmpidl9PVE9waWFLSWxPd1NEMWlJRm1mZGxHbVY2bnI1UjhqcGtkOWhaOWprYnlDSlYtal9WMER5OXQzZkk2bmlUbE5sOUhlYXg4emhaNi0zemREcmM3VjY2VlV6ZTNFSmlFSVV6ZzNHdDB6dmo4TXJJSGdWM1lFLTUwQ0pyRGRvb1pHNkVyeGs5bmc3MW4xQk9GMkxSMHBqNWhOb2JlWDlXVkhfS3VKejJsMTlYSlJUSmdvTXFFUXRkMndIS2FyemxLOU1oSWRXdG1xcGgzbGhSemZRN29NQ0lCS1pGQUtNd21NUDVQMkNwOV94NlFDU1dHX1IzX1BfWXVsUlI4RXZFS1FSeF9HVWotZTktbVhlUkF5dGM1enBrSHVLQmpRUDhkeERuSmpCNFFXTEZvZ0VqeTJPQzdETnVBZ2JwSTN3Tkd1OUVKTV9TZ2I2Tm5EcFdYZzdvWUZPWFN5dEhQc1lTSl95WXY5UWpiM1l0Wng3aFFiM2VHT3dRY2l0VWMyWEszWWt4Yktmbmx3?oc=5",
-          "source": "台灣好新聞",
-          "published": "2026-11-24T07:52:42+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
-          "title": "學大教育(000526.SZ)：第三季度的業績表現與教培行業季節性特徵直接相關 - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE11NFF0X2JZM3JLYmttMlBuX3Uwek5ZN21xQURoYnVZS0dFWUlsTTF6NUdOMkRUSW5xTjRXa2pGV3JZSUJnejhRRjdHdE85ZXhtZDlOeHc5LVI2ZU9OVFFhOWdZVUNIZlprYUE?oc=5",
+          "title": "立德教育(01449.HK)盈喜：預計年度税後綜合溢利淨額1800萬元至2300萬元 - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9KM0xfc1dVN0tTa2l0YlJjR3BNOGlES2F1SnNpM3VZYV82R3Y4b3Z5U1pNMW1CMl85VHFvMlV6RDhYR1FtN2U4aXBOdndnNnQtZDNDbDIzUW9EV0xZRmc3aVBPd3JadENnUEE?oc=5",
           "source": "TradingView",
-          "published": "2026-11-24T07:39:02+00:00",
+          "published": "2026-11-24T14:44:36+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "教育部青年署女培營Podcast特別企劃 分享女培營收穫 - Yahoo新聞",
-          "url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxNcE1QdWx0TXM5VTREUHhqMS1iVkozY2I3Q1hOWVY3T2dHY2ViREhrN19CTHluVDRUUGk0NE1FX3AxVGxJMFg3NUc1QlZiNThuSHJXYXowcW5qcm1ocDV3dW5FOW9SeDZMeHgwSk1ibFlQRWtreFFGcFFaTllQNjBockJKMW9QQXhtYzZlckpwLVhMSnV0ZEdObDRiMW9Fa0V3aGRFa2NPb0Mwd1M2Y2otYTNaUm9UVnlQRGIzSU9sWEx5TUxQRlB5OHhzMWhoY2c1a21TRTZ6OGRTd1NYVnlsMVkzajhWQWFNVWxScWxBSWpHUXlFSHFtcVMtUDFVdzFkcTYydEhPRFpyVUVhSUtScEFFRTAyR2ZLSk91WkR2YjFRblYya3VnV1Z5WW1vYl9DN1M0d1k2Wk1RdGtqNmpCSVlJQ0l5VVpqeW5tQy1B?oc=5",
-          "source": "Yahoo新聞",
-          "published": "2026-11-24T07:38:16+00:00",
+          "title": "基隆國中生墜樓不治 教育處啟動關懷輔導機制陪伴師生度過傷痛 - 墨新聞-MORE News",
+          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9QZDluZ2ZldU5uZ0c4NjU1LVlVZHA1a3AzcDVLSVpqN0dVckVuRlZZbnRyMFpHcVlmbllJYnVRcjFqUQ?oc=5",
+          "source": "墨新聞-MORE News",
+          "published": "2026-11-24T13:53:20+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "人權繪本扎根教育 7屆催生逾百部創作 - Rti 中央廣播電臺",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBjSlluUnNOLXVkUXBwZEZFZnNSdXJvaTdiTHk1aGtEUzg2X3BJQWI0MkhDYUtDTXFadGJFc2tEQ0ZfWkFhZDNYS1dXNl9EOWZndmlicGg1aXA?oc=5",
-          "source": "Rti 中央廣播電臺",
-          "published": "2026-11-24T07:26:29+00:00",
+          "title": "美國麻州教育廳長訪高雄仁武高中 學子雙語專題驚豔國際 - 台灣好報",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA5aEl5bm9WeXJvUzc1MW5WT2JSQkc3djU2ekNUR0pKaTBzWVRYMFdxeTltbzQ4bzNXYmZEek1SUzVkb3RXYTRtY1Y4UkJ6UkNBel84?oc=5",
+          "source": "台灣好報",
+          "published": "2026-11-24T13:42:49+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "鳳凰國小藝術教育走出校園 30幅童趣畫作妝點咖啡廳 - 台灣生活新聞",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFAtY19CRk9TYmxQZzZaT2NrRjg4NXNSZTlsVG5qVHJ4cXhiNl85WFN1UXM5NF81a2FoYkp5Y3BwaWxNdGpRVXV0MEFRd1hYMjg4?oc=5",
+          "source": "台灣生活新聞",
+          "published": "2026-11-24T13:04:47+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "思考樂教育(01769.HK)：受託人根據股份獎勵計劃購買16萬股 - TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE00ZFdKMXBQSVRfLVAyRjVKZWtTX19PSk1wQU9lSmhOMXFVTmdRczJUQnBfdkZxMjNkSXNPdDUtV0V2blo2eGMzLW9Vc1BvZUdISUZCekVDbmRJaXFoWllyQUphRmhaUzFhb1E?oc=5",
+          "source": "TradingView",
+          "published": "2026-11-24T12:09:19+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "美國教育官員參訪仁武高中 雙語專題驚豔國際夥伴 - 自由時報",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5aYnJDVEpVY0twdU1LVWtJdGlfRWRfRjJMTGhxT0pWMmJUZlJ2VklYeWdmd3lob0k3cnZETVVua1VuRkNNaVBaczNzWFo5ekdCbkxhWkF5N3lzOUY4M2VSYW90aG3SAWpBVV95cUxQbTJqd09CcXROZWZ5OVRGblp2c1FCZUkyZWNRZ1hpbUFGZ0FQckQ3dGRvSUtLWmpRR0t2RDNFQkZNeHNJWWNDU2o1V0w5NE4zX0g4eHhTZHlVcktkRUpkT1ZmOEFqT2djdTF3?oc=5",
+          "source": "自由時報",
+          "published": "2026-11-24T12:02:52+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "總統教育獎獲獎學生 勇敢逐夢 - 中華新聞雲／中華日報",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBFdXF3WndMM0lJLXBsemp0TDlUeC1qU1Y3OVVNYUd5Z2g4cXVhcnpzQXc3bE84ODJGb1hPZVAzMVYyc0ZCQUZDcGtRWmVoMDkwSmc?oc=5",
+          "source": "中華新聞雲／中華日報",
+          "published": "2026-11-24T11:59:51+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "美麻州教育廳長參訪仁武高中 驚豔仁武學子自主學習軟實力 臺美教育跨海交流！ - 今傳媒 JNEWS",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1mRkdUZjlZSVRJSHp5VWQ1R0xKanVHdE55VWd1em9NTTF6bzNxY1Y4YmxtOFdJWmU5ZEpiOG9DZFZnUU8xbml6VlV3QWcyUUZqS3fSAVJBVV95cUxNZkZHVGY5WUlUSUh6eVVkNUdMSmp1R3ROeVVndXpvTU0xem8zcWNWOGJsbThXSVplOWRKYjhvQ2RWZ1FPMW5pelZVd0FnMlFGakt3?oc=5",
+          "source": "今傳媒 JNEWS",
+          "published": "2026-11-24T10:50:24+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "115年全民國防教育「網際網路有獎徵答」抽獎活動開獎 | 青年日報 - LINE TODAY",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBZaDYybXF6bVVhWExZc0xBNEJUQnpKU3pSU1BRR2FpTjc1MHZ0MlNDYVNBd1lTVDZadE9xYnZUU0ZBWUVvYzI3YklaaTFHTVE4Zk04RFV3?oc=5",
+          "source": "LINE TODAY",
+          "published": "2026-11-24T10:41:43+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "高雄3教師接連離世 工會陳情籲撤換教育局長 - 大紀元",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5EY2pqaTNHTV9nM1lEV2R0WFNtWFRwRk51b2trSFVlaXQwcHVMNFJaQXBQRXoxMFVCNDB4MFNFdm5OWnRBeUVMSUNFZFJmQXdfZXdTMEh1NDNJY2IwSG5BWXl30gFnQVVfeXFMTjZaV1lST0puY3R0STljSEhqN2NXUC1MYnQ0VkRDY29JMjF2SkJONWFNa1p5OE5QcUlvMU4tUHhwTmhwcGxrNzNlREFIcXNHNzZLY2JRaTNpMzI2V25pNFNISTVKc0Fsbw?oc=5",
+          "source": "大紀元",
+          "published": "2026-11-24T10:29:00+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "九份子國中小國際教育再拓版圖 韓國介軍中學牽線促成西宗中學締結姊妹校 - 墨新聞-MORE News",
+          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1OZWRDdjNCa01fYjBwRWhvMjBDSmV6d0k3RFFONnFIZGJGcUJCV0RUbzJMTmJSTjY2QWdOZUFDWmgwQQ?oc=5",
+          "source": "墨新聞-MORE News",
+          "published": "2026-11-24T09:52:33+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "ETtoday新聞雲. . 【綠能教育分享】 海岸線上巨型風機如何運轉？達德能源響應「GTO CSR Day」，走進苗栗後龍國小帶領學童深入風機內部、操作測風儀，在趣味探索中認識綠能奧秘，讓愛護地球與永續發展的種子從小扎根！🌱💨 #達德能源 #綠能教育 #風力發電 #永續 - Facebook",
+          "url": "https://news.google.com/rss/articles/CBMiqgdBVV95cUxPRHZ0U3J6T2toUDZkSlp3TGdMVGI3WGVmWUxVRVhBOUltcTlKRm5qUl9HaU10UFRwdzFqMFptUW85a0xtYUphQjJ6NzBKWTh1Z2xsQUFrUGh1T1I5bFZXcE95cDEycXcyeHhDWVlhUzh0b3JOQm9UTFQ3cW8tMVI3SWpfajF6YkF3b1E1aU90TFZWU2ZzUkI2dTZLRDBCUE16TlluQkpUME52Ql9abENKdlExLUtXV21QQVRUcnRpdFlqNXpqQzRwZHYxcU5PLThmWUg1dVlDSmpuNFl1UlBqUUdYYnVHY1JsbjJ2WXpxSVk5RjNXMl82dDVpSFExb1owdUV0Y1hmZzY0Mjh4MjU5dnAwTnpTWXZ1REhiUUw3a3VxcnZJT3VyeDljSG5tVm5UaHY3MnpyRnp0X1libktzWTZVaFlrRDdhTXBuOUdDVFo5UGd6a1J2OEplRW5KT2VzSGZzZkQ2VFBMQXYzYmRFbmNSU3JKMjdIRC01S1AzUEpnU0RsMFBlaW5fWGU1YVBYTnRYT1JvanROQ1FwVHVZLWw1Q0xmVTFLMlRDQnlYVE1xZnFpX1NTTUREQzBLSWs1ME1iaGx3bm1JUndkR3hqdUxQTFNlUUJ3ekpoSDRoV3Y1eFV4NVR4eGRJaVI2cF9TLVRPT0pCVnVKa3h3Ul9HOElubDMtVmlnZVcxRzZVMmxxckF1aHAtT3lxV3pIbEFMdjgtZmZRVXJISWQ4ZWF1NVRYRjBBQjdJMDFtX1dqaHRRWFkwZ0ZjSWlGQ0g2S05kZzRGMjlaZ2UyOWNDWDAzZndMYU5ibGVGR05yYXJWQVRicGNUbXR2emVDR1pDbWNmRkFGWUxoeFJQa1o3YmJETTNIekVFbU81dmZjbUFXT0FqUVdGa1ZFakZrZkVtSlpoTlVYanBpcHF6aWRDUmVIREVVdEJnczZYS25KM256WFJTTHl0dWY0dXVXcjJveGwyY1Y1MjRySE9iSy0tT0oxZ3hDZ2U2MEZNbkJiQm54eHVnY3JKbTBYd09WUlFOMThUUHoxR01RR2JIbmZXdU1lX3Znd3d4OFh2UkxUTkRGeGpYUkktcXIwT0hkQUsxOHdjLWZnLWFhTm5wQ1ZjT1g1eEdtS3Vxd3Jxc29JTXR2UXpEanVwUjNBVmcwOGdlSnlGaVJHeFRFeEhDeUZuYmc3VUw3N3FacUk5RU16MFExRkRPN2NmVVRVOU9KY0IyMnJ4blpvdVIzNEJsdw?oc=5",
+          "source": "Facebook",
+          "published": "2026-11-24T09:51:28+00:00",
           "type": "文章",
           "description": ""
         }
       ],
-      "updated": "2026-11-24T10:05:30.156284+00:00",
-      "checkedAt": "2026-11-24T10:05:30.156284+00:00",
+      "updated": "2026-11-24T20:42:41.222754+00:00",
+      "checkedAt": "2026-11-24T20:42:41.222754+00:00",
       "keys": [
         "台北教育",
         "國中缺師率",
@@ -869,8 +869,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-24T10:05:30.156284+00:00",
-      "checkedAt": "2026-11-24T10:05:30.156284+00:00",
+      "updated": "2026-11-24T20:42:41.222754+00:00",
+      "checkedAt": "2026-11-24T20:42:41.222754+00:00",
       "keys": [
         "兩岸議題"
       ],
