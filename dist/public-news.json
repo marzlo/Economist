@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T08:48:21.059610+00:00",
+  "updated": "2026-11-25T19:57:47.524781+00:00",
   "topics": [
     {
       "id": "civic-songshan-airport",
@@ -536,8 +536,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-25T08:48:21.059610+00:00",
-      "checkedAt": "2026-11-25T08:48:21.059610+00:00",
+      "updated": "2026-11-25T19:57:47.524781+00:00",
+      "checkedAt": "2026-11-25T19:57:47.524781+00:00",
       "keys": [
         "松山機場",
         "松機",
@@ -668,8 +668,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-25T08:48:21.059610+00:00",
-      "checkedAt": "2026-11-25T08:48:21.059610+00:00",
+      "updated": "2026-11-25T19:57:47.524781+00:00",
+      "checkedAt": "2026-11-25T19:57:47.524781+00:00",
       "keys": [
         "臺北都市更新",
         "都市更新",
@@ -680,14 +680,6 @@
     "de668d5d-e7db-4828-a05c-37f8632400a4": {
       "items": [
         {
-          "title": "瀘州老窖(000568.SZ)：擬向瀘州市教育助學基金會捐贈1000萬元 - TradingView",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1hTVlwNUJKMWt6al85T01STXFLWC1NcUd5TzM3dkk3SmxuMTlwZmY1eEtQWUljamtXbWFuU2FqS3NOb2hIUUlXUGF5eHg1RlFXN2U2QkIweG9aNWY0ZENuTkgzNmRPVEh2X1E?oc=5",
-          "source": "TradingView",
-          "published": "2026-11-25T08:06:26+00:00",
-          "type": "文章",
-          "description": ""
-        },
-        {
           "title": "教育部全球資訊網 - 教育部全球資訊網",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBJV2hyV1lLVmxwYlM0c05na1hvUW81ZFJjMlFCbzQtMXR4UkNHQ3lScjItUG5MQmwxSEo1b0l5Q1NvSHZNWk90UlVFY3lic2p2LWZPbjFTVmZzQVE0TXV0dkVVazgzQ01fQk00djVGalRCYkNiYkFxNTJMWV9saFk?oc=5",
           "source": "教育部全球資訊網",
@@ -696,112 +688,120 @@
           "description": ""
         },
         {
-          "title": "德明科大深耕教育61載 傑出校友展現卓越成就 - 商傳媒",
-          "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxQVjdSNVI5UzZheGduQzhSSXZjU0R4MlJaRjhlYUJwLVVWNkQ5WnN4Ni1oUE0wR2wzaWkyNDVIUjV2WlRkcVpUZG5BbmExSWtwQ0o3dEg4OUo3Zy1MODdrLV8wdHFSUHVmbHkwd1VpT25zRVpYeUxlTE5QVWx0cThOUHF4Qm9uNnJTMkZTQ3h2QkdFeGpaZFJhWFJibkJLR19ZSi1odU9QZ01fanNZRHpjNjloc0ZiaWZ2M1poWl9jTkxSVk5ndWJfYWJlS2tncmkteVduQUk2dnNMaFlPZW9tSDhqZzJ0WGxtQlBrN010U0RzQmdNcDZ6ODh4dGVmbTJmYXhEa2tNNlpjd0FNTW5vcy1rVDQxWm5XamNhSTdFNVczRldLanRGNFprdlNENnhlTE1NZjQ3OHJBbjBWOEVyVDM0ek1uN0RRVTZZLWM2N3ZnUlM3a3YzRjhoNWJJSDA?oc=5",
-          "source": "商傳媒",
-          "published": "2026-11-25T07:30:00+00:00",
+          "title": "我是藝術教育的傳遞者 「美感假日學校」讓孩子在藝術中發現創意與自信 - 教育部全球資訊網",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1VaHgwWDlYczIxb0xuTWItZC1HNHYydUlUX2h2ZGVnUjkzdkk2RU0ySkc5R2ZlZ0R5VGUwSTl0aXM3UnRVWjdVa0FNUTBtZjk3Sjh6TEZzeXZhRkh2T2FONG00SlJKM0ZIMHZiOEZYa3VKTDFQWXNxNUlsTTFvSWs?oc=5",
+          "source": "教育部全球資訊網",
+          "published": "2026-11-25T02:14:26+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "教育部推動技職實作與產學基地 縮短學用磨合期 - 科技島",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4yOHB6RGZPTFl5TmNaOG1WM0tiNjNGUGNfZm9JZ2hqdGpESmJOWkQzV0RPd084ZWpFUXMzQjdQVjNjTUw5cHJHUzBkelBZbnAtMmJrMTBKX1A0dzl5TE05c0JjSnVMUlYzWHZob25LUnp4clNHZC1TRVd3?oc=5",
-          "source": "科技島",
-          "published": "2026-11-25T07:23:13+00:00",
+          "title": "「2026年教育部美感教育教師國際參訪計畫」團員拜會本館 - ROC-Taiwan.org",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBfVGduWTlhR2luZFBnb0pweENtWlRaa1VSUWdsVDg5dUdwbVdIVHo3OFZaY2xCRkE1clpNMkZXRmJ6Q0xDMUZ3bnlCT0gzZVl5aTBxNE43Zw?oc=5",
+          "source": "ROC-Taiwan.org",
+          "published": "2026-11-24T13:46:10+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "教育人員留職停薪規定放寬！明年一月起撫育8歲以下子女最多可請三年 - Yahoo新聞",
-          "url": "https://news.google.com/rss/articles/CBMiyANBVV95cUxQOXo5X19PQ1JMRWlNMEhZSnpnT2w2ZncwQUZKY3lhX001OF85X2Nrc0dQLUlaVVlJaGNkb0JYQ1BFRUpYZ082MUpiX1ZFaVJmemZsaTM4SHlHMDhJd28tLVpYNmZEaDVjMWVadXF6Q3pOamYzLVJ1bjJtWW0zQWZSbm5lM29uT1RIWlM0ZE9mV1ZQY0ZKbk9ZNW45T1RJWDg3V3E2dEdZcmp2UnluQ3JuWmE1cFZkNkZNTVNWYjduN08tM19fZTZQMzNYalZIQWMxbFViT1poMFBJUm1kQ0FXLXd3MjNXdG1hRWVOLU9KempaMzVSUlZ5TzBCVFNpYzl4VEdkU2dmZVVvdkEwSlM0aHhUTDdmVDRZbUF4SkRlUllickcyT002aUxCVmdsTFZBYlY1UUVmM3QxMWR0TEh4Tnk5SHFVOGlzTnpobkNENnZuQldkUFZPMHloWHA1cDZWRXVfR3E2MVhPemxzWE42dzJaVHdIUjdrNjhPV19XakVGd2d1YVgyeVBVVTYzM3ZPSDlkWlN2R2VNcUk0dDFidEczQlNackFUclRoRjhKeXZIaHdBMmlZOWM1c1d1dnlwS2ZEN2ZfMTI?oc=5",
+          "title": "快訊／台中教育大學18歲男持美工刀攻擊！老師受傷送醫 - Yahoo新聞",
+          "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxOT3BSYWJtSGc3SnhwUElGVmlSSnp5RzFkQmJ5Q25EbE1uSDhVM1g3YVM3S3VDUlZnd1FRQ1lEeHRfb1Y1Vk5sZmF6U0VKYXhkMkpERERBWDYtRmNJMEp2N1UwNDY4WVRuNzZYMHZwbzl1c2hlUUhwZkpGdEs5aUYtOXVQNTNGVjBHQTMxUHRxU3pxdGc0SnJUdmhnZFF1aUlONHNOT3QyRjJFQ3M5a0M1U2MtOGRLOTlhU19Ram81REFnNDZvcDlUcm1JMTJIVXZ6bmp4ZHlRdVRoOHpfTGRIREJrY1ItYnlEQi1MS2xKN2YtSTAySUJSamFHQjBHY0FxaVQyUnNTakhuWEYydWlPUVpkNUdhaE5rQmEyZy1LeXNnRk9xZlYwTmMwZTdTdmFHclZWNzdXSlV0Q0tJTWUyOHF3X0g4UjBHTEVvcnlDTGxTdU9aN0ZFSVZxb3ZoWVNa?oc=5",
           "source": "Yahoo新聞",
-          "published": "2026-11-25T07:16:53+00:00",
+          "published": "2026-11-24T05:28:57+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "美國麻州教育廳長訪嘉 黃敏惠：讓孩子與世界連結 - 墨新聞-MORE News",
-          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE10MGRDdHYxS0RxeGE0SVUwNGIxN1pzRHhNWHZKcVQxdFpmOGI1cHBBQ0RubEo5U25sMktVS1RKa05hdw?oc=5",
-          "source": "墨新聞-MORE News",
-          "published": "2026-11-25T07:07:31+00:00",
+          "title": "台中教育大學驚傳老師遭學生持刀抵脖生揚言：把老師滅了| 社會萬象| 社會 - UDN",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE10Ylo2YlJiWWF5U3FGZ3h0eTlmelJmT1J4M3pSLVhLV1ZGY0RrVEtnemtWYXpYdFZhZTgtLUd3ckpBd2NzdU41aE1sWkhPZTNj?oc=5",
+          "source": "UDN",
+          "published": "2026-11-24T04:54:35+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "輔英科大推動身障平權教育 八大主題體驗打造共融校園 - 台灣好報",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE83cGZMM3NVWTNwcnZRREtqMDJRaVBNMkc2Q01TY2RiakJtRW42MkFNTTd5ZmhzTXZUUUM1RVZjTWgwNU9NOVpxeXNqdEJYMWZIazlN?oc=5",
-          "source": "台灣好報",
-          "published": "2026-11-25T07:04:13+00:00",
+          "title": "韓國AI作弊連環爆：240萬檢舉金、教育部長下台，為何AI讓人更想投機？ - 天下雜誌",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1NZTRUUFRBTWd6QzU4MVY1STdfcmhRNHRyWWF3MXRUeU01V3VCWXQ1cGxWWXM2Rk5EOWZFeXVDbFJxaXpKODRMRDBEeGdvUQ?oc=5",
+          "source": "天下雜誌",
+          "published": "2026-11-23T11:25:00+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "全美總會ACTFL午宴聚焦華語教育 回顧AP中文20年 分享TCML經驗|華語浪潮 - 僑新聞",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE82VkwwTUFIVmtfd0tOVzBpTzlRWXF0YTFQRld3d2xsdXR6bW5MTGRQdkZYcHJxamtvU0VBd2lWbkd3ZFFySXhGemtsSQ?oc=5",
-          "source": "僑新聞",
-          "published": "2026-11-25T07:00:00+00:00",
+          "title": "中華資訊與科技教育學會「iceet數位學習與教育科技國際研討會」及「2027全國創意與智慧科技競賽暨AI協作挑戰賽」 - NTNU",
+          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOb0k0bXh4c1gxR1Z2MFd0dXYxMUpZb3lfbXllSzBwU3l1eEM1MjA4cndPNU9sNy0xcERWS3l1cWhvY2hmdWFMYThONERrRmNHRi1vS1g4a0Q0TGNoSGNDTUc0RE5JS0lxZFpnclRJUTgwcjRQSWFqYWJ5cVoxaHp1RE1ybTdtcmtnUk4tRDVXMHllOWdsU1lYdkE1VklPLVNXaUxrSGphQzUyVFNtWm5sQVJ2ZE5oSGdMZ013ck93dk5uYzFZZjdPMFpBSjl0c0VJaHNQNGFNenM4NVdFcElrVEZFUzhGaGFPSFQ3dFoweDRMWHQ2QXdGenVuRTByNFNzWmNqcw?oc=5",
+          "source": "NTNU",
+          "published": "2026-11-23T01:16:29+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "教育人員留職停薪 撫育8歲以下子女最多可請3年 - 中央社 CNA",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9CTjdOd0dnZTE1M0N4cEtzLURuMHJCVDZKcE5QVzhKLUNBbFpFNkhxWkFWcExjYzdhSXh4VFRxQlQ5djlhWl83d25QSUxkeTJTejBfU29mNU9mclBCQnRR?oc=5",
-          "source": "中央社 CNA",
-          "published": "2026-11-25T06:58:00+00:00",
+          "title": "臺灣環境教育再度揚名國際！ 永安社區環教中心獲 CIFA 大獎 - 環境部新聞專區",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1rLXpJV0tBZThoMVAtVDlyVFZkamhfN3Z1Mm5wNUFCZzNhQ2c3UXB3X0pCVWtBeTJYcDNqZ1p2OU43Zk5zX09lZHNYSmdKZHhmbm00MDBnWUg5cld6bmpLUjZpUmw?oc=5",
+          "source": "環境部新聞專區",
+          "published": "2026-11-22T01:30:00+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "番路鄉農會深化食農教育推廣 特色禮盒『拾柿山茶』赴韓交流成最尊貴禮品 - 台灣好報",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9zMFNoc0hFMTRkdGIxNXp5dzVVWjh5Y3EzR0JybC1qVnNSY3pXVTVBUlpLUDZSb1ZYYnpFV2tVM1NFdEFrZUl3alBGbWdmc2hNNm1V?oc=5",
-          "source": "台灣好報",
-          "published": "2026-11-25T06:49:18+00:00",
+          "title": "教育部全球資訊網 - 教育部全球資訊網",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5RTTJOa25xbDJCbDZ4a2J0WVhaMWdKaS1scmwwMDh3NFdXMkZDQUdDYVN6MUJyX3lEV0xMdFV6WjBOUnpfWXBIbWFjSmJxaHhEdV9zbkpZX0tFZWc2aktEaG56dmJEaEtxdTk5ZWFGV1dzTXBWOFpsdDR2eXVIUms?oc=5",
+          "source": "教育部全球資訊網",
+          "published": "2026-11-21T04:00:47+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "AI教育政策國際研討會倡議AI效能與倫理並重| 青年日報 - LINE TODAY",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5heFhFT2lqYllBUEZ5NmY0Vk1uemx0WldUcmtYakc2a3g1V0JrakNJRkctTXIxZDRiNktUUnZZRHFYV09FUzNKYmU0dVJKV3RSZTE5Vlh3?oc=5",
-          "source": "LINE TODAY",
-          "published": "2026-11-25T06:18:03+00:00",
+          "title": "教育部全球資訊網 - 教育部全球資訊網",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBhY19jdzdsWTZpVl82OUw3SDM5bWNXYXBxUFdkZGwwLUlXTlQzUUFFQU4ya0diVm5sZF9mZ282Mk8xbW05U0s0Q0w0NFZneTlIdFNMTVdnWnhmd1I4RjlNT3NTeWN4eFRrM2VEdHJ0MjJianRKX0RDMWVCM25FUGM?oc=5",
+          "source": "教育部全球資訊網",
+          "published": "2026-11-21T00:33:49+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "化身小小銀行員 親子金融教育新選擇 「中國信託銀行KidZania體驗分行」開幕 - udn",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9PMEFXa01qUnVEMkxfZ2E3dVRveTN0elUtQ3ZlekpBcDNLSE53M1cwMll1LW9EdkFITWlQZWt6WGlYT3NYQ1J1bERHS01nRWVm?oc=5",
-          "source": "udn",
-          "published": "2026-11-25T06:05:00+00:00",
+          "title": "教育部全球資訊網 - 教育部全球資訊網",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8tS2VYbnJJT29VekVUMDZhd1FKeFpwWS1ucUM0NGNTTmp1S2w3Q0tMZkV3dXhxYnpmMjVaTkRLRF9hSEFCeHlZRkg5YWVJUUNCU2IyZFZ1RTUwdDRSeXc3Y2g0RlgyQnBwM2lhMGVtY0JnaFZaSVhEemc0QVNlWWc?oc=5",
+          "source": "教育部全球資訊網",
+          "published": "2026-11-20T08:07:12+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "高雄與韓國高陽簽教育友好合作書深化校際交流| 地方 - 中央社 CNA",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9vVmUtZEMtcEtuQ2Rtdjg5S01hLXdtUU9GZktGM2EtSjNkWWFtOEJ5cW9qWmVERlhacUtiTjJTZklITlN4TXRMNXprNVVfdVh0T2tVd2h2dEV5V284TXBj?oc=5",
-          "source": "中央社 CNA",
-          "published": "2026-11-25T06:04:00+00:00",
+          "title": "教育部全球資訊網 - 教育部全球資訊網",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1SckFEczV1d2RMVjZsNVpTUU1MTjF4MlR2OE04anJ5N0E2QkRWOTdONEVFaXJXTV9MOVZMSG5HaGJ1bFNESWQ5Tnp6TDhVblB6OUh1RlA4d3FKdFlGZ0tYbHBWdXRrdFNIY3lLdF9QdnJ0eXhIaURVTTNuWGJBZW8?oc=5",
+          "source": "教育部全球資訊網",
+          "published": "2026-11-20T08:00:00+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "新北防災教育獲中央肯定 守護孩童安全 | 青年日報 - LINE TODAY",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5pSk8xckZzaHJBeG12WnVVOW1FQXVPOUdmVGpPaFU0dzFSa0dIOG1Wd09aaG4xd1NWczdSOFRONVVPRllWVDZ2ZzRWSkxUVHR4cWltX0pn?oc=5",
-          "source": "LINE TODAY",
-          "published": "2026-11-25T04:23:31+00:00",
+          "title": "AI時代不只學科技！中原大學入選教育部WISE計畫 結合人文與AI培育跨域人才 - 104職場力",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1IRkphZk41RzQtUzFLb1hCV2NZTGRjaEhQb2ZtU1JOb3dHYjJGV2o5ZDlxZ0s2WDlfVXMwSmVSYkhVR2V1UHl1WUE0c2NEV1RwNTBkRWFn?oc=5",
+          "source": "104職場力",
+          "published": "2026-11-20T03:08:22+00:00",
           "type": "文章",
           "description": ""
         },
         {
-          "title": "美國麻州教育廳長訪仁武高中 學生全英語專題展現自主學習實力 - 台灣新聞雲報",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1HT0tSam5TeGpRa1A2eU04bkZIaXgzUGpqQ0U1NG5sMERybE45ME8yT3N3TUNjRWRTQ0hMYWNucnRHVkFNZUE?oc=5",
-          "source": "台灣新聞雲報",
-          "published": "2026-11-25T03:43:32+00:00",
+          "title": "臺北市政府教育局「115學年度臺北市高中生 AI 與智慧機器人超未來實戰營實施計畫」 - NTNU",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOV0N2Mlg5M2sxZTdzSjBSYldEY0wwT1hqS1RPV2hTcWFrbHJNSUZMZHVGSzJHTFhRWklXRVNFQjFoSGpuXzZDY3RnUWQwYndLeG5iZzRzNm1oTml0SkFZQWdXMk9rQ0xXQUxLOFdDRVg1dzkyZklzd1dLdnlYR0x4V1BzVmFwMTEwaWZFcUIxM3lnUTJha2JXQg?oc=5",
+          "source": "NTNU",
+          "published": "2026-11-19T02:09:33+00:00",
+          "type": "文章",
+          "description": ""
+        },
+        {
+          "title": "教育部全球資訊網 - 教育部全球資訊網",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAzTzZYYi1Sd1ZjQXNrUk1qRXBhSldBMF9nNkQxdG5tZVpYc1hTWjBmdUFzQ0ZTNnZqOW9NSWZJcFEyQWkyZlFXR2UwcWJya1NiMEFiVlRyd0FsMmZGTlNCLXBVbTBPSldLZzJZaXBBdk5oMWJiMUpSYjZadUJVQzA?oc=5",
+          "source": "教育部全球資訊網",
+          "published": "2026-11-18T07:56:16+00:00",
           "type": "文章",
           "description": ""
         }
       ],
-      "updated": "2026-11-25T08:48:21.059610+00:00",
-      "checkedAt": "2026-11-25T08:48:21.059610+00:00",
+      "updated": "2026-11-25T19:57:47.524781+00:00",
+      "checkedAt": "2026-11-25T19:57:47.524781+00:00",
       "keys": [
         "台北教育",
         "國中缺師率",
@@ -869,8 +869,8 @@
           "description": ""
         }
       ],
-      "updated": "2026-11-25T08:48:21.059610+00:00",
-      "checkedAt": "2026-11-25T08:48:21.059610+00:00",
+      "updated": "2026-11-25T19:57:47.524781+00:00",
+      "checkedAt": "2026-11-25T19:57:47.524781+00:00",
       "keys": [
         "兩岸議題"
       ],
